@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <style type="text/css">
+
+/*一定要重置，否则不会原地转。不要问我为什么*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+    .demo-cube {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    zoom: 2;
+}
+.demo-cube .cube-inner{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50px 50px; //决定是否原地转
+    transform-origin: 50px 50px;
+     -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+    transform: rotateX(-33.5deg) rotateY(45deg);
+
+    }
+
+    
+    .demo-cube .cube-inner > li {
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid; */
+    background:radial-gradient(transparent 99%, rgba(0, 0, 0, 0.3) 100%);
+
+    }
+
+    li {
+    list-style: none;
+}
+
+.demo-cube .cube-inner .top {
+  -webkit-transform: rotateX(90deg) translateZ(50px);
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.demo-cube .cube-inner .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(50px);
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.demo-cube .cube-inner .front {
+  -webkit-transform: translateZ(50px);
+  transform: translateZ(50px);
+}
+
+.demo-cube .cube-inner .back {
+  -webkit-transform: rotateX(-180deg) translateZ(50px);
+  transform: rotateX(-180deg) translateZ(50px);
+}
+
+.demo-cube .cube-inner .left {
+  -webkit-transform: rotateY(-90deg) translateZ(50px);
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.demo-cube .cube-inner .right {
+  -webkit-transform: rotateY(90deg) translateZ(50px);
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.demo-cube .cube-inner li:before{
+      content: "";
+     box-shadow: rgba(255, 255, 255, 0.5) -14px 1px 25px 10px inset;
+       width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-filter: blur(10px);
+
+}
+
+.demo-cube .cube-inner{
+     -webkit-animation: fastspin 2s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+    animation: fastspin 2s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+.pic{
+    -webkit-animation: pic_show 2s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+    animation: pic_show 2s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+
+@-webkit-keyframes pic_show {
+    0% {
+        -webkit-clip-path:polygon(50% 2%, 94% 25%, 95% 75%, 50% 98%, 3% 74%, 1% 26%);
+    }
+    100%{
+       -webkit-clip-path:polygon(57% 3%, 96% 33%, 94% 77%, 41% 97%, 3% 71%, 2% 22%);
+    }
+}
+
+@-webkit-keyframes fastspin {
+  /* 0% {
+     -webkit-transform: rotateX(-40.5deg) rotateY(45deg);
+    transform: rotateX(-40.5deg) rotateY(45deg);
+  }
+  40%, to {
+     -webkit-transform: rotateX(-40.5deg) rotateY(-315deg);
+    transform: rotateX(-40.5deg) rotateY(-315deg);
+  } */
+
+  0% {
+     -webkit-transform: rotateX(-40.5deg) rotateY(45deg);
+    transform: rotateX(-40.5deg) rotateY(45deg);
+  }
+  100%{
+    -webkit-transform: rotateX(-40.5deg) rotateY(35deg);
+    transform: rotateX(-40.5deg) rotateY(35deg);
+  }
+  
+
+}
+
+
+
+.pic{
+    /* background: url(img/pic.jpg); */
+   width: 288px;
+    height: 330px;
+    position: absolute;
+    top: 12%;
+    left: 43.3%;
+    -webkit-clip-path: polygon(49% 3%, 97% 26%, 97% 75%, 49% 98%, 1% 75%, 1% 26%);
+    /* -webkit-clip-path:polygon(143px 3px, 286px 84px, 284px 250px, 143px 328px, 3px 252px, -1px 85px); */
+}
+
+
+
+/*.demo-cube .cube-inner > li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+*/
+
+
+
+
+
+</style>
+
+</head>
+<body>
+    <img src="../img/pic.jpg" alt="" class="pic">
+    <div class="demo-cube">
+    <ul id="div" class="cube-inner">
+        <li class="top"></li>
+        <li class="bottom"></li>
+        <li class="front"></li>
+        <li class="back"></li>
+        <li class="right"></li>
+        <li class="left"></li>
+    </ul>
+    
+  
+    </div>
+</body>
+</html>

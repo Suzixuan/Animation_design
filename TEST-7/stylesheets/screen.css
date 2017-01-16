@@ -1,0 +1,1671 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* mixin */
+/* mixin */
+/* mixin */
+@font-face {
+  font-family: 'christmas_time_personal_useRg';
+  src: url("../font/christmas_time_personal_use-webfont.woff2") format("woff2"), url("../font/christmas_time_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 156, ../sass/screen.scss */
+body {
+  overflow: hidden;
+  font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+/* line 162, ../sass/screen.scss */
+.container .wrap {
+  position: relative;
+  width: 1400px;
+  height: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6d4bf+0,bed0bc+14,b6ccb9+32,a9c5b5+50,8db6aa+70,84b0a7+100 */
+  background: #c6d4bf;
+  /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #c6d4bf 0%, #bed0bc 14%, #b6ccb9 32%, #a9c5b5 50%, #8db6aa 70%, #84b0a7 100%);
+  /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #c6d4bf 0%, #bed0bc 14%, #b6ccb9 32%, #a9c5b5 50%, #8db6aa 70%, #84b0a7 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #c6d4bf 0%, #bed0bc 14%, #b6ccb9 32%, #a9c5b5 50%, #8db6aa 70%, #84b0a7 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6d4bf', endColorstr='#84b0a7',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+}
+/* line 176, ../sass/screen.scss */
+.container .wrap .font {
+  font-family: 'christmas_time_personal_useRg';
+  color: #BE8E43;
+  position: absolute;
+  bottom: 400px;
+  left: 17%;
+}
+/* line 183, ../sass/screen.scss */
+.container .wrap .name {
+  bottom: 350px;
+  left: 19%;
+}
+/* line 188, ../sass/screen.scss */
+.container .wrap .triangle {
+  background-image: url(../SVG/triangle.svg);
+  width: 200px;
+  height: 390px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+/* line 208, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line {
+  position: absolute;
+  bottom: 10%;
+  width: 86%;
+  left: 10px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .5s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .5s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .5s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .5s infinite;
+}
+/* line 218, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_1 {
+  position: absolute;
+  bottom: 20%;
+  width: 77%;
+  left: 21px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .9s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .9s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .9s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .9s infinite;
+}
+/* line 228, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_2 {
+  position: absolute;
+  bottom: 30%;
+  width: 67%;
+  left: 32px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .7s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .7s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .7s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .7s infinite;
+}
+/* line 238, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_3 {
+  position: absolute;
+  bottom: 40%;
+  width: 59%;
+  left: 41px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.2s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.2s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.2s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.2s infinite;
+}
+/* line 248, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_4 {
+  position: absolute;
+  bottom: 50%;
+  width: 50%;
+  left: 52px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.4s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.4s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.4s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.4s infinite;
+}
+/* line 258, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_5 {
+  position: absolute;
+  bottom: 60%;
+  width: 38%;
+  left: 61px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.6s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.6s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.6s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.6s infinite;
+}
+/* line 268, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_6 {
+  position: absolute;
+  bottom: 70%;
+  width: 28%;
+  left: 72px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.8s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.8s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.8s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.8s infinite;
+}
+/* line 278, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_7 {
+  position: absolute;
+  bottom: 80%;
+  width: 19%;
+  left: 80px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+}
+/* line 288, ../sass/screen.scss */
+.container .wrap .triangle .wavy_line_8 {
+  position: absolute;
+  bottom: 87%;
+  width: 10%;
+  left: 90px;
+  transform: skewX(-7deg) rotateX(50.5deg);
+  -webkit-transform: skewX(-7deg) rotateX(50.5deg);
+  -moz-transform: skewX(-7deg) rotateX(50.5deg);
+  -o-transform: skewX(-7deg) rotateX(50.5deg);
+  height: 25px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-image: radial-gradient(circle, transparent, transparent 23px, #edde92 25px, #edde92 25px, transparent 9px, transparent);
+  background-size: 50px 50px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2.2s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2.2s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2.2s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2.2s infinite;
+}
+/* line 297, ../sass/screen.scss */
+.container .wrap .triangle .decorate_position {
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 65px;
+  left: 30px;
+  -webkit-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+  -moz-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+  -o-animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+  animation: line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite;
+}
+/* line 307, ../sass/screen.scss */
+.container .wrap .triangle .decorate_position.first {
+  left: 98px;
+}
+/* line 310, ../sass/screen.scss */
+.container .wrap .triangle .decorate_position.second {
+  left: 160px;
+}
+/* line 313, ../sass/screen.scss */
+.container .wrap .triangle .decorate {
+  width: 30px;
+  height: 28px;
+  margin: -13px -13px;
+  background-image: -webkit-radial-gradient(circle, transparent, transparent 10px, #e1d998 10px, #e1d998);
+  background-image: -moz-radial-gradient(circle, transparent, transparent 10px, #e1d998 10px, #e1d998);
+  background-image: radial-gradient(circle, transparent, transparent 10px, #e1d998 10px, #e1d998);
+  background-size: 20px 20px;
+}
+/* line 327, ../sass/screen.scss */
+.container .wrap .star_position {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 400px;
+  left: 43.5%;
+}
+/* line 335, ../sass/screen.scss */
+.container .wrap .five_star {
+  width: 0px;
+  height: 0px;
+  margin: 80px auto 0;
+  position: relative;
+  display: block;
+  color: #F2DF8E;
+  border-right: 20px solid transparent;
+  border-bottom: 10px  solid #F2DF8E;
+  border-left: 20px solid transparent;
+  -moz-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  -webkit-filter: blur(2px);
+  -webkit-animation: star_show_1 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  -moz-animation: star_show_1 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  -o-animation: star_show_1 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  animation: star_show_1 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+}
+/* line 353, ../sass/screen.scss */
+.container .wrap .five_star:before {
+  border-bottom: 16px solid #F2DF8E;
+  border-left: 6px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -12px;
+  left: -12px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  -webkit-filter: blur(2px);
+  -webkit-animation: star_show_2 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  -moz-animation: star_show_2 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  -o-animation: star_show_2 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  animation: star_show_2 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+}
+/* line 372, ../sass/screen.scss */
+.container .wrap .five_star:after {
+  position: absolute;
+  display: block;
+  color: #F2DF8E;
+  top: 0px;
+  left: -19px;
+  width: 0px;
+  height: 0px;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid #F2DF8E;
+  border-left: 20px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  content: '';
+  -webkit-filter: blur(2px);
+  -webkit-animation: star_show_3 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  -moz-animation: star_show_3 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  -o-animation: star_show_3 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+  animation: star_show_3 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite;
+}
+/* line 396, ../sass/screen.scss */
+.container .wrap ul {
+  width: 100%;
+  height: 700px;
+  top: -700px;
+}
+/* line 405, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(1):after {
+  content: "";
+  -webkit-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  -moz-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  -ms-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  -o-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  -o-filter: blur(5px);
+  z-index: 999;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  right: -143px;
+}
+/* line 411, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(2) {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+}
+/* line 418, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(2):after {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(11px);
+  -moz-filter: blur(11px);
+  -ms-filter: blur(11px);
+  -o-filter: blur(11px);
+  z-index: 10;
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  right: -300px;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 425, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(3) {
+  -webkit-transform: scale(0.2);
+  -moz-transform: scale(0.2);
+  -ms-transform: scale(0.2);
+  -o-transform: scale(0.2);
+}
+/* line 431, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(3):after {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -ms-filter: blur(13px);
+  -o-filter: blur(13px);
+  z-index: 10;
+  background: white;
+  width: 196px;
+  height: 196px;
+  border-radius: 196px;
+  right: -300px;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s;
+}
+/* line 438, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(4) {
+  -webkit-transform: scale(0.09);
+  -moz-transform: scale(0.09);
+  -ms-transform: scale(0.09);
+  -o-transform: scale(0.09);
+}
+/* line 444, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(4):after {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(18px);
+  -moz-filter: blur(18px);
+  -ms-filter: blur(18px);
+  -o-filter: blur(18px);
+  z-index: 10;
+  background: white;
+  width: 196px;
+  height: 196px;
+  border-radius: 196px;
+  right: -290px;
+  -webkit-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -moz-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -ms-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -o-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+}
+/* line 451, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(5) {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}
+/* line 457, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(5):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(19px);
+  -moz-filter: blur(19px);
+  -ms-filter: blur(19px);
+  -o-filter: blur(19px);
+  z-index: 10;
+  background: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 102px;
+  right: 398px;
+  -webkit-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 464, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(6) {
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+}
+/* line 470, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(6):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -ms-filter: blur(13px);
+  -o-filter: blur(13px);
+  z-index: 10;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  right: 400px;
+  -webkit-animation: snow_show 8.6s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 8.6s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 8.6s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 8.6s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 477, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(7) {
+  -webkit-transform: scale(0.12);
+  -moz-transform: scale(0.12);
+  -ms-transform: scale(0.12);
+  -o-transform: scale(0.12);
+}
+/* line 483, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(7):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(16px);
+  -moz-filter: blur(16px);
+  -ms-filter: blur(16px);
+  -o-filter: blur(16px);
+  z-index: 10;
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  right: 530px;
+  -webkit-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 490, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(8) {
+  -webkit-transform: scale(0.18);
+  -moz-transform: scale(0.18);
+  -ms-transform: scale(0.18);
+  -o-transform: scale(0.18);
+}
+/* line 497, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(8):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -ms-filter: blur(13px);
+  -o-filter: blur(13px);
+  z-index: 10;
+  background: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 102px;
+  right: 775px;
+  -webkit-animation: snow_show 9.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+  -moz-animation: snow_show 9.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+  -ms-animation: snow_show 9.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+  -o-animation: snow_show 9.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+}
+/* line 504, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(9) {
+  -webkit-transform: scale(0.099);
+  -moz-transform: scale(0.099);
+  -ms-transform: scale(0.099);
+  -o-transform: scale(0.099);
+}
+/* line 511, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(9):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -ms-filter: blur(15px);
+  -o-filter: blur(15px);
+  z-index: 10;
+  background: white;
+  width: 196px;
+  height: 196px;
+  border-radius: 196px;
+  right: -1500px;
+  -webkit-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+  -moz-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+  -ms-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+  -o-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s;
+}
+/* line 518, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(10) {
+  -webkit-transform: scale(0.07);
+  -moz-transform: scale(0.07);
+  -ms-transform: scale(0.07);
+  -o-transform: scale(0.07);
+}
+/* line 525, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(10):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(12px);
+  -moz-filter: blur(12px);
+  -ms-filter: blur(12px);
+  -o-filter: blur(12px);
+  z-index: 10;
+  background: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 102px;
+  right: 2000px;
+  -webkit-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 532, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(11) {
+  -webkit-transform: scale(0.3);
+  -moz-transform: scale(0.3);
+  -ms-transform: scale(0.3);
+  -o-transform: scale(0.3);
+}
+/* line 538, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(11):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -ms-filter: blur(15px);
+  -o-filter: blur(15px);
+  z-index: 10;
+  background: white;
+  width: 196px;
+  height: 196px;
+  border-radius: 196px;
+  right: 1500px;
+  -webkit-animation: snow_show 7.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 7.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 7.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 7.4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 545, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(12) {
+  -webkit-transform: scale(0.081);
+  -moz-transform: scale(0.081);
+  -ms-transform: scale(0.081);
+  -o-transform: scale(0.081);
+}
+/* line 551, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(12):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(11px);
+  -moz-filter: blur(11px);
+  -ms-filter: blur(11px);
+  -o-filter: blur(11px);
+  z-index: 10;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  right: 3200px;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 558, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(13) {
+  -webkit-transform: scale(0.081);
+  -moz-transform: scale(0.081);
+  -ms-transform: scale(0.081);
+  -o-transform: scale(0.081);
+}
+/* line 564, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(13):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(10.5px);
+  -moz-filter: blur(10.5px);
+  -ms-filter: blur(10.5px);
+  -o-filter: blur(10.5px);
+  z-index: 10;
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  right: 4000px;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 571, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(14) {
+  -webkit-transform: scale(0.09);
+  -moz-transform: scale(0.09);
+  -ms-transform: scale(0.09);
+  -o-transform: scale(0.09);
+}
+/* line 577, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(14):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(19px);
+  -moz-filter: blur(19px);
+  -ms-filter: blur(19px);
+  -o-filter: blur(19px);
+  z-index: 10;
+  background: white;
+  width: 196px;
+  height: 196px;
+  border-radius: 196px;
+  right: 4500px;
+  -webkit-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 584, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(15) {
+  -webkit-transform: scale(0.76);
+  -moz-transform: scale(0.76);
+  -ms-transform: scale(0.76);
+  -o-transform: scale(0.76);
+}
+/* line 591, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(15):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(17px);
+  -moz-filter: blur(17px);
+  -ms-filter: blur(17px);
+  -o-filter: blur(17px);
+  z-index: 10;
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  right: 4800px;
+  -webkit-animation: snow_show 8.7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 8.7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 8.7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 8.7s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 598, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(16) {
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+/* line 605, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(16):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(14px);
+  -moz-filter: blur(14px);
+  -ms-filter: blur(14px);
+  -o-filter: blur(14px);
+  z-index: 10;
+  background: white;
+  width: 165px;
+  height: 165px;
+  border-radius: 165px;
+  right: 630px;
+  -webkit-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  -moz-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  -ms-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+  -o-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s;
+}
+/* line 612, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(17) {
+  -webkit-transform: scale(0.095);
+  -moz-transform: scale(0.095);
+  -ms-transform: scale(0.095);
+  -o-transform: scale(0.095);
+}
+/* line 619, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(17):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(17px);
+  -moz-filter: blur(17px);
+  -ms-filter: blur(17px);
+  -o-filter: blur(17px);
+  z-index: 10;
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  right: -2900px;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s;
+}
+/* line 626, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(18) {
+  -webkit-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -o-transform: scale(0.1);
+}
+/* line 633, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(18):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(18px);
+  -moz-filter: blur(18px);
+  -ms-filter: blur(18px);
+  -o-filter: blur(18px);
+  z-index: 10;
+  background: white;
+  width: 196px;
+  height: 196px;
+  border-radius: 196px;
+  right: -2000px;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+}
+/* line 640, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(19) {
+  -webkit-transform: scale(0.111);
+  -moz-transform: scale(0.111);
+  -ms-transform: scale(0.111);
+  -o-transform: scale(0.111);
+}
+/* line 646, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(19):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(14px);
+  -moz-filter: blur(14px);
+  -ms-filter: blur(14px);
+  -o-filter: blur(14px);
+  z-index: 10;
+  background: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 102px;
+  right: -1100px;
+  -webkit-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 653, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(20) {
+  -webkit-transform: scale(0.081);
+  -moz-transform: scale(0.081);
+  -ms-transform: scale(0.081);
+  -o-transform: scale(0.081);
+}
+/* line 659, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(20):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -ms-filter: blur(13px);
+  -o-filter: blur(13px);
+  z-index: 10;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  right: -800px;
+  -webkit-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 9s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 667, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(21) {
+  transform: scale(0.3);
+}
+/* line 670, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(21):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(16px);
+  -moz-filter: blur(16px);
+  -ms-filter: blur(16px);
+  -o-filter: blur(16px);
+  z-index: 10;
+  background: white;
+  width: 172px;
+  height: 172px;
+  border-radius: 172px;
+  right: -344px;
+  -webkit-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 5s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 678, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(22) {
+  transform: scale(0.234);
+}
+/* line 681, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(22):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -ms-filter: blur(13px);
+  -o-filter: blur(13px);
+  z-index: 10;
+  background: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 102px;
+  right: -763px;
+  -webkit-animation: snow_show 2s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 2s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 2s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 2s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 689, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(23) {
+  transform: scale(0.765);
+}
+/* line 692, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(23):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(11.7px);
+  -moz-filter: blur(11.7px);
+  -ms-filter: blur(11.7px);
+  -o-filter: blur(11.7px);
+  z-index: 10;
+  background: white;
+  -webkit-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 8s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 699, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(24) {
+  transform: scale(0.875);
+}
+/* line 702, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(24):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(19px);
+  -moz-filter: blur(19px);
+  -ms-filter: blur(19px);
+  -o-filter: blur(19px);
+  z-index: 10;
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  right: -432px;
+  -webkit-animation: snow_show 12s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 12s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 12s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 12s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 710, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(25) {
+  transform: scale(1.01);
+}
+/* line 713, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(25):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(17px);
+  -moz-filter: blur(17px);
+  -ms-filter: blur(17px);
+  -o-filter: blur(17px);
+  z-index: 10;
+  background: white;
+  width: 165px;
+  height: 165px;
+  border-radius: 165px;
+  right: -324px;
+  -webkit-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 10s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 720, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(26) {
+  transform: scale(0.54);
+}
+/* line 723, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(26):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  -o-filter: blur(4px);
+  z-index: 10;
+  background: white;
+  width: 172px;
+  height: 172px;
+  border-radius: 172px;
+  right: -654px;
+  -webkit-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -moz-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -ms-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+  -o-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s;
+}
+/* line 730, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(27) {
+  transform: scale(0.33);
+}
+/* line 733, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(27):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -ms-filter: blur(20px);
+  -o-filter: blur(20px);
+  z-index: 10;
+  background: white;
+  width: 160px;
+  height: 160px;
+  border-radius: 160px;
+  right: -212px;
+  -webkit-animation: snow_show 13s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -moz-animation: snow_show 13s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -ms-animation: snow_show 13s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -o-animation: snow_show 13s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+}
+/* line 740, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(28) {
+  transform: scale(1);
+}
+/* line 743, ../sass/screen.scss */
+.container .wrap ul .snow:nth-child(28):before {
+  content: "";
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -ms-filter: blur(8px);
+  -o-filter: blur(8px);
+  z-index: 10;
+  background: white;
+  width: 102px;
+  height: 102px;
+  border-radius: 102px;
+  right: -542px;
+  -webkit-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -moz-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -ms-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+  -o-animation: snow_show 4s infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s;
+}
+
+@-webkit-keyframes line_show {
+  /* line 756, ../sass/screen.scss */
+  0% {
+    opacity: 0;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+  }
+
+  /* line 762, ../sass/screen.scss */
+  50% {
+    opacity: .5;
+  }
+
+  /* line 765, ../sass/screen.scss */
+  100% {
+    opacity: 1;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+  }
+}
+
+@-moz-keyframes line_show {
+  /* line 756, ../sass/screen.scss */
+  0% {
+    opacity: 0;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+  }
+
+  /* line 762, ../sass/screen.scss */
+  50% {
+    opacity: .5;
+  }
+
+  /* line 765, ../sass/screen.scss */
+  100% {
+    opacity: 1;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+  }
+}
+
+@-o-keyframes line_show {
+  /* line 756, ../sass/screen.scss */
+  0% {
+    opacity: 0;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+  }
+
+  /* line 762, ../sass/screen.scss */
+  50% {
+    opacity: .5;
+  }
+
+  /* line 765, ../sass/screen.scss */
+  100% {
+    opacity: 1;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+  }
+}
+
+@keyframes line_show {
+  /* line 756, ../sass/screen.scss */
+  0% {
+    opacity: 0;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #78a8a0 25px, #78a8a0 25px, transparent 9px, transparent);
+  }
+
+  /* line 762, ../sass/screen.scss */
+  50% {
+    opacity: .5;
+  }
+
+  /* line 765, ../sass/screen.scss */
+  100% {
+    opacity: 1;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #f1df8f 25px, #f1df8f 25px, transparent 9px, transparent);
+  }
+}
+
+@-webkit-keyframes star_show {
+  /* line 775, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+  }
+
+  /* line 781, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  /* line 787, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+}
+
+@-moz-keyframes star_show {
+  /* line 775, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+  }
+
+  /* line 781, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  /* line 787, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+}
+
+@-o-keyframes star_show {
+  /* line 775, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+  }
+
+  /* line 781, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  /* line 787, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+}
+
+@keyframes star_show {
+  /* line 775, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+  }
+
+  /* line 781, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+
+  /* line 787, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -o-transform: scale(0.6);
+  }
+}
+
+@-webkit-keyframes star_show_1 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(35deg);
+    -moz-transform: scale(0.5) rotate(35deg);
+    -ms-transform: scale(0.5) rotate(35deg);
+    -o-transform: scale(0.5) rotate(35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(35deg);
+    -moz-transform: scale(1.2) rotate(35deg);
+    -ms-transform: scale(1.2) rotate(35deg);
+    -o-transform: scale(1.2) rotate(35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(35deg);
+    -moz-transform: scale(0.6) rotate(35deg);
+    -ms-transform: scale(0.6) rotate(35deg);
+    -o-transform: scale(0.6) rotate(35deg);
+  }
+}
+
+@-moz-keyframes star_show_1 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(35deg);
+    -moz-transform: scale(0.5) rotate(35deg);
+    -ms-transform: scale(0.5) rotate(35deg);
+    -o-transform: scale(0.5) rotate(35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(35deg);
+    -moz-transform: scale(1.2) rotate(35deg);
+    -ms-transform: scale(1.2) rotate(35deg);
+    -o-transform: scale(1.2) rotate(35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(35deg);
+    -moz-transform: scale(0.6) rotate(35deg);
+    -ms-transform: scale(0.6) rotate(35deg);
+    -o-transform: scale(0.6) rotate(35deg);
+  }
+}
+
+@-o-keyframes star_show_1 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(35deg);
+    -moz-transform: scale(0.5) rotate(35deg);
+    -ms-transform: scale(0.5) rotate(35deg);
+    -o-transform: scale(0.5) rotate(35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(35deg);
+    -moz-transform: scale(1.2) rotate(35deg);
+    -ms-transform: scale(1.2) rotate(35deg);
+    -o-transform: scale(1.2) rotate(35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(35deg);
+    -moz-transform: scale(0.6) rotate(35deg);
+    -ms-transform: scale(0.6) rotate(35deg);
+    -o-transform: scale(0.6) rotate(35deg);
+  }
+}
+
+@keyframes star_show_1 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(35deg);
+    -moz-transform: scale(0.5) rotate(35deg);
+    -ms-transform: scale(0.5) rotate(35deg);
+    -o-transform: scale(0.5) rotate(35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(35deg);
+    -moz-transform: scale(1.2) rotate(35deg);
+    -ms-transform: scale(1.2) rotate(35deg);
+    -o-transform: scale(1.2) rotate(35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(35deg);
+    -moz-transform: scale(0.6) rotate(35deg);
+    -ms-transform: scale(0.6) rotate(35deg);
+    -o-transform: scale(0.6) rotate(35deg);
+  }
+}
+
+@-webkit-keyframes star_show_2 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-35deg);
+    -moz-transform: scale(0.5) rotate(-35deg);
+    -ms-transform: scale(0.5) rotate(-35deg);
+    -o-transform: scale(0.5) rotate(-35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-35deg);
+    -moz-transform: scale(1.2) rotate(-35deg);
+    -ms-transform: scale(1.2) rotate(-35deg);
+    -o-transform: scale(1.2) rotate(-35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-35deg);
+    -moz-transform: scale(0.6) rotate(-35deg);
+    -ms-transform: scale(0.6) rotate(-35deg);
+    -o-transform: scale(0.6) rotate(-35deg);
+  }
+}
+
+@-moz-keyframes star_show_2 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-35deg);
+    -moz-transform: scale(0.5) rotate(-35deg);
+    -ms-transform: scale(0.5) rotate(-35deg);
+    -o-transform: scale(0.5) rotate(-35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-35deg);
+    -moz-transform: scale(1.2) rotate(-35deg);
+    -ms-transform: scale(1.2) rotate(-35deg);
+    -o-transform: scale(1.2) rotate(-35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-35deg);
+    -moz-transform: scale(0.6) rotate(-35deg);
+    -ms-transform: scale(0.6) rotate(-35deg);
+    -o-transform: scale(0.6) rotate(-35deg);
+  }
+}
+
+@-o-keyframes star_show_2 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-35deg);
+    -moz-transform: scale(0.5) rotate(-35deg);
+    -ms-transform: scale(0.5) rotate(-35deg);
+    -o-transform: scale(0.5) rotate(-35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-35deg);
+    -moz-transform: scale(1.2) rotate(-35deg);
+    -ms-transform: scale(1.2) rotate(-35deg);
+    -o-transform: scale(1.2) rotate(-35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-35deg);
+    -moz-transform: scale(0.6) rotate(-35deg);
+    -ms-transform: scale(0.6) rotate(-35deg);
+    -o-transform: scale(0.6) rotate(-35deg);
+  }
+}
+
+@keyframes star_show_2 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-35deg);
+    -moz-transform: scale(0.5) rotate(-35deg);
+    -ms-transform: scale(0.5) rotate(-35deg);
+    -o-transform: scale(0.5) rotate(-35deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-35deg);
+    -moz-transform: scale(1.2) rotate(-35deg);
+    -ms-transform: scale(1.2) rotate(-35deg);
+    -o-transform: scale(1.2) rotate(-35deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-35deg);
+    -moz-transform: scale(0.6) rotate(-35deg);
+    -ms-transform: scale(0.6) rotate(-35deg);
+    -o-transform: scale(0.6) rotate(-35deg);
+  }
+}
+
+@-webkit-keyframes star_show_3 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-70deg);
+    -moz-transform: scale(0.5) rotate(-70deg);
+    -ms-transform: scale(0.5) rotate(-70deg);
+    -o-transform: scale(0.5) rotate(-70deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-70deg);
+    -moz-transform: scale(1.2) rotate(-70deg);
+    -ms-transform: scale(1.2) rotate(-70deg);
+    -o-transform: scale(1.2) rotate(-70deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-70deg);
+    -moz-transform: scale(0.6) rotate(-70deg);
+    -ms-transform: scale(0.6) rotate(-70deg);
+    -o-transform: scale(0.6) rotate(-70deg);
+  }
+}
+
+@-moz-keyframes star_show_3 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-70deg);
+    -moz-transform: scale(0.5) rotate(-70deg);
+    -ms-transform: scale(0.5) rotate(-70deg);
+    -o-transform: scale(0.5) rotate(-70deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-70deg);
+    -moz-transform: scale(1.2) rotate(-70deg);
+    -ms-transform: scale(1.2) rotate(-70deg);
+    -o-transform: scale(1.2) rotate(-70deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-70deg);
+    -moz-transform: scale(0.6) rotate(-70deg);
+    -ms-transform: scale(0.6) rotate(-70deg);
+    -o-transform: scale(0.6) rotate(-70deg);
+  }
+}
+
+@-o-keyframes star_show_3 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-70deg);
+    -moz-transform: scale(0.5) rotate(-70deg);
+    -ms-transform: scale(0.5) rotate(-70deg);
+    -o-transform: scale(0.5) rotate(-70deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-70deg);
+    -moz-transform: scale(1.2) rotate(-70deg);
+    -ms-transform: scale(1.2) rotate(-70deg);
+    -o-transform: scale(1.2) rotate(-70deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-70deg);
+    -moz-transform: scale(0.6) rotate(-70deg);
+    -ms-transform: scale(0.6) rotate(-70deg);
+    -o-transform: scale(0.6) rotate(-70deg);
+  }
+}
+
+@keyframes star_show_3 {
+  /* line 64, ../sass/screen.scss */
+  0% {
+    -webkit-transform: scale(0.5) rotate(-70deg);
+    -moz-transform: scale(0.5) rotate(-70deg);
+    -ms-transform: scale(0.5) rotate(-70deg);
+    -o-transform: scale(0.5) rotate(-70deg);
+  }
+
+  /* line 70, ../sass/screen.scss */
+  50% {
+    -webkit-transform: scale(1.2) rotate(-70deg);
+    -moz-transform: scale(1.2) rotate(-70deg);
+    -ms-transform: scale(1.2) rotate(-70deg);
+    -o-transform: scale(1.2) rotate(-70deg);
+  }
+
+  /* line 76, ../sass/screen.scss */
+  100% {
+    -webkit-transform: scale(0.6) rotate(-70deg);
+    -moz-transform: scale(0.6) rotate(-70deg);
+    -ms-transform: scale(0.6) rotate(-70deg);
+    -o-transform: scale(0.6) rotate(-70deg);
+  }
+}
+
+/* keyframes */
+@-webkit-keyframes snow_show {
+  /* line 812, ../sass/screen.scss */
+  0% {
+    -webkit-transform: rotate(1000deg) translate3d(484px, 1px, 1px);
+    -moz-transform: rotate(1000deg) translate3d(484px, 1px, 1px);
+    -ms-transform: rotate(1000deg) translate3d(484px, 1px, 1px);
+    -o-transform: rotate(1000deg) translate3d(484px, 1px, 1px);
+    top: -700px;
+    opacity: 1;
+  }
+
+  /* line 820, ../sass/screen.scss */
+  100% {
+    -webkit-transform: rotateZ(0deg) translate3d(0px, 1px, 1px);
+    -moz-transform: rotateZ(0deg) translate3d(0px, 1px, 1px);
+    -ms-transform: rotateZ(0deg) translate3d(0px, 1px, 1px);
+    -o-transform: rotateZ(0deg) translate3d(0px, 1px, 1px);
+    top: 3000px;
+    opacity: .8;
+  }
+}

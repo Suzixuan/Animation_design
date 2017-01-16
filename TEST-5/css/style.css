@@ -1,0 +1,191 @@
+@charset "UTF-8";
+/* line 5, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* mixin */
+/* keyframes */
+@keyframes pie_move {
+  0% {
+    transform: rotate(0deg); }
+  49.9% {
+    transform: rotate(-180deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-180deg); } }
+@keyframes pie_bg {
+  49.9% {
+    background: white; } }
+@keyframes pie_color {
+  100% {
+    background-color: white; } }
+@keyframes pie_bg_wrap {
+  49.9% {
+    background: #96DCFC; } }
+@keyframes pie_color_wrap {
+  100% {
+    background-color: #96DCFC; } }
+/* line 41, ../sass/style.scss */
+body {
+  font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif; }
+
+/* line 44, ../sass/style.scss */
+.container {
+  background: url("../images/videoplay.png");
+  width: 984px;
+  height: 69px;
+  margin: 600px auto 0;
+  position: relative; }
+  /* line 51, ../sass/style.scss */
+  .container:before {
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: -500px;
+    overflow: hidden;
+    background: #96DCFC; }
+  /* line 61, ../sass/style.scss */
+  .container .pie, .container .pie-wrap-2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    line-height: 150px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    background: black;
+    transform: rotateZ(90deg);
+    top: -350px;
+    font-size: 40px;
+    left: 400px;
+    z-index: 3;
+    background-image: -webkit-linear-gradient(left, white 50%, transparent 0);
+    animation: pie_color 2s step-end forwards 1; }
+    /* line 70, ../sass/style.scss */
+    .container .pie::before, .container .pie-wrap-2::before {
+      content: "";
+      display: block;
+      margin-right: 49.9%;
+      height: 100%;
+      border-radius: 100% 0% 0% 100% / 50%;
+      background-color: inherit;
+      transform-origin: right;
+      position: relative;
+      z-index: 3;
+      animation: pie_move 2s linear forwards 1, pie_bg 2s step-end forwards 1; }
+  /* line 86, ../sass/style.scss */
+  .container .pie-wrap-1 {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    line-height: 180px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    background: #96DCFC;
+    transform: rotateZ(90deg);
+    top: -365px;
+    font-size: 40px;
+    left: 385px;
+    z-index: 2; }
+  /* line 93, ../sass/style.scss */
+  .container .pie-wrap-2 {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    line-height: 190px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    background: black;
+    transform: rotateZ(90deg);
+    top: -370px;
+    font-size: 40px;
+    left: 380px;
+    z-index: 1;
+    background-image: -webkit-linear-gradient(left, #96DCFC 50%, transparent 0);
+    animation: pie_color_wrap 3s step-end forwards 1; }
+    /* line 102, ../sass/style.scss */
+    .container .pie-wrap-2::before {
+      animation: pie_move 3s linear forwards 1, pie_bg_wrap 3s step-end forwards 1; }
+  /* line 108, ../sass/style.scss */
+  .container .inside, .container .outside {
+    position: absolute;
+    top: -290px;
+    left: 425px;
+    color: white;
+    line-height: 30px;
+    z-index: 3; }
+  /* line 116, ../sass/style.scss */
+  .container .outside {
+    color: black;
+    z-index: 4; }
+
+/* 参考
+
+1、关于每个边框圆角两个值设置半径问题：
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/border-radius
+
+2、pie图教程：
+http://www.w3cplus.com/css3/designing-simple-pie-charts-with-css.html
+
+3、关于动画速率step-end:
+https://idiotwu.me/understanding-css3-timing-function-steps/
+http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp
+
+
+ */

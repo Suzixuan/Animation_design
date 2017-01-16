@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		   @-webkit-keyframes cube{
+       from{transform:rotateY(360deg) rotateZ(0deg);}
+    to{transform: rotateY(100deg) rotateZ(50deg);}
+    }
+.container{
+    animation:cube 6s linear infinite;
+    -webkit-animation:cube 5s linear infinite;
+}
+
+
+     .stage {
+        width: 300px;
+        height: 300px;
+        margin: 75px auto;
+        position: relative;
+        background: url(http://www.w3cplus.com/sites/default/files/blogs/2013/1311/bg.jpg) repeat center center;
+
+        -webkit-perspective: 300px;
+        -moz-perspective: 300px;
+        -ms-perspective: 300px;
+        -o-perspective: 300px;
+        perspective: 300px;
+    }
+    .container {
+        top: 50%;
+        left: 50%;
+        margin: -100px 0 0 -100px;
+        position: absolute;
+       
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+    }
+ 
+    .side {
+        background: rgba(142,198,63,0.3);
+        border: 2px solid #8ec63f;
+        font-size: 60px;
+        font-weight: bold;
+        color: #fff;
+        height: 196px;
+        line-height: 196px;
+        position: absolute;
+        text-align: center;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+        text-transform: uppercase;
+        width: 196px;
+    }
+
+    .front{
+        -webkit-transform: translateZ(100px) rotateZ(20deg);
+    }
+    .back{
+        -webkit-transform:rotateX(180deg) translateZ(100px) rotateZ(-20deg);
+    }
+    .left{
+       -webkit-transform: rotateY(-90deg) translateZ(105px) rotateX(20deg) translateY(-35px);
+      
+    }
+    .right{
+        -webkit-transform: rotateY(90deg) translateZ(105px) rotateX(-20deg) translateY(35px);
+
+    }
+    .top{
+       -webkit-transform:rotateX(90deg) translateZ(105px) rotateY(20deg) translateX(35px);
+    }
+    .bottom{
+         -webkit-transform:rotateX(-90deg) translateZ(105px) rotateY(-20deg) translateX(-35px);
+    }
+    .pic{
+    	-webkit-transform: translateZ(100px);
+    	background: url("img/pic.jpg") no-repeat;
+    	width: 200px;height: 200px;
+    	
+    }
+
+
+
+	</style>
+</head>
+<body>
+
+    <div class="stage">
+    <div class="side pic"></div>
+    <div class="container">
+       <div class="side front">1</div>
+        <div class="side back">2</div>
+        <div class="side left">3</div>
+        <div class="side right">4</div>
+       <div class="side top">5</div>
+        <div class="side bottom">6</div>
+       	
+    </div>
+	
+</body>
+</html>

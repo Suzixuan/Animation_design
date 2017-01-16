@@ -1,0 +1,65 @@
+
+@include keyframes(typing){
+	0%{ width: 0; }
+}
+@include keyframes(typing_none){
+	0%{border-right: .05em solid;}
+	100%{ width: 0;border-right: .05em solid; }
+}
+@include keyframes(typing_back){
+	30%,80%{ width: 40px;display:block; }
+	100%{ width: 0px;display:none; }
+}
+@include keyframes(caret){
+	// 50%{ border-color:transparent; }
+	100%{ border-color:transparent; }
+}
+@include keyframes(caret_sec){
+	0%{ border-color:transparent; border-right: .05em solid; }
+	100%{ border-color:transparent; border-right: 0em solid; }
+}
+@include keyframes(caret_thir){
+	0%{ border-color:transparent; border-right: .05em solid; }
+	100%{ border-color:transparent; border-right: 0em solid; }
+}
+@include keyframes(caret_four){
+	50%{ border-color:transparent;border-right: .05em solid; }
+}
+
+// 放大
+@include keyframes(zoom_out){
+	0%{ transform:translate3d(0px,0px,0px); }
+	100%{ transform:translate3d(0px,100px,150px); }
+}
+// 急速放大
+@include keyframes(zoom_left){
+	0%{ transform:translate3d(0px,100px,150px) scale(1); }
+	90%{ transform:translate3d(0px,100px,150px) scale(1.5);}
+	100%{ transform:translate3d(0px,100px,150px) scale(7);}
+}
+// 切换
+@include keyframes(switch){
+	to { height: 0;opacity: 0; }
+}
+// 页面移动
+@include keyframes(page_move){
+	0%{ transform:rotateZ(7deg) rotateY(8deg) translate3d(200px, -120px, 320px); width:0; opacity: 1; }
+	100%{ transform:rotateZ(4deg) rotateY(3deg) translate3d(-150px, -100px, 320px); width:921px;opacity: 1; }
+}
+@include keyframes(page_move_sec){
+	0%{ transform:rotateZ(4deg) rotateY(3deg) translate3d(-150px, -100px, 320px); width:921px;opacity: 1; }
+	100%{ transform:rotateZ(4deg) rotateY(3deg) translate3d(-150px, -600px, 320px); width:921px;opacity: 1; }
+}
+@include keyframes(shade){
+	to { transform:translate3d(1000px,0px,0px); }
+}
+// 文字显示
+@include keyframes(words_show){
+	100%{ width: 50%; }
+}
+// 内容显示
+@include keyframes(content_move){
+	0%{ transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -262px, 220px); opacity: .9;}
+	90%{ transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -5000px, 220px); opacity: .6; filter:blur(2px); }
+	100%{ transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -5000px, 220px); opacity: 0; filter:blur(20px); }
+}

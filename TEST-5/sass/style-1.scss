@@ -1,0 +1,503 @@
+﻿@import "compass/reset";
+
+
+@mixin dot-size($length,$top,$left){
+	width:$length;
+	height:$length;
+	border-radius:50%;
+	background:white;
+    position: absolute;
+    top: $top;
+    left: $left;	
+}
+
+@mixin lint-text($text,$rotateZ,$width,$x,$y){
+	content: $text;
+    position: absolute;
+    color: white;
+    transform: rotateZ(#{$rotateZ}deg) translate3d(#{$x}px, #{$y}px, 0px) scale(0);
+    font-size: 21px;
+    width: #{$width}px;
+}
+
+@mixin bg-color{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+20,000005+22,020408+23,06080c+28,0b0f15+31,0b0f15+33,0d131a+34,0e141b+36,10151d+36,0e161d+38,10191f+38,10181f+39,131a23+40,131e26+43,172129+44,152229+46,1b282f+49,1d2b37+53,293742+60,263643+62,2a3b48+63,293c48+65,2d3f4b+68,2e4351+69,304553+73,334958+74,314857+74,364d5c+76,384f5e+80,3d5566+83,405a6d+88,425d6f+88,405d6f+89,456377+94,476679+94,476679+96,4c6b7e+98,4c6b7e+99,456477+100 */
+	background: rgb(0,0,0); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,5,1) 22%, rgba(2,4,8,1) 23%, rgba(6,8,12,1) 28%, rgba(11,15,21,1) 31%, rgba(11,15,21,1) 33%, rgba(13,19,26,1) 34%, rgba(14,20,27,1) 36%, rgba(16,21,29,1) 36%, rgba(14,22,29,1) 38%, rgba(16,25,31,1) 38%, rgba(16,24,31,1) 39%, rgba(19,26,35,1) 40%, rgba(19,30,38,1) 43%, rgba(23,33,41,1) 44%, rgba(21,34,41,1) 46%, rgba(27,40,47,1) 49%, rgba(29,43,55,1) 53%, rgba(41,55,66,1) 60%, rgba(38,54,67,1) 62%, rgba(42,59,72,1) 63%, rgba(41,60,72,1) 65%, rgba(45,63,75,1) 68%, rgba(46,67,81,1) 69%, rgba(48,69,83,1) 73%, rgba(51,73,88,1) 74%, rgba(49,72,87,1) 74%, rgba(54,77,92,1) 76%, rgba(56,79,94,1) 80%, rgba(61,85,102,1) 83%, rgba(64,90,109,1) 88%, rgba(66,93,111,1) 88%, rgba(64,93,111,1) 89%, rgba(69,99,119,1) 94%, rgba(71,102,121,1) 94%, rgba(71,102,121,1) 96%, rgba(76,107,126,1) 98%, rgba(76,107,126,1) 99%, rgba(69,100,119,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 20%,rgba(0,0,5,1) 22%,rgba(2,4,8,1) 23%,rgba(6,8,12,1) 28%,rgba(11,15,21,1) 31%,rgba(11,15,21,1) 33%,rgba(13,19,26,1) 34%,rgba(14,20,27,1) 36%,rgba(16,21,29,1) 36%,rgba(14,22,29,1) 38%,rgba(16,25,31,1) 38%,rgba(16,24,31,1) 39%,rgba(19,26,35,1) 40%,rgba(19,30,38,1) 43%,rgba(23,33,41,1) 44%,rgba(21,34,41,1) 46%,rgba(27,40,47,1) 49%,rgba(29,43,55,1) 53%,rgba(41,55,66,1) 60%,rgba(38,54,67,1) 62%,rgba(42,59,72,1) 63%,rgba(41,60,72,1) 65%,rgba(45,63,75,1) 68%,rgba(46,67,81,1) 69%,rgba(48,69,83,1) 73%,rgba(51,73,88,1) 74%,rgba(49,72,87,1) 74%,rgba(54,77,92,1) 76%,rgba(56,79,94,1) 80%,rgba(61,85,102,1) 83%,rgba(64,90,109,1) 88%,rgba(66,93,111,1) 88%,rgba(64,93,111,1) 89%,rgba(69,99,119,1) 94%,rgba(71,102,121,1) 94%,rgba(71,102,121,1) 96%,rgba(76,107,126,1) 98%,rgba(76,107,126,1) 99%,rgba(69,100,119,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 20%,rgba(0,0,5,1) 22%,rgba(2,4,8,1) 23%,rgba(6,8,12,1) 28%,rgba(11,15,21,1) 31%,rgba(11,15,21,1) 33%,rgba(13,19,26,1) 34%,rgba(14,20,27,1) 36%,rgba(16,21,29,1) 36%,rgba(14,22,29,1) 38%,rgba(16,25,31,1) 38%,rgba(16,24,31,1) 39%,rgba(19,26,35,1) 40%,rgba(19,30,38,1) 43%,rgba(23,33,41,1) 44%,rgba(21,34,41,1) 46%,rgba(27,40,47,1) 49%,rgba(29,43,55,1) 53%,rgba(41,55,66,1) 60%,rgba(38,54,67,1) 62%,rgba(42,59,72,1) 63%,rgba(41,60,72,1) 65%,rgba(45,63,75,1) 68%,rgba(46,67,81,1) 69%,rgba(48,69,83,1) 73%,rgba(51,73,88,1) 74%,rgba(49,72,87,1) 74%,rgba(54,77,92,1) 76%,rgba(56,79,94,1) 80%,rgba(61,85,102,1) 83%,rgba(64,90,109,1) 88%,rgba(66,93,111,1) 88%,rgba(64,93,111,1) 89%,rgba(69,99,119,1) 94%,rgba(71,102,121,1) 94%,rgba(71,102,121,1) 96%,rgba(76,107,126,1) 98%,rgba(76,107,126,1) 99%,rgba(69,100,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#456477',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin box-position($top,$right,$left){
+	width: 500px;
+    height: 300px;
+    position: absolute;
+    top:#{$top}px;
+    right:#{$right}px;
+    left:#{$left}px;
+} 
+
+@keyframes line_show{
+	from{ transform: rotate(15deg) translate3d(0px,40px,0px); }
+	to{ transform: rotate(15deg) translate3d(-68px,40px,0px); }
+}
+@keyframes line_show_1{
+	from{ transform: rotateZ(145deg) translate3d(0px, -35px, 0px); }
+	to{ transform: rotateZ(145deg) translate3d(-55px, -35px, 0px); }
+}
+@keyframes line_show_2{
+	from{ transform: rotate(-122deg) translate3d(-45px, -20px, 0px); }
+	to{ transform: rotate(-122deg) translate3d(-110px, -20px, 0px); }
+}
+
+@keyframes line_text{
+	from{ transform:rotateZ(-15deg) translate3d(-120px, -35px, 0px) scale(0); }
+	to{ transform:rotateZ(-15deg) translate3d(-140px, -35px, 0px) scale(1); }
+}
+@keyframes line_text_1{
+	from{ transform:rotateZ(-145deg) translate3d(140px, -35px, 0px) scale(0); }
+	to{ transform:rotateZ(-145deg) translate3d(160px, -35px, 0px) scale(1); }
+}
+@keyframes line_text_2{
+	from{ transform:rotateZ(-237deg) translate3d(8px, 90px, 0px) scale(0); }
+	to{ transform:rotateZ(-237deg) translate3d(100px, 90px, 0px) scale(1); }
+}
+
+@keyframes dot_move{
+	20%{ transform:translate3d(1px,5px,0); }
+	50%{ transform:translate3d(3px,2px,0); }
+	60%{ transform:translate3d(5px,4px,0); }
+	100%{ transform:translate3d(1px,3px,0);}
+}
+
+@keyframes screen_move{
+	0%{transform:rotateZ(0deg) translateY(0px) translateX(0px);}
+	100%{transform:rotateZ(50deg) translateY(300px) translateX(-150px);}
+}
+@keyframes screen_second_move{
+	0%{ transform:rotateZ(50deg) translateY(300px) translateX(-150px); }
+	100%{ transform:rotateZ(60deg) translateY(300px) translateX(-150px); }
+}
+@keyframes screen_third_move{
+	0%{ transform:rotateZ(60deg) translateY(300px) translateX(-150px); }
+	100%{ transform:rotateZ(80deg) translateY(320px) translateX(-140px); }
+}
+@keyframes dot_size{
+	to{ transform:translateY(-50px) scale(0.6);-webkit-filter:blur(9px); }
+}
+@keyframes dot_size_move{
+	from{ transform:translateY(-50px) scale(0.6);-webkit-filter:blur(9px); }
+	to{ transform:translateY(-30px) scale(0.4) rotate(10deg);-webkit-filter:blur(10px); }
+}
+
+@keyframes dot_1_show{
+	0%{ -webkit-filter:blur(10px);transform:translate3d(450px,-400px,0px) rotateZ(-200deg); }
+	100%{ transform:translate3d(0px,0px,0px)  rotateZ(0deg);-webkit-filter:blur(1px); }
+}
+@keyframes dot_text_1{
+	to{ transform:rotateZ(0deg) translate3d(-130px, 0px, 0px) scale(1); }
+}
+@keyframes dot_text_2{
+	to{ transform:rotateZ(0deg) translate3d(-120px, 10px, 0px) scale(1); }
+}
+@keyframes dot_text_3{
+	to{ transform:rotateZ(0deg) translate3d(60px, 20px, 0px) scale(1); }
+}
+@keyframes dot_second_show{
+	0%{ transform:translate3d(0px,0px,0px)  rotateZ(0deg);-webkit-filter:blur(1px); }
+	100%{
+		transform:translate3d(10px,10px,0px) rotateZ(50deg) scale(0.7);
+		-webkit-filter:blur(5px);
+	}
+}
+@keyframes dot_third_show{
+	0%{
+		transform:translate3d(10px,10px,0px) rotateZ(50deg) scale(0.7);
+		-webkit-filter:blur(5px);
+	}
+	100%{
+		transform:translate3d(-100px,10px,0px) rotateZ(100deg) scale(0.3);
+		-webkit-filter:blur(5.5px);
+	}
+}
+
+@keyframes dot_2_show{
+	from{ -webkit-filter:blur(10px);transform:translate3d(-245px,270px,1px) rotateZ(-200deg); }
+	to{ transform:translate3d(0px,0px,0px)  rotateZ(0deg);-webkit-filter:blur(0px); }
+}
+@keyframes dot_2_first_show{
+	from{ transform:translate3d(0px,0px,0px)  rotateZ(0deg);-webkit-filter:blur(0px); }
+	to{ transform:translate3d(205px, -175px, 0px) rotateZ(70deg) scale(0.6);-webkit-filter:blur(3px); }
+}
+
+
+@keyframes dot_second_text_1{
+	to{ transform:rotateZ(-70deg) translate3d(-8px, -80px, 0px) scale(1); }
+}
+@keyframes dot_second_text_2{
+	to{ transform:rotateZ(-142deg) translate3d(20px, -50px, 0px) scale(1); }
+}
+@keyframes dot_second_text_3{
+	to{ transform:rotateZ(-40deg) translate3d(130px, 25px, 0px) scale(1); }
+}
+
+@keyframes dot_3_show{
+	0%{ 
+		-webkit-filter: blur(2px);
+    	transform: scale(3.5) translate3d(-400px, 340px, 0px);
+     }
+     70%{ 
+		transform: scale(3.5) translate3d(400px,-340px,0px);
+     }
+     100%{
+     	-webkit-filter: blur(0px);
+    	transform: scale(1) translate3d(0px,0px,0px);
+     }
+}
+
+@keyframes dot_third_line_1{
+	to{transform: rotate(34deg) translate3d(-35px, 100px, 0px);}
+}
+@keyframes dot_third_line_2{
+	to{transform: rotate(130deg) translate3d(280px, -130px, 0px);}
+}
+@keyframes dot_third_line_3{
+	to{transform: rotate(50deg) translate3d(350px, 70px, 0px);}
+}
+
+@keyframes dot_third_text_1{
+	to{transform: rotateZ(-35deg) translate3d(-125px, -65px, 0px) scale(1);}	
+}
+@keyframes dot_third_text_2{
+	to{transform: rotateZ(230deg) translate3d(-30px, 90px, 0px) scale(1);}	
+}
+@keyframes dot_third_text_3{
+	to{transform: rotateZ(-50deg) translate3d(55px, 75px, 0px) scale(1);}	
+}
+
+
+
+
+
+
+
+body{
+	overflow: hidden;
+	font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+.container{
+	width: 984px;
+	height: 69px;
+	margin: 100px auto 0;
+	position: relative;
+
+	.wrap{
+		width: 984px;
+		height: 500px;
+		overflow: hidden;
+		background:black;
+		
+	}
+
+	.dot-box{
+		width: 100%;
+	    height: 500px;
+	    border: 1px;
+	    position: relative;
+	    @include bg-color();
+	    animation:screen_move 1s linear forwards 4s 1,
+	    		  screen_second_move 1s linear forwards 8.5s 1,
+				  screen_third_move 3s linear forwards 10.5s 1;
+
+	    ul{
+	    	width: 500px;
+		    height: 300px;
+		    margin: 60px auto 0;
+		    position: relative;
+		    animation:dot_size 1s linear forwards 4s 1,
+		    		  dot_size_move 1s linear forwards 8.5s 1;
+
+
+		    .dot:nth-child(1){
+		    	@include dot-size(100px,45%,45%);
+		    	animation:dot_move 4s linear forwards 3s 1;
+		    	.line{
+		    		width:80px;
+		    		border:1px solid white;
+	    			opacity: 0.5;
+		    	}
+		    	.line:nth-child(1){ 
+		    		transform: rotate(15deg) translate3d(-68px,40px,0px);
+		    		animation:line_show 1s linear forwards 1;
+		    		&:before{
+					    @include lint-text(
+					    	$text:"Big Big World",
+					    	$rotateZ:-15,
+					    	$width:150,
+					    	$x:-140,
+					    	$y:-35
+					    	);
+					    animation:line_text .5s linear forwards 1s 1;
+		    		}
+
+		    	}
+		    	.line:nth-child(2){ 
+		    		transform: rotateZ(145deg) translate3d(-55px, -35px, 0px);
+		    		animation:line_show_1 1s linear forwards 1;
+		    		&:before{
+		    			@include lint-text(
+					    	$text:"Love Lost",
+					    	$rotateZ:-145,
+					    	$width:150,
+					    	$x:160,
+					    	$y:-35
+					    	);
+		    			animation:line_text_1 .5s linear forwards 1s 1;
+
+		    		}
+				 }
+		    	.line:nth-child(3){ 
+		    		transform: rotate(-122deg) translate3d(-110px, -20px, 0px);
+		    		animation:line_show_2 1s linear forwards 1;
+		    		&:before{
+		    			@include lint-text(
+					    	$text:"Diamond Eyes",
+					    	$rotateZ:-237,
+					    	$width:150,
+					    	$x:100,
+					    	$y:90
+					    	);
+		    			animation:line_text_2 .5s linear forwards 1s 1;
+		    		}
+	    		 }
+		    }
+		    .dot:nth-child(2){
+		    	@include dot-size(20px,60%,25%);
+		    }
+		    .dot:nth-child(3){
+		    	@include dot-size(25px,25%,70%);
+		    }
+		    .dot:nth-child(4){
+		    	@include dot-size(15px,80%,40%);
+		    }
+		    .dot:nth-child(5){
+		    	@include dot-size(10px,65%,66%);
+		    }
+	    }
+	}
+
+	.dot-box-1{
+		@include box-position($top:40,$right:250,$left:auto);
+	    transform:translate3d(450px,-400px,0px);
+	    animation:dot_1_show 1s ease-out forwards 6s 1,
+	    		  dot_second_show 1s ease-out forwards 8.5s 1,
+	    		  dot_third_show 3s ease-out forwards 10.5s 1;
+
+	    &:before{
+	    	width:100%;
+	    	height:100%;
+	    	display:block;
+	    	position:relative;
+	    }
+
+	    .dot:nth-child(1){
+			@include dot-size(200px,45%,45%);
+
+			.line{
+				width:120px;
+	    		border:1px solid white;
+    			opacity: 0.5;
+			}
+			.line:nth-child(1){
+				transform: rotate(90deg) translate3d(-30px,-40px,0px);
+			}
+			.line:nth-child(2){
+				transform: rotate(142deg) translate3d(176px,-50px,0px);
+			}
+			.line:nth-child(3){
+				transform: rotate(-142deg) translate3d(-201px,-40px,0px);
+			}		
+	    }
+	    .dot:nth-child(2){
+			@include dot-size(50px,5%,60%);
+			&:before{
+				@include lint-text(
+			    	$text:"On My Own",
+			    	$rotateZ:0,
+			    	$width:150,
+			    	$x:-130,
+			    	$y:0
+	    		);
+	    		animation:dot_text_1 .5s linear forwards 7.5s 1;
+			}
+	    }
+	    .dot:nth-child(3){
+			@include dot-size(50px,103%,18%);
+			&:before{
+				@include lint-text(
+			    	$text:"Bring Back",
+			    	$rotateZ:0,
+			    	$width:150,
+			    	$x:-120,
+			    	$y:10
+	    		);
+	    		animation:dot_text_2 .5s linear forwards 7.5s 1;
+			}
+	    }
+	    .dot:nth-child(4){
+			@include dot-size(50px,105%,90%);
+			&:before{
+				@include lint-text(
+			    	$text:"Each and All",
+			    	$rotateZ:0,
+			    	$width:150,
+			    	$x:60,
+			    	$y:20
+	    		);
+	    		animation:dot_text_3 .5s linear forwards 7.5s 1;
+			}
+	    }
+	}
+
+	.dot-box-2{
+	    @include box-position($top:190,$left:5,$right:auto);
+	    transform:translate3d(-245px,270px,1px);
+	    animation:dot_2_show 1s ease-out forwards 8.5s 1,
+	    		  dot_2_first_show 3s ease-out forwards 10.5s 1;
+
+	    &:before{
+	    	width:100%;
+	    	height:100%;
+	    	display:block;
+	    	position:relative;
+	    }
+
+	    .dot:nth-child(1){
+	    	@include dot-size(200px,25%,30%);
+
+	    	.line{
+	    		width:120px;
+	    		border:1px solid white;
+    			opacity: 0.5;
+	    	}
+	    	.line:nth-child(1){
+				transform: rotate(70deg) translate3d(5px, 30px, 0px);
+				&:before{
+					@include lint-text(
+				    	$text:"欧若拉",
+				    	$rotateZ:-70,
+				    	$width:150,
+				    	$x:-8,
+				    	$y:-80
+	    			);
+	    			animation:dot_second_text_1 .5s linear forwards 9.5s 1;
+				}
+			}
+			.line:nth-child(2){
+				transform: rotate(142deg) translate3d(-125px, -105px, 0px);
+				&:before{
+					@include lint-text(
+				    	$text:"星星和雨的夜",
+				    	$rotateZ:-142,
+				    	$width:150,
+				    	$x:20,
+				    	$y:-50
+	    			);
+	    			animation:dot_second_text_2 .5s linear forwards 9.5s 1;
+				}
+			}
+			.line:nth-child(3){
+				transform: rotate(40deg) translate3d(200px, 5px, 0px);
+				&:before{
+					@include lint-text(
+				    	$text:"咸鱼",
+				    	$rotateZ:-40,
+				    	$width:150,
+				    	$x:130,
+				    	$y:25
+	    			);
+	    			animation:dot_second_text_3 .5s linear forwards 9.5s 1;
+				}
+			}
+	    }
+	}
+	.dot-box-3{
+    	@include box-position($top:30,$right:5,$left:auto);
+
+    	&:before{
+	    	width:100%;
+	    	height:100%;
+	    	display:block;
+	    	position:relative;
+	    }
+
+    	.dot{
+			@include dot-size(300px,0%,10%);
+    		transform: scale(3.5) translate3d(-200px, 240px, 1px);
+			animation:dot_3_show 3s linear forwards 10.5s 1;
+			z-index: 2;
+	
+			.line{
+	    		width:150px;
+	    		border:1px solid white;
+    			opacity: 0.5;
+	    	}
+
+	    	.line:nth-child(1){
+	    		transform: rotate(34deg) translate3d(75px, 100px, 0px);
+	    		animation:dot_third_line_1 1s linear forwards 14s 1;
+	    		&:before{
+					@include lint-text(
+				    	$text:"永 恒 的 回 忆",
+				    	$rotateZ:-35,
+				    	$width:150,
+				    	$x:-125,
+				    	$y:-65
+	    			);
+	    			animation:dot_third_text_1 1s linear forwards 15s 1;
+	    			
+				}
+
+	    	}
+	    	.line:nth-child(2){
+	    		transform: rotate(130deg) translate3d(130px, -130px, 0px);
+	    		animation:dot_third_line_2 1s linear forwards 14s 1;
+	    		&:before{
+					@include lint-text(
+				    	$text:"花 与 剑",
+				    	$rotateZ:230,
+				    	$width:150,
+				    	$x:-30,
+				    	$y:90
+	    			);
+	    			animation:dot_third_text_2 1s linear forwards 15s 1;
+	    			
+				}
+	    	}
+	    	.line:nth-child(3){
+	    		transform: rotate(50deg) translate3d(220px, 70px, 0px);
+	    		animation:dot_third_line_3 1s linear forwards 14s 1;
+	    		&:before{
+					@include lint-text(
+				    	$text:"和脆弱的自己打仗",
+				    	$rotateZ:-50,
+				    	$width:170,
+				    	$x:55,
+				    	$y:75
+	    			);
+	    			animation:dot_third_text_3 1s linear forwards 15s 1;
+	    			
+				}
+	    	}
+
+    	}
+	}
+	.bottom{
+		background: url("../images/videoplay.png");
+		width: 984px;
+		height: 69px;
+		position: relative;
+		z-index: 3;
+	}
+}

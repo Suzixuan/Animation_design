@@ -1,0 +1,307 @@
+﻿@import "compass/reset";
+
+
+/* mixin */
+@mixin rotate($rotateX,$translateZ){
+	-webkit-transform: rotateX($rotateX) translateZ($translateZ);
+  	transform: rotateX($rotateX) translateZ($translateZ);
+}
+
+@mixin animation($name,$second){
+	-webkit-animation: $name $second cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+    animation: $name $second cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+
+@mixin snow_animation($name,$second,$wait){
+	-webkit-animation: $name $second cubic-bezier(0.27, 0.25, 0.76, 0.76) $wait infinite; 
+    animation: $name $second cubic-bezier(0.27, 0.25, 0.76, 0.76)  $wait infinite;
+}
+
+@mixin fastspin_ani($rotateY){
+	 -webkit-transform: rotateX(-40.5deg) rotateY($rotateY);
+    transform: rotateX(-40.5deg) rotateY($rotateY);
+}
+
+@mixin li_position($right){
+	position:absolute;
+	right:$right;
+}
+
+
+body{
+	width:100%;
+	font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+.demo-cube {
+	background: url(../img/videoplay.png);
+	width: 76.9%;
+	height: 69px;
+	margin: 45% auto 0;
+	position: relative;
+
+	&:before{
+		content: "";
+		width: 100%;
+		height: 500px;
+		background: #FFFEF5;
+		// background: black;
+		position: absolute;
+		top: -500px;
+	}
+
+	.pic{
+	    width: 288px;
+	    height: 330px;
+	    position: absolute;
+	    top: -430px;
+    	left: 139px;
+	    -webkit-clip-path: polygon(49% 3%, 97% 26%, 97% 75%, 49% 98%, 1% 75%, 1% 26%);
+    /* -webkit-clip-path:polygon(143px 3px, 286px 84px, 284px 250px, 143px 328px, 3px 252px, -1px 85px); */
+
+    	@include animation(pic_show,20s);
+	}
+
+	.cube-inner{
+		display: block;
+	    position: absolute;
+	    top: -335px;
+    	left: 195px;
+	    -webkit-transform-style: preserve-3d;
+	    transform-style: preserve-3d;
+	    -webkit-transform-origin: 50px 50px; //决定是否原地转
+	    transform-origin: 50px 50px;
+	    -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+	    transform: rotateX(-33.5deg) rotateY(45deg);
+
+	    @include animation(fastspin,20s);
+
+
+	    > li{
+			position: absolute;
+		    display: block;
+		    width: 200px;
+		    height: 200px;
+		    // border: 1px solid;
+		    background:radial-gradient(transparent 99%, rgba(0, 0, 0, 0.3) 100%);
+
+		    &:before{
+				content: "";
+				box-shadow: rgba(255, 255, 255, 0.5) -20px 0px 30px 10px inset;
+				width: 100%;
+				height: 100%;
+				display: block;
+				// -webkit-filter: blur(10px);
+		    }
+
+		}
+
+		.top {
+		  @include rotate(90deg,100px);
+		}
+
+		.bottom {
+		  @include rotate(-90deg,100px);
+		}
+
+		.front {
+		  -webkit-transform: translateZ(100px);
+		  transform: translateZ(100px);
+		}
+
+		.back {
+		   @include rotate(-180deg,100px);
+		}
+
+		.left {
+		   @include rotate(-90deg,100px);
+		}
+
+		.right {
+		  @include rotate(90deg,100px);
+		}
+	}
+
+
+
+	.text{
+		.main{
+			display: inline-block;
+			width: 40px;
+			height: 150px;
+			position: absolute;
+			right: 220px;
+    		top: -380px;
+    		overflow: hidden;
+
+    		// @include animation(text_show,5s);
+
+    		span:nth-child(1){
+    			display: block;
+    			opacity: 0;
+    			@include animation(word_show,3s);
+    		}
+    		span:nth-child(2){
+    			display: block;
+    			opacity: 0;
+    			@include animation(word_show,3s);
+    		}
+    		span:nth-child(3){
+    			display: block;
+    			opacity: 0;
+    			@include animation(word_show,3s);
+    		}
+		}
+		.wrap{
+			@extend .main;
+			background: #EB94F0;
+		    color: white;
+		    right: 245px;
+		    text-align: right;
+		    top: -360px;
+		    @include animation(text_show,5s);
+
+			span{
+				margin: -20px 0 0 25px;
+    			display: inline-block;
+			}
+		}
+
+	}
+
+
+	ul{
+		> li{
+			background: #EB94F0;
+			opacity: 0;
+		}
+
+		li:nth-child(1){
+			width: 10px;
+			height: 20px;
+			@include li_position(100px);
+			@include snow_animation(snow_show,5s,0s);
+
+		}
+		li:nth-child(2){
+			width: 2px;
+			height: 3px;
+			@include li_position(312px);
+			@include snow_animation(snow_show,5s,5s);
+		}
+		li:nth-child(3){
+			width: 4px;
+			height: 6px;
+			@include li_position(444px);
+			@include snow_animation(snow_show,5s,7s);
+		}
+		li:nth-child(4){
+			width: 6px;
+			height: 8px;
+			@include li_position(213px);
+			@include snow_animation(snow_show,5s,2s);
+		}
+		li:nth-child(5){
+			width: 4px;
+			height: 3px;
+			@include li_position(510px);
+			@include snow_animation(snow_show,4s,8s);
+		}
+		li:nth-child(6){
+			width: 3px;
+			height: 6px;
+			@include li_position(664px);
+			@include snow_animation(snow_show,5s,3s);
+		}
+		li:nth-child(7){
+			width: 9px;
+			height: 11px;
+			@include li_position(699px);
+			@include snow_animation(snow_show,5s,9s);
+		}
+		li:nth-child(8){
+			width: 7px;
+			height: 3px;
+			@include li_position(736px);
+			@include snow_animation(snow_show,5s,4s);
+		}
+		li:nth-child(9){
+			width: 3px;
+			height: 1px;
+			@include li_position(811px);
+			@include snow_animation(snow_show,4s,1s);
+		}
+		li:nth-child(10){
+			width: 8px;
+			height: 9px;
+			@include li_position(903px);
+			@include snow_animation(snow_show,6s,5s);
+		}
+
+	}
+	
+}
+
+
+@-webkit-keyframes pic_show {
+    0% {
+        -webkit-clip-path: polygon(49% 3%, 97% 26%, 97% 70%, 49% 98%, 1% 70%, 1% 26%);
+    }
+    10%{
+       -webkit-clip-path:polygon(60% 5%, 99% 32%, 98% 75%, 43% 98%, 7% 73%, 5% 24%);
+    }
+    20%{
+		-webkit-clip-path:polygon(69% 8%, 96% 37%, 95% 85%, 36% 98%, 9% 70%, 9% 21%)
+    }
+    30%{
+		-webkit-clip-path:polygon(78% 10%, 95% 41%, 95% 90%, 30% 98%, 13% 68%, 13% 19%);
+    }
+ 
+}
+
+@-webkit-keyframes fastspin {
+  0% {
+     @include fastspin_ani(45deg);
+  }
+  10%{
+    @include fastspin_ani(35deg);
+  }
+  20%{
+	 @include fastspin_ani(25deg);
+  }
+  30%{
+  	@include fastspin_ani(15deg);
+  }
+}
+
+@-webkit-keyframes text_show{
+	0%{
+		height: 0;
+	}
+	100%{
+		height: 150px;
+	}
+}
+
+@-webkit-keyframes word_show{
+	0%{
+		-webkit-transform:translateY(20px);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform:translateY(0px);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes snow_show{
+	0%{
+		-webkit-transform:rotateZ(0deg);
+		top:-1px;
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform:rotateZ(360deg);
+		top:-500px;
+		opacity: .8;
+	}
+}

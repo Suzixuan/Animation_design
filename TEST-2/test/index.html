@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+
+ 
+
+html{
+    /*background:radial-gradient(ellipse at center,#430d6d 0%,#000 100%);*/
+    height:100%;
+}
+body{
+    padding:0;
+    margin:0;
+    height:100%;
+    /*设置视差*/
+    perspective:1000px;
+}
+cube{
+     width:20em;
+    height:20em;
+    /*在窗口居中*/
+    position:absolute;left:0;top:0;right:0;bottom:0;margin:auto;
+    /*声明 3D 变换*/
+    transform-style:preserve-3d;
+}
+
+cube > div{
+        position:absolute;
+        width:100%;height:100%;
+        border:1px solid black;
+        /*box-shadow:0 0 5em rgba(0,128,0,.4);*/
+
+    }
+    cube > div:before{
+
+             content: "";
+    }
+.front{
+     left:0px;
+     top:0px;
+     transform:translateZ(10em);
+}
+.back{
+     top:0px;
+     left:0px;
+     transform:translateZ(-10em);
+
+     
+}
+.left{
+     left:-20em;
+     top:0px;
+     transform: translateZ(10em) rotateY(-90deg);
+     transform-origin:right;
+}
+.right{
+     right:-20em;
+     top:0px;
+     transform:translateZ(10em) rotateY(90deg);
+     transform-origin:left;
+
+}
+.top{
+     left:0px;
+     top:-20em;
+     transform:translateZ(10em) rotateX(90deg);
+     transform-origin:bottom;
+}
+.bottom{             
+     left:0px;
+     bottom:-20em;
+     transform:translateZ(10em) rotateX(-90deg);
+     transform-origin:top;
+}
+
+cube{
+   animation:cube 6s linear infinite;
+    -webkit-animation:cube 6s linear infinite;
+}
+
+@-webkit-keyframes cube{
+    from{transform:translateZ(-50em) rotateY(360deg) rotateZ(0deg);}
+    to{transform:translateZ(-50em) rotateY(100deg) rotateZ(50deg);}
+}
+
+.pic{
+    width: 300px;
+    height: 381px;
+    background: url(img/pic.jpg);
+    position: absolute;
+    overflow: hidden;
+    background-size: 203%;
+    top: 160px;
+    left: 300px;
+}
+.block{
+    width: 385px;
+    height: 386px;
+    position: absolute;
+    overflow: hidden;
+    /* background-size: 203%; */
+        top: -37px;
+    left: -30px;
+    background: url(img/pic.jpg);
+}
+
+</style>
+</head>
+
+<body>
+    <!-- <img src="img/pic.jpg" alt="" width="300" height="300"> -->
+         
+         <div class="block"></div>
+         <cube>
+
+              <div class="front"></div>
+              <div class="back"></div>
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="top"></div>
+              <div class="bottom"></div> 
+         </cube>
+     
+
+   <!--  <div class="wrap">
+        
+         
+     </div> -->
+
+</body>
+
+</html>
+
+<!-- 
+    笔记：
+    transform-style: flat | preserve-3d ： 
+        1.指定嵌套元素如何在3D空间中呈现
+        2.其中flat值为默认值，表示所有子元素在2D平面呈现。
+        3.preserve-3d表示所有子元素在3D空间中呈现。
+        4.需要设置在父元素中，并且高于任何嵌套的变形元素。
+        5.不能为了防止子元素溢出容器而设置overflow值为hidden，如果设置了overflow:hidden同样可以迫死子元素出现在同一平面
+
+
+    perspective: none | px :
+        1.理解为视距，用来设置用户和元素3D空间Z平面之间的距离。而其效应由他的值来决定
+        2.值越小，用户与3D空间Z平面距离越近，3D效果就越明显，也就是你的眼睛越靠近真3D。；反之，值越大，用户与3D空间Z平面距离越远，视觉效果就很小.
+        3.不能为百分比值。
+        4.用在父元素
+
+    transform: perspective(px) :
+        1.当前变形元素上
+        2.取值只能大于0
+
+
+    transform:
+        1.translate() :从其当前位置移动，根据给定的 left（x 坐标） 和 top（y 坐标）
+        2.rotate() :元素顺时针旋转给定的角度。允许负值，元素将逆时针旋转。
+        3.scale() :会增加或减少，根据给定的宽度（X 轴）和高度（Y 轴）
+        4.skew() :元素翻转给定的角度，根据给定的水平线（X 轴）和垂直线（Y 轴）;围绕 X 轴把元素翻转 30 度，围绕 Y 轴翻转 20 度
+
+    transform-origin:
+        1.默认情况，变形的原点在元素的中心点
+        2.属性值可以是百分比、em、px等具体的值
+        3.也可以是top、right、bottom、left和center
+        4.   top = top center = center top = 50% 0
+             right = right center = center right = 100%或(100% 50%)
+             bottom = bottom center = center bottom = 50% 100%
+             left = left center = center left = 0或(0 50%)
+             center = center center = 50%或（50% 50%）
+             top left = left top = 0 0
+             right top = top right = 100% 0
+             bottom right = right bottom = 100% 100%
+             bottom left = left bottom = 0 100%
+        5.http://www.w3cplus.com/css3/transform-origin.html
+
+
+
+    参考：
+    http://www.html5tricks.com/demo/3d-folded-images-gallery/index.html
+    http://www.icokco.com/uploads/userup/94/14430125U-3195/index.html
+    https://github.com/chokcoco/cnblogsArticle/issues/9
+    http://sbco.cc/demo/css3demo/html/index.html
+
+
+    clip-path:
+    http://web.jobbole.com/86440/
+
+
+
+
+ -->

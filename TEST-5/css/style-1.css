@@ -1,0 +1,570 @@
+@charset "UTF-8";
+/* line 5, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+@keyframes line_show {
+  from {
+    transform: rotate(15deg) translate3d(0px, 40px, 0px); }
+  to {
+    transform: rotate(15deg) translate3d(-68px, 40px, 0px); } }
+@keyframes line_show_1 {
+  from {
+    transform: rotateZ(145deg) translate3d(0px, -35px, 0px); }
+  to {
+    transform: rotateZ(145deg) translate3d(-55px, -35px, 0px); } }
+@keyframes line_show_2 {
+  from {
+    transform: rotate(-122deg) translate3d(-45px, -20px, 0px); }
+  to {
+    transform: rotate(-122deg) translate3d(-110px, -20px, 0px); } }
+@keyframes line_text {
+  from {
+    transform: rotateZ(-15deg) translate3d(-120px, -35px, 0px) scale(0); }
+  to {
+    transform: rotateZ(-15deg) translate3d(-140px, -35px, 0px) scale(1); } }
+@keyframes line_text_1 {
+  from {
+    transform: rotateZ(-145deg) translate3d(140px, -35px, 0px) scale(0); }
+  to {
+    transform: rotateZ(-145deg) translate3d(160px, -35px, 0px) scale(1); } }
+@keyframes line_text_2 {
+  from {
+    transform: rotateZ(-237deg) translate3d(8px, 90px, 0px) scale(0); }
+  to {
+    transform: rotateZ(-237deg) translate3d(100px, 90px, 0px) scale(1); } }
+@keyframes dot_move {
+  20% {
+    transform: translate3d(1px, 5px, 0); }
+  50% {
+    transform: translate3d(3px, 2px, 0); }
+  60% {
+    transform: translate3d(5px, 4px, 0); }
+  100% {
+    transform: translate3d(1px, 3px, 0); } }
+@keyframes screen_move {
+  0% {
+    transform: rotateZ(0deg) translateY(0px) translateX(0px); }
+  100% {
+    transform: rotateZ(50deg) translateY(300px) translateX(-150px); } }
+@keyframes screen_second_move {
+  0% {
+    transform: rotateZ(50deg) translateY(300px) translateX(-150px); }
+  100% {
+    transform: rotateZ(60deg) translateY(300px) translateX(-150px); } }
+@keyframes screen_third_move {
+  0% {
+    transform: rotateZ(60deg) translateY(300px) translateX(-150px); }
+  100% {
+    transform: rotateZ(80deg) translateY(320px) translateX(-140px); } }
+@keyframes dot_size {
+  to {
+    transform: translateY(-50px) scale(0.6);
+    -webkit-filter: blur(9px); } }
+@keyframes dot_size_move {
+  from {
+    transform: translateY(-50px) scale(0.6);
+    -webkit-filter: blur(9px); }
+  to {
+    transform: translateY(-30px) scale(0.4) rotate(10deg);
+    -webkit-filter: blur(10px); } }
+@keyframes dot_1_show {
+  0% {
+    -webkit-filter: blur(10px);
+    transform: translate3d(450px, -400px, 0px) rotateZ(-200deg); }
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+    -webkit-filter: blur(1px); } }
+@keyframes dot_text_1 {
+  to {
+    transform: rotateZ(0deg) translate3d(-130px, 0px, 0px) scale(1); } }
+@keyframes dot_text_2 {
+  to {
+    transform: rotateZ(0deg) translate3d(-120px, 10px, 0px) scale(1); } }
+@keyframes dot_text_3 {
+  to {
+    transform: rotateZ(0deg) translate3d(60px, 20px, 0px) scale(1); } }
+@keyframes dot_second_show {
+  0% {
+    transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+    -webkit-filter: blur(1px); }
+  100% {
+    transform: translate3d(10px, 10px, 0px) rotateZ(50deg) scale(0.7);
+    -webkit-filter: blur(5px); } }
+@keyframes dot_third_show {
+  0% {
+    transform: translate3d(10px, 10px, 0px) rotateZ(50deg) scale(0.7);
+    -webkit-filter: blur(5px); }
+  100% {
+    transform: translate3d(-100px, 10px, 0px) rotateZ(100deg) scale(0.3);
+    -webkit-filter: blur(5.5px); } }
+@keyframes dot_2_show {
+  from {
+    -webkit-filter: blur(10px);
+    transform: translate3d(-245px, 270px, 1px) rotateZ(-200deg); }
+  to {
+    transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+    -webkit-filter: blur(0px); } }
+@keyframes dot_2_first_show {
+  from {
+    transform: translate3d(0px, 0px, 0px) rotateZ(0deg);
+    -webkit-filter: blur(0px); }
+  to {
+    transform: translate3d(205px, -175px, 0px) rotateZ(70deg) scale(0.6);
+    -webkit-filter: blur(3px); } }
+@keyframes dot_second_text_1 {
+  to {
+    transform: rotateZ(-70deg) translate3d(-8px, -80px, 0px) scale(1); } }
+@keyframes dot_second_text_2 {
+  to {
+    transform: rotateZ(-142deg) translate3d(20px, -50px, 0px) scale(1); } }
+@keyframes dot_second_text_3 {
+  to {
+    transform: rotateZ(-40deg) translate3d(130px, 25px, 0px) scale(1); } }
+@keyframes dot_3_show {
+  0% {
+    -webkit-filter: blur(2px);
+    transform: scale(3.5) translate3d(-400px, 340px, 0px); }
+  70% {
+    transform: scale(3.5) translate3d(400px, -340px, 0px); }
+  100% {
+    -webkit-filter: blur(0px);
+    transform: scale(1) translate3d(0px, 0px, 0px); } }
+@keyframes dot_third_line_1 {
+  to {
+    transform: rotate(34deg) translate3d(-35px, 100px, 0px); } }
+@keyframes dot_third_line_2 {
+  to {
+    transform: rotate(130deg) translate3d(280px, -130px, 0px); } }
+@keyframes dot_third_line_3 {
+  to {
+    transform: rotate(50deg) translate3d(350px, 70px, 0px); } }
+@keyframes dot_third_text_1 {
+  to {
+    transform: rotateZ(-35deg) translate3d(-125px, -65px, 0px) scale(1); } }
+@keyframes dot_third_text_2 {
+  to {
+    transform: rotateZ(230deg) translate3d(-30px, 90px, 0px) scale(1); } }
+@keyframes dot_third_text_3 {
+  to {
+    transform: rotateZ(-50deg) translate3d(55px, 75px, 0px) scale(1); } }
+/* line 185, ../sass/style-1.scss */
+body {
+  overflow: hidden;
+  font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif; }
+
+/* line 189, ../sass/style-1.scss */
+.container {
+  width: 984px;
+  height: 69px;
+  margin: 100px auto 0;
+  position: relative; }
+  /* line 195, ../sass/style-1.scss */
+  .container .wrap {
+    width: 984px;
+    height: 500px;
+    overflow: hidden;
+    background: black; }
+  /* line 203, ../sass/style-1.scss */
+  .container .dot-box {
+    width: 100%;
+    height: 500px;
+    border: 1px;
+    position: relative;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+20,000005+22,020408+23,06080c+28,0b0f15+31,0b0f15+33,0d131a+34,0e141b+36,10151d+36,0e161d+38,10191f+38,10181f+39,131a23+40,131e26+43,172129+44,152229+46,1b282f+49,1d2b37+53,293742+60,263643+62,2a3b48+63,293c48+65,2d3f4b+68,2e4351+69,304553+73,334958+74,314857+74,364d5c+76,384f5e+80,3d5566+83,405a6d+88,425d6f+88,405d6f+89,456377+94,476679+94,476679+96,4c6b7e+98,4c6b7e+99,456477+100 */
+    background: black;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, black 0%, black 20%, #000005 22%, #020408 23%, #06080c 28%, #0b0f15 31%, #0b0f15 33%, #0d131a 34%, #0e141b 36%, #10151d 36%, #0e161d 38%, #10191f 38%, #10181f 39%, #131a23 40%, #131e26 43%, #172129 44%, #152229 46%, #1b282f 49%, #1d2b37 53%, #293742 60%, #263643 62%, #2a3b48 63%, #293c48 65%, #2d3f4b 68%, #2e4351 69%, #304553 73%, #334958 74%, #314857 74%, #364d5c 76%, #384f5e 80%, #3d5566 83%, #405a6d 88%, #425d6f 88%, #405d6f 89%, #456377 94%, #476679 94%, #476679 96%, #4c6b7e 98%, #4c6b7e 99%, #456477 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, black 0%, black 20%, #000005 22%, #020408 23%, #06080c 28%, #0b0f15 31%, #0b0f15 33%, #0d131a 34%, #0e141b 36%, #10151d 36%, #0e161d 38%, #10191f 38%, #10181f 39%, #131a23 40%, #131e26 43%, #172129 44%, #152229 46%, #1b282f 49%, #1d2b37 53%, #293742 60%, #263643 62%, #2a3b48 63%, #293c48 65%, #2d3f4b 68%, #2e4351 69%, #304553 73%, #334958 74%, #314857 74%, #364d5c 76%, #384f5e 80%, #3d5566 83%, #405a6d 88%, #425d6f 88%, #405d6f 89%, #456377 94%, #476679 94%, #476679 96%, #4c6b7e 98%, #4c6b7e 99%, #456477 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, black 0%, black 20%, #000005 22%, #020408 23%, #06080c 28%, #0b0f15 31%, #0b0f15 33%, #0d131a 34%, #0e141b 36%, #10151d 36%, #0e161d 38%, #10191f 38%, #10181f 39%, #131a23 40%, #131e26 43%, #172129 44%, #152229 46%, #1b282f 49%, #1d2b37 53%, #293742 60%, #263643 62%, #2a3b48 63%, #293c48 65%, #2d3f4b 68%, #2e4351 69%, #304553 73%, #334958 74%, #314857 74%, #364d5c 76%, #384f5e 80%, #3d5566 83%, #405a6d 88%, #425d6f 88%, #405d6f 89%, #456377 94%, #476679 94%, #476679 96%, #4c6b7e 98%, #4c6b7e 99%, #456477 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#456477',GradientType=0 );
+    /* IE6-9 */
+    animation: screen_move 1s linear forwards 4s 1, screen_second_move 1s linear forwards 8.5s 1, screen_third_move 3s linear forwards 10.5s 1; }
+    /* line 213, ../sass/style-1.scss */
+    .container .dot-box ul {
+      width: 500px;
+      height: 300px;
+      margin: 60px auto 0;
+      position: relative;
+      animation: dot_size 1s linear forwards 4s 1, dot_size_move 1s linear forwards 8.5s 1; }
+      /* line 222, ../sass/style-1.scss */
+      .container .dot-box ul .dot:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        animation: dot_move 4s linear forwards 3s 1; }
+        /* line 225, ../sass/style-1.scss */
+        .container .dot-box ul .dot:nth-child(1) .line {
+          width: 80px;
+          border: 1px solid white;
+          opacity: 0.5; }
+        /* line 230, ../sass/style-1.scss */
+        .container .dot-box ul .dot:nth-child(1) .line:nth-child(1) {
+          transform: rotate(15deg) translate3d(-68px, 40px, 0px);
+          animation: line_show 1s linear forwards 1; }
+          /* line 233, ../sass/style-1.scss */
+          .container .dot-box ul .dot:nth-child(1) .line:nth-child(1):before {
+            content: "Big Big World";
+            position: absolute;
+            color: white;
+            transform: rotateZ(-15deg) translate3d(-140px, -35px, 0px) scale(0);
+            font-size: 21px;
+            width: 150px;
+            animation: line_text .5s linear forwards 1s 1; }
+        /* line 245, ../sass/style-1.scss */
+        .container .dot-box ul .dot:nth-child(1) .line:nth-child(2) {
+          transform: rotateZ(145deg) translate3d(-55px, -35px, 0px);
+          animation: line_show_1 1s linear forwards 1; }
+          /* line 248, ../sass/style-1.scss */
+          .container .dot-box ul .dot:nth-child(1) .line:nth-child(2):before {
+            content: "Love Lost";
+            position: absolute;
+            color: white;
+            transform: rotateZ(-145deg) translate3d(160px, -35px, 0px) scale(0);
+            font-size: 21px;
+            width: 150px;
+            animation: line_text_1 .5s linear forwards 1s 1; }
+        /* line 260, ../sass/style-1.scss */
+        .container .dot-box ul .dot:nth-child(1) .line:nth-child(3) {
+          transform: rotate(-122deg) translate3d(-110px, -20px, 0px);
+          animation: line_show_2 1s linear forwards 1; }
+          /* line 263, ../sass/style-1.scss */
+          .container .dot-box ul .dot:nth-child(1) .line:nth-child(3):before {
+            content: "Diamond Eyes";
+            position: absolute;
+            color: white;
+            transform: rotateZ(-237deg) translate3d(100px, 90px, 0px) scale(0);
+            font-size: 21px;
+            width: 150px;
+            animation: line_text_2 .5s linear forwards 1s 1; }
+      /* line 275, ../sass/style-1.scss */
+      .container .dot-box ul .dot:nth-child(2) {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 60%;
+        left: 25%; }
+      /* line 278, ../sass/style-1.scss */
+      .container .dot-box ul .dot:nth-child(3) {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 25%;
+        left: 70%; }
+      /* line 281, ../sass/style-1.scss */
+      .container .dot-box ul .dot:nth-child(4) {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 80%;
+        left: 40%; }
+      /* line 284, ../sass/style-1.scss */
+      .container .dot-box ul .dot:nth-child(5) {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        top: 65%;
+        left: 66%; }
+  /* line 290, ../sass/style-1.scss */
+  .container .dot-box-1 {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 40px;
+    right: 250px;
+    left: autopx;
+    transform: translate3d(450px, -400px, 0px);
+    animation: dot_1_show 1s ease-out forwards 6s 1, dot_second_show 1s ease-out forwards 8.5s 1, dot_third_show 3s ease-out forwards 10.5s 1; }
+    /* line 297, ../sass/style-1.scss */
+    .container .dot-box-1:before {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative; }
+    /* line 304, ../sass/style-1.scss */
+    .container .dot-box-1 .dot:nth-child(1) {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 45%;
+      left: 45%; }
+      /* line 307, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(1) .line {
+        width: 120px;
+        border: 1px solid white;
+        opacity: 0.5; }
+      /* line 312, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(1) .line:nth-child(1) {
+        transform: rotate(90deg) translate3d(-30px, -40px, 0px); }
+      /* line 315, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(1) .line:nth-child(2) {
+        transform: rotate(142deg) translate3d(176px, -50px, 0px); }
+      /* line 318, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(1) .line:nth-child(3) {
+        transform: rotate(-142deg) translate3d(-201px, -40px, 0px); }
+    /* line 322, ../sass/style-1.scss */
+    .container .dot-box-1 .dot:nth-child(2) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 5%;
+      left: 60%; }
+      /* line 324, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(2):before {
+        content: "On My Own";
+        position: absolute;
+        color: white;
+        transform: rotateZ(0deg) translate3d(-130px, 0px, 0px) scale(0);
+        font-size: 21px;
+        width: 150px;
+        animation: dot_text_1 .5s linear forwards 7.5s 1; }
+    /* line 335, ../sass/style-1.scss */
+    .container .dot-box-1 .dot:nth-child(3) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 103%;
+      left: 18%; }
+      /* line 337, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(3):before {
+        content: "Bring Back";
+        position: absolute;
+        color: white;
+        transform: rotateZ(0deg) translate3d(-120px, 10px, 0px) scale(0);
+        font-size: 21px;
+        width: 150px;
+        animation: dot_text_2 .5s linear forwards 7.5s 1; }
+    /* line 348, ../sass/style-1.scss */
+    .container .dot-box-1 .dot:nth-child(4) {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 105%;
+      left: 90%; }
+      /* line 350, ../sass/style-1.scss */
+      .container .dot-box-1 .dot:nth-child(4):before {
+        content: "Each and All";
+        position: absolute;
+        color: white;
+        transform: rotateZ(0deg) translate3d(60px, 20px, 0px) scale(0);
+        font-size: 21px;
+        width: 150px;
+        animation: dot_text_3 .5s linear forwards 7.5s 1; }
+  /* line 363, ../sass/style-1.scss */
+  .container .dot-box-2 {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 190px;
+    right: autopx;
+    left: 5px;
+    transform: translate3d(-245px, 270px, 1px);
+    animation: dot_2_show 1s ease-out forwards 8.5s 1, dot_2_first_show 3s ease-out forwards 10.5s 1; }
+    /* line 369, ../sass/style-1.scss */
+    .container .dot-box-2:before {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative; }
+    /* line 376, ../sass/style-1.scss */
+    .container .dot-box-2 .dot:nth-child(1) {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 25%;
+      left: 30%; }
+      /* line 379, ../sass/style-1.scss */
+      .container .dot-box-2 .dot:nth-child(1) .line {
+        width: 120px;
+        border: 1px solid white;
+        opacity: 0.5; }
+      /* line 384, ../sass/style-1.scss */
+      .container .dot-box-2 .dot:nth-child(1) .line:nth-child(1) {
+        transform: rotate(70deg) translate3d(5px, 30px, 0px); }
+        /* line 386, ../sass/style-1.scss */
+        .container .dot-box-2 .dot:nth-child(1) .line:nth-child(1):before {
+          content: "欧若拉";
+          position: absolute;
+          color: white;
+          transform: rotateZ(-70deg) translate3d(-8px, -80px, 0px) scale(0);
+          font-size: 21px;
+          width: 150px;
+          animation: dot_second_text_1 .5s linear forwards 9.5s 1; }
+      /* line 397, ../sass/style-1.scss */
+      .container .dot-box-2 .dot:nth-child(1) .line:nth-child(2) {
+        transform: rotate(142deg) translate3d(-125px, -105px, 0px); }
+        /* line 399, ../sass/style-1.scss */
+        .container .dot-box-2 .dot:nth-child(1) .line:nth-child(2):before {
+          content: "星星和雨的夜";
+          position: absolute;
+          color: white;
+          transform: rotateZ(-142deg) translate3d(20px, -50px, 0px) scale(0);
+          font-size: 21px;
+          width: 150px;
+          animation: dot_second_text_2 .5s linear forwards 9.5s 1; }
+      /* line 410, ../sass/style-1.scss */
+      .container .dot-box-2 .dot:nth-child(1) .line:nth-child(3) {
+        transform: rotate(40deg) translate3d(200px, 5px, 0px); }
+        /* line 412, ../sass/style-1.scss */
+        .container .dot-box-2 .dot:nth-child(1) .line:nth-child(3):before {
+          content: "咸鱼";
+          position: absolute;
+          color: white;
+          transform: rotateZ(-40deg) translate3d(130px, 25px, 0px) scale(0);
+          font-size: 21px;
+          width: 150px;
+          animation: dot_second_text_3 .5s linear forwards 9.5s 1; }
+  /* line 425, ../sass/style-1.scss */
+  .container .dot-box-3 {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    left: autopx; }
+    /* line 428, ../sass/style-1.scss */
+    .container .dot-box-3:before {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative; }
+    /* line 435, ../sass/style-1.scss */
+    .container .dot-box-3 .dot {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: white;
+      position: absolute;
+      top: 0%;
+      left: 10%;
+      transform: scale(3.5) translate3d(-200px, 240px, 1px);
+      animation: dot_3_show 3s linear forwards 10.5s 1;
+      z-index: 2; }
+      /* line 441, ../sass/style-1.scss */
+      .container .dot-box-3 .dot .line {
+        width: 150px;
+        border: 1px solid white;
+        opacity: 0.5; }
+      /* line 447, ../sass/style-1.scss */
+      .container .dot-box-3 .dot .line:nth-child(1) {
+        transform: rotate(34deg) translate3d(75px, 100px, 0px);
+        animation: dot_third_line_1 1s linear forwards 14s 1; }
+        /* line 450, ../sass/style-1.scss */
+        .container .dot-box-3 .dot .line:nth-child(1):before {
+          content: "永 恒 的 回 忆";
+          position: absolute;
+          color: white;
+          transform: rotateZ(-35deg) translate3d(-125px, -65px, 0px) scale(0);
+          font-size: 21px;
+          width: 150px;
+          animation: dot_third_text_1 1s linear forwards 15s 1; }
+      /* line 463, ../sass/style-1.scss */
+      .container .dot-box-3 .dot .line:nth-child(2) {
+        transform: rotate(130deg) translate3d(130px, -130px, 0px);
+        animation: dot_third_line_2 1s linear forwards 14s 1; }
+        /* line 466, ../sass/style-1.scss */
+        .container .dot-box-3 .dot .line:nth-child(2):before {
+          content: "花 与 剑";
+          position: absolute;
+          color: white;
+          transform: rotateZ(230deg) translate3d(-30px, 90px, 0px) scale(0);
+          font-size: 21px;
+          width: 150px;
+          animation: dot_third_text_2 1s linear forwards 15s 1; }
+      /* line 478, ../sass/style-1.scss */
+      .container .dot-box-3 .dot .line:nth-child(3) {
+        transform: rotate(50deg) translate3d(220px, 70px, 0px);
+        animation: dot_third_line_3 1s linear forwards 14s 1; }
+        /* line 481, ../sass/style-1.scss */
+        .container .dot-box-3 .dot .line:nth-child(3):before {
+          content: "和脆弱的自己打仗";
+          position: absolute;
+          color: white;
+          transform: rotateZ(-50deg) translate3d(55px, 75px, 0px) scale(0);
+          font-size: 21px;
+          width: 170px;
+          animation: dot_third_text_3 1s linear forwards 15s 1; }
+  /* line 496, ../sass/style-1.scss */
+  .container .bottom {
+    background: url("../images/videoplay.png");
+    width: 984px;
+    height: 69px;
+    position: relative;
+    z-index: 3; }

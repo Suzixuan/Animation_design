@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* line 5, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* mixin */
+/* line 31, ../sass/screen.scss */
+body {
+  width: 100%;
+  background:#EFEFEF;
+  font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+/* line 35, ../sass/screen.scss */
+.demo-cube {
+  background: url(../img/videoplay.png);
+  width: 76.9%;
+  max-width:984px;
+  height: 69px;
+  margin: 40% auto 0;
+  position: relative;
+}
+/* line 42, ../sass/screen.scss */
+.demo-cube:before {
+  content: "";
+  width: 100%;
+  height: 500px;
+  background: #FFFEF5;
+  position: absolute;
+  top: -500px;
+}
+/* line 52, ../sass/screen.scss */
+.demo-cube .pic {
+  width: 288px;
+  height: 330px;
+  position: absolute;
+  top: -430px;
+  left: 139px;
+  -webkit-clip-path: polygon(49% 3%, 97% 26%, 97% 75%, 49% 98%, 1% 75%, 1% 26%);
+  /* -webkit-clip-path:polygon(143px 3px, 286px 84px, 284px 250px, 143px 328px, 3px 252px, -1px 85px); */
+  -webkit-animation: pic_show 20s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: pic_show 20s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+/* line 64, ../sass/screen.scss */
+.demo-cube .cube-inner {
+  display: block;
+  position: absolute;
+  top: -335px;
+  left: 195px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50px 50px;
+  transform-origin: 50px 50px;
+  -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+  transform: rotateX(-33.5deg) rotateY(45deg);
+  -webkit-animation: fastspin 20s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: fastspin 20s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+/* line 79, ../sass/screen.scss */
+.demo-cube .cube-inner > li {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(rgba(0, 0, 0, 0) 99%, rgba(0, 0, 0, 0.3) 100%);
+}
+/* line 87, ../sass/screen.scss */
+.demo-cube .cube-inner > li:before {
+  content: "";
+  box-shadow: rgba(255, 255, 255, 0.5) -20px 0px 30px 10px inset;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+/* line 98, ../sass/screen.scss */
+.demo-cube .cube-inner .top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+}
+/* line 102, ../sass/screen.scss */
+.demo-cube .cube-inner .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+/* line 106, ../sass/screen.scss */
+.demo-cube .cube-inner .front {
+  -webkit-transform: translateZ(100px);
+  transform: translateZ(100px);
+}
+/* line 111, ../sass/screen.scss */
+.demo-cube .cube-inner .back {
+  -webkit-transform: rotateX(-180deg) translateZ(100px);
+  transform: rotateX(-180deg) translateZ(100px);
+}
+/* line 115, ../sass/screen.scss */
+.demo-cube .cube-inner .left {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(100px);
+}
+/* line 119, ../sass/screen.scss */
+.demo-cube .cube-inner .right {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+  transform: rotateX(90deg) translateZ(100px);
+}
+/* line 127, ../sass/screen.scss */
+.demo-cube .text .main, .demo-cube .text .wrap {
+  display: inline-block;
+  width: 40px;
+  height: 150px;
+  position: absolute;
+  right: 220px;
+  top: -380px;
+  overflow: hidden;
+}
+/* line 138, ../sass/screen.scss */
+.demo-cube .text .main span:nth-child(1), .demo-cube .text .wrap span:nth-child(1) {
+  display: block;
+  opacity: 0;
+  -webkit-animation: word_show 3s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: word_show 3s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+/* line 143, ../sass/screen.scss */
+.demo-cube .text .main span:nth-child(2), .demo-cube .text .wrap span:nth-child(2) {
+  display: block;
+  opacity: 0;
+  -webkit-animation: word_show 3s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: word_show 3s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+/* line 148, ../sass/screen.scss */
+.demo-cube .text .main span:nth-child(3), .demo-cube .text .wrap span:nth-child(3) {
+  display: block;
+  opacity: 0;
+  -webkit-animation: word_show 3s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: word_show 3s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+/* line 154, ../sass/screen.scss */
+.demo-cube .text .wrap {
+  background: #EB94F0;
+  color: white;
+  right: 245px;
+  text-align: right;
+  top: -360px;
+  -webkit-animation: text_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: text_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+}
+/* line 163, ../sass/screen.scss */
+.demo-cube .text .wrap span {
+  margin: -20px 0 0 25px;
+  display: inline-block;
+}
+/* line 173, ../sass/screen.scss */
+.demo-cube ul > li {
+  background: #EB94F0;
+  opacity: 0;
+}
+/* line 178, ../sass/screen.scss */
+.demo-cube ul li:nth-child(1) {
+  width: 10px;
+  height: 20px;
+  position: absolute;
+  right: 100px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 185, ../sass/screen.scss */
+.demo-cube ul li:nth-child(2) {
+  width: 2px;
+  height: 3px;
+  position: absolute;
+  right: 312px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 5s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 5s infinite;
+}
+/* line 191, ../sass/screen.scss */
+.demo-cube ul li:nth-child(3) {
+  width: 4px;
+  height: 6px;
+  position: absolute;
+  right: 444px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 7s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 7s infinite;
+}
+/* line 197, ../sass/screen.scss */
+.demo-cube ul li:nth-child(4) {
+  width: 6px;
+  height: 8px;
+  position: absolute;
+  right: 213px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s infinite;
+}
+/* line 203, ../sass/screen.scss */
+.demo-cube ul li:nth-child(5) {
+  width: 4px;
+  height: 3px;
+  position: absolute;
+  right: 510px;
+  -webkit-animation: snow_show 4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 8s infinite;
+  animation: snow_show 4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 8s infinite;
+}
+/* line 209, ../sass/screen.scss */
+.demo-cube ul li:nth-child(6) {
+  width: 3px;
+  height: 6px;
+  position: absolute;
+  right: 664px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s infinite;
+}
+/* line 215, ../sass/screen.scss */
+.demo-cube ul li:nth-child(7) {
+  width: 9px;
+  height: 11px;
+  position: absolute;
+  right: 699px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 9s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 9s infinite;
+}
+/* line 221, ../sass/screen.scss */
+.demo-cube ul li:nth-child(8) {
+  width: 7px;
+  height: 3px;
+  position: absolute;
+  right: 736px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s infinite;
+}
+/* line 227, ../sass/screen.scss */
+.demo-cube ul li:nth-child(9) {
+  width: 3px;
+  height: 1px;
+  position: absolute;
+  right: 811px;
+  -webkit-animation: snow_show 4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s infinite;
+  animation: snow_show 4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s infinite;
+}
+/* line 233, ../sass/screen.scss */
+.demo-cube ul li:nth-child(10) {
+  width: 8px;
+  height: 9px;
+  position: absolute;
+  right: 903px;
+  -webkit-animation: snow_show 6s cubic-bezier(0.27, 0.25, 0.76, 0.76) 5s infinite;
+  animation: snow_show 6s cubic-bezier(0.27, 0.25, 0.76, 0.76) 5s infinite;
+}
+
+@-webkit-keyframes pic_show {
+  0% {
+    -webkit-clip-path: polygon(49% 3%, 97% 26%, 97% 70%, 49% 98%, 1% 70%, 1% 26%);
+  }
+  10% {
+    -webkit-clip-path: polygon(60% 5%, 99% 32%, 98% 75%, 43% 98%, 7% 73%, 5% 24%);
+  }
+  20% {
+    -webkit-clip-path: polygon(69% 8%, 96% 37%, 95% 85%, 36% 98%, 9% 70%, 9% 21%);
+  }
+  30% {
+    -webkit-clip-path: polygon(78% 10%, 95% 41%, 95% 90%, 30% 98%, 13% 68%, 13% 19%);
+  }
+}
+@-webkit-keyframes fastspin {
+  0% {
+    -webkit-transform: rotateX(-40.5deg) rotateY(45deg);
+    transform: rotateX(-40.5deg) rotateY(45deg);
+  }
+  10% {
+    -webkit-transform: rotateX(-40.5deg) rotateY(35deg);
+    transform: rotateX(-40.5deg) rotateY(35deg);
+  }
+  20% {
+    -webkit-transform: rotateX(-40.5deg) rotateY(25deg);
+    transform: rotateX(-40.5deg) rotateY(25deg);
+  }
+  30% {
+    -webkit-transform: rotateX(-40.5deg) rotateY(15deg);
+    transform: rotateX(-40.5deg) rotateY(15deg);
+  }
+}
+@-webkit-keyframes text_show {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 150px;
+  }
+}
+@-webkit-keyframes word_show {
+  0% {
+    -webkit-transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes snow_show {
+  0% {
+    -webkit-transform: rotateZ(0deg);
+    top: -1px;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+    top: -500px;
+    opacity: .8;
+  }
+}

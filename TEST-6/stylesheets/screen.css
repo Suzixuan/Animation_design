@@ -1,0 +1,793 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../program/Ruby22/lib/ruby/gems/2.2.0/gems/compass-0.12.3/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* mixin */
+/* line 45, ../sass/screen.scss */
+.container {
+  margin: 100px auto 0;
+  position: relative;
+  width: 984px;
+  height: 500px;
+  overflow: hidden;
+  background: #13131a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #13131a 0%, #1c1a26 19%, #1e1d28 24%, #1d1c25 24%, #211e28 30%, #23202c 32%, #24212f 33%, #262230 43%, #282435 45%, #292536 51%, #2c283b 58%, #2c283e 59%, #30293d 61%, #322b3f 68%, #352f45 76%, #342e44 78%, #363046 78%, #363048 79%, #352e47 80%, #383149 81%, #3b344d 95%, #3d3651 97%, #3d3751 100%, #3b374d 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #13131a 0%, #1c1a26 19%, #1e1d28 24%, #1d1c25 24%, #211e28 30%, #23202c 32%, #24212f 33%, #262230 43%, #282435 45%, #292536 51%, #2c283b 58%, #2c283e 59%, #30293d 61%, #322b3f 68%, #352f45 76%, #342e44 78%, #363046 78%, #363048 79%, #352e47 80%, #383149 81%, #3b344d 95%, #3d3651 97%, #3d3751 100%, #3b374d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #13131a 0%, #1c1a26 19%, #1e1d28 24%, #1d1c25 24%, #211e28 30%, #23202c 32%, #24212f 33%, #262230 43%, #282435 45%, #292536 51%, #2c283b 58%, #2c283e 59%, #30293d 61%, #322b3f 68%, #352f45 76%, #342e44 78%, #363046 78%, #363048 79%, #352e47 80%, #383149 81%, #3b344d 95%, #3d3651 97%, #3d3751 100%, #3b374d 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#13131a', endColorstr='#3b374d',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 60, ../sass/screen.scss */
+.container .bottom {
+  width: 500%;
+  height: 600px;
+  background: black;
+  position: absolute;
+  bottom: -475px;
+  left: -200%;
+}
+/* line 69, ../sass/screen.scss */
+.container .wrap {
+  width: 100%;
+  height: 100%;
+  -webkit-transform:  scale(1.4, 1.4) translate(92px, -202px);
+  -moz-transform:  scale(1.4, 1.4) translate(92px, -202px);
+  -ms-transform:  scale(1.4, 1.4) translate(92px, -202px);
+  -o-transform:  scale(1.4, 1.4) translate(92px, -202px);
+  transform:  scale(1.4, 1.4) translate(92px, -202px);
+  -webkit-animation: lens 12s ease-out 0s forwards, lens_in 4s linear 24s forwards;
+  -moz-animation: lens 12s ease-out 0s forwards, lens_in 4s linear 24s forwards;
+  -o-animation: lens 12s ease-out 0s forwards, lens_in 4s linear 24s forwards;
+  animation: lens 12s ease-out 0s forwards, lens_in 4s linear 24s forwards;
+}
+/* line 81, ../sass/screen.scss */
+.container .train {
+  width: 550%;
+  position: absolute;
+  bottom: 120px;
+  -webkit-animation: train_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite, train_paused .5s ease-out 28s forwards;
+  -moz-animation: train_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite, train_paused .5s ease-out 28s forwards;
+  -o-animation: train_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite, train_paused .5s ease-out 28s forwards;
+  animation: train_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite, train_paused .5s ease-out 28s forwards;
+}
+/* line 87, ../sass/screen.scss */
+.container .train img {
+  margin-left: -20px;
+}
+/* line 93, ../sass/screen.scss */
+.container .lampstandard {
+  width: 13000px;
+  -webkit-animation: lampstandard_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite;
+  -moz-animation: lampstandard_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite;
+  -o-animation: lampstandard_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite;
+  animation: lampstandard_go 30s cubic-bezier(0, 0, 0.31, 0.65) infinite;
+}
+/* line 97, ../sass/screen.scss */
+.container .lampstandard .equipment {
+  position: relative;
+  width: 811px;
+  float: left;
+}
+/* line 102, ../sass/screen.scss */
+.container .lampstandard .equipment .lampline {
+  width: 690px;
+  height: 100px;
+  border-bottom: 3px solid #12130F;
+  position: absolute;
+  border-radius: 99%;
+  top: 15px;
+  left: 165px;
+}
+/* line 111, ../sass/screen.scss */
+.container .lampstandard .equipment .lampline:nth-child(1) {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+/* line 114, ../sass/screen.scss */
+.container .lampstandard .equipment .lampline:nth-child(2) {
+  -webkit-transform: rotate(1deg);
+  -moz-transform: rotate(1deg);
+  -ms-transform: rotate(1deg);
+  -o-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+/* line 120, ../sass/screen.scss */
+.container .fence {
+  width: 500%;
+  height: 50px;
+  position: absolute;
+  bottom: 125px;
+  -webkit-animation: fence_go 3s linear 0s infinite;
+  -moz-animation: fence_go 3s linear 0s infinite;
+  -o-animation: fence_go 3s linear 0s infinite;
+  animation: fence_go 3s linear 0s infinite;
+}
+/* line 127, ../sass/screen.scss */
+.container .fence img {
+  margin-left: -15px;
+}
+/* line 132, ../sass/screen.scss */
+.container .doge {
+  position: absolute;
+  z-index: 999;
+  right: 315px;
+  top: 107px;
+  width: 300px;
+  opacity: 0;
+  -webkit-animation: doge_show 1s linear 25.79s forwards;
+  -moz-animation: doge_show 1s linear 25.79s forwards;
+  -o-animation: doge_show 1s linear 25.79s forwards;
+  animation: doge_show 1s linear 25.79s forwards;
+}
+
+/* line 143, ../sass/screen.scss */
+.floor {
+  background: url("http://suzixuan.qiniudn.com/videoplay.png");
+  width: 984px;
+  height: 69px;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes train_go {
+  /* line 152, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 153, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@-moz-keyframes train_go {
+  /* line 152, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 153, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@-o-keyframes train_go {
+  /* line 152, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 153, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes train_go {
+  /* line 152, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 153, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@-webkit-keyframes lampstandard_go {
+  /* line 157, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 158, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@-moz-keyframes lampstandard_go {
+  /* line 157, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 158, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@-o-keyframes lampstandard_go {
+  /* line 157, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 158, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@keyframes lampstandard_go {
+  /* line 157, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 158, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-80%);
+    -moz-transform: translateX(-80%);
+    -ms-transform: translateX(-80%);
+    -o-transform: translateX(-80%);
+    transform: translateX(-80%);
+  }
+}
+
+@-webkit-keyframes fence_go {
+  /* line 162, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 163, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-40%);
+    -moz-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    -o-transform: translateX(-40%);
+    transform: translateX(-40%);
+  }
+}
+
+@-moz-keyframes fence_go {
+  /* line 162, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 163, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-40%);
+    -moz-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    -o-transform: translateX(-40%);
+    transform: translateX(-40%);
+  }
+}
+
+@-o-keyframes fence_go {
+  /* line 162, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 163, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-40%);
+    -moz-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    -o-transform: translateX(-40%);
+    transform: translateX(-40%);
+  }
+}
+
+@keyframes fence_go {
+  /* line 162, ../sass/screen.scss */
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /* line 163, ../sass/screen.scss */
+  100% {
+    -webkit-transform: translateX(-40%);
+    -moz-transform: translateX(-40%);
+    -ms-transform: translateX(-40%);
+    -o-transform: translateX(-40%);
+    transform: translateX(-40%);
+  }
+}
+
+@-webkit-keyframes doge_show {
+  /* line 167, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  20% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes doge_show {
+  /* line 167, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  20% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes doge_show {
+  /* line 167, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  20% {
+    opacity: 0;
+  }
+}
+
+@keyframes doge_show {
+  /* line 167, ../sass/screen.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 168, ../sass/screen.scss */
+  20% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes lens {
+  /* line 172, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -moz-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -ms-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -o-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    transform:  scale(1.4, 1.4) translate(100px, -202px);
+  }
+
+  /* line 180, ../sass/screen.scss */
+  30% {
+    -webkit-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -moz-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -ms-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -o-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    transform:  scale(1.3, 1.3) translate(50px, -180px);
+  }
+
+  /* line 189, ../sass/screen.scss */
+  50% {
+    -webkit-transform:  scale(1, 1) translate(-700px, 0px);
+    -moz-transform:  scale(1, 1) translate(-700px, 0px);
+    -ms-transform:  scale(1, 1) translate(-700px, 0px);
+    -o-transform:  scale(1, 1) translate(-700px, 0px);
+    transform:  scale(1, 1) translate(-700px, 0px);
+  }
+
+  /* line 197, ../sass/screen.scss */
+  85% {
+    -webkit-transform:  scale(1, 1) translate(100px, -20px);
+    -moz-transform:  scale(1, 1) translate(100px, -20px);
+    -ms-transform:  scale(1, 1) translate(100px, -20px);
+    -o-transform:  scale(1, 1) translate(100px, -20px);
+    transform:  scale(1, 1) translate(100px, -20px);
+  }
+
+  /* line 205, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -moz-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -ms-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -o-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    transform:  scale(0.9, 0.9) translate(0px, -20px);
+  }
+}
+
+@-moz-keyframes lens {
+  /* line 172, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -moz-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -ms-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -o-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    transform:  scale(1.4, 1.4) translate(100px, -202px);
+  }
+
+  /* line 180, ../sass/screen.scss */
+  30% {
+    -webkit-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -moz-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -ms-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -o-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    transform:  scale(1.3, 1.3) translate(50px, -180px);
+  }
+
+  /* line 189, ../sass/screen.scss */
+  50% {
+    -webkit-transform:  scale(1, 1) translate(-700px, 0px);
+    -moz-transform:  scale(1, 1) translate(-700px, 0px);
+    -ms-transform:  scale(1, 1) translate(-700px, 0px);
+    -o-transform:  scale(1, 1) translate(-700px, 0px);
+    transform:  scale(1, 1) translate(-700px, 0px);
+  }
+
+  /* line 197, ../sass/screen.scss */
+  85% {
+    -webkit-transform:  scale(1, 1) translate(100px, -20px);
+    -moz-transform:  scale(1, 1) translate(100px, -20px);
+    -ms-transform:  scale(1, 1) translate(100px, -20px);
+    -o-transform:  scale(1, 1) translate(100px, -20px);
+    transform:  scale(1, 1) translate(100px, -20px);
+  }
+
+  /* line 205, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -moz-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -ms-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -o-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    transform:  scale(0.9, 0.9) translate(0px, -20px);
+  }
+}
+
+@-o-keyframes lens {
+  /* line 172, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -moz-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -ms-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -o-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    transform:  scale(1.4, 1.4) translate(100px, -202px);
+  }
+
+  /* line 180, ../sass/screen.scss */
+  30% {
+    -webkit-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -moz-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -ms-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -o-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    transform:  scale(1.3, 1.3) translate(50px, -180px);
+  }
+
+  /* line 189, ../sass/screen.scss */
+  50% {
+    -webkit-transform:  scale(1, 1) translate(-700px, 0px);
+    -moz-transform:  scale(1, 1) translate(-700px, 0px);
+    -ms-transform:  scale(1, 1) translate(-700px, 0px);
+    -o-transform:  scale(1, 1) translate(-700px, 0px);
+    transform:  scale(1, 1) translate(-700px, 0px);
+  }
+
+  /* line 197, ../sass/screen.scss */
+  85% {
+    -webkit-transform:  scale(1, 1) translate(100px, -20px);
+    -moz-transform:  scale(1, 1) translate(100px, -20px);
+    -ms-transform:  scale(1, 1) translate(100px, -20px);
+    -o-transform:  scale(1, 1) translate(100px, -20px);
+    transform:  scale(1, 1) translate(100px, -20px);
+  }
+
+  /* line 205, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -moz-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -ms-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -o-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    transform:  scale(0.9, 0.9) translate(0px, -20px);
+  }
+}
+
+@keyframes lens {
+  /* line 172, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -moz-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -ms-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    -o-transform:  scale(1.4, 1.4) translate(100px, -202px);
+    transform:  scale(1.4, 1.4) translate(100px, -202px);
+  }
+
+  /* line 180, ../sass/screen.scss */
+  30% {
+    -webkit-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -moz-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -ms-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    -o-transform:  scale(1.3, 1.3) translate(50px, -180px);
+    transform:  scale(1.3, 1.3) translate(50px, -180px);
+  }
+
+  /* line 189, ../sass/screen.scss */
+  50% {
+    -webkit-transform:  scale(1, 1) translate(-700px, 0px);
+    -moz-transform:  scale(1, 1) translate(-700px, 0px);
+    -ms-transform:  scale(1, 1) translate(-700px, 0px);
+    -o-transform:  scale(1, 1) translate(-700px, 0px);
+    transform:  scale(1, 1) translate(-700px, 0px);
+  }
+
+  /* line 197, ../sass/screen.scss */
+  85% {
+    -webkit-transform:  scale(1, 1) translate(100px, -20px);
+    -moz-transform:  scale(1, 1) translate(100px, -20px);
+    -ms-transform:  scale(1, 1) translate(100px, -20px);
+    -o-transform:  scale(1, 1) translate(100px, -20px);
+    transform:  scale(1, 1) translate(100px, -20px);
+  }
+
+  /* line 205, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -moz-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -ms-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    -o-transform:  scale(0.9, 0.9) translate(0px, -20px);
+    transform:  scale(0.9, 0.9) translate(0px, -20px);
+  }
+}
+
+@-webkit-keyframes lens_in {
+  /* line 216, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+
+  /* line 224, ../sass/screen.scss */
+  35% {
+    -webkit-transform:  scale(8, 8) translate(0px, -70px);
+    -moz-transform:  scale(8, 8) translate(0px, -70px);
+    -ms-transform:  scale(8, 8) translate(0px, -70px);
+    -o-transform:  scale(8, 8) translate(0px, -70px);
+    transform:  scale(8, 8) translate(0px, -70px);
+  }
+
+  /* line 232, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+}
+
+@-moz-keyframes lens_in {
+  /* line 216, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+
+  /* line 224, ../sass/screen.scss */
+  35% {
+    -webkit-transform:  scale(8, 8) translate(0px, -70px);
+    -moz-transform:  scale(8, 8) translate(0px, -70px);
+    -ms-transform:  scale(8, 8) translate(0px, -70px);
+    -o-transform:  scale(8, 8) translate(0px, -70px);
+    transform:  scale(8, 8) translate(0px, -70px);
+  }
+
+  /* line 232, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+}
+
+@-o-keyframes lens_in {
+  /* line 216, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+
+  /* line 224, ../sass/screen.scss */
+  35% {
+    -webkit-transform:  scale(8, 8) translate(0px, -70px);
+    -moz-transform:  scale(8, 8) translate(0px, -70px);
+    -ms-transform:  scale(8, 8) translate(0px, -70px);
+    -o-transform:  scale(8, 8) translate(0px, -70px);
+    transform:  scale(8, 8) translate(0px, -70px);
+  }
+
+  /* line 232, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+}
+
+@keyframes lens_in {
+  /* line 216, ../sass/screen.scss */
+  0% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+
+  /* line 224, ../sass/screen.scss */
+  35% {
+    -webkit-transform:  scale(8, 8) translate(0px, -70px);
+    -moz-transform:  scale(8, 8) translate(0px, -70px);
+    -ms-transform:  scale(8, 8) translate(0px, -70px);
+    -o-transform:  scale(8, 8) translate(0px, -70px);
+    transform:  scale(8, 8) translate(0px, -70px);
+  }
+
+  /* line 232, ../sass/screen.scss */
+  100% {
+    -webkit-transform:  scale(1, 1) translate(0px, 0px);
+    -moz-transform:  scale(1, 1) translate(0px, 0px);
+    -ms-transform:  scale(1, 1) translate(0px, 0px);
+    -o-transform:  scale(1, 1) translate(0px, 0px);
+    transform:  scale(1, 1) translate(0px, 0px);
+  }
+}

@@ -1,0 +1,545 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* keyframes */
+@-webkit-keyframes snow_show {
+  0% {
+    transform: rotateZ(1500deg);
+    top: -400px;
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(0deg);
+    top: 4000px;
+    opacity: .8;
+  }
+}
+@-webkit-keyframes lyric_show {
+  10% {
+    content: "二度となにも失くさぬように";
+  }
+  20% {
+    content: "私を忘れて　始めて　“Restart”";
+  }
+  30% {
+    content: "No, don't give up on life";
+  }
+  40% {
+    content: "This endless dead end";
+  }
+  50% {
+    content: "君を砕くこの悲しみが";
+  }
+  60% {
+    content: "いつか終わりますように";
+  }
+  70% {
+    content: "私を忘れて　始めて　“Restart”";
+  }
+  80% {
+    content: "For now I'll see you off";
+  }
+}
+/* mixin */
+/* line 98, ../sass/screen.scss */
+body {
+  width: 100%;
+  font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+/* line 102, ../sass/screen.scss */
+.container {
+  background: url(../img/videoplay.png);
+  width: 984px;
+  height: 69px;
+  margin: 45% auto 0;
+  position: relative;
+}
+/* line 109, ../sass/screen.scss */
+.container:before {
+  content: "";
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: -500px;
+  overflow: hidden;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0e0e0e+60,303030+99 */
+  background: #0e0e0e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0e0e0e 60%, #303030 99%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0e0e0e 60%, #303030 99%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0e0e0e 60%, #303030 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e0e0e', endColorstr='#303030',GradientType=0 );
+  /* IE6-9 */
+}
+/* line 127, ../sass/screen.scss */
+.container ul:nth-child(1) {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  top: -500px;
+  position: relative;
+}
+/* line 134, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(1) {
+  transform: scale(1.2);
+}
+/* line 137, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(1):before {
+  content: "";
+  -webkit-animation: snow_show 7s cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s infinite;
+  animation: snow_show 7s cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s infinite;
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(5px);
+  z-index: 999;
+  width: 420px;
+  height: 370px;
+  right: -143px;
+  background-position: -430px 0px;
+}
+/* line 143, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(2) {
+  transform: scale(0.4);
+}
+/* line 146, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(2):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(0px);
+  z-index: 10;
+  width: 181px;
+  height: 208px;
+  right: -300px;
+  background-position: -215px 0;
+  -webkit-animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 153, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(3) {
+  transform: scale(0.2);
+}
+/* line 156, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(3):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(0px);
+  z-index: 10;
+  width: 178px;
+  height: 157px;
+  right: -300px;
+  background-position: 0px -275px;
+  -webkit-animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s infinite;
+  animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 3s infinite;
+}
+/* line 163, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(4) {
+  transform: scale(0.09);
+}
+/* line 166, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(4):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(0px);
+  z-index: 10;
+  width: 178px;
+  height: 157px;
+  right: -290px;
+  background-position: 0px -275px;
+  -webkit-animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s infinite;
+  animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s infinite;
+}
+/* line 173, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(5) {
+  transform: scale(0.9);
+}
+/* line 176, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(5):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(4px);
+  z-index: 10;
+  width: 183px;
+  height: 242px;
+  right: 398px;
+  background-position: -221px -467px;
+  -webkit-animation: snow_show 10s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 10s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 183, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(6) {
+  transform: scale(0.1);
+}
+/* line 186, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(6):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(3px);
+  z-index: 10;
+  width: 420px;
+  height: 370px;
+  right: 400px;
+  background-position: -430px 0px;
+  -webkit-animation: snow_show 8.6s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 8.6s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 193, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(7) {
+  transform: scale(0.12);
+}
+/* line 196, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(7):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(2px);
+  z-index: 10;
+  width: 181px;
+  height: 208px;
+  right: 530px;
+  background-position: -215px 0;
+  -webkit-animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 203, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(8) {
+  transform: scale(0.18);
+}
+/* line 206, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(8):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(4px);
+  z-index: 10;
+  width: 183px;
+  height: 242px;
+  right: 775px;
+  background-position: -221px -467px;
+  -webkit-animation: snow_show 9.4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s infinite;
+  animation: snow_show 9.4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s infinite;
+}
+/* line 213, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(9) {
+  transform: scale(0.099);
+}
+/* line 216, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(9):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(3px);
+  z-index: 10;
+  width: 178px;
+  height: 157px;
+  right: -1500px;
+  background-position: 0px -275px;
+  -webkit-animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s infinite;
+  animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0.5s infinite;
+}
+/* line 223, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(10) {
+  transform: scale(0.07);
+}
+/* line 226, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(10):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(0px);
+  z-index: 10;
+  width: 183px;
+  height: 242px;
+  right: 2000px;
+  background-position: -221px -467px;
+  -webkit-animation: snow_show 7s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 7s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 233, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(11) {
+  transform: scale(0.3);
+}
+/* line 236, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(11):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(0px);
+  z-index: 10;
+  width: 178px;
+  height: 157px;
+  right: 1500px;
+  background-position: 0px -275px;
+  -webkit-animation: snow_show 7.4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 7.4s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 243, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(12) {
+  transform: scale(0.081);
+}
+/* line 246, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(12):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(2px);
+  z-index: 10;
+  width: 420px;
+  height: 370px;
+  right: 3200px;
+  background-position: -430px 0px;
+  -webkit-animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 253, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(13) {
+  transform: scale(0.081);
+}
+/* line 256, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(13):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(1px);
+  z-index: 10;
+  width: 181px;
+  height: 208px;
+  right: 4000px;
+  background-position: -215px 0;
+  -webkit-animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 263, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(14) {
+  transform: scale(0.09);
+}
+/* line 266, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(14):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(4px);
+  z-index: 10;
+  width: 178px;
+  height: 157px;
+  right: 4500px;
+  background-position: 0px -275px;
+  -webkit-animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 273, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(15) {
+  transform: scale(0.76);
+}
+/* line 276, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(15):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(3px);
+  z-index: 10;
+  width: 181px;
+  height: 208px;
+  right: 4800px;
+  background-position: -215px 0;
+  -webkit-animation: snow_show 8.7s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 8.7s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 283, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(16) {
+  transform: scale(2);
+}
+/* line 286, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(16):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(2px);
+  z-index: 10;
+  width: 181px;
+  height: 210px;
+  right: 630px;
+  background-position: -446px -500px;
+  -webkit-animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s infinite;
+  animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 4s infinite;
+}
+/* line 293, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(17) {
+  transform: scale(0.095);
+}
+/* line 296, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(17):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(2px);
+  z-index: 10;
+  width: 181px;
+  height: 208px;
+  right: -2900px;
+  background-position: -215px 0;
+  -webkit-animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s infinite;
+  animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 2s infinite;
+}
+/* line 303, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(18) {
+  transform: scale(0.1);
+}
+/* line 306, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(18):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(1px);
+  z-index: 10;
+  width: 178px;
+  height: 157px;
+  right: -2000px;
+  background-position: 0px -275px;
+  -webkit-animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s infinite;
+  animation: snow_show 8s cubic-bezier(0.27, 0.25, 0.76, 0.76) 1s infinite;
+}
+/* line 313, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(19) {
+  transform: scale(0.111);
+}
+/* line 316, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(19):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(1px);
+  z-index: 10;
+  width: 183px;
+  height: 242px;
+  right: -1100px;
+  background-position: -221px -467px;
+  -webkit-animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 5s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 323, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(20) {
+  transform: scale(0.081);
+}
+/* line 326, ../sass/screen.scss */
+.container ul:nth-child(1) .snow:nth-child(20):before {
+  content: "";
+  background: url("../img/FreeVector-Snowflakes-Footage.png");
+  position: absolute;
+  top: -400px;
+  -webkit-filter: blur(4px);
+  z-index: 10;
+  width: 420px;
+  height: 370px;
+  right: -800px;
+  background-position: -430px 0px;
+  -webkit-animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+  animation: snow_show 9s cubic-bezier(0.27, 0.25, 0.76, 0.76) 0s infinite;
+}
+/* line 336, ../sass/screen.scss */
+.container .lyric:before {
+  content: "Oh, please don't let me die";
+  -webkit-animation: lyric_show 12s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  animation: lyric_show 12s cubic-bezier(0.27, 0.25, 0.76, 0.76) infinite;
+  font-size: 19px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px #f99fd7;
+  position: absolute;
+  top: -50px;
+  left: 50px;
+}

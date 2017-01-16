@@ -1,0 +1,828 @@
+﻿/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+/* mixin */
+@mixin wavy_line($position,$width,$left) {
+	position: absolute;
+	bottom: $position;
+   	width: $width;
+	left: $left;
+	transform: skewX(-7deg) rotateX(50.5deg);
+	-webkit-transform: skewX(-7deg) rotateX(50.5deg);
+	-moz-transform: skewX(-7deg) rotateX(50.5deg);
+	-o-transform: skewX(-7deg) rotateX(50.5deg);
+    height: 25px;
+    background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #EDDE92 25px, #EDDE92 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #EDDE92 25px, #EDDE92 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #EDDE92 25px, #EDDE92 25px, transparent 9px, transparent);
+    background-size: 50px 50px;
+	
+}
+
+
+
+/* mixin */
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin star_animation($name,$value){
+	@include keyframes($name) {
+		0%{
+			-webkit-transform: scale(.5) #{$value};
+				-moz-transform:scale(.5) #{$value};
+				-ms-transform:scale(.5) #{$value};
+				-o-transform:scale(.5) #{$value};
+		}
+		50%{
+			-webkit-transform: scale(1.2) #{$value};
+				-moz-transform:scale(1.2) #{$value};
+				-ms-transform:scale(1.2) #{$value};
+				-o-transform:scale(1.2) #{$value};
+		}
+		100%{
+			-webkit-transform: scale(.6) #{$value};
+				-moz-transform:scale(.6) #{$value};
+				-ms-transform:scale(.6) #{$value};
+				-o-transform:scale(.6) #{$value};
+		}
+
+	}
+}
+
+/* mixin */
+@mixin snow_pic($kind,$fuzzy,$position,$zindex){
+	position:absolute;
+	top: -400px;
+	-webkit-filter: blur($fuzzy); //模糊效果
+	-moz-filter: blur($fuzzy);
+	-ms-filter: blur($fuzzy);
+	-o-filter: blur($fuzzy);
+
+	z-index:$zindex;
+	background:white;
+	
+	@if $kind == 1{
+		width: 150px;
+    	height: 150px;
+    	border-radius:150px;
+    	right: $position;
+	}
+	@if $kind == 2{
+		width: 160px;
+		height: 160px;
+		border-radius:160px;
+		right: $position;
+	}
+	@if $kind == 3{
+		width: 196px;
+		height: 196px;
+		border-radius:196px;
+		right: $position;
+	}
+	@if $kind == 4{
+		width: 102px;
+		height: 102px;
+		border-radius:102px;
+		right: $position;
+	}
+	@if $kind == 5{
+		width: 165px;
+		height:165px;
+		border-radius:165px;
+		right: $position;
+	}
+	@if $kind == 6{
+		width: 172px;
+		height: 172px;
+		border-radius:172px;
+		right: $position;
+	}
+
+}
+
+@mixin snow_animation($second,$wait){
+	-webkit-animation: snow_show $second infinite cubic-bezier(0.27, 0.25, 0.76, 0.76) $wait; 
+    -moz-animation: snow_show $second infinite cubic-bezier(0.27, 0.25, 0.76, 0.76)  $wait;
+    -ms-animation: snow_show $second infinite cubic-bezier(0.27, 0.25, 0.76, 0.76)  $wait;
+    -o-animation: snow_show $second infinite cubic-bezier(0.27, 0.25, 0.76, 0.76)  $wait;
+}
+
+
+
+
+@font-face {
+    font-family: 'christmas_time_personal_useRg';
+    src: url('../font/christmas_time_personal_use-webfont.woff2') format('woff2'),
+         url('../font/christmas_time_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	overflow: hidden;
+	font: 35px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+.container{
+
+	.wrap{
+		position: relative;
+		width: 900px;
+		height: 700px;
+		margin:0 auto;
+		overflow: hidden;
+		
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c6d4bf+0,bed0bc+14,b6ccb9+32,a9c5b5+50,8db6aa+70,84b0a7+100 */
+		background: rgb(198,212,191); /* Old browsers */
+		background: -moz-radial-gradient(center, ellipse cover,  rgba(198,212,191,1) 0%, rgba(190,208,188,1) 14%, rgba(182,204,185,1) 32%, rgba(169,197,181,1) 50%, rgba(141,182,170,1) 70%, rgba(132,176,167,1) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover,  rgba(198,212,191,1) 0%,rgba(190,208,188,1) 14%,rgba(182,204,185,1) 32%,rgba(169,197,181,1) 50%,rgba(141,182,170,1) 70%,rgba(132,176,167,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center,  rgba(198,212,191,1) 0%,rgba(190,208,188,1) 14%,rgba(182,204,185,1) 32%,rgba(169,197,181,1) 50%,rgba(141,182,170,1) 70%,rgba(132,176,167,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6d4bf', endColorstr='#84b0a7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+		.font{
+			font-family:'christmas_time_personal_useRg';
+			color:#BE8E43;
+			position: absolute;
+    		bottom: 400px;
+    		left: 17%;
+		}
+		.name{
+		    bottom: 350px;
+    		left: 19%;
+		}
+
+		.triangle{
+			// top: 100px;
+			//left: 40%;
+			// position:absolute;
+			// border-style: solid;
+			// border-width: 0 100px 400px 100px;
+			// border-color: transparent transparent #7EADA5 transparent;
+			// line-height: 0px;
+			// _border-color: #000000 #000000 #7EADA5 #000000;
+			// _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+
+			background-image:url(../SVG/triangle.svg);
+			width:200px;
+			height: 390px;
+		    overflow: hidden;
+		    position: absolute;
+		    bottom: 0;
+		    left: 40%;
+
+
+			.wavy_line{
+			   @include wavy_line(
+					$position:10%,
+					$width:86%,
+					$left:10px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .5s infinite');
+			}
+
+			.wavy_line_1{
+			   @include wavy_line(
+					$position:20%,
+					$width:77%,
+					$left:21px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .9s infinite');
+			}
+
+			.wavy_line_2{
+			   @include wavy_line(
+					$position:30%,
+					$width:67%,
+					$left:32px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) .7s infinite');
+			}
+
+			.wavy_line_3{
+			   @include wavy_line(
+					$position:40%,
+					$width:59%,
+					$left:41px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.2s infinite');
+			}
+
+			.wavy_line_4{
+			   @include wavy_line(
+					$position:50%,
+					$width:50%,
+					$left:52px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.4s infinite');
+			}
+
+			.wavy_line_5{
+			   @include wavy_line(
+					$position:60%,
+					$width:38%,
+					$left:61px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.6s infinite');
+			}
+
+			.wavy_line_6{
+			   @include wavy_line(
+					$position:70%,
+					$width:28%,
+					$left:72px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 1.8s infinite');
+			}
+
+			.wavy_line_7{
+			   @include wavy_line(
+					$position:80%,
+					$width:19%,
+					$left:80px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite');
+			}
+
+			.wavy_line_8{
+			   @include wavy_line(
+					$position:87%,
+					$width:10%,
+					$left:90px
+			   	); 
+
+			   @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2.2s infinite');
+			}
+			.decorate_position{
+				width: 15px;
+			    height: 15px;
+			    overflow: hidden;
+			    position: absolute;
+		        bottom: 65px;
+    			left: 30px;
+
+    			 @include animation('line_show 1s cubic-bezier(0.4, 0, 0.21, 0.98) 2s infinite');
+			}
+			.decorate_position.first{
+				left: 98px;
+			}
+			.decorate_position.second{
+				left: 160px;
+			}
+			.decorate{
+	    	    width: 30px;
+			    height: 28px;
+			    margin: -13px -13px;
+			    background-image: -webkit-radial-gradient(circle, transparent, transparent 10px, #E1D998 10px, #E1D998);
+			    background-image: -moz-radial-gradient(circle, transparent, transparent 10px, #E1D998 10px, #E1D998);
+			    background-image: radial-gradient(circle, transparent, transparent 10px, #E1D998 10px, #E1D998);
+			    background-size: 20px 20px;
+			    
+			}
+
+
+		}
+
+		.star_position{
+		    width: 100px;
+		    height: 100px;
+		    position: absolute;
+	        bottom: 400px;
+		    left: 43.5%;
+		}
+
+		.five_star{
+			width: 0px;
+			height: 0px;
+			margin: 80px auto 0;
+			position: relative;
+			display: block;
+			color: #F2DF8E;
+			border-right: 20px solid transparent;
+			border-bottom: 10px  solid #F2DF8E;
+			border-left:20px solid transparent;
+			-moz-transform:rotate(35deg);
+			-webkit-transform: rotate(35deg);
+			-ms-transform:rotate(35deg);
+			-o-transform:rotate(35deg);
+
+			-webkit-filter: blur(2px);
+
+			@include animation('star_show_1 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite');
+			&:before{
+				border-bottom: 16px solid #F2DF8E;;
+				border-left: 6px solid transparent;
+				border-right: 8px solid transparent;
+				position: absolute;
+				height: 0;
+				width: 0;
+				top: -12px;
+				left: -12px;
+				display: block;
+				content: '';
+				-webkit-transform: rotate(-35deg);
+				-moz-transform:rotate(-35deg);
+				-ms-transform:rotate(-35deg);
+				-o-transform:rotate(-35deg);
+
+				-webkit-filter: blur(2px);
+				@include animation('star_show_2 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite');
+			}
+			&:after{
+				position: absolute;
+				display: block;
+				color: #F2DF8E;
+				top: 0px;
+	    		left: -19px;
+				width: 0px;
+				height: 0px;
+				border-right: 20px solid transparent;
+				border-bottom: 10px solid #F2DF8E;
+				border-left: 20px solid transparent;
+				-webkit-transform: rotate(-70deg);
+				-moz-transform:rotate(-70deg);
+				-ms-transform:rotate(-70deg);
+				-o-transform:rotate(-70deg);
+				content: '';
+
+				-webkit-filter: blur(2px);
+				@include animation('star_show_3 3s cubic-bezier(0.4, 0, 0.21, 0.98) 0s infinite');
+			}
+		}
+
+
+		// snow
+		ul{
+		    width: 100%;
+		    height: 700px;
+		    // overflow: hidden;
+		    top: -700px;
+		    // position: relative;
+
+			.snow:nth-child(1){
+				
+				&:after{
+					content: "";
+					@include snow_animation(7s,4s);
+					@include snow_pic(1,5px,-143px,999);
+				}
+			}
+			.snow:nth-child(2){
+				
+				-webkit-transform:scale(0.4);
+				-moz-transform:scale(0.4);
+				-ms-transform:scale(0.4);
+				-o-transform:scale(0.4);
+
+				&:after{
+					content: "";
+					@include snow_pic(2,11px,-300px,10);
+					@include snow_animation(8s,0s);
+				}
+				
+			}
+			.snow:nth-child(3){
+				-webkit-transform:scale(0.2);
+				-moz-transform:scale(0.2);
+				-ms-transform:scale(0.2);
+				-o-transform:scale(0.2);
+
+				&:after{
+					content: "";
+					@include snow_pic(3,13px,-300px,10);
+					@include snow_animation(8s,3s);
+				}
+				
+			}
+			.snow:nth-child(4){
+				-webkit-transform:scale(0.09);
+				-moz-transform:scale(0.09);
+				-ms-transform:scale(0.09);
+				-o-transform:scale(0.09);
+
+				&:after{
+					content: "";
+					@include snow_pic(3,18px,-290px,10);
+					@include snow_animation(9s,1s);
+				}
+				
+			}
+			.snow:nth-child(5){
+				-webkit-transform:scale(0.9);
+				-moz-transform:scale(0.9);
+				-ms-transform:scale(0.9);
+				-o-transform:scale(0.9);
+
+				&:before{
+					content: "";
+					@include snow_pic(4,19px,398px,10);
+					@include snow_animation(10s,0s);
+				}
+				
+			}
+			.snow:nth-child(6){
+				-webkit-transform:scale(0.1);
+				-moz-transform:scale(0.1);
+				-ms-transform:scale(0.1);
+				-o-transform:scale(0.1);
+
+				&:before{
+					content: "";
+					@include snow_pic(1,13px,400px,10);
+					@include snow_animation(8.6s,0s);
+				}
+				
+			}
+			.snow:nth-child(7){
+				-webkit-transform:scale(0.12);
+				-moz-transform:scale(0.12);
+				-ms-transform:scale(0.12);
+				-o-transform:scale(0.12);
+
+				&:before{
+					content: "";
+					@include snow_pic(2,16px,530px,10);
+					@include snow_animation(9s,0s);
+				}
+				
+			}
+			.snow:nth-child(8){
+				-webkit-transform:scale(0.18);
+				-moz-transform:scale(0.18);
+				-ms-transform:scale(0.18);
+				-o-transform:scale(0.18);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(4,13px,775px,10);
+					@include snow_animation(9.4s,0.5s);
+				}
+				
+			}
+			.snow:nth-child(9){
+				-webkit-transform:scale(0.099);
+				-moz-transform:scale(0.099);
+				-ms-transform:scale(0.099);
+				-o-transform:scale(0.099);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(3,15px,-1500px,10);
+					@include snow_animation(9s,0.5s);
+				}
+				
+			}
+			.snow:nth-child(10){
+				-webkit-transform:scale(0.07);
+				-moz-transform:scale(0.07);
+				-ms-transform:scale(0.07);
+				-o-transform:scale(0.07);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(4,12px,2000px,10);
+					@include snow_animation(7s,0s);
+				}
+				
+			}
+			.snow:nth-child(11){
+				-webkit-transform:scale(0.3);
+				-moz-transform:scale(0.3);
+				-ms-transform:scale(0.3);
+				-o-transform:scale(0.3);
+
+				&:before{
+					content: "";
+					@include snow_pic(3,15px,1500px,10);
+					@include snow_animation(7.4s,0s);
+				}
+				
+			}
+			.snow:nth-child(12){
+				-webkit-transform:scale(0.081);
+				-moz-transform:scale(0.081);
+				-ms-transform:scale(0.081);
+				-o-transform:scale(0.081);
+
+				&:before{
+					content: "";
+					@include snow_pic(1,11px,3200px,10);
+					@include snow_animation(8s,0s);
+				}
+				
+			}
+			.snow:nth-child(13){
+				-webkit-transform:scale(0.081);
+				-moz-transform:scale(0.081);
+				-ms-transform:scale(0.081);
+				-o-transform:scale(0.081);
+
+				&:before{
+					content: "";
+					@include snow_pic(2,10.5px,4000px,10);
+					@include snow_animation(8s,0s);
+				}
+				
+			}
+			.snow:nth-child(14){
+				-webkit-transform:scale(0.09);
+				-moz-transform:scale(0.09);
+				-ms-transform:scale(0.09);
+				-o-transform:scale(0.09);
+
+				&:before{
+					content: "";
+					@include snow_pic(3,19px,4500px,10);
+					@include snow_animation(9s,0s);
+				}
+				
+			}
+			.snow:nth-child(15){
+				-webkit-transform:scale(0.76);
+				-moz-transform:scale(0.76);
+				-ms-transform:scale(0.76);
+				-o-transform:scale(0.76);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(2,17px,4800px,10);
+					@include snow_animation(8.7s,0s);
+				}
+				
+			}
+			.snow:nth-child(16){
+				-webkit-transform:scale(2);
+				-moz-transform:scale(2);
+				-ms-transform:scale(2);
+				-o-transform:scale(2);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(5,14px,630px,10);
+					@include snow_animation(9s,4s);
+				}
+				
+			}
+			.snow:nth-child(17){
+				-webkit-transform:scale(0.095);
+				-moz-transform:scale(0.095);
+				-ms-transform:scale(0.095);
+				-o-transform:scale(0.095);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(2,17px,-2900px,10);
+					@include snow_animation(8s,2s);
+				}
+				
+			}
+			.snow:nth-child(18){
+				-webkit-transform:scale(0.1);
+				-moz-transform:scale(0.1);
+				-ms-transform:scale(0.1);
+				-o-transform:scale(0.1);
+
+
+				&:before{
+					content: "";
+					@include snow_pic(3,18px,-2000px,10);
+					@include snow_animation(8s,1s);
+				}
+				
+			}
+			.snow:nth-child(19){
+				-webkit-transform:scale(0.111);
+				-moz-transform:scale(0.111);
+				-ms-transform:scale(0.111);
+				-o-transform:scale(0.111);
+
+				&:before{
+					content: "";
+					@include snow_pic(4,14px,-1100px,10);
+					@include snow_animation(5s,0s);
+				}
+				
+			}
+			.snow:nth-child(20){
+				-webkit-transform:scale(0.081);
+				-moz-transform:scale(0.081);
+				-ms-transform:scale(0.081);
+				-o-transform:scale(0.081);
+
+				&:before{
+					content: "";
+					@include snow_pic(1,13px,-800px,10);
+					@include snow_animation(9s,0s);
+				}
+				
+			}
+
+			.snow:nth-child(21){
+				transform:scale(0.3);
+
+				&:before{
+					content: "";
+					@include snow_pic(6,16px,-344px,10);
+					@include snow_animation(5s,0s);
+				}
+				
+			}
+
+			.snow:nth-child(22){
+				transform:scale(0.234);
+
+				&:before{
+					content: "";
+					@include snow_pic(4,13px,-763px,10);
+					@include snow_animation(2s,0s);
+				}
+				
+			}
+
+			.snow:nth-child(23){
+				transform:scale(0.765);
+
+				&:before{
+					content: "";
+					@include snow_pic(7,11.7px,-876px,10);
+					@include snow_animation(8s,0s);
+				}
+				
+			}
+			.snow:nth-child(24){
+				transform:scale(0.875);
+
+				&:before{
+					content: "";
+					@include snow_pic(1,19px,-432px,10);
+					@include snow_animation(12s,0s);
+				}
+				
+			}
+
+			.snow:nth-child(25){
+				transform:scale(1.01);
+
+				&:before{
+					content: "";
+					@include snow_pic(5,17px,-324px,10);
+					@include snow_animation(10s,0s);
+				}
+				
+			}
+			.snow:nth-child(26){
+				transform:scale(0.54);
+
+				&:before{
+					content: "";
+					@include snow_pic(6,4px,-654px,10);
+					@include snow_animation(4s,0s);
+				}
+				
+			}
+			.snow:nth-child(27){
+				transform:scale(0.33);
+
+				&:before{
+					content: "";
+					@include snow_pic(2,20px,-212px,10);
+					@include snow_animation(13s,1s);
+				}
+				
+			}
+			.snow:nth-child(28){
+				transform:scale(1);
+
+				&:before{
+					content: "";
+					@include snow_pic(4,8px,-542px,10);
+					@include snow_animation(4s,1s);
+				}
+				
+			}
+		}
+
+	}
+}
+
+@include keyframes(line_show) {
+   0% {
+	opacity: 0;
+	background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #78A8A0 25px, #78A8A0 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #78A8A0 25px, #78A8A0 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #78A8A0 25px, #78A8A0 25px, transparent 9px, transparent);
+	}
+	50%{
+		opacity: .5;
+	}
+  100% {
+  	opacity: 1;
+	background-image: -webkit-radial-gradient(circle, transparent, transparent 23px, #F1DF8F 25px, #F1DF8F 25px, transparent 9px, transparent);
+    background-image: -moz-radial-gradient(circle, transparent, transparent 23px, #F1DF8F 25px, #F1DF8F 25px, transparent 9px, transparent);
+    background-image: radial-gradient(circle, transparent, transparent 23px, #F1DF8F 25px, #F1DF8F 25px, transparent 9px, transparent);
+
+  }
+}
+
+@include keyframes(star_show) {
+	0%{
+		-webkit-transform: scale(.3);
+			-moz-transform:scale(.3);
+			-ms-transform:scale(.3);
+			-o-transform:scale(.3);
+	}
+	50%{
+		-webkit-transform: scale(1.2);
+			-moz-transform:scale(1.2);
+			-ms-transform:scale(1.2);
+			-o-transform:scale(1.2);
+	}
+	100%{
+		-webkit-transform: scale(.6);
+			-moz-transform:scale(.6);
+			-ms-transform:scale(.6);
+			-o-transform:scale(.6);
+	}
+
+}
+
+@include star_animation(
+	$name:star_show_1,
+	$value:'rotate(35deg)'
+	);
+@include star_animation(
+	$name:star_show_2,
+	$value:'rotate(-35deg)'
+	);
+@include star_animation(
+	$name:star_show_3,
+	$value:'rotate(-70deg)'
+	);
+
+
+/* keyframes */
+@-webkit-keyframes snow_show{
+	0%{
+		-webkit-transform:rotate(1000deg) translate3d(484px,1px,1px);
+		-moz-transform:rotate(1000deg) translate3d(484px,1px,1px);
+		-ms-transform:rotate(1000deg) translate3d(484px,1px,1px);
+		-o-transform:rotate(1000deg) translate3d(484px,1px,1px);
+		top:-700px;
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform:rotateZ(0deg) translate3d(0px,1px,1px);
+		-moz-transform:rotateZ(0deg) translate3d(0px,1px,1px);
+		-ms-transform:rotateZ(0deg) translate3d(0px,1px,1px);
+		-o-transform:rotateZ(0deg) translate3d(0px,1px,1px);
+		top:3000px;
+		opacity: .8;
+	}
+}

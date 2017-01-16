@@ -1,0 +1,133 @@
+
+/* 
+refer:
+https://blog.arvinh.info/2016/08/06/%E5%BF%AB%E9%80%9F%E5%AF%A6%E4%BD%9C-CSS3-%E6%89%93%E5%AD%97%E5%8B%95%E7%95%AB/
+http://www.cnblogs.com/dolphinX/p/4087817.html
+
+
+ */
+@import "partials/mixins";
+@import "partials/keyframes";
+
+
+
+html{
+	margin: 0;
+	padding:0;
+}
+body{
+	overflow: hidden;
+	font: 20px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+.container{
+	perspective:500px;
+	width: 100%;
+    height: 100%;
+    float: left;
+
+	.google_view{
+		background: url(../images/google_view.png) 0 0 no-repeat;
+		width: 600px;
+		height: 350px;
+		margin: 100px auto;
+		position: relative;
+
+		transform-origin: left bottom;
+		@include animation("zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.36s forwards,switch .1s linear 9.35s forwards");
+
+
+		.typed{
+		  width: 9em;
+		  height: 25px;
+		  overflow: hidden;
+		  white-space: nowrap;
+		  border-right: .05em solid;
+		  position: absolute;
+		  bottom: 28%;
+		  left: 3%;
+
+		  @include animation("typing 1s steps(12),caret 1s steps(1) forwards,typing_none 1.7s steps(12) 7.65s forwards");
+		}
+
+		.type_wait{
+	  	    width: 0px;
+	  	    height: 25px;
+	  	    overflow: hidden;
+	  	    border-right: 0em solid;
+	  	    // float: right;
+	  	    position: absolute;
+	  	    bottom: 28%;
+  	        left: 33%;
+
+  	        &:nth-child(2){
+  	        	@include animation("typing_back 2s steps(2) 1.50s forwards,caret_sec 2s steps(1) 1.50s forwards");
+  	        }
+  	        &:nth-child(3){
+  	        	@include animation("typing_back 2s steps(2) 3.50s forwards,caret_thir 2s steps(1) 3.50s forwards");
+  	        }
+  	        &:nth-child(4){
+  	        	@include animation("typing_back 2s steps(2) 5.50s forwards,caret_four 2s steps(1) 5.50s forwards");
+  	        }
+
+		}
+	}
+
+	.weibo{
+		// visibility: hidden;
+		// overflow: hidden;
+		width: 0px;
+		position: absolute;
+		top:0;
+		left:25%;
+		transform-origin:top left;
+		// 9.45s、11.65s、14
+		@include animation("page_move 3s ease-out 0s forwards,page_move_sec 0.77s ease-in 5.3s forwards");
+
+		&:before{
+			content: "";
+		    width: 1111px;
+		    height: 400px;
+		    position: absolute;
+		    left:-100px;
+		    top:-20px;
+		    filter: blur(8px);
+
+		   background: white;
+		   
+			
+			@include animation("shade 3s ease-out 0s forwards");
+
+		}
+		.shade{
+			position: absolute;
+			width: 0%;
+		    height: 15px;
+		    font-size:10px;
+		    color:#FCFCFC;
+		    overflow: hidden;
+		    white-space: nowrap;
+		    bottom: 38%;
+		    left: 30%;
+		    @include animation('words_show 2.5s linear 3s forwards');
+		}
+	}
+	.session{
+		position: absolute;
+	    top: 635px;
+	    left: 25%;
+	    opacity: 0;
+	    transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -262px, 220px);
+	    @include animation("content_move 3s ease-in 5.3s forwards");
+
+	    &:before{
+	    	// content:"";
+	    	// width: 100%;
+	    	// height: 100%;
+	    	// background: white;
+	    	// position: absolute;
+	    	// top:0;
+	    }
+	}
+	
+}

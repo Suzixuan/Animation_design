@@ -1,0 +1,130 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, .content p:nth-child(2), blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../program/Ruby23/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 36, ../sass/screen.scss */
+.content .object {
+  background: url("../img/object.png") 0 0 no-repeat;
+  width: 359px;
+  height: 498px;
+  position: fixed;
+  left: 35%;
+  top: 100%;
+  z-index: 3;
+}
+/* line 45, ../sass/screen.scss */
+.content .object.scaleY {
+  transform: scaleY(-1);
+}
+/* line 49, ../sass/screen.scss */
+.content .pic {
+  background: url("../img/0.jpg") center 50px repeat-y;
+  width: 60%;
+  height: 5000px;
+  margin: 0 auto;
+  background-size: 100%;
+  position: relative;
+  overflow: hidden;
+}
+/* line 58, ../sass/screen.scss */
+.content .pic .text {
+  width: 67%;
+  display: inline-block;
+  margin-left: 18%;
+  overflow: hidden;
+  margin-top: 150%;
+  position: relative;
+  z-index: 2;
+}
+/* line 69, ../sass/screen.scss */
+.content .pic .text span {
+  margin: 10px 0 0px 0;
+  font-weight: bold;
+  display: inline-block;
+  color: #4646FB;
+  font-family: "Lato", arial, sans-serif;
+}
+/* line 78, ../sass/screen.scss */
+.content p, .content p:nth-child(2) {
+  font-size: 90px;
+  color: #F6BB2E;
+  position: absolute;
+  left: 65%;
+  top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: "Helvetica Neue", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  width: 60px;
+  z-index: 2;
+}
+/* line 83, ../sass/screen.scss */
+.content p:nth-child(2) {
+  left: 25%;
+  top: 10%;
+  color: #4A11E9;
+}

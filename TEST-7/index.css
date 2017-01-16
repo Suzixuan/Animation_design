@@ -1,0 +1,63 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: Open Sans, sans-serif;
+    font-size: 200%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.error {
+    position: relative;
+}
+.error::before {
+    content: '';
+    position: absolute;
+    bottom: -0.125em;
+    width: 100%;
+    height: 0.25em;
+    background: -webkit-linear-gradient(315deg, transparent, transparent 45%, #dc3912, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent, transparent 45%, #dc3912, transparent 55%, transparent 100%);
+    background: linear-gradient(135deg, transparent, transparent 45%, #dc3912, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #dc3912, transparent 55%, transparent 100%);
+    background-size: 0.5em 0.5em;
+    background-repeat: repeat-x, repeat-x;
+}
+.warning {
+    position: relative;
+}
+.warning::before {
+    content: '';
+    position: absolute;
+    bottom: -0.125em;
+    width: 100%;
+    height: 0.25em;
+    background: -webkit-linear-gradient(315deg, transparent, transparent 45%, #f90, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent, transparent 45%, #f90, transparent 55%, transparent 100%);
+    background: linear-gradient(135deg, transparent, transparent 45%, #f90, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #f90, transparent 55%, transparent 100%);
+    background-size: 0.5em 0.5em;
+    background-repeat: repeat-x, repeat-x;
+}
+.info {
+    position: relative;
+}
+.info::before {
+    content: '';
+    position: absolute;
+    bottom: -0.125em;
+    width: 100%;
+    height: 0.25em;
+    background: -webkit-linear-gradient(315deg, transparent, transparent 45%, #008000, transparent 55%, transparent 100%), -webkit-linear-gradient(45deg, transparent, transparent 45%, #008000, transparent 55%, transparent 100%);
+    background: linear-gradient(135deg, transparent, transparent 45%, #008000, transparent 55%, transparent 100%), linear-gradient(45deg, transparent, transparent 45%, #008000, transparent 55%, transparent 100%);
+    background-size: 0.5em 0.5em;
+    background-repeat: repeat-x, repeat-x;
+}

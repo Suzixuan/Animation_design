@@ -1,0 +1,89 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$pic:"../img/0.jpg";
+$object:"../img/object.png";
+$orange_color:#F6BB2E;
+$blue_color:#4A11E9;
+$font_family:"Helvetica Neue","Hiragino Sans GB","Microsoft Yahei",Helvetica,Arial,sans-serif;
+$font_family_1:'Lato', arial, sans-serif;
+
+
+//===========mixin=============
+@mixin fonts(
+	$color,
+	$size,
+	$left,
+	$top
+	){
+	font-size:$size;
+	color:$color;
+	position:absolute;
+	left:$left;
+	top:$top;
+	display:inline-block;
+	font-weight:bold;
+	font-family:$font_family;
+}
+
+// ============================
+
+.content{
+	.object{
+		background:url($object) 0 0 no-repeat;
+		width: 359px;
+		height: 498px;
+		position: fixed;
+		left: 35%;
+		top:100%;
+		z-index: 3;
+
+		&.scaleY{
+			transform:scaleY(-1);	
+		}
+	}
+	.pic{
+		background: url($pic) center 50px repeat-y;
+		width: 60%;
+		height: 5000px;
+		margin: 0 auto;
+		background-size: 100%;
+		position:relative;
+		overflow: hidden;
+
+		.text{
+			width: 67%;
+			display: inline-block;
+			margin-left: 18%;
+			overflow: hidden;
+			margin-top: 150%;
+
+			position: relative;
+    		z-index: 2;
+			
+
+			span{
+				margin:10px 0 0px 0;
+				font-weight: bold;
+				display: inline-block;
+				color: #4646FB;
+				font-family: $font_family_1;
+			}
+		}
+	}
+	p{
+		@include fonts($orange_color,90px,65%,10px);
+		width: 60px;
+		z-index: 2;
+	}
+	p:nth-child(2){
+		@extend p;
+		left: 25%;
+		top:10%;
+		color: $blue_color;
+	}
+}
