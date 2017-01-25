@@ -63,3 +63,38 @@
 	90%{ transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -5000px, 220px); opacity: .6; filter:blur(2px); }
 	100%{ transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -5000px, 220px); opacity: 0; filter:blur(20px); }
 }
+// 球移动
+@include keyframes(ball_move){
+	0%{ transform:translate3d(0px,-120px,0px) scale(1); }
+	20%{ transform:translate3d(0px,350px,0px) scale(.6); }
+	55%{ transform:translate3d(0px,150px,-100px) scale(.5); }
+	70%{ transform:translate3d(-120px,130px,0px) scale(.4); }
+	100%{ transform:translate3d(-450px,400px,0px) scale(.4); }
+}
+// 球持续运动
+@include keyframes(ball_move_sec){
+	0%{ transform:translate3d(-450px,400px,0px) scale(.5); }
+	50%{ transform:translate3d(-450px,200px,0px) scale(.5); }
+	100%{ transform:translate3d(-450px,400px,0px) scale(.5); }
+}
+// 球阴影
+@include keyframes(ball_shade){
+	from{ border-bottom:5px solid; }
+}
+// 文字显示
+@include keyframes(text_show){
+	to{ opacity: 1; }
+}
+
+// 第一屏后退
+@include keyframes(session_back){
+	100%{ transform:rotate(30deg) translate3d(-300px,300px,-200px); filter:blur(5px); }
+}
+// 第一屏图片显示
+@include keyframes(p1_show){
+	to{ transform:translateX(0); }
+}
+// 第一屏移动
+@include keyframes(p1_move){
+	to{ transform:translateY(-690px); }
+}
