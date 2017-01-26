@@ -165,55 +165,168 @@ body{
 	}
 	.session_3{
 		width: 70%;
-		height: 600px;
+		height: 2000px;
+		overflow: hidden;
 		position: absolute;
 		left: 15%;
 		top:20%;
 
 		@include animation("p1_move 1s linear 7s forwards");
 
-		li{
-			float:left;
-			width: 300px;
-			height: 500px;
-			margin: 0 10px;
-			list-style:none;
-			
+		ul.first{
 
-			&:nth-child(1){
-				background: url(../images/1.jpg) 0 0 no-repeat;
-				background-size: cover;
-				transform:translateX(1600px);
-				@include animation("p1_show .3s linear 5s forwards");
+			li{
+				float:left;
+				width: 300px;
+				height: 500px;
+				margin: 0 10px;
+				list-style:none;
+				
+
+				&:nth-child(1){
+					background: url(../images/1.jpg) 0 0 no-repeat;
+					background-size: cover;
+					transform:translateX(1600px);
+					@include animation("p1_show .3s linear 5s forwards");
+				}
+				&:nth-child(2){
+					background: url(../images/2.jpg) 0 0 no-repeat;
+					background-size: cover;
+					transform:translateX(1300px);
+					@include animation("p1_show .4s linear 5.3s forwards");
+				}
+				&:nth-child(3){
+					background: url(../images/3.jpg) 0 0 no-repeat;
+					background-size: cover;
+					transform:translateX(1000px);
+					@include animation("p1_show .5s linear 5.7s forwards");
+				}
+				&:nth-child(4){
+					background: url(../images/4.jpg) 0 0 no-repeat;
+					background-size: cover;
+					transform:translateX(700px);
+					@include animation("p1_show .6s linear 6.2s forwards");
+				}
 			}
-			&:nth-child(2){
-				background: url(../images/2.jpg) 0 0 no-repeat;
-				background-size: cover;
-				transform:translateX(1300px);
-				@include animation("p1_show .4s linear 5.3s forwards");
-			}
-			&:nth-child(3){
-				background: url(../images/3.jpg) 0 0 no-repeat;
-				background-size: cover;
-				transform:translateX(1000px);
-				@include animation("p1_show .5s linear 5.7s forwards");
-			}
-			&:nth-child(4){
-				background: url(../images/4.jpg) 0 0 no-repeat;
-				background-size: cover;
-				transform:translateX(700px);
-				@include animation("p1_show .6s linear 6.2s forwards");
-			}
+
 		}
+
 		.content{
 			display: inline-block;
 			width: 100%;
 			margin: 50px 0;
 			text-align: center;
 			font-size: 30px;
+			color: #EA4462;
+			font-weight:bold;
 			transform:translateX(1700px);
 			letter-spacing:5px;
 			@include animation("p1_show .5s linear 5.7s forwards");
+		}
+
+		ul.second{
+			perspective:2000px;
+			@include animation("p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards");
+
+			li{
+				float:left;
+				margin:10px;
+				list-style:none;
+				opacity: 0;
+
+				&:before{
+					content:"";
+					color: black;
+					font-size:100px;
+					background: #C5A8AC;
+					display:inline-block;
+					font-weight:bold;
+					padding:0px;
+					width: 100%;
+					height: 100%;
+					text-align:center;
+					border:1px solid #9A8784;
+					transform:rotateY(-40deg);
+					opacity: 0;
+					@include animation("p2_bg_rotate .3s ease-in-out 11s forwards");
+
+				}
+
+				&:nth-child(1){
+					background: url(../images/P60304-083830.jpg) 0 0 no-repeat;
+					background-size: cover;
+					width: 600px;
+					height: 500px;
+					transform:translateX(-150px);					
+					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards");
+
+					&:before{
+						content:"趴地";
+						line-height: 500px;						
+					}
+
+				}
+				&:nth-child(2){
+					background: url(../images/P60610-092752.jpg) 0 0 no-repeat;
+					background-size: cover;
+					width: 400px;
+					height: 300px;
+					transform:translateX(150px);
+					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards");
+
+					&:before{
+						content:"合照";
+						line-height: 300px;
+					}
+
+				}
+				&:nth-child(3){
+					background: url(../images/P60421-100056.jpg) 0 0 no-repeat;
+					background-size: cover;
+					width: 400px;
+					height: 180px;
+					transform:translateX(130px);
+					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards");
+
+					&:before{
+						content:"游行";
+					}
+				}
+			}
+		}
+		ul.third{
+			width: 27%;
+			margin: 0 auto;
+			
+			li{
+				float:left;
+				margin:10px;
+				list-style:none;
+
+				background: url(../images/huaji.png) 0 0 no-repeat;
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				transform:translateY(300px);
+
+				&:nth-child(1){
+					@include animation("huaji_move_1 .7s ease-out 12s forwards,huaji_move_1_sec .5s ease-in 12.7s forwards");
+				}
+				&:nth-child(2){
+					@include animation("huaji_move_2 .7s ease-out 12s forwards,huaji_move_2_sec .5s ease-in 12.7s forwards");
+				}
+				&:nth-child(3){
+					@include animation("huaji_move_3 .7s ease-out 12s forwards,huaji_move_3_sec .5s ease-in 12.7s forwards");
+				}
+				&:nth-child(4){
+					@include animation("huaji_move_4 .7s ease-out 12s forwards,huaji_move_4_sec .5s ease-in 12.7s forwards");
+				}
+				&:nth-child(5){
+					@include animation("huaji_move_5 .7s ease-out 12s forwards,huaji_move_5_sec .5s ease-in 12.7s forwards");
+				}
+
+
+			}
 		}
 	}
 	

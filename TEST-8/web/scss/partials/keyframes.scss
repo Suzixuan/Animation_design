@@ -88,7 +88,7 @@
 
 // 第一屏后退
 @include keyframes(session_back){
-	100%{ transform:rotate(30deg) translate3d(-300px,300px,-200px); filter:blur(5px); }
+	100%{ transform:rotate(30deg) translate3d(200px,200px,-400px); filter:blur(5px); }
 }
 // 第一屏图片显示
 @include keyframes(p1_show){
@@ -97,4 +97,76 @@
 // 第一屏移动
 @include keyframes(p1_move){
 	to{ transform:translateY(-690px); }
+}
+// 第二屏图片移动
+@include keyframes(p2_show){
+	to{ transform:translateX(0); opacity: 1; }
+}
+// 第二屏图片旋转
+@include keyframes(p2_rorate){
+	from{ transform:translateX(100px) rotateY(0deg);}
+	to{ transform:translateX(0px) rotateY(360deg);}
+}
+// 第二屏移动
+@include keyframes(p2_move){
+	to{ transform:translateX(100px); }
+}
+// 第二屏第二次移动
+@include keyframes(p2_move_sec){
+	from{ transform:translate3d(100px,0,0); }
+	to{ transform:translate3d(100px,-50px,0); }
+}
+// 第二屏图片背景转动
+@include keyframes(p2_bg_rotate){
+	to{ transform:rotateY(0deg); opacity: .5; }
+}
+// 滑稽移动
+@include keyframes(huaji_move_1){
+	from{ transform:translateY(500px);}
+	to{ transform:translateY(-300px); }
+}
+// 滑稽移动
+@include keyframes(huaji_move_2){
+	from{ transform:translateY(450px); }
+	to{ transform:translateY(-320px); }
+}
+// 滑稽移动
+@include keyframes(huaji_move_3){
+	from{ transform:translateY(400px); }
+	to{ transform:translateY(-340px); }
+}
+// 滑稽移动
+@include keyframes(huaji_move_4){
+	from{ transform:translateY(350px); }
+	to{ transform:translateY(-360px); }
+}
+// 滑稽移动
+@include keyframes(huaji_move_5){
+	from{ transform:translateY(300px); }
+	to{ transform:translateY(-380px); }
+}
+// 滑稽二次移动
+@include keyframes(huaji_move_1_sec){
+	from{ transform:translateY(-300px); }
+	to{ transform:translateY(300px); }
+}
+// 滑稽二次移动
+@include keyframes(huaji_move_2_sec){
+	from{ transform:translateY(-320px); }
+	to{ transform:translateY(350px); }
+}
+// 滑稽二次移动
+@include keyframes(huaji_move_3_sec){
+	from{ transform:translateY(-340px); }
+	to{ transform:translateY(400px); }
+}
+// 滑稽二次移动
+@include keyframes(huaji_move_4_sec){
+	from{ transform:translateY(-360px); }
+	to{ transform:translateY(450px); }
+}
+// 滑稽二次移动
+@include keyframes(huaji_move_5_sec){
+	from{ transform:translateY(-380px); }
+	to{ transform:translateY(500px); }
 }
