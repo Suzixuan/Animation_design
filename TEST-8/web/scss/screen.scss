@@ -16,6 +16,8 @@ html{
 	padding:0;
 }
 body{
+	margin: 0;
+	padding:0;
 	overflow: hidden;
 	font: 20px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
 }
@@ -23,8 +25,10 @@ body{
 .container{
 	perspective:500px;
 	width: 100%;
-    height: 100%;
+    height: 3000px;
     float: left;
+
+    @include animation("bg_change .3s linear 1s forwards,bg_change_sec .3s linear 13s forwards");
 
 	.google_view{
 		background: url(../images/google_view.png) 0 0 no-repeat;
@@ -119,8 +123,9 @@ body{
 
 	}
 	.session_1{
-		width: 100%;
-		height: 100%;
+		margin: 0 auto;
+	    width: 285px;
+	    height: 100px;
 
 		@include animation("session_back 2s linear 3s forwards");
 
@@ -143,8 +148,8 @@ body{
 	    	width: 20px;
 	    	height: 2px;
 	    	position: absolute;
-    	    bottom: -385px;
-	        left: 25.8%;
+    	    bottom: -378%;
+	        left: -112.2%;
 	    	border-bottom:0px solid;
 	    	filter:blur(4px);
 	    	@include animation("ball_shade .8s ease-in-out 1s infinite");
@@ -164,14 +169,14 @@ body{
 		}
 	}
 	.session_3{
-		width: 70%;
-		height: 2000px;
+		width: 85%;
+		height: 3000px;
 		overflow: hidden;
 		position: absolute;
 		left: 15%;
-		top:20%;
+		top:5%;
 
-		@include animation("p1_move 1s linear 7s forwards");
+		@include animation("p1_move 1s linear 7s forwards,p1_move_sec .5s linear 13s forwards");
 
 		ul.first{
 
@@ -213,7 +218,7 @@ body{
 
 		.content{
 			display: inline-block;
-			width: 100%;
+			width: 85%;
 			margin: 50px 0;
 			text-align: center;
 			font-size: 30px;
@@ -225,6 +230,7 @@ body{
 		}
 
 		ul.second{
+			width: 85%;
 			perspective:2000px;
 			@include animation("p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards");
 
@@ -310,23 +316,61 @@ body{
 				transform:translateY(300px);
 
 				&:nth-child(1){
-					@include animation("huaji_move_1 .7s ease-out 12s forwards,huaji_move_1_sec .5s ease-in 12.7s forwards");
+					@include animation("huaji_move_1 .7s ease-out 12s forwards,huaji_move_1_sec 1s ease-in 12.7s forwards");
 				}
 				&:nth-child(2){
-					@include animation("huaji_move_2 .7s ease-out 12s forwards,huaji_move_2_sec .5s ease-in 12.7s forwards");
+					@include animation("huaji_move_2 .7s ease-out 12s forwards,huaji_move_2_sec 1s ease-in 12.7s forwards");
 				}
 				&:nth-child(3){
-					@include animation("huaji_move_3 .7s ease-out 12s forwards,huaji_move_3_sec .5s ease-in 12.7s forwards");
+					@include animation("huaji_move_3 .7s ease-out 12s forwards,huaji_move_3_sec 1s ease-in 12.7s forwards");
 				}
 				&:nth-child(4){
-					@include animation("huaji_move_4 .7s ease-out 12s forwards,huaji_move_4_sec .5s ease-in 12.7s forwards");
+					@include animation("huaji_move_4 .7s ease-out 12s forwards,huaji_move_4_sec 1s ease-in 12.7s forwards");
 				}
 				&:nth-child(5){
-					@include animation("huaji_move_5 .7s ease-out 12s forwards,huaji_move_5_sec .5s ease-in 12.7s forwards");
+					@include animation("huaji_move_5 .7s ease-out 12s forwards,huaji_move_5_sec 1s ease-in 12.7s forwards");
+				}
+			}
+		}
+		ul.fourth{
+			width: 100%;
+			height: 700px;
+			position: absolute;
+			left:25%;
+			top:50%;
+
+			li{
+				float:left;
+				margin:10px;
+				list-style:none;
+				width: 800px;
+				height: 800px;
+				transform:rotate(45deg);
+				overflow: hidden;
+
+				.img{
+					width: 800px;
+					height: 1000px;
+					transform: rotate(-45deg) scale(1.6);
 				}
 
 
+				&:nth-child(1){
+					
+					.img{
+						background: url(../images/P60607-225342-001.jpg) 0 0 no-repeat;
+						background-size: cover;
+					}
+				}
+				&:nth-child(2){
+					transform:translate3d(-158px,-362px,1px) rotate(45deg);
+					.img{
+						background: url(../images/P60607-225342-001.jpg) 0 0 no-repeat;
+						background-size: cover;
+					}
+				}
 			}
+
 		}
 	}
 	
