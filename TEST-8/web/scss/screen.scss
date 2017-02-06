@@ -171,7 +171,7 @@ body{
 	.session_3{
 		width: 85%;
 		height: 3000px;
-		overflow: hidden;
+		// overflow: hidden;
 		position: absolute;
 		left: 15%;
 		top:5%;
@@ -336,37 +336,91 @@ body{
 			width: 100%;
 			height: 700px;
 			position: absolute;
-			left:25%;
-			top:50%;
+			left:45%;
+			top:61%;
+			opacity: 0;
+			@include animation("fourth_show .1s linear 13.3s forwards,fourth_move .3s linear 17s forwards,fourth_move_sec .3s linear 19s forwards");
+
+			&:before{
+				content:"学习";
+				font-size:70px;
+				width: 50%;
+				color:#4B5753;
+				height: 50px;
+				position: absolute;
+				left:-20%;
+				top:-40%;
+				font-weight:bold;
+				opacity: 0;
+				@include animation("fourth_word .5s linear 13.5s forwards,fourth_word_sec .7s linear 17s forwards");
+			}
+			&:after{
+				content:"后浪推前浪，辞职死在沙滩上";
+				font-size:25px;
+				color:#777;
+				width: 50%;
+				height: 50px;
+				position: absolute;
+				left:-20%;
+				top:-25%;
+				opacity: 0;
+				@include animation("fourth_word_1 .5s linear 13.5s forwards,fourth_word_sec_1 .7s linear 17s forwards");
+			}
 
 			li{
 				float:left;
 				margin:10px;
 				list-style:none;
-				width: 800px;
-				height: 800px;
-				transform:rotate(45deg);
+				width: 700px;
+				height: 700px;
+				transform:rotate(45deg) translate3d(0,0,0);
 				overflow: hidden;
+				opacity: 0;
 
 				.img{
-					width: 800px;
+					width: 750px;
 					height: 1000px;
+					display:inline-block;
 					transform: rotate(-45deg) scale(1.6);
 				}
 
 
 				&:nth-child(1){
-					
+					@include animation("fourth_img .5s linear 13.7s forwards");
 					.img{
-						background: url(../images/P60607-225342-001.jpg) 0 0 no-repeat;
-						background-size: cover;
+						background: url(../images/P60818-152835.jpg) 0 0 no-repeat;
+						background-size: 100%;
+						@include animation("bg_move 20s linear 14s infinite");
 					}
 				}
 				&:nth-child(2){
-					transform:translate3d(-158px,-362px,1px) rotate(45deg);
+					transform:translate3d(-215px, -502px, 1px) rotate(45deg);
+					@include animation("fourth_img_1 .5s linear 13.7s forwards");
 					.img{
-						background: url(../images/P60607-225342-001.jpg) 0 0 no-repeat;
+						background: url(../images/IMG20160616002433.jpg) 0 0 no-repeat;
 						background-size: cover;
+						background-position: -88px -170px;
+						@include animation("bg_move_1 20s linear 14s infinite");
+					}
+				}
+				&:nth-child(3){
+					transform:rotate(45deg) translate3d(215px, -509px, 0px);
+					@include animation("fourth_img_2 .5s linear 17s forwards");
+					.img{
+						background: url(../images/P60807-111334.jpg) 0 0 no-repeat;
+						background-size: cover;
+						background-position: 8px -175px;
+						@include animation("bg_move_1 20s linear 17s infinite");
+					}
+				}
+				&:nth-child(4){
+					transform:rotate(45deg) translate3d(-294px, -717px, 0px);
+					@include animation("fourth_img_3 .2s linear 20s forwards");
+					.img{
+						background: url(../images/6a1e8e1bgy1fcgogdggiuj21000qodnf.jpg) 0 0 no-repeat;
+						background-size: 115%;
+						background-position: 0px 110px;
+						@include animation("bg_move_2 20s linear 20s infinite");
 					}
 				}
 			}
