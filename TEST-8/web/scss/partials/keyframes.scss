@@ -90,6 +90,10 @@
 @include keyframes(session_back){
 	100%{ transform: translate3d(0px,0px,-100px); filter:blur(5px); }
 }
+// 第一屏隐藏
+@include keyframes(session_hide){
+	to{ opacity: 0; }
+}
 // 第一屏图片显示
 @include keyframes(p1_show){
 	to{ transform:translateX(0); }
@@ -115,6 +119,10 @@
 @include keyframes(p2_move_sec){
 	from{ transform:translate3d(100px,0,0); }
 	to{ transform:translate3d(100px,-50px,0); }
+}
+// 第二屏模糊
+@include keyframes(p2_blur){
+	to{ filter:blur(10px); }
 }
 // 第二屏图片背景转动
 @include keyframes(p2_bg_rotate){
@@ -181,12 +189,13 @@
 	to{
 		opacity: 1;
 		filter:blur(.5px);
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#edd9c9+0,f0decf+5,efddce+6,f0ded2+7,f0e0d3+8,f0e0d1+12,f1e1d4+16,f0dece+46,f2decc+75,f2dcca+76,f4dcc8+91,f3d9c4+100 */
-		background: rgb(237,217,201); /* Old browsers */
-		background: -moz-radial-gradient(center, ellipse cover,  rgb(237,217,201) 0%, rgb(240,222,207) 5%, rgb(239,221,206) 6%, rgb(240,222,210) 7%, rgb(240,224,211) 8%, rgb(240,224,209) 12%, rgb(241,225,212) 16%, rgb(240,222,206) 46%, rgb(242,222,204) 75%, rgb(242,220,202) 76%, rgb(244,220,200) 91%, rgb(243,217,196) 100%); /* FF3.6-15 */
-		background: -webkit-radial-gradient(center, ellipse cover,  rgb(237,217,201) 0%,rgb(240,222,207) 5%,rgb(239,221,206) 6%,rgb(240,222,210) 7%,rgb(240,224,211) 8%,rgb(240,224,209) 12%,rgb(241,225,212) 16%,rgb(240,222,206) 46%,rgb(242,222,204) 75%,rgb(242,220,202) 76%,rgb(244,220,200) 91%,rgb(243,217,196) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: radial-gradient(ellipse at center,  rgb(237,217,201) 0%,rgb(240,222,207) 5%,rgb(239,221,206) 6%,rgb(240,222,210) 7%,rgb(240,224,211) 8%,rgb(240,224,209) 12%,rgb(241,225,212) 16%,rgb(240,222,206) 46%,rgb(242,222,204) 75%,rgb(242,220,202) 76%,rgb(244,220,200) 91%,rgb(243,217,196) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edd9c9', endColorstr='#f3d9c4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eff3f9+0,f1f5fa+0,f2f7f8+5,f5f7f8+5,f5f7f9+17,f6f6f6+19,f4f4f4+28,f8f3f2+48,f6f2ef+49,f8eee6+92,f7ebe1+96,f5e5d6+100 */
+		background: rgb(239,243,249); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgb(239,243,249) 0%, rgb(241,245,250) 0%, rgb(242,247,248) 5%, rgb(245,247,248) 5%, rgb(245,247,249) 17%, rgb(246,246,246) 19%, rgb(244,244,244) 28%, rgb(248,243,242) 48%, rgb(246,242,239) 49%, rgb(248,238,230) 92%, rgb(247,235,225) 96%, rgb(245,229,214) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgb(239,243,249) 0%,rgb(241,245,250) 0%,rgb(242,247,248) 5%,rgb(245,247,248) 5%,rgb(245,247,249) 17%,rgb(246,246,246) 19%,rgb(244,244,244) 28%,rgb(248,243,242) 48%,rgb(246,242,239) 49%,rgb(248,238,230) 92%,rgb(247,235,225) 96%,rgb(245,229,214) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgb(239,243,249) 0%,rgb(241,245,250) 0%,rgb(242,247,248) 5%,rgb(245,247,248) 5%,rgb(245,247,249) 17%,rgb(246,246,246) 19%,rgb(244,244,244) 28%,rgb(248,243,242) 48%,rgb(246,242,239) 49%,rgb(248,238,230) 92%,rgb(247,235,225) 96%,rgb(245,229,214) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f9', endColorstr='#f5e5d6',GradientType=1 ); /* IE6-9 */
+
 
 	}
 }
@@ -194,24 +203,69 @@
 @include keyframes(bg_change_sec){
 	from{
 		filter:blur(.5px);
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#edd9c9+0,f0decf+5,efddce+6,f0ded2+7,f0e0d3+8,f0e0d1+12,f1e1d4+16,f0dece+46,f2decc+75,f2dcca+76,f4dcc8+91,f3d9c4+100 */
-		background: rgb(237,217,201); /* Old browsers */
-		background: -moz-radial-gradient(center, ellipse cover,  rgb(237,217,201) 0%, rgb(240,222,207) 5%, rgb(239,221,206) 6%, rgb(240,222,210) 7%, rgb(240,224,211) 8%, rgb(240,224,209) 12%, rgb(241,225,212) 16%, rgb(240,222,206) 46%, rgb(242,222,204) 75%, rgb(242,220,202) 76%, rgb(244,220,200) 91%, rgb(243,217,196) 100%); /* FF3.6-15 */
-		background: -webkit-radial-gradient(center, ellipse cover,  rgb(237,217,201) 0%,rgb(240,222,207) 5%,rgb(239,221,206) 6%,rgb(240,222,210) 7%,rgb(240,224,211) 8%,rgb(240,224,209) 12%,rgb(241,225,212) 16%,rgb(240,222,206) 46%,rgb(242,222,204) 75%,rgb(242,220,202) 76%,rgb(244,220,200) 91%,rgb(243,217,196) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: radial-gradient(ellipse at center,  rgb(237,217,201) 0%,rgb(240,222,207) 5%,rgb(239,221,206) 6%,rgb(240,222,210) 7%,rgb(240,224,211) 8%,rgb(240,224,209) 12%,rgb(241,225,212) 16%,rgb(240,222,206) 46%,rgb(242,222,204) 75%,rgb(242,220,202) 76%,rgb(244,220,200) 91%,rgb(243,217,196) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edd9c9', endColorstr='#f3d9c4',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		background: rgb(239,243,249); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgb(239,243,249) 0%, rgb(241,245,250) 0%, rgb(242,247,248) 5%, rgb(245,247,248) 5%, rgb(245,247,249) 17%, rgb(246,246,246) 19%, rgb(244,244,244) 28%, rgb(248,243,242) 48%, rgb(246,242,239) 49%, rgb(248,238,230) 92%, rgb(247,235,225) 96%, rgb(245,229,214) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgb(239,243,249) 0%,rgb(241,245,250) 0%,rgb(242,247,248) 5%,rgb(245,247,248) 5%,rgb(245,247,249) 17%,rgb(246,246,246) 19%,rgb(244,244,244) 28%,rgb(248,243,242) 48%,rgb(246,242,239) 49%,rgb(248,238,230) 92%,rgb(247,235,225) 96%,rgb(245,229,214) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgb(239,243,249) 0%,rgb(241,245,250) 0%,rgb(242,247,248) 5%,rgb(245,247,248) 5%,rgb(245,247,249) 17%,rgb(246,246,246) 19%,rgb(244,244,244) 28%,rgb(248,243,242) 48%,rgb(246,242,239) 49%,rgb(248,238,230) 92%,rgb(247,235,225) 96%,rgb(245,229,214) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f9', endColorstr='#f5e5d6',GradientType=1 ); /* IE6-9 */
 	}
 	to{
 		filter:blur(.4px);
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1f5fa+0,e3f5f8+100 */
-		background: rgb(225,245,250); /* Old browsers */
-		background: -moz-radial-gradient(center, ellipse cover,  rgb(225,245,250) 0%, rgb(227,245,248) 100%); /* FF3.6-15 */
-		background: -webkit-radial-gradient(center, ellipse cover,  rgb(225,245,250) 0%,rgb(227,245,248) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: radial-gradient(ellipse at center,  rgb(225,245,250) 0%,rgb(227,245,248) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1f5fa', endColorstr='#e3f5f8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f0ee+0,e5f2ed+100 */
+		background: rgb(228,240,238); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgb(228,240,238) 0%, rgb(229,242,237) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgb(228,240,238) 0%,rgb(229,242,237) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgb(228,240,238) 0%,rgb(229,242,237) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f0ee', endColorstr='#e5f2ed',GradientType=1 ); /* IE6-9 */
+
 
 	}
 }
+
+// 背景第二次变化
+@include keyframes(bg_change_third){
+	from{
+		filter:blur(.4px);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e4f0ee+0,e5f2ed+100 */
+		background: rgb(228,240,238); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgb(228,240,238) 0%, rgb(229,242,237) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgb(228,240,238) 0%,rgb(229,242,237) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgb(228,240,238) 0%,rgb(229,242,237) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f0ee', endColorstr='#e5f2ed',GradientType=1 ); /* IE6-9 */
+	}
+	to{
+		filter:blur(.4px);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7ebe3+0,e8e9e0+100 */
+		background: rgb(231,235,227); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgb(231,235,227) 0%, rgb(232,233,224) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgb(231,235,227) 0%,rgb(232,233,224) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgb(231,235,227) 0%,rgb(232,233,224) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7ebe3', endColorstr='#e8e9e0',GradientType=1 ); /* IE6-9 */
+
+
+	}
+}
+// 背景第三次变化
+@include keyframes(bg_change_fourth){
+	from{
+		filter:blur(.4px);
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e7ebe3+0,e8e9e0+100 */
+		background: rgb(231,235,227); /* Old browsers */
+		background: -moz-linear-gradient(left,  rgb(231,235,227) 0%, rgb(232,233,224) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(left,  rgb(231,235,227) 0%,rgb(232,233,224) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to right,  rgb(231,235,227) 0%,rgb(232,233,224) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7ebe3', endColorstr='#e8e9e0',GradientType=1 ); /* IE6-9 */
+	}
+	to{
+		background: black;
+	}
+}
+
+
+
+
+
 
 // 第四屏显示
 @include keyframes(fourth_show){
@@ -290,6 +344,16 @@
 	from{ left: -20%;top: -25%; opacity: 1; }
 	to{ left: -20%;top: 115%; opacity: 1; content:"从Chinatown搬到Rosemead,房租死贵死贵的。" }
 }
+// 第四屏文字第三次移动
+@include keyframes(fourth_word_third){
+	from{ left: -20%;top: 100%; opacity: 1;}
+	to{ left: 130%;top: 20%; opacity: 1; content:"兼职" }
+}
+// 第四屏文字第三次移动
+@include keyframes(fourth_word_third_1){
+	from{ left: -20%;top: 115%; opacity: 1;}
+	to{ left: 130%;top: 35%;opacity: 1; content:"从零开始做社畜。" }
+}
 // 第四屏第二次移动
 @include keyframes(fourth_move_sec){
 	from{ top:29%; }
@@ -298,4 +362,33 @@
     	left: -47%;
     	transform: scale(.8); 
     }
+}
+// 第四屏第三次移动
+@include keyframes(fourth_move_third){
+	from{
+		top: 45%;
+    	left: -47%;
+    	transform: scale(.8);
+	}
+	to{
+		top: 45%;
+    	left: -130%;
+    	transform: scale(.8) rotateZ(-450deg);
+	}
+}
+
+// 第五屏视频背景显示
+@include keyframes(sessiong_bg_show){
+	to{ opacity: 1; }
+}
+// 第五屏文字阴影
+@include keyframes(_shadow){
+	0% { text-shadow: -7px 3px 1px grey; }
+	50%{ text-shadow: 8px -6px 2px grey; }
+	100%{ text-shadow: -1px 6px 3px grey; }
+}
+// 第五屏文字切换
+@include keyframes(words_change){
+	0% { content:"这一年，曾经努力摆脱现状，想证明个人的价值。"; }
+	20%{ content:"但失败了...致使过完这一事无成的一年，一直走弯路。"; }
 }

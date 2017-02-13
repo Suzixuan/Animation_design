@@ -28,7 +28,7 @@ body{
     height: 3000px;
     float: left;
 
-    @include animation("bg_change .3s linear 1s forwards,bg_change_sec .3s linear 13s forwards");
+    @include animation("bg_change .3s linear 1s forwards,bg_change_sec .3s linear 13s forwards,bg_change_third .3s linear 20s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 22s forwards");
 
 	.google_view{
 		background: url(../images/google_view.png) 0 0 no-repeat;
@@ -127,7 +127,7 @@ body{
 	    width: 285px;
 	    height: 100px;
 
-		@include animation("session_back 2s linear 3s forwards");
+		@include animation("session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards");
 
 		.ball{
 			width: 100px;
@@ -161,7 +161,7 @@ body{
 		margin: 10% auto 0;
 		text-indent: 20px;
 		opacity: 0;
-		@include animation("text_show .5s linear 1.8s forwards,session_back 2s linear 3s forwards");
+		@include animation("text_show .5s linear 1.8s forwards,session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards");
 
 		li{
 			text-shadow:50px 30px 27px black;
@@ -232,7 +232,7 @@ body{
 		ul.second{
 			width: 85%;
 			perspective:2000px;
-			@include animation("p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards");
+			@include animation("p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards,p2_blur .5s linear 12s forwards");
 
 			li{
 				float:left;
@@ -339,7 +339,7 @@ body{
 			left:45%;
 			top:61%;
 			opacity: 0;
-			@include animation("fourth_show .1s linear 13.3s forwards,fourth_move .3s linear 17s forwards,fourth_move_sec .3s linear 19s forwards");
+			@include animation("fourth_show .1s linear 13.3s forwards,fourth_move .3s linear 17s forwards,fourth_move_sec .3s linear 19s forwards,fourth_move_third 1s linear 22s forwards");
 
 			&:before{
 				content:"学习";
@@ -352,7 +352,7 @@ body{
 				top:-40%;
 				font-weight:bold;
 				opacity: 0;
-				@include animation("fourth_word .5s linear 13.5s forwards,fourth_word_sec .7s linear 17s forwards");
+				@include animation("fourth_word .5s linear 13.5s forwards,fourth_word_sec 1s linear 17s forwards,fourth_word_third .7s linear 20s forwards");
 			}
 			&:after{
 				content:"后浪推前浪，辞职死在沙滩上";
@@ -364,7 +364,7 @@ body{
 				left:-20%;
 				top:-25%;
 				opacity: 0;
-				@include animation("fourth_word_1 .5s linear 13.5s forwards,fourth_word_sec_1 .7s linear 17s forwards");
+				@include animation("fourth_word_1 .5s linear 13.5s forwards,fourth_word_sec_1 1s linear 17s forwards,fourth_word_third_1 .7s linear 20s forwards");
 			}
 
 			li{
@@ -425,6 +425,35 @@ body{
 				}
 			}
 
+		}
+	}
+	.session_4{
+		position: absolute;
+		top:-50px;
+		opacity: 0;
+		@include animation("sessiong_bg_show .2s linear 22s forwards");
+
+		.video{
+			filter:blur(10px);
+			opacity: .9;
+
+		}
+		.subtitle{
+			width: 1200px;
+			height: 100px;
+			position: absolute;
+			top:40%;
+			left:20%;
+			z-index: 999;
+			text-align:center;
+			&:before{
+				content:"这一年，曾经努力摆脱现状，想证明个人的价值。";
+				color:white;
+				font-size: 50px;
+			    text-shadow: -4px 2px 1px grey;
+			    font-weight: bold;
+			    @include animation("words_change 10s linear 22s forwards,_shadow 10s linear 23s forwards");
+			}
 		}
 	}
 	
