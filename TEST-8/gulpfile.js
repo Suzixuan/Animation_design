@@ -25,7 +25,7 @@ gulp.task('scss', function () {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['./web/scss/*.scss','./web/scss/partials/*.scss'], ['scss']);
+  gulp.watch(['./web/scss/*.scss','./web/scss/partials/*.scss','./web/*.html'], ['scss']);
 });
 
 // 监视 Sass 文件的改动，如果发生变更，运行 'sass' 任务，并且重载文件
@@ -36,5 +36,5 @@ gulp.task('serve', ['scss'], function() {
     }
   });
 
-  gulp.watch(['./web/scss/*.scss','*.html','./web/images/**','./web/scss/partials/*.scss'], ['scss']);
+  gulp.watch(['./web/scss/*.scss','*.html','./web/images/**','./web/scss/partials/*.scss','./web/*.html'], ['scss']);
 });

@@ -25,10 +25,10 @@ body{
 .container{
 	perspective:500px;
 	width: 100%;
-    height: 3000px;
+    height: 0px;
     float: left;
 
-    @include animation("bg_change .3s linear 1s forwards,bg_change_sec .3s linear 13s forwards,bg_change_third .3s linear 20s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 22s forwards");
+    @include animation("bg_change .3s linear 19s forwards,bg_change_sec .3s linear 32s forwards,bg_change_third .3s linear 38s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 40s forwards,height_change .2s linear 25s forwards");
 
 	.google_view{
 		background: url(../images/google_view.png) 0 0 no-repeat;
@@ -38,7 +38,7 @@ body{
 		position: relative;
 
 		transform-origin: left bottom;
-		@include animation("zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.36s forwards,switch .1s linear 9.35s forwards");
+		@include animation("zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.3s forwards,switch .1s linear 9.3s forwards");
 
 
 		.typed{
@@ -82,11 +82,12 @@ body{
 		// overflow: hidden;
 		width: 0px;
 		position: absolute;
-		top:0;
+		top:18%;
 		left:25%;
 		transform-origin:top left;
+		opacity: 0;
 		// 9.45s、11.65s、14s
-		@include animation("page_move 3s ease-out 0s forwards,page_move_sec 0.77s ease-in 5.3s forwards");
+		@include animation("page_move 3s ease-out 10s forwards,page_move_sec 0.77s ease-in 15.3s forwards");
 
 		&:before{
 			content: "";
@@ -95,9 +96,9 @@ body{
 		    position: absolute;
 		    left:-100px;
 		    top:-20px;
-		    filter: blur(8px);
+		    filter: blur(3px);
 		    background: white;
-			@include animation("shade 3s ease-out 0s forwards");
+			@include animation("shade 3s ease-out 10s forwards");
 
 		}
 		.shade{
@@ -110,7 +111,7 @@ body{
 		    white-space: nowrap;
 		    bottom: 38%;
 		    left: 30%;
-		    @include animation('words_show 2.5s linear 3s forwards');
+		    @include animation('words_show 2.5s linear 13s forwards');
 		}
 	}
 	.session{
@@ -119,7 +120,7 @@ body{
 	    left: 25%;
 	    opacity: 0;
 	    transform:rotateZ(5deg) rotateY(4deg) translate3d(-440px, -262px, 220px);
-	    @include animation("content_move 3s ease-in 5.3s forwards");
+	    @include animation("content_move 3s ease-in 15.3s forwards");
 
 	}
 	.session_1{
@@ -127,7 +128,7 @@ body{
 	    width: 285px;
 	    height: 100px;
 
-		@include animation("session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards");
+		@include animation("session_back 2s linear 21s forwards,session_hide .5s linear 40s forwards");
 
 		.ball{
 			width: 100px;
@@ -136,12 +137,9 @@ body{
 			margin:0 auto;
 			border-radius: 100px;
 		    margin: 0 auto;
+		    opacity: 0;
 		    transform:translate3d(0px,350px,0px) scale(1);
-		    @include animation("ball_move 1s ease-in-out 0s forwards,ball_move_sec .8s ease-in-out 1s infinite");
-
-		    &:before{
-		    	
-		    }
+		    @include animation("ball_move 1s ease-in-out 18s forwards,ball_move_sec .8s ease-in-out 19s infinite");
 
 		}
 		.ball_shade{
@@ -152,7 +150,7 @@ body{
 	        left: -112.2%;
 	    	border-bottom:0px solid;
 	    	filter:blur(4px);
-	    	@include animation("ball_shade .8s ease-in-out 1s infinite");
+	    	@include animation("ball_shade .8s ease-in-out 19s infinite");
 		}
 	}
 	.session_2{
@@ -161,7 +159,7 @@ body{
 		margin: 10% auto 0;
 		text-indent: 20px;
 		opacity: 0;
-		@include animation("text_show .5s linear 1.8s forwards,session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards");
+		@include animation("text_show .5s linear 20s forwards,session_back 2s linear 21s forwards,session_hide .5s linear 40s forwards");
 
 		li{
 			text-shadow:50px 30px 27px black;
@@ -176,7 +174,7 @@ body{
 		left: 15%;
 		top:5%;
 
-		@include animation("p1_move 1s linear 7s forwards,p1_move_sec .5s linear 13s forwards");
+		@include animation("p1_move 1s linear 25s forwards,p1_move_sec .5s linear 31s forwards");
 
 		ul.first{
 
@@ -192,25 +190,25 @@ body{
 					background: url(../images/1.jpg) 0 0 no-repeat;
 					background-size: cover;
 					transform:translateX(1600px);
-					@include animation("p1_show .3s linear 5s forwards");
+					@include animation("p1_show .3s linear 23s forwards");
 				}
 				&:nth-child(2){
 					background: url(../images/2.jpg) 0 0 no-repeat;
 					background-size: cover;
 					transform:translateX(1300px);
-					@include animation("p1_show .4s linear 5.3s forwards");
+					@include animation("p1_show .4s linear 23.3s forwards");
 				}
 				&:nth-child(3){
 					background: url(../images/3.jpg) 0 0 no-repeat;
 					background-size: cover;
 					transform:translateX(1000px);
-					@include animation("p1_show .5s linear 5.7s forwards");
+					@include animation("p1_show .5s linear 23.7s forwards");
 				}
 				&:nth-child(4){
 					background: url(../images/4.jpg) 0 0 no-repeat;
 					background-size: cover;
 					transform:translateX(700px);
-					@include animation("p1_show .6s linear 6.2s forwards");
+					@include animation("p1_show .6s linear 24.2s forwards");
 				}
 			}
 
@@ -226,13 +224,13 @@ body{
 			font-weight:bold;
 			transform:translateX(1700px);
 			letter-spacing:5px;
-			@include animation("p1_show .5s linear 5.7s forwards");
+			@include animation("p1_show .5s linear 23.7s forwards");
 		}
 
 		ul.second{
 			width: 85%;
 			perspective:2000px;
-			@include animation("p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards,p2_blur .5s linear 12s forwards");
+			@include animation("p2_move 1s ease-in-out 27s forwards,p2_move_sec 1s ease-in-out 28s forwards,p2_blur .5s linear 30s forwards");
 
 			li{
 				float:left;
@@ -254,7 +252,7 @@ body{
 					border:1px solid #9A8784;
 					transform:rotateY(-40deg);
 					opacity: 0;
-					@include animation("p2_bg_rotate .3s ease-in-out 11s forwards");
+					@include animation("p2_bg_rotate .3s ease-in-out 29s forwards");
 
 				}
 
@@ -264,7 +262,7 @@ body{
 					width: 600px;
 					height: 500px;
 					transform:translateX(-150px);					
-					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards");
+					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards");
 
 					&:before{
 						content:"趴地";
@@ -278,7 +276,7 @@ body{
 					width: 400px;
 					height: 300px;
 					transform:translateX(150px);
-					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards");
+					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards");
 
 					&:before{
 						content:"合照";
@@ -292,7 +290,7 @@ body{
 					width: 400px;
 					height: 180px;
 					transform:translateX(130px);
-					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards");
+					@include animation("p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards");
 
 					&:before{
 						content:"游行";
@@ -316,19 +314,19 @@ body{
 				transform:translateY(300px);
 
 				&:nth-child(1){
-					@include animation("huaji_move_1 .7s ease-out 12s forwards,huaji_move_1_sec 1s ease-in 12.7s forwards");
+					@include animation("huaji_move_1 .7s ease-out 30s forwards,huaji_move_1_sec 1s ease-in 30.7s forwards");
 				}
 				&:nth-child(2){
-					@include animation("huaji_move_2 .7s ease-out 12s forwards,huaji_move_2_sec 1s ease-in 12.7s forwards");
+					@include animation("huaji_move_2 .7s ease-out 30s forwards,huaji_move_2_sec 1s ease-in 30.7s forwards");
 				}
 				&:nth-child(3){
-					@include animation("huaji_move_3 .7s ease-out 12s forwards,huaji_move_3_sec 1s ease-in 12.7s forwards");
+					@include animation("huaji_move_3 .7s ease-out 30s forwards,huaji_move_3_sec 1s ease-in 30.7s forwards");
 				}
 				&:nth-child(4){
-					@include animation("huaji_move_4 .7s ease-out 12s forwards,huaji_move_4_sec 1s ease-in 12.7s forwards");
+					@include animation("huaji_move_4 .7s ease-out 30s forwards,huaji_move_4_sec 1s ease-in 30.7s forwards");
 				}
 				&:nth-child(5){
-					@include animation("huaji_move_5 .7s ease-out 12s forwards,huaji_move_5_sec 1s ease-in 12.7s forwards");
+					@include animation("huaji_move_5 .7s ease-out 30s forwards,huaji_move_5_sec 1s ease-in 30.7s forwards");
 				}
 			}
 		}
@@ -339,7 +337,7 @@ body{
 			left:45%;
 			top:61%;
 			opacity: 0;
-			@include animation("fourth_show .1s linear 13.3s forwards,fourth_move .3s linear 17s forwards,fourth_move_sec .3s linear 19s forwards,fourth_move_third 1s linear 22s forwards");
+			@include animation("fourth_show .1s linear 31.3s forwards,fourth_move .3s linear 35s forwards,fourth_move_sec .3s linear 37s forwards,fourth_move_third 1s linear 40s forwards");
 
 			&:before{
 				content:"学习";
@@ -352,7 +350,7 @@ body{
 				top:-40%;
 				font-weight:bold;
 				opacity: 0;
-				@include animation("fourth_word .5s linear 13.5s forwards,fourth_word_sec 1s linear 17s forwards,fourth_word_third .7s linear 20s forwards");
+				@include animation("fourth_word .5s linear 31.5s forwards,fourth_word_sec 1s linear 35s forwards,fourth_word_third .7s linear 38s forwards");
 			}
 			&:after{
 				content:"后浪推前浪，辞职死在沙滩上";
@@ -364,7 +362,7 @@ body{
 				left:-20%;
 				top:-25%;
 				opacity: 0;
-				@include animation("fourth_word_1 .5s linear 13.5s forwards,fourth_word_sec_1 1s linear 17s forwards,fourth_word_third_1 .7s linear 20s forwards");
+				@include animation("fourth_word_1 .5s linear 31.5s forwards,fourth_word_sec_1 1s linear 35s forwards,fourth_word_third_1 .7s linear 38s forwards");
 			}
 
 			li{
@@ -386,41 +384,41 @@ body{
 
 
 				&:nth-child(1){
-					@include animation("fourth_img .5s linear 13.7s forwards");
+					@include animation("fourth_img .5s linear 31.7s forwards");
 					.img{
 						background: url(../images/P60818-152835.jpg) 0 0 no-repeat;
 						background-size: 100%;
-						@include animation("bg_move 20s linear 14s infinite");
+						@include animation("bg_move 20s linear 32s infinite");
 					}
 				}
 				&:nth-child(2){
 					transform:translate3d(-215px, -502px, 1px) rotate(45deg);
-					@include animation("fourth_img_1 .5s linear 13.7s forwards");
+					@include animation("fourth_img_1 .5s linear 31.7s forwards");
 					.img{
 						background: url(../images/IMG20160616002433.jpg) 0 0 no-repeat;
 						background-size: cover;
 						background-position: -88px -170px;
-						@include animation("bg_move_1 20s linear 14s infinite");
+						@include animation("bg_move_1 20s linear 32s infinite");
 					}
 				}
 				&:nth-child(3){
 					transform:rotate(45deg) translate3d(215px, -509px, 0px);
-					@include animation("fourth_img_2 .5s linear 17s forwards");
+					@include animation("fourth_img_2 .5s linear 35s forwards");
 					.img{
 						background: url(../images/P60807-111334.jpg) 0 0 no-repeat;
 						background-size: cover;
 						background-position: 8px -175px;
-						@include animation("bg_move_1 20s linear 17s infinite");
+						@include animation("bg_move_1 20s linear 35s infinite");
 					}
 				}
 				&:nth-child(4){
 					transform:rotate(45deg) translate3d(-294px, -717px, 0px);
-					@include animation("fourth_img_3 .2s linear 20s forwards");
+					@include animation("fourth_img_3 .2s linear 38s forwards");
 					.img{
 						background: url(../images/6a1e8e1bgy1fcgogdggiuj21000qodnf.jpg) 0 0 no-repeat;
 						background-size: 115%;
 						background-position: 0px 110px;
-						@include animation("bg_move_2 20s linear 20s infinite");
+						@include animation("bg_move_2 20s linear 38s infinite");
 					}
 				}
 			}
@@ -431,7 +429,7 @@ body{
 		position: absolute;
 		top:-50px;
 		opacity: 0;
-		@include animation("sessiong_bg_show .2s linear 22s forwards");
+		@include animation("sessiong_bg_show .2s linear 40s forwards");
 
 		.video{
 			filter:blur(10px);
@@ -439,11 +437,11 @@ body{
 
 		}
 		.subtitle{
-			width: 1200px;
+			width: 1500px;
 			height: 100px;
 			position: absolute;
 			top:40%;
-			left:20%;
+			left:10%;
 			z-index: 999;
 			text-align:center;
 			&:before{
@@ -452,7 +450,7 @@ body{
 				font-size: 50px;
 			    text-shadow: -4px 2px 1px grey;
 			    font-weight: bold;
-			    @include animation("words_change 10s linear 22s forwards,_shadow 10s linear 23s forwards");
+			    @include animation("words_change 30s linear 40s forwards,_shadow 5s linear 41s infinite");
 			}
 		}
 	}

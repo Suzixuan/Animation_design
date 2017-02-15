@@ -34,13 +34,19 @@
 // 急速放大
 @include keyframes(zoom_left){
 	0%{ transform:translate3d(0px,100px,150px) scale(1); }
-	90%{ transform:translate3d(0px,100px,150px) scale(1.5);}
-	100%{ transform:translate3d(0px,100px,150px) scale(7);}
+	80%{ transform:translate3d(0px,100px,150px) scale(1.3);}
+	100%{ transform:translate3d(0px,100px,150px) scale(6);}
 }
 // 切换
 @include keyframes(switch){
-	to { height: 0;opacity: 0; }
+	to { height: 0px;opacity: 0; }
 }
+
+//
+@include keyframes(height_change){
+	to{ height:3000px; }
+}
+
 // 页面移动
 @include keyframes(page_move){
 	0%{ transform:rotateZ(7deg) rotateY(8deg) translate3d(200px, -120px, 320px); width:0; opacity: 1; }
@@ -65,11 +71,11 @@
 }
 // 球移动
 @include keyframes(ball_move){
-	0%{ transform:translate3d(0px,-120px,0px) scale(1); }
-	20%{ transform:translate3d(0px,350px,0px) scale(.6); }
-	55%{ transform:translate3d(0px,150px,-100px) scale(.5); }
-	70%{ transform:translate3d(-120px,130px,0px) scale(.4); }
-	100%{ transform:translate3d(-450px,400px,0px) scale(.4); }
+	0%{ transform:translate3d(0px,-120px,0px) scale(1); opacity: 1; }
+	20%{ transform:translate3d(0px,350px,0px) scale(.6); opacity: 1; }
+	55%{ transform:translate3d(0px,150px,-100px) scale(.5); opacity: 1; }
+	70%{ transform:translate3d(-120px,130px,0px) scale(.4); opacity: 1; }
+	100%{ transform:translate3d(-450px,400px,0px) scale(.4); opacity: 1; }
 }
 // 球持续运动
 @include keyframes(ball_move_sec){
@@ -383,12 +389,17 @@
 }
 // 第五屏文字阴影
 @include keyframes(_shadow){
-	0% { text-shadow: -7px 3px 1px grey; }
-	50%{ text-shadow: 8px -6px 2px grey; }
-	100%{ text-shadow: -1px 6px 3px grey; }
+	0% { text-shadow: -12px 10px 1px grey; }
+	50%{ text-shadow: 8px -10px 2px grey; }
+	80%{ text-shadow: 10px 10px 4px grey; }
+	100%{ text-shadow: -9px 6px 3px grey; }
 }
 // 第五屏文字切换
 @include keyframes(words_change){
 	0% { content:"这一年，曾经努力摆脱现状，想证明个人的价值。"; }
-	20%{ content:"但失败了...致使过完这一事无成的一年，一直走弯路。"; }
+	20%{ content:"但失败了...致使过完这一事无成的一年，并一直走弯路。"; }
+	40%{ content:"不懂学习的方式...不想接触外界...遇到难题就想逃避"; }
+	60%{ content:"独自去社区大学报名时，在人群中的孤立无助，有口难言..."; }
+	80%{ content:"打着无数的电话求职，独自开车去面试，从新体验着那一份忐忑。"; }
+	100%{ content:"不甘心...却改变不了，又名为失败者的愤怒。"; }
 }

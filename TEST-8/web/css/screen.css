@@ -115,33 +115,41 @@ http://www.cnblogs.com/dolphinX/p/4087817.html
   0% {
     -webkit-transform: translate3d(0px, 100px, 150px) scale(1);
             transform: translate3d(0px, 100px, 150px) scale(1); }
-  90% {
-    -webkit-transform: translate3d(0px, 100px, 150px) scale(1.5);
-            transform: translate3d(0px, 100px, 150px) scale(1.5); }
+  80% {
+    -webkit-transform: translate3d(0px, 100px, 150px) scale(1.3);
+            transform: translate3d(0px, 100px, 150px) scale(1.3); }
   100% {
-    -webkit-transform: translate3d(0px, 100px, 150px) scale(7);
-            transform: translate3d(0px, 100px, 150px) scale(7); } }
+    -webkit-transform: translate3d(0px, 100px, 150px) scale(6);
+            transform: translate3d(0px, 100px, 150px) scale(6); } }
 
 @keyframes zoom_left {
   0% {
     -webkit-transform: translate3d(0px, 100px, 150px) scale(1);
             transform: translate3d(0px, 100px, 150px) scale(1); }
-  90% {
-    -webkit-transform: translate3d(0px, 100px, 150px) scale(1.5);
-            transform: translate3d(0px, 100px, 150px) scale(1.5); }
+  80% {
+    -webkit-transform: translate3d(0px, 100px, 150px) scale(1.3);
+            transform: translate3d(0px, 100px, 150px) scale(1.3); }
   100% {
-    -webkit-transform: translate3d(0px, 100px, 150px) scale(7);
-            transform: translate3d(0px, 100px, 150px) scale(7); } }
+    -webkit-transform: translate3d(0px, 100px, 150px) scale(6);
+            transform: translate3d(0px, 100px, 150px) scale(6); } }
 
 @-webkit-keyframes switch {
   to {
-    height: 0;
+    height: 0px;
     opacity: 0; } }
 
 @keyframes switch {
   to {
-    height: 0;
+    height: 0px;
     opacity: 0; } }
+
+@-webkit-keyframes height_change {
+  to {
+    height: 3000px; } }
+
+@keyframes height_change {
+  to {
+    height: 3000px; } }
 
 @-webkit-keyframes page_move {
   0% {
@@ -248,36 +256,46 @@ http://www.cnblogs.com/dolphinX/p/4087817.html
 @-webkit-keyframes ball_move {
   0% {
     -webkit-transform: translate3d(0px, -120px, 0px) scale(1);
-            transform: translate3d(0px, -120px, 0px) scale(1); }
+            transform: translate3d(0px, -120px, 0px) scale(1);
+    opacity: 1; }
   20% {
     -webkit-transform: translate3d(0px, 350px, 0px) scale(0.6);
-            transform: translate3d(0px, 350px, 0px) scale(0.6); }
+            transform: translate3d(0px, 350px, 0px) scale(0.6);
+    opacity: 1; }
   55% {
     -webkit-transform: translate3d(0px, 150px, -100px) scale(0.5);
-            transform: translate3d(0px, 150px, -100px) scale(0.5); }
+            transform: translate3d(0px, 150px, -100px) scale(0.5);
+    opacity: 1; }
   70% {
     -webkit-transform: translate3d(-120px, 130px, 0px) scale(0.4);
-            transform: translate3d(-120px, 130px, 0px) scale(0.4); }
+            transform: translate3d(-120px, 130px, 0px) scale(0.4);
+    opacity: 1; }
   100% {
     -webkit-transform: translate3d(-450px, 400px, 0px) scale(0.4);
-            transform: translate3d(-450px, 400px, 0px) scale(0.4); } }
+            transform: translate3d(-450px, 400px, 0px) scale(0.4);
+    opacity: 1; } }
 
 @keyframes ball_move {
   0% {
     -webkit-transform: translate3d(0px, -120px, 0px) scale(1);
-            transform: translate3d(0px, -120px, 0px) scale(1); }
+            transform: translate3d(0px, -120px, 0px) scale(1);
+    opacity: 1; }
   20% {
     -webkit-transform: translate3d(0px, 350px, 0px) scale(0.6);
-            transform: translate3d(0px, 350px, 0px) scale(0.6); }
+            transform: translate3d(0px, 350px, 0px) scale(0.6);
+    opacity: 1; }
   55% {
     -webkit-transform: translate3d(0px, 150px, -100px) scale(0.5);
-            transform: translate3d(0px, 150px, -100px) scale(0.5); }
+            transform: translate3d(0px, 150px, -100px) scale(0.5);
+    opacity: 1; }
   70% {
     -webkit-transform: translate3d(-120px, 130px, 0px) scale(0.4);
-            transform: translate3d(-120px, 130px, 0px) scale(0.4); }
+            transform: translate3d(-120px, 130px, 0px) scale(0.4);
+    opacity: 1; }
   100% {
     -webkit-transform: translate3d(-450px, 400px, 0px) scale(0.4);
-            transform: translate3d(-450px, 400px, 0px) scale(0.4); } }
+            transform: translate3d(-450px, 400px, 0px) scale(0.4);
+    opacity: 1; } }
 
 @-webkit-keyframes ball_move_sec {
   0% {
@@ -1151,31 +1169,51 @@ http://www.cnblogs.com/dolphinX/p/4087817.html
 
 @-webkit-keyframes _shadow {
   0% {
-    text-shadow: -7px 3px 1px grey; }
+    text-shadow: -12px 10px 1px grey; }
   50% {
-    text-shadow: 8px -6px 2px grey; }
+    text-shadow: 8px -10px 2px grey; }
+  80% {
+    text-shadow: 10px 10px 4px grey; }
   100% {
-    text-shadow: -1px 6px 3px grey; } }
+    text-shadow: -9px 6px 3px grey; } }
 
 @keyframes _shadow {
   0% {
-    text-shadow: -7px 3px 1px grey; }
+    text-shadow: -12px 10px 1px grey; }
   50% {
-    text-shadow: 8px -6px 2px grey; }
+    text-shadow: 8px -10px 2px grey; }
+  80% {
+    text-shadow: 10px 10px 4px grey; }
   100% {
-    text-shadow: -1px 6px 3px grey; } }
+    text-shadow: -9px 6px 3px grey; } }
 
 @-webkit-keyframes words_change {
   0% {
     content: "这一年，曾经努力摆脱现状，想证明个人的价值。"; }
   20% {
-    content: "但失败了...致使过完这一事无成的一年，一直走弯路。"; } }
+    content: "但失败了...致使过完这一事无成的一年，并一直走弯路。"; }
+  40% {
+    content: "不懂学习的方式...不想接触外界...遇到难题就想逃避"; }
+  60% {
+    content: "独自去社区大学报名时，在人群中的孤立无助，有口难言..."; }
+  80% {
+    content: "打着无数的电话求职，独自开车去面试，从新体验着那一份忐忑。"; }
+  100% {
+    content: "不甘心...却改变不了，又名为失败者的愤怒。"; } }
 
 @keyframes words_change {
   0% {
     content: "这一年，曾经努力摆脱现状，想证明个人的价值。"; }
   20% {
-    content: "但失败了...致使过完这一事无成的一年，一直走弯路。"; } }
+    content: "但失败了...致使过完这一事无成的一年，并一直走弯路。"; }
+  40% {
+    content: "不懂学习的方式...不想接触外界...遇到难题就想逃避"; }
+  60% {
+    content: "独自去社区大学报名时，在人群中的孤立无助，有口难言..."; }
+  80% {
+    content: "打着无数的电话求职，独自开车去面试，从新体验着那一份忐忑。"; }
+  100% {
+    content: "不甘心...却改变不了，又名为失败者的愤怒。"; } }
 
 html {
   margin: 0;
@@ -1191,10 +1229,10 @@ body {
   -webkit-perspective: 500px;
           perspective: 500px;
   width: 100%;
-  height: 3000px;
+  height: 0px;
   float: left;
-  -webkit-animation: bg_change .3s linear 1s forwards,bg_change_sec .3s linear 13s forwards,bg_change_third .3s linear 20s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 22s forwards;
-  animation: bg_change .3s linear 1s forwards,bg_change_sec .3s linear 13s forwards,bg_change_third .3s linear 20s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 22s forwards; }
+  -webkit-animation: bg_change .3s linear 19s forwards,bg_change_sec .3s linear 32s forwards,bg_change_third .3s linear 38s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 40s forwards,height_change .2s linear 25s forwards;
+  animation: bg_change .3s linear 19s forwards,bg_change_sec .3s linear 32s forwards,bg_change_third .3s linear 38s forwards,bg_change_fourth .7s cubic-bezier(0.175, 0.885, 0.32, 1.275) 40s forwards,height_change .2s linear 25s forwards; }
   .container .google_view {
     background: url(../images/google_view.png) 0 0 no-repeat;
     width: 600px;
@@ -1203,8 +1241,8 @@ body {
     position: relative;
     -webkit-transform-origin: left bottom;
             transform-origin: left bottom;
-    -webkit-animation: zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.36s forwards,switch .1s linear 9.35s forwards;
-    animation: zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.36s forwards,switch .1s linear 9.35s forwards; }
+    -webkit-animation: zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.3s forwards,switch .1s linear 9.3s forwards;
+    animation: zoom_out 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards,zoom_left 1s steps(3) 8.3s forwards,switch .1s linear 9.3s forwards; }
     .container .google_view .typed {
       width: 9em;
       height: 25px;
@@ -1236,12 +1274,13 @@ body {
   .container .weibo {
     width: 0px;
     position: absolute;
-    top: 0;
+    top: 18%;
     left: 25%;
     -webkit-transform-origin: top left;
             transform-origin: top left;
-    -webkit-animation: page_move 3s ease-out 0s forwards,page_move_sec 0.77s ease-in 5.3s forwards;
-    animation: page_move 3s ease-out 0s forwards,page_move_sec 0.77s ease-in 5.3s forwards; }
+    opacity: 0;
+    -webkit-animation: page_move 3s ease-out 10s forwards,page_move_sec 0.77s ease-in 15.3s forwards;
+    animation: page_move 3s ease-out 10s forwards,page_move_sec 0.77s ease-in 15.3s forwards; }
     .container .weibo:before {
       content: "";
       width: 1111px;
@@ -1249,11 +1288,11 @@ body {
       position: absolute;
       left: -100px;
       top: -20px;
-      -webkit-filter: blur(8px);
-              filter: blur(8px);
+      -webkit-filter: blur(3px);
+              filter: blur(3px);
       background: white;
-      -webkit-animation: shade 3s ease-out 0s forwards;
-      animation: shade 3s ease-out 0s forwards; }
+      -webkit-animation: shade 3s ease-out 10s forwards;
+      animation: shade 3s ease-out 10s forwards; }
     .container .weibo .shade {
       position: absolute;
       width: 0%;
@@ -1264,8 +1303,8 @@ body {
       white-space: nowrap;
       bottom: 38%;
       left: 30%;
-      -webkit-animation: words_show 2.5s linear 3s forwards;
-      animation: words_show 2.5s linear 3s forwards; }
+      -webkit-animation: words_show 2.5s linear 13s forwards;
+      animation: words_show 2.5s linear 13s forwards; }
   .container .session {
     position: absolute;
     top: 635px;
@@ -1273,14 +1312,14 @@ body {
     opacity: 0;
     -webkit-transform: rotateZ(5deg) rotateY(4deg) translate3d(-440px, -262px, 220px);
             transform: rotateZ(5deg) rotateY(4deg) translate3d(-440px, -262px, 220px);
-    -webkit-animation: content_move 3s ease-in 5.3s forwards;
-    animation: content_move 3s ease-in 5.3s forwards; }
+    -webkit-animation: content_move 3s ease-in 15.3s forwards;
+    animation: content_move 3s ease-in 15.3s forwards; }
   .container .session_1 {
     margin: 0 auto;
     width: 285px;
     height: 100px;
-    -webkit-animation: session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards;
-    animation: session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards; }
+    -webkit-animation: session_back 2s linear 21s forwards,session_hide .5s linear 40s forwards;
+    animation: session_back 2s linear 21s forwards,session_hide .5s linear 40s forwards; }
     .container .session_1 .ball {
       width: 100px;
       height: 100px;
@@ -1288,10 +1327,11 @@ body {
       margin: 0 auto;
       border-radius: 100px;
       margin: 0 auto;
+      opacity: 0;
       -webkit-transform: translate3d(0px, 350px, 0px) scale(1);
               transform: translate3d(0px, 350px, 0px) scale(1);
-      -webkit-animation: ball_move 1s ease-in-out 0s forwards,ball_move_sec .8s ease-in-out 1s infinite;
-      animation: ball_move 1s ease-in-out 0s forwards,ball_move_sec .8s ease-in-out 1s infinite; }
+      -webkit-animation: ball_move 1s ease-in-out 18s forwards,ball_move_sec .8s ease-in-out 19s infinite;
+      animation: ball_move 1s ease-in-out 18s forwards,ball_move_sec .8s ease-in-out 19s infinite; }
     .container .session_1 .ball_shade {
       width: 20px;
       height: 2px;
@@ -1301,16 +1341,16 @@ body {
       border-bottom: 0px solid;
       -webkit-filter: blur(4px);
               filter: blur(4px);
-      -webkit-animation: ball_shade .8s ease-in-out 1s infinite;
-      animation: ball_shade .8s ease-in-out 1s infinite; }
+      -webkit-animation: ball_shade .8s ease-in-out 19s infinite;
+      animation: ball_shade .8s ease-in-out 19s infinite; }
   .container .session_2 {
     width: 40%;
     height: 500px;
     margin: 10% auto 0;
     text-indent: 20px;
     opacity: 0;
-    -webkit-animation: text_show .5s linear 1.8s forwards,session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards;
-    animation: text_show .5s linear 1.8s forwards,session_back 2s linear 3s forwards,session_hide .5s linear 22s forwards; }
+    -webkit-animation: text_show .5s linear 20s forwards,session_back 2s linear 21s forwards,session_hide .5s linear 40s forwards;
+    animation: text_show .5s linear 20s forwards,session_back 2s linear 21s forwards,session_hide .5s linear 40s forwards; }
     .container .session_2 li {
       text-shadow: 50px 30px 27px black;
       font-size: 30px; }
@@ -1320,8 +1360,8 @@ body {
     position: absolute;
     left: 15%;
     top: 5%;
-    -webkit-animation: p1_move 1s linear 7s forwards,p1_move_sec .5s linear 13s forwards;
-    animation: p1_move 1s linear 7s forwards,p1_move_sec .5s linear 13s forwards; }
+    -webkit-animation: p1_move 1s linear 25s forwards,p1_move_sec .5s linear 31s forwards;
+    animation: p1_move 1s linear 25s forwards,p1_move_sec .5s linear 31s forwards; }
     .container .session_3 ul.first li {
       float: left;
       width: 300px;
@@ -1333,29 +1373,29 @@ body {
         background-size: cover;
         -webkit-transform: translateX(1600px);
                 transform: translateX(1600px);
-        -webkit-animation: p1_show .3s linear 5s forwards;
-        animation: p1_show .3s linear 5s forwards; }
+        -webkit-animation: p1_show .3s linear 23s forwards;
+        animation: p1_show .3s linear 23s forwards; }
       .container .session_3 ul.first li:nth-child(2) {
         background: url(../images/2.jpg) 0 0 no-repeat;
         background-size: cover;
         -webkit-transform: translateX(1300px);
                 transform: translateX(1300px);
-        -webkit-animation: p1_show .4s linear 5.3s forwards;
-        animation: p1_show .4s linear 5.3s forwards; }
+        -webkit-animation: p1_show .4s linear 23.3s forwards;
+        animation: p1_show .4s linear 23.3s forwards; }
       .container .session_3 ul.first li:nth-child(3) {
         background: url(../images/3.jpg) 0 0 no-repeat;
         background-size: cover;
         -webkit-transform: translateX(1000px);
                 transform: translateX(1000px);
-        -webkit-animation: p1_show .5s linear 5.7s forwards;
-        animation: p1_show .5s linear 5.7s forwards; }
+        -webkit-animation: p1_show .5s linear 23.7s forwards;
+        animation: p1_show .5s linear 23.7s forwards; }
       .container .session_3 ul.first li:nth-child(4) {
         background: url(../images/4.jpg) 0 0 no-repeat;
         background-size: cover;
         -webkit-transform: translateX(700px);
                 transform: translateX(700px);
-        -webkit-animation: p1_show .6s linear 6.2s forwards;
-        animation: p1_show .6s linear 6.2s forwards; }
+        -webkit-animation: p1_show .6s linear 24.2s forwards;
+        animation: p1_show .6s linear 24.2s forwards; }
     .container .session_3 .content {
       display: inline-block;
       width: 85%;
@@ -1367,14 +1407,14 @@ body {
       -webkit-transform: translateX(1700px);
               transform: translateX(1700px);
       letter-spacing: 5px;
-      -webkit-animation: p1_show .5s linear 5.7s forwards;
-      animation: p1_show .5s linear 5.7s forwards; }
+      -webkit-animation: p1_show .5s linear 23.7s forwards;
+      animation: p1_show .5s linear 23.7s forwards; }
     .container .session_3 ul.second {
       width: 85%;
       -webkit-perspective: 2000px;
               perspective: 2000px;
-      -webkit-animation: p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards,p2_blur .5s linear 12s forwards;
-      animation: p2_move 1s ease-in-out 9s forwards,p2_move_sec 1s ease-in-out 10s forwards,p2_blur .5s linear 12s forwards; }
+      -webkit-animation: p2_move 1s ease-in-out 27s forwards,p2_move_sec 1s ease-in-out 28s forwards,p2_blur .5s linear 30s forwards;
+      animation: p2_move 1s ease-in-out 27s forwards,p2_move_sec 1s ease-in-out 28s forwards,p2_blur .5s linear 30s forwards; }
       .container .session_3 ul.second li {
         float: left;
         margin: 10px;
@@ -1395,8 +1435,8 @@ body {
           -webkit-transform: rotateY(-40deg);
                   transform: rotateY(-40deg);
           opacity: 0;
-          -webkit-animation: p2_bg_rotate .3s ease-in-out 11s forwards;
-          animation: p2_bg_rotate .3s ease-in-out 11s forwards; }
+          -webkit-animation: p2_bg_rotate .3s ease-in-out 29s forwards;
+          animation: p2_bg_rotate .3s ease-in-out 29s forwards; }
         .container .session_3 ul.second li:nth-child(1) {
           background: url(../images/P60304-083830.jpg) 0 0 no-repeat;
           background-size: cover;
@@ -1404,8 +1444,8 @@ body {
           height: 500px;
           -webkit-transform: translateX(-150px);
                   transform: translateX(-150px);
-          -webkit-animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards;
-          animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards; }
+          -webkit-animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards;
+          animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards; }
           .container .session_3 ul.second li:nth-child(1):before {
             content: "趴地";
             line-height: 500px; }
@@ -1416,8 +1456,8 @@ body {
           height: 300px;
           -webkit-transform: translateX(150px);
                   transform: translateX(150px);
-          -webkit-animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards;
-          animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards; }
+          -webkit-animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards;
+          animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards; }
           .container .session_3 ul.second li:nth-child(2):before {
             content: "合照";
             line-height: 300px; }
@@ -1428,8 +1468,8 @@ body {
           height: 180px;
           -webkit-transform: translateX(130px);
                   transform: translateX(130px);
-          -webkit-animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards;
-          animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards,p2_rorate .2s ease-in-out 11s forwards; }
+          -webkit-animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards;
+          animation: p2_show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 26s forwards,p2_rorate .2s ease-in-out 29s forwards; }
           .container .session_3 ul.second li:nth-child(3):before {
             content: "游行"; }
     .container .session_3 ul.third {
@@ -1446,20 +1486,20 @@ body {
         -webkit-transform: translateY(300px);
                 transform: translateY(300px); }
         .container .session_3 ul.third li:nth-child(1) {
-          -webkit-animation: huaji_move_1 .7s ease-out 12s forwards,huaji_move_1_sec 1s ease-in 12.7s forwards;
-          animation: huaji_move_1 .7s ease-out 12s forwards,huaji_move_1_sec 1s ease-in 12.7s forwards; }
+          -webkit-animation: huaji_move_1 .7s ease-out 30s forwards,huaji_move_1_sec 1s ease-in 30.7s forwards;
+          animation: huaji_move_1 .7s ease-out 30s forwards,huaji_move_1_sec 1s ease-in 30.7s forwards; }
         .container .session_3 ul.third li:nth-child(2) {
-          -webkit-animation: huaji_move_2 .7s ease-out 12s forwards,huaji_move_2_sec 1s ease-in 12.7s forwards;
-          animation: huaji_move_2 .7s ease-out 12s forwards,huaji_move_2_sec 1s ease-in 12.7s forwards; }
+          -webkit-animation: huaji_move_2 .7s ease-out 30s forwards,huaji_move_2_sec 1s ease-in 30.7s forwards;
+          animation: huaji_move_2 .7s ease-out 30s forwards,huaji_move_2_sec 1s ease-in 30.7s forwards; }
         .container .session_3 ul.third li:nth-child(3) {
-          -webkit-animation: huaji_move_3 .7s ease-out 12s forwards,huaji_move_3_sec 1s ease-in 12.7s forwards;
-          animation: huaji_move_3 .7s ease-out 12s forwards,huaji_move_3_sec 1s ease-in 12.7s forwards; }
+          -webkit-animation: huaji_move_3 .7s ease-out 30s forwards,huaji_move_3_sec 1s ease-in 30.7s forwards;
+          animation: huaji_move_3 .7s ease-out 30s forwards,huaji_move_3_sec 1s ease-in 30.7s forwards; }
         .container .session_3 ul.third li:nth-child(4) {
-          -webkit-animation: huaji_move_4 .7s ease-out 12s forwards,huaji_move_4_sec 1s ease-in 12.7s forwards;
-          animation: huaji_move_4 .7s ease-out 12s forwards,huaji_move_4_sec 1s ease-in 12.7s forwards; }
+          -webkit-animation: huaji_move_4 .7s ease-out 30s forwards,huaji_move_4_sec 1s ease-in 30.7s forwards;
+          animation: huaji_move_4 .7s ease-out 30s forwards,huaji_move_4_sec 1s ease-in 30.7s forwards; }
         .container .session_3 ul.third li:nth-child(5) {
-          -webkit-animation: huaji_move_5 .7s ease-out 12s forwards,huaji_move_5_sec 1s ease-in 12.7s forwards;
-          animation: huaji_move_5 .7s ease-out 12s forwards,huaji_move_5_sec 1s ease-in 12.7s forwards; }
+          -webkit-animation: huaji_move_5 .7s ease-out 30s forwards,huaji_move_5_sec 1s ease-in 30.7s forwards;
+          animation: huaji_move_5 .7s ease-out 30s forwards,huaji_move_5_sec 1s ease-in 30.7s forwards; }
     .container .session_3 ul.fourth {
       width: 100%;
       height: 700px;
@@ -1467,8 +1507,8 @@ body {
       left: 45%;
       top: 61%;
       opacity: 0;
-      -webkit-animation: fourth_show .1s linear 13.3s forwards,fourth_move .3s linear 17s forwards,fourth_move_sec .3s linear 19s forwards,fourth_move_third 1s linear 22s forwards;
-      animation: fourth_show .1s linear 13.3s forwards,fourth_move .3s linear 17s forwards,fourth_move_sec .3s linear 19s forwards,fourth_move_third 1s linear 22s forwards; }
+      -webkit-animation: fourth_show .1s linear 31.3s forwards,fourth_move .3s linear 35s forwards,fourth_move_sec .3s linear 37s forwards,fourth_move_third 1s linear 40s forwards;
+      animation: fourth_show .1s linear 31.3s forwards,fourth_move .3s linear 35s forwards,fourth_move_sec .3s linear 37s forwards,fourth_move_third 1s linear 40s forwards; }
       .container .session_3 ul.fourth:before {
         content: "学习";
         font-size: 70px;
@@ -1480,8 +1520,8 @@ body {
         top: -40%;
         font-weight: bold;
         opacity: 0;
-        -webkit-animation: fourth_word .5s linear 13.5s forwards,fourth_word_sec 1s linear 17s forwards,fourth_word_third .7s linear 20s forwards;
-        animation: fourth_word .5s linear 13.5s forwards,fourth_word_sec 1s linear 17s forwards,fourth_word_third .7s linear 20s forwards; }
+        -webkit-animation: fourth_word .5s linear 31.5s forwards,fourth_word_sec 1s linear 35s forwards,fourth_word_third .7s linear 38s forwards;
+        animation: fourth_word .5s linear 31.5s forwards,fourth_word_sec 1s linear 35s forwards,fourth_word_third .7s linear 38s forwards; }
       .container .session_3 ul.fourth:after {
         content: "后浪推前浪，辞职死在沙滩上";
         font-size: 25px;
@@ -1492,8 +1532,8 @@ body {
         left: -20%;
         top: -25%;
         opacity: 0;
-        -webkit-animation: fourth_word_1 .5s linear 13.5s forwards,fourth_word_sec_1 1s linear 17s forwards,fourth_word_third_1 .7s linear 20s forwards;
-        animation: fourth_word_1 .5s linear 13.5s forwards,fourth_word_sec_1 1s linear 17s forwards,fourth_word_third_1 .7s linear 20s forwards; }
+        -webkit-animation: fourth_word_1 .5s linear 31.5s forwards,fourth_word_sec_1 1s linear 35s forwards,fourth_word_third_1 .7s linear 38s forwards;
+        animation: fourth_word_1 .5s linear 31.5s forwards,fourth_word_sec_1 1s linear 35s forwards,fourth_word_third_1 .7s linear 38s forwards; }
       .container .session_3 ul.fourth li {
         float: left;
         margin: 10px;
@@ -1511,62 +1551,62 @@ body {
           -webkit-transform: rotate(-45deg) scale(1.6);
                   transform: rotate(-45deg) scale(1.6); }
         .container .session_3 ul.fourth li:nth-child(1) {
-          -webkit-animation: fourth_img .5s linear 13.7s forwards;
-          animation: fourth_img .5s linear 13.7s forwards; }
+          -webkit-animation: fourth_img .5s linear 31.7s forwards;
+          animation: fourth_img .5s linear 31.7s forwards; }
           .container .session_3 ul.fourth li:nth-child(1) .img {
             background: url(../images/P60818-152835.jpg) 0 0 no-repeat;
             background-size: 100%;
-            -webkit-animation: bg_move 20s linear 14s infinite;
-            animation: bg_move 20s linear 14s infinite; }
+            -webkit-animation: bg_move 20s linear 32s infinite;
+            animation: bg_move 20s linear 32s infinite; }
         .container .session_3 ul.fourth li:nth-child(2) {
           -webkit-transform: translate3d(-215px, -502px, 1px) rotate(45deg);
                   transform: translate3d(-215px, -502px, 1px) rotate(45deg);
-          -webkit-animation: fourth_img_1 .5s linear 13.7s forwards;
-          animation: fourth_img_1 .5s linear 13.7s forwards; }
+          -webkit-animation: fourth_img_1 .5s linear 31.7s forwards;
+          animation: fourth_img_1 .5s linear 31.7s forwards; }
           .container .session_3 ul.fourth li:nth-child(2) .img {
             background: url(../images/IMG20160616002433.jpg) 0 0 no-repeat;
             background-size: cover;
             background-position: -88px -170px;
-            -webkit-animation: bg_move_1 20s linear 14s infinite;
-            animation: bg_move_1 20s linear 14s infinite; }
+            -webkit-animation: bg_move_1 20s linear 32s infinite;
+            animation: bg_move_1 20s linear 32s infinite; }
         .container .session_3 ul.fourth li:nth-child(3) {
           -webkit-transform: rotate(45deg) translate3d(215px, -509px, 0px);
                   transform: rotate(45deg) translate3d(215px, -509px, 0px);
-          -webkit-animation: fourth_img_2 .5s linear 17s forwards;
-          animation: fourth_img_2 .5s linear 17s forwards; }
+          -webkit-animation: fourth_img_2 .5s linear 35s forwards;
+          animation: fourth_img_2 .5s linear 35s forwards; }
           .container .session_3 ul.fourth li:nth-child(3) .img {
             background: url(../images/P60807-111334.jpg) 0 0 no-repeat;
             background-size: cover;
             background-position: 8px -175px;
-            -webkit-animation: bg_move_1 20s linear 17s infinite;
-            animation: bg_move_1 20s linear 17s infinite; }
+            -webkit-animation: bg_move_1 20s linear 35s infinite;
+            animation: bg_move_1 20s linear 35s infinite; }
         .container .session_3 ul.fourth li:nth-child(4) {
           -webkit-transform: rotate(45deg) translate3d(-294px, -717px, 0px);
                   transform: rotate(45deg) translate3d(-294px, -717px, 0px);
-          -webkit-animation: fourth_img_3 .2s linear 20s forwards;
-          animation: fourth_img_3 .2s linear 20s forwards; }
+          -webkit-animation: fourth_img_3 .2s linear 38s forwards;
+          animation: fourth_img_3 .2s linear 38s forwards; }
           .container .session_3 ul.fourth li:nth-child(4) .img {
             background: url(../images/6a1e8e1bgy1fcgogdggiuj21000qodnf.jpg) 0 0 no-repeat;
             background-size: 115%;
             background-position: 0px 110px;
-            -webkit-animation: bg_move_2 20s linear 20s infinite;
-            animation: bg_move_2 20s linear 20s infinite; }
+            -webkit-animation: bg_move_2 20s linear 38s infinite;
+            animation: bg_move_2 20s linear 38s infinite; }
   .container .session_4 {
     position: absolute;
     top: -50px;
     opacity: 0;
-    -webkit-animation: sessiong_bg_show .2s linear 22s forwards;
-    animation: sessiong_bg_show .2s linear 22s forwards; }
+    -webkit-animation: sessiong_bg_show .2s linear 40s forwards;
+    animation: sessiong_bg_show .2s linear 40s forwards; }
     .container .session_4 .video {
       -webkit-filter: blur(10px);
               filter: blur(10px);
       opacity: .9; }
     .container .session_4 .subtitle {
-      width: 1200px;
+      width: 1500px;
       height: 100px;
       position: absolute;
       top: 40%;
-      left: 20%;
+      left: 10%;
       z-index: 999;
       text-align: center; }
       .container .session_4 .subtitle:before {
@@ -1575,5 +1615,5 @@ body {
         font-size: 50px;
         text-shadow: -4px 2px 1px grey;
         font-weight: bold;
-        -webkit-animation: words_change 10s linear 22s forwards,_shadow 10s linear 23s forwards;
-        animation: words_change 10s linear 22s forwards,_shadow 10s linear 23s forwards; }
+        -webkit-animation: words_change 30s linear 40s forwards,_shadow 5s linear 41s infinite;
+        animation: words_change 30s linear 40s forwards,_shadow 5s linear 41s infinite; }
