@@ -1,0 +1,703 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* 封装Animation,允许同一元素绑定多个动画 */
+@-webkit-keyframes line_show {
+  to {
+    transform: rotate(-25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-moz-keyframes line_show {
+  to {
+    transform: rotate(-25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-o-keyframes line_show {
+  to {
+    transform: rotate(-25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes line_show {
+  to {
+    transform: rotate(-25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes line_show_1 {
+  to {
+    transform: rotate(25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-moz-keyframes line_show_1 {
+  to {
+    transform: rotate(25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-o-keyframes line_show_1 {
+  to {
+    transform: rotate(25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes line_show_1 {
+  to {
+    transform: rotate(25deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes line_show_2 {
+  to {
+    transform: rotate(90deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-moz-keyframes line_show_2 {
+  to {
+    transform: rotate(90deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-o-keyframes line_show_2 {
+  to {
+    transform: rotate(90deg) translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes line_show_2 {
+  to {
+    transform: rotate(90deg) translate3d(0px, 0px, 0px);
+  }
+}
+@-webkit-keyframes block_hide {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, -500px, 0px);
+  }
+}
+@-moz-keyframes block_hide {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, -500px, 0px);
+  }
+}
+@-o-keyframes block_hide {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, -500px, 0px);
+  }
+}
+@keyframes block_hide {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, -500px, 0px);
+  }
+}
+@-webkit-keyframes block_hide_1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -500px, 0px);
+  }
+}
+@-moz-keyframes block_hide_1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -500px, 0px);
+  }
+}
+@-o-keyframes block_hide_1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -500px, 0px);
+  }
+}
+@keyframes block_hide_1 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, -500px, 0px);
+  }
+}
+@-webkit-keyframes block_hide_2 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, -500px, 0px);
+  }
+}
+@-moz-keyframes block_hide_2 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, -500px, 0px);
+  }
+}
+@-o-keyframes block_hide_2 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, -500px, 0px);
+  }
+}
+@keyframes block_hide_2 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, -500px, 0px);
+  }
+}
+@-webkit-keyframes block_hide_3 {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-moz-keyframes block_hide_3 {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-o-keyframes block_hide_3 {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes block_hide_3 {
+  from {
+    opacity: .8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes block_hide_4 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, 500px, 0px);
+  }
+}
+@-moz-keyframes block_hide_4 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, 500px, 0px);
+  }
+}
+@-o-keyframes block_hide_4 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, 500px, 0px);
+  }
+}
+@keyframes block_hide_4 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(240px, 500px, 0px);
+  }
+}
+@-webkit-keyframes block_hide_5 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, 500px, 0px);
+  }
+}
+@-moz-keyframes block_hide_5 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, 500px, 0px);
+  }
+}
+@-o-keyframes block_hide_5 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, 500px, 0px);
+  }
+}
+@keyframes block_hide_5 {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-240px, 500px, 0px);
+  }
+}
+@-webkit-keyframes block_show {
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes block_show {
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes block_show {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes block_show {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes block_show_1 {
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes block_show_1 {
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes block_show_1 {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes block_show_1 {
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes word_show {
+  0% {
+    stroke-dasharray: 0,425;
+  }
+  100% {
+    stroke-dasharray: 400,425;
+  }
+}
+@-moz-keyframes word_show {
+  0% {
+    stroke-dasharray: 0,425;
+  }
+  100% {
+    stroke-dasharray: 400,425;
+  }
+}
+@-o-keyframes word_show {
+  0% {
+    stroke-dasharray: 0,425;
+  }
+  100% {
+    stroke-dasharray: 400,425;
+  }
+}
+@keyframes word_show {
+  0% {
+    stroke-dasharray: 0,425;
+  }
+  100% {
+    stroke-dasharray: 400,425;
+  }
+}
+@-webkit-keyframes color_change {
+  to {
+    fill: white;
+    stroke: black;
+  }
+}
+@-moz-keyframes color_change {
+  to {
+    fill: white;
+    stroke: black;
+  }
+}
+@-o-keyframes color_change {
+  to {
+    fill: white;
+    stroke: black;
+  }
+}
+@keyframes color_change {
+  to {
+    fill: white;
+    stroke: black;
+  }
+}
+@-webkit-keyframes color_change_1 {
+  to {
+    fill: black;
+    stroke: black;
+  }
+}
+@-moz-keyframes color_change_1 {
+  to {
+    fill: black;
+    stroke: black;
+  }
+}
+@-o-keyframes color_change_1 {
+  to {
+    fill: black;
+    stroke: black;
+  }
+}
+@keyframes color_change_1 {
+  to {
+    fill: black;
+    stroke: black;
+  }
+}
+/* line 10, ../sass/screen.scss */
+.screen {
+  width: 800px;
+  height: 600px;
+  background: black;
+  margin: 100px auto 0;
+  position: relative;
+}
+/* line 17, ../sass/screen.scss */
+.screen ul {
+  transform: translateY(-100px);
+}
+/* line 20, ../sass/screen.scss */
+.screen ul.first li {
+  transform: rotate(-25deg) translate3d(1px, -800px, 1px);
+}
+/* line 22, ../sass/screen.scss */
+.screen ul.first li:nth-child(1) {
+  -webkit-animation: line_show 2s linear 2s forwards;
+  -moz-animation: line_show 2s linear 2s forwards;
+  -o-animation: line_show 2s linear 2s forwards;
+  animation: line_show 2s linear 2s forwards;
+}
+/* line 23, ../sass/screen.scss */
+.screen ul.first li:nth-child(2) {
+  -webkit-animation: line_show 2s linear 2.3s forwards;
+  -moz-animation: line_show 2s linear 2.3s forwards;
+  -o-animation: line_show 2s linear 2.3s forwards;
+  animation: line_show 2s linear 2.3s forwards;
+}
+/* line 24, ../sass/screen.scss */
+.screen ul.first li:nth-child(3) {
+  -webkit-animation: line_show 2s linear 2.6s forwards;
+  -moz-animation: line_show 2s linear 2.6s forwards;
+  -o-animation: line_show 2s linear 2.6s forwards;
+  animation: line_show 2s linear 2.6s forwards;
+}
+/* line 25, ../sass/screen.scss */
+.screen ul.first li:nth-child(4) {
+  -webkit-animation: line_show 2s linear 2.9s forwards;
+  -moz-animation: line_show 2s linear 2.9s forwards;
+  -o-animation: line_show 2s linear 2.9s forwards;
+  animation: line_show 2s linear 2.9s forwards;
+}
+/* line 26, ../sass/screen.scss */
+.screen ul.first li:nth-child(5) {
+  -webkit-animation: line_show 2s linear 3.2s forwards;
+  -moz-animation: line_show 2s linear 3.2s forwards;
+  -o-animation: line_show 2s linear 3.2s forwards;
+  animation: line_show 2s linear 3.2s forwards;
+}
+/* line 27, ../sass/screen.scss */
+.screen ul.first li:nth-child(6) {
+  -webkit-animation: line_show 2s linear 3.5s forwards;
+  -moz-animation: line_show 2s linear 3.5s forwards;
+  -o-animation: line_show 2s linear 3.5s forwards;
+  animation: line_show 2s linear 3.5s forwards;
+}
+/* line 29, ../sass/screen.scss */
+.screen ul.second li {
+  transform: rotate(25deg) translate3d(1px, 800px, 1px);
+}
+/* line 31, ../sass/screen.scss */
+.screen ul.second li:nth-child(1) {
+  -webkit-animation: line_show_1 2s linear 0.3s forwards;
+  -moz-animation: line_show_1 2s linear 0.3s forwards;
+  -o-animation: line_show_1 2s linear 0.3s forwards;
+  animation: line_show_1 2s linear 0.3s forwards;
+}
+/* line 32, ../sass/screen.scss */
+.screen ul.second li:nth-child(2) {
+  -webkit-animation: line_show_1 2s linear 0.6s forwards;
+  -moz-animation: line_show_1 2s linear 0.6s forwards;
+  -o-animation: line_show_1 2s linear 0.6s forwards;
+  animation: line_show_1 2s linear 0.6s forwards;
+}
+/* line 33, ../sass/screen.scss */
+.screen ul.second li:nth-child(3) {
+  -webkit-animation: line_show_1 2s linear 0.9s forwards;
+  -moz-animation: line_show_1 2s linear 0.9s forwards;
+  -o-animation: line_show_1 2s linear 0.9s forwards;
+  animation: line_show_1 2s linear 0.9s forwards;
+}
+/* line 34, ../sass/screen.scss */
+.screen ul.second li:nth-child(4) {
+  -webkit-animation: line_show_1 2s linear 1.2s forwards;
+  -moz-animation: line_show_1 2s linear 1.2s forwards;
+  -o-animation: line_show_1 2s linear 1.2s forwards;
+  animation: line_show_1 2s linear 1.2s forwards;
+}
+/* line 35, ../sass/screen.scss */
+.screen ul.second li:nth-child(5) {
+  -webkit-animation: line_show_1 2s linear 1.5s forwards;
+  -moz-animation: line_show_1 2s linear 1.5s forwards;
+  -o-animation: line_show_1 2s linear 1.5s forwards;
+  animation: line_show_1 2s linear 1.5s forwards;
+}
+/* line 36, ../sass/screen.scss */
+.screen ul.second li:nth-child(6) {
+  -webkit-animation: line_show_1 2s linear 1.8s forwards;
+  -moz-animation: line_show_1 2s linear 1.8s forwards;
+  -o-animation: line_show_1 2s linear 1.8s forwards;
+  animation: line_show_1 2s linear 1.8s forwards;
+}
+/* line 39, ../sass/screen.scss */
+.screen ul li {
+  width: 2px;
+  height: 800px;
+  background: white;
+  position: absolute;
+  z-index: 1;
+}
+/* line 46, ../sass/screen.scss */
+.screen ul li:nth-child(1) {
+  left: 1px;
+}
+/* line 49, ../sass/screen.scss */
+.screen ul li:nth-child(2) {
+  left: 160px;
+}
+/* line 52, ../sass/screen.scss */
+.screen ul li:nth-child(3) {
+  left: 320px;
+}
+/* line 55, ../sass/screen.scss */
+.screen ul li:nth-child(4) {
+  left: 480px;
+}
+/* line 58, ../sass/screen.scss */
+.screen ul li:nth-child(5) {
+  left: 640px;
+}
+/* line 61, ../sass/screen.scss */
+.screen ul li:nth-child(6) {
+  right: 1px;
+}
+/* line 70, ../sass/screen.scss */
+.screen ul.third li {
+  transform: rotate(90deg) translate3d(0px, 800px, 0px);
+  left: 400px;
+}
+/* line 74, ../sass/screen.scss */
+.screen ul.third li:nth-child(1) {
+  top: -172px;
+  -webkit-animation: line_show_2 2s linear 2.8s forwards;
+  -moz-animation: line_show_2 2s linear 2.8s forwards;
+  -o-animation: line_show_2 2s linear 2.8s forwards;
+  animation: line_show_2 2s linear 2.8s forwards;
+}
+/* line 78, ../sass/screen.scss */
+.screen ul.third li:nth-child(2) {
+  top: 0px;
+  -webkit-animation: line_show_2 2s linear 3.1s forwards;
+  -moz-animation: line_show_2 2s linear 3.1s forwards;
+  -o-animation: line_show_2 2s linear 3.1s forwards;
+  animation: line_show_2 2s linear 3.1s forwards;
+}
+/* line 82, ../sass/screen.scss */
+.screen ul.third li:nth-child(3) {
+  top: 172px;
+  -webkit-animation: line_show_2 2s linear 1.2s forwards;
+  -moz-animation: line_show_2 2s linear 1.2s forwards;
+  -o-animation: line_show_2 2s linear 1.2s forwards;
+  animation: line_show_2 2s linear 1.2s forwards;
+}
+
+/* line 94, ../sass/screen.scss */
+#lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 100, ../sass/screen.scss */
+svg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+/* line 106, ../sass/screen.scss */
+#svg_17 {
+  opacity: 0;
+  -webkit-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.3s forwards,block_hide 4s linear 6s forwards;
+  -moz-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.3s forwards,block_hide 4s linear 6s forwards;
+  -o-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.3s forwards,block_hide 4s linear 6s forwards;
+  animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.3s forwards,block_hide 4s linear 6s forwards;
+}
+
+/* line 110, ../sass/screen.scss */
+#svg_16 {
+  opacity: 0;
+  -webkit-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.8s forwards,block_hide_1 5s linear 6s forwards;
+  -moz-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.8s forwards,block_hide_1 5s linear 6s forwards;
+  -o-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.8s forwards,block_hide_1 5s linear 6s forwards;
+  animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.8s forwards,block_hide_1 5s linear 6s forwards;
+}
+
+/* line 114, ../sass/screen.scss */
+#svg_15 {
+  opacity: 0;
+  -webkit-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.4s forwards,block_hide_2 3s linear 7.5s forwards;
+  -moz-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.4s forwards,block_hide_2 3s linear 7.5s forwards;
+  -o-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.4s forwards,block_hide_2 3s linear 7.5s forwards;
+  animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.4s forwards,block_hide_2 3s linear 7.5s forwards;
+}
+
+/* line 118, ../sass/screen.scss */
+#svg_18 {
+  opacity: 0;
+  -webkit-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.5s forwards,block_hide_3 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards;
+  -moz-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.5s forwards,block_hide_3 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards;
+  -o-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.5s forwards,block_hide_3 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards;
+  animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.5s forwards,block_hide_3 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards;
+}
+
+/* line 122, ../sass/screen.scss */
+#svg_20 {
+  opacity: 0;
+  -webkit-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.8s forwards,block_hide_4 6s linear 6.5s forwards;
+  -moz-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.8s forwards,block_hide_4 6s linear 6.5s forwards;
+  -o-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.8s forwards,block_hide_4 6s linear 6.5s forwards;
+  animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.8s forwards,block_hide_4 6s linear 6.5s forwards;
+}
+
+/* line 126, ../sass/screen.scss */
+#svg_19 {
+  opacity: 0;
+  -webkit-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5.1s forwards,block_hide_5 3s linear 7.5s forwards;
+  -moz-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5.1s forwards,block_hide_5 3s linear 7.5s forwards;
+  -o-animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5.1s forwards,block_hide_5 3s linear 7.5s forwards;
+  animation: block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5.1s forwards,block_hide_5 3s linear 7.5s forwards;
+}
+
+/* line 131, ../sass/screen.scss */
+#svg_5, #svg_6, #svg_8, #svg_12, #svg_11, #svg_14 {
+  opacity: 0;
+  -webkit-animation: block_show_1 0.5s linear 6s forwards;
+  -moz-animation: block_show_1 0.5s linear 6s forwards;
+  -o-animation: block_show_1 0.5s linear 6s forwards;
+  animation: block_show_1 0.5s linear 6s forwards;
+}
+
+/* line 135, ../sass/screen.scss */
+#svg_01 {
+  stroke-dasharray: 0,425;
+  -webkit-animation: word_show 5s linear 5s forwards,color_change 1s linear 10s forwards;
+  -moz-animation: word_show 5s linear 5s forwards,color_change 1s linear 10s forwards;
+  -o-animation: word_show 5s linear 5s forwards,color_change 1s linear 10s forwards;
+  animation: word_show 5s linear 5s forwards,color_change 1s linear 10s forwards;
+}
+
+/* line 139, ../sass/screen.scss */
+#svg_02, #svg_03 {
+  stroke-dasharray: 0,425;
+  -webkit-animation: word_show 5s linear 5s forwards,color_change_1 1s linear 10s forwards;
+  -moz-animation: word_show 5s linear 5s forwards,color_change_1 1s linear 10s forwards;
+  -o-animation: word_show 5s linear 5s forwards,color_change_1 1s linear 10s forwards;
+  animation: word_show 5s linear 5s forwards,color_change_1 1s linear 10s forwards;
+}

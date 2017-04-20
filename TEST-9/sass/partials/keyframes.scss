@@ -1,0 +1,50 @@
+
+@include keyframes(line_show){
+	to{ transform:rotate(-25deg) translate3d(0px,0px,0px); }
+}
+@include keyframes(line_show_1){
+	to{ transform:rotate(25deg) translate3d(0px,0px,0px); }
+}
+@include keyframes(line_show_2){
+	to{ transform:rotate(90deg) translate3d(0px,0px,0px); }
+}
+@include keyframes(block_hide){
+	0%{ transform:translate3d(0px,0px,0px); }
+	100%{ transform:translate3d(240px,-500px,0px); }
+}
+@include keyframes(block_hide_1){
+	0%{ transform:translate3d(0px,0px,0px); }
+	100%{ transform:translate3d(0px,-500px,0px); }
+}
+@include keyframes(block_hide_2){
+	0%{ transform:translate3d(0px,0px,0px); }
+	100%{ transform:translate3d(-240px,-500px,0px); }
+}
+@include keyframes(block_hide_3){
+	from{ opacity: .8; }
+	to{ opacity:0; }
+}
+@include keyframes(block_hide_4){
+	0%{ transform:translate3d(0px,0px,0px); }
+	100%{ transform:translate3d(240px,500px,0px); }
+}
+@include keyframes(block_hide_5){
+	0%{ transform:translate3d(0px,0px,0px); }
+	100%{ transform:translate3d(-240px,500px,0px); }
+}
+@include keyframes(block_show){
+	to{ opacity:1; }
+}
+@include keyframes(block_show_1){
+	to{ opacity:1; }
+}
+@include keyframes(word_show){
+	0%{ stroke-dasharray: 0,425; }
+	100%{ stroke-dasharray: 400,425; }
+}
+@include keyframes(color_change){
+	to{ fill:white; stroke:black; }
+}
+@include keyframes(color_change_1){
+	to{ fill:black; stroke:black; }
+}

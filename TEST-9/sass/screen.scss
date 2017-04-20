@@ -1,0 +1,142 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/mixins";
+@import "partials/keyframes";
+
+.screen{
+	width: 800px;
+	height: 600px;
+	background:black;
+	margin: 100px auto 0;
+	position: relative;
+
+	ul{
+		transform:translateY(-100px);
+
+		&.first li{
+			transform:rotate(-25deg) translate3d(1px,-800px,1px);
+			&:nth-child(1){ @include animation("line_show 2s linear 2s forwards"); }
+			&:nth-child(2){ @include animation("line_show 2s linear 2.3s forwards"); }
+			&:nth-child(3){ @include animation("line_show 2s linear 2.6s forwards"); }
+			&:nth-child(4){ @include animation("line_show 2s linear 2.9s forwards"); }
+			&:nth-child(5){ @include animation("line_show 2s linear 3.2s forwards"); }
+			&:nth-child(6){ @include animation("line_show 2s linear 3.5s forwards"); }
+		}
+		&.second li{
+			transform:rotate(25deg) translate3d(1px,800px,1px);
+			&:nth-child(1){ @include animation("line_show_1 2s linear 0.3s forwards"); }
+			&:nth-child(2){ @include animation("line_show_1 2s linear 0.6s forwards"); }
+			&:nth-child(3){ @include animation("line_show_1 2s linear 0.9s forwards"); }
+			&:nth-child(4){ @include animation("line_show_1 2s linear 1.2s forwards"); }
+			&:nth-child(5){ @include animation("line_show_1 2s linear 1.5s forwards"); }
+			&:nth-child(6){ @include animation("line_show_1 2s linear 1.8s forwards"); }
+		}
+		
+		li{
+			width: 2px;
+			height: 800px;
+			background:white;
+			position: absolute;
+			z-index: 1;
+
+			&:nth-child(1){
+				left: 1px;
+			}
+			&:nth-child(2){
+				left: 160px;
+			}
+			&:nth-child(3){
+				left: 320px;
+			}
+			&:nth-child(4){
+				left: 480px;
+			}
+			&:nth-child(5){
+				left:640px;
+			}
+			&:nth-child(6){
+				right:1px;
+			}
+
+		}
+
+
+		&.third{
+
+		 	li{
+				transform:rotate(90deg) translate3d(0px,800px,0px);
+				left:400px;
+
+				&:nth-child(1){
+					top:-172px;
+					@include animation("line_show_2 2s linear 2.8s forwards");
+				}
+				&:nth-child(2){
+					top:0px;
+					@include animation("line_show_2 2s linear 3.1s forwards");
+				}
+				&:nth-child(3){
+					top:172px;
+					@include animation("line_show_2 2s linear 1.2s forwards");
+				}
+			}
+		}
+
+
+	}
+	
+
+}
+#lines{
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+svg{
+	position:absolute;
+	top:0px;
+	left:0;
+}
+
+#svg_17{
+	opacity: 0;
+	@include animation("block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.3s forwards,block_hide 4s linear 6s forwards");
+}
+#svg_16{
+	opacity: 0;
+	@include animation("block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.8s forwards,block_hide_1 5s linear 6s forwards");
+}
+#svg_15{
+	opacity: 0;
+	@include animation("block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 3.4s forwards,block_hide_2 3s linear 7.5s forwards");
+}
+#svg_18{
+	opacity: 0;
+	@include animation("block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.5s forwards,block_hide_3 4s cubic-bezier(0.68, -0.55, 0.265, 1.55) 8s forwards");
+}
+#svg_20{
+	opacity: 0;
+	@include animation("block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4.8s forwards,block_hide_4 6s linear 6.5s forwards");
+}
+#svg_19{
+	opacity: 0;
+	@include animation("block_show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 5.1s forwards,block_hide_5 3s linear 7.5s forwards");
+}
+
+#svg_5,#svg_6,#svg_8,#svg_12,#svg_11,#svg_14{
+	opacity: 0;
+	@include animation("block_show_1 0.5s linear 6s forwards");
+}
+#svg_01{
+	stroke-dasharray: 0,425;
+	@include animation("word_show 5s linear 5s forwards,color_change 1s linear 10s forwards");
+}
+#svg_02,#svg_03{
+	stroke-dasharray: 0,425;
+	@include animation("word_show 5s linear 5s forwards,color_change_1 1s linear 10s forwards");
+}
