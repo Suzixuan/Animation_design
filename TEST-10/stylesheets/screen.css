@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* 封装Animation,允许同一元素绑定多个动画 */
+@-webkit-keyframes color_switch_1 {
+  to {
+    border: 300px #ff7020 solid;
+  }
+}
+@-moz-keyframes color_switch_1 {
+  to {
+    border: 300px #ff7020 solid;
+  }
+}
+@-o-keyframes color_switch_1 {
+  to {
+    border: 300px #ff7020 solid;
+  }
+}
+@keyframes color_switch_1 {
+  to {
+    border: 300px #ff7020 solid;
+  }
+}
+@-webkit-keyframes color_switch_2 {
+  from {
+    border: 300px #ff7020 solid;
+  }
+  to {
+    border: 300px #ff9800 solid;
+  }
+}
+@-moz-keyframes color_switch_2 {
+  from {
+    border: 300px #ff7020 solid;
+  }
+  to {
+    border: 300px #ff9800 solid;
+  }
+}
+@-o-keyframes color_switch_2 {
+  from {
+    border: 300px #ff7020 solid;
+  }
+  to {
+    border: 300px #ff9800 solid;
+  }
+}
+@keyframes color_switch_2 {
+  from {
+    border: 300px #ff7020 solid;
+  }
+  to {
+    border: 300px #ff9800 solid;
+  }
+}
+@-webkit-keyframes color_switch_3 {
+  from {
+    border: 300px #ff9800 solid;
+  }
+  to {
+    border: 300px #40251b solid;
+  }
+}
+@-moz-keyframes color_switch_3 {
+  from {
+    border: 300px #ff9800 solid;
+  }
+  to {
+    border: 300px #40251b solid;
+  }
+}
+@-o-keyframes color_switch_3 {
+  from {
+    border: 300px #ff9800 solid;
+  }
+  to {
+    border: 300px #40251b solid;
+  }
+}
+@keyframes color_switch_3 {
+  from {
+    border: 300px #ff9800 solid;
+  }
+  to {
+    border: 300px #40251b solid;
+  }
+}
+@-webkit-keyframes color_switch_4 {
+  from {
+    border: 300px #40251b solid;
+  }
+  to {
+    border: 300px #e91e63 solid;
+  }
+}
+@-moz-keyframes color_switch_4 {
+  from {
+    border: 300px #40251b solid;
+  }
+  to {
+    border: 300px #e91e63 solid;
+  }
+}
+@-o-keyframes color_switch_4 {
+  from {
+    border: 300px #40251b solid;
+  }
+  to {
+    border: 300px #e91e63 solid;
+  }
+}
+@keyframes color_switch_4 {
+  from {
+    border: 300px #40251b solid;
+  }
+  to {
+    border: 300px #e91e63 solid;
+  }
+}
+@-webkit-keyframes color_switch_5 {
+  from {
+    border: 300px #e91e63 solid;
+  }
+  to {
+    border: 300px #552f9a solid;
+  }
+}
+@-moz-keyframes color_switch_5 {
+  from {
+    border: 300px #e91e63 solid;
+  }
+  to {
+    border: 300px #552f9a solid;
+  }
+}
+@-o-keyframes color_switch_5 {
+  from {
+    border: 300px #e91e63 solid;
+  }
+  to {
+    border: 300px #552f9a solid;
+  }
+}
+@keyframes color_switch_5 {
+  from {
+    border: 300px #e91e63 solid;
+  }
+  to {
+    border: 300px #552f9a solid;
+  }
+}
+@-webkit-keyframes color_switch_6 {
+  from {
+    border: 300px #552f9a solid;
+  }
+  to {
+    border: 300px #ffc107 solid;
+  }
+}
+@-moz-keyframes color_switch_6 {
+  from {
+    border: 300px #552f9a solid;
+  }
+  to {
+    border: 300px #ffc107 solid;
+  }
+}
+@-o-keyframes color_switch_6 {
+  from {
+    border: 300px #552f9a solid;
+  }
+  to {
+    border: 300px #ffc107 solid;
+  }
+}
+@keyframes color_switch_6 {
+  from {
+    border: 300px #552f9a solid;
+  }
+  to {
+    border: 300px #ffc107 solid;
+  }
+}
+@-webkit-keyframes color_switch_7 {
+  from {
+    border: 300px #ffc107 solid;
+  }
+  to {
+    border: 300px #FFF solid;
+  }
+}
+@-moz-keyframes color_switch_7 {
+  from {
+    border: 300px #ffc107 solid;
+  }
+  to {
+    border: 300px #FFF solid;
+  }
+}
+@-o-keyframes color_switch_7 {
+  from {
+    border: 300px #ffc107 solid;
+  }
+  to {
+    border: 300px #FFF solid;
+  }
+}
+@keyframes color_switch_7 {
+  from {
+    border: 300px #ffc107 solid;
+  }
+  to {
+    border: 300px #FFF solid;
+  }
+}
+@-webkit-keyframes color_switch_8 {
+  from {
+    border: 300px #FFF solid;
+  }
+  to {
+    border: 300px red solid;
+  }
+}
+@-moz-keyframes color_switch_8 {
+  from {
+    border: 300px #FFF solid;
+  }
+  to {
+    border: 300px red solid;
+  }
+}
+@-o-keyframes color_switch_8 {
+  from {
+    border: 300px #FFF solid;
+  }
+  to {
+    border: 300px red solid;
+  }
+}
+@keyframes color_switch_8 {
+  from {
+    border: 300px #FFF solid;
+  }
+  to {
+    border: 300px red solid;
+  }
+}
+@-webkit-keyframes color_switch_9 {
+  from {
+    border: 300px red solid;
+  }
+  to {
+    border: 300px #4268ff solid;
+  }
+}
+@-moz-keyframes color_switch_9 {
+  from {
+    border: 300px red solid;
+  }
+  to {
+    border: 300px #4268ff solid;
+  }
+}
+@-o-keyframes color_switch_9 {
+  from {
+    border: 300px red solid;
+  }
+  to {
+    border: 300px #4268ff solid;
+  }
+}
+@keyframes color_switch_9 {
+  from {
+    border: 300px red solid;
+  }
+  to {
+    border: 300px #4268ff solid;
+  }
+}
+@-webkit-keyframes color_switch_10 {
+  from {
+    border: 300px #4268ff solid;
+  }
+  to {
+    border: 300px #2600ff solid;
+  }
+}
+@-moz-keyframes color_switch_10 {
+  from {
+    border: 300px #4268ff solid;
+  }
+  to {
+    border: 300px #2600ff solid;
+  }
+}
+@-o-keyframes color_switch_10 {
+  from {
+    border: 300px #4268ff solid;
+  }
+  to {
+    border: 300px #2600ff solid;
+  }
+}
+@keyframes color_switch_10 {
+  from {
+    border: 300px #4268ff solid;
+  }
+  to {
+    border: 300px #2600ff solid;
+  }
+}
+@-webkit-keyframes word_show {
+  0% {
+    stroke-dasharray: 0,400;
+  }
+  100% {
+    stroke-dasharray: 1000,400;
+  }
+}
+@-moz-keyframes word_show {
+  0% {
+    stroke-dasharray: 0,400;
+  }
+  100% {
+    stroke-dasharray: 1000,400;
+  }
+}
+@-o-keyframes word_show {
+  0% {
+    stroke-dasharray: 0,400;
+  }
+  100% {
+    stroke-dasharray: 1000,400;
+  }
+}
+@keyframes word_show {
+  0% {
+    stroke-dasharray: 0,400;
+  }
+  100% {
+    stroke-dasharray: 1000,400;
+  }
+}
+/* line 10, ../sass/screen.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font: 20px/1 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+/* line 20, ../sass/screen.scss */
+.cirle {
+  width: 2500px;
+  height: 1000px;
+  background-color: transparent;
+  border: 300px transparent solid;
+  border-radius: 1000px;
+  position: absolute;
+  top: -28%;
+  left: -25%;
+  z-index: 999;
+  filter: blur(180px);
+  -webkit-animation: color_switch_1 .7s ease-in-out .5s forwards,color_switch_2 .7s ease-in-out 3s forwards,color_switch_3 .7s ease-in-out 5s forwards,color_switch_4 .7s ease-in-out 8s forwards,color_switch_5 .7s ease-in-out 10.5s forwards,color_switch_6 .7s ease-in-out 13s forwards,color_switch_7 .7s ease-in-out 17.8s forwards,color_switch_8 .7s ease-in-out 18.3s forwards,color_switch_9 .7s ease-in-out 24s forwards,color_switch_10 .7s ease-in-out 29s forwards;
+  -moz-animation: color_switch_1 .7s ease-in-out .5s forwards,color_switch_2 .7s ease-in-out 3s forwards,color_switch_3 .7s ease-in-out 5s forwards,color_switch_4 .7s ease-in-out 8s forwards,color_switch_5 .7s ease-in-out 10.5s forwards,color_switch_6 .7s ease-in-out 13s forwards,color_switch_7 .7s ease-in-out 17.8s forwards,color_switch_8 .7s ease-in-out 18.3s forwards,color_switch_9 .7s ease-in-out 24s forwards,color_switch_10 .7s ease-in-out 29s forwards;
+  -o-animation: color_switch_1 .7s ease-in-out .5s forwards,color_switch_2 .7s ease-in-out 3s forwards,color_switch_3 .7s ease-in-out 5s forwards,color_switch_4 .7s ease-in-out 8s forwards,color_switch_5 .7s ease-in-out 10.5s forwards,color_switch_6 .7s ease-in-out 13s forwards,color_switch_7 .7s ease-in-out 17.8s forwards,color_switch_8 .7s ease-in-out 18.3s forwards,color_switch_9 .7s ease-in-out 24s forwards,color_switch_10 .7s ease-in-out 29s forwards;
+  animation: color_switch_1 .7s ease-in-out .5s forwards,color_switch_2 .7s ease-in-out 3s forwards,color_switch_3 .7s ease-in-out 5s forwards,color_switch_4 .7s ease-in-out 8s forwards,color_switch_5 .7s ease-in-out 10.5s forwards,color_switch_6 .7s ease-in-out 13s forwards,color_switch_7 .7s ease-in-out 17.8s forwards,color_switch_8 .7s ease-in-out 18.3s forwards,color_switch_9 .7s ease-in-out 24s forwards,color_switch_10 .7s ease-in-out 29s forwards;
+}
+
+/* line 34, ../sass/screen.scss */
+.title {
+  position: absolute;
+  z-index: 9999;
+  bottom: -15%;
+  right: 5%;
+}
+
+/* line 40, ../sass/screen.scss */
+#svg_01 {
+  stroke-dasharray: 0,500;
+  -webkit-animation: word_show 33s linear 0s forwards;
+  -moz-animation: word_show 33s linear 0s forwards;
+  -o-animation: word_show 33s linear 0s forwards;
+  animation: word_show 33s linear 0s forwards;
+}

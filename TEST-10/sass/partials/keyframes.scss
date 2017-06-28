@@ -1,0 +1,44 @@
+﻿
+@include keyframes(color_switch_1){
+	to { border: 300px #ff7020 solid; }
+}
+@include keyframes(color_switch_2){
+	from{ border: 300px #ff7020 solid; }
+	to { border: 300px #ff9800 solid; }
+}
+@include keyframes(color_switch_3){
+	from{ border: 300px #ff9800 solid; }
+	to { border: 300px #40251b solid; }
+}
+@include keyframes(color_switch_4){
+	from{ border: 300px #40251b solid; }
+	to { border: 300px #e91e63 solid; }
+}
+@include keyframes(color_switch_5){
+	from{ border: 300px #e91e63 solid; }
+	to { border: 300px #552f9a solid; }
+}
+@include keyframes(color_switch_6){
+	from{ border: 300px #552f9a solid; }
+	to { border: 300px #ffc107 solid; }
+}
+@include keyframes(color_switch_7){
+	from{ border: 300px #ffc107 solid; }
+	to { border: 300px #FFF solid; }
+}
+@include keyframes(color_switch_8){
+	from{ border: 300px #FFF solid; }
+	to { border: 300px red solid; }
+}
+@include keyframes(color_switch_9){
+	from{ border: 300px red solid; }
+	to { border: 300px #4268ff solid; }
+}
+@include keyframes(color_switch_10){
+	from{ border: 300px #4268ff solid; }
+	to { border: 300px #2600ff solid; }
+}
+@include keyframes(word_show){
+	0%{ stroke-dasharray: 0,400; }
+	100%{ stroke-dasharray: 1000,400; }
+}

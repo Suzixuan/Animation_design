@@ -1,0 +1,43 @@
+﻿/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "partials/mixins";
+@import "partials/keyframes";
+
+html{
+	margin: 0;
+	padding:0;
+}
+body{
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	font: 20px/1 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+.cirle{
+	width: 2500px;
+    height: 1000px;
+    background-color: transparent;
+    border: 300px transparent solid;
+    border-radius: 1000px;
+    position: absolute;
+    top: -28%;
+    left: -25%;
+    z-index: 999;
+    filter:blur(180px);
+
+    @include animation("color_switch_1 .7s ease-in-out .5s forwards,color_switch_2 .7s ease-in-out 3s forwards,color_switch_3 .7s ease-in-out 5s forwards,color_switch_4 .7s ease-in-out 8s forwards,color_switch_5 .7s ease-in-out 10.5s forwards,color_switch_6 .7s ease-in-out 13s forwards,color_switch_7 .7s ease-in-out 17.8s forwards,color_switch_8 .7s ease-in-out 18.3s forwards,color_switch_9 .7s ease-in-out 24s forwards,color_switch_10 .7s ease-in-out 29s forwards");
+}
+.title{
+	position: absolute;
+    z-index: 9999;
+    bottom: -15%;
+    right: 5%;
+}
+#svg_01{
+	stroke-dasharray: 0,500;
+	@include animation("word_show 33s linear 0s forwards");
+}
