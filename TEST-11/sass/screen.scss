@@ -1,0 +1,57 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "partials/mixins";
+@import "partials/keyframes";
+@mixin mask(){
+	-webkit-mask-image: url(../image/hero_mask_large.svg);
+	-webkit-mask-size: 855px 824px;
+	-webkit-mask-repeat: no-repeat;
+	width: 848px;
+    height: 824px;
+    display: inline-block;
+    vertical-align: baseline;
+    background-image:-webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,black),color-stop(100%,black));
+}
+
+.container{
+	background: black;
+	width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+
+	.apple{
+		background-image: url("../image/hero_large.jpg");
+		width: 848px;
+		height: 824px;
+		margin: 100px auto;
+	    position: relative;
+	    opacity: .8;
+
+	    .canvas{
+	    	background: linear-gradient(170deg, transparent 0%, transparent 55%, #000 90%, #000 100%);
+	    	position: absolute;
+    	    width: 200px;
+    	    height: 100px;
+    	    top: 49px;
+    	    left: 86px;
+    	    transform: rotate(20deg);
+    	    border-radius: 100px;
+    	    @include animation("sharow .5s linear 4.15s forwards");
+	    }
+	}
+	.mask-video{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.mask{
+		@include mask();
+		@include animation("mask_switch 5s ease-in-out 0s forwards")
+
+	}
+}

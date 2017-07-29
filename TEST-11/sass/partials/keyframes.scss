@@ -1,0 +1,9 @@
+﻿
+@include keyframes(mask_switch){
+	60%{ transform: translate3d(0px,-112px,0px) rotate(-7deg);opacity: .80; filter:blur(40px);}
+	100%{ transform:translate3d(600px,-112px,0px)rotate(0deg);opacity: .9;filter:blur(40px); }
+}
+@include keyframes(sharow){
+	from{ top:49px;left:80px; }
+	to{ top:98px;left:115px; }
+}

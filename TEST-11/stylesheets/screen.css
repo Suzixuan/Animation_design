@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* 封装Animation,允许同一元素绑定多个动画 */
+@-webkit-keyframes mask_switch {
+  60% {
+    transform: translate3d(0px, -112px, 0px) rotate(-7deg);
+    opacity: .80;
+    filter: blur(40px);
+  }
+  100% {
+    transform: translate3d(600px, -112px, 0px) rotate(0deg);
+    opacity: .9;
+    filter: blur(40px);
+  }
+}
+@-moz-keyframes mask_switch {
+  60% {
+    transform: translate3d(0px, -112px, 0px) rotate(-7deg);
+    opacity: .80;
+    filter: blur(40px);
+  }
+  100% {
+    transform: translate3d(600px, -112px, 0px) rotate(0deg);
+    opacity: .9;
+    filter: blur(40px);
+  }
+}
+@-o-keyframes mask_switch {
+  60% {
+    transform: translate3d(0px, -112px, 0px) rotate(-7deg);
+    opacity: .80;
+    filter: blur(40px);
+  }
+  100% {
+    transform: translate3d(600px, -112px, 0px) rotate(0deg);
+    opacity: .9;
+    filter: blur(40px);
+  }
+}
+@keyframes mask_switch {
+  60% {
+    transform: translate3d(0px, -112px, 0px) rotate(-7deg);
+    opacity: .80;
+    filter: blur(40px);
+  }
+  100% {
+    transform: translate3d(600px, -112px, 0px) rotate(0deg);
+    opacity: .9;
+    filter: blur(40px);
+  }
+}
+@-webkit-keyframes sharow {
+  from {
+    top: 49px;
+    left: 80px;
+  }
+  to {
+    top: 98px;
+    left: 115px;
+  }
+}
+@-moz-keyframes sharow {
+  from {
+    top: 49px;
+    left: 80px;
+  }
+  to {
+    top: 98px;
+    left: 115px;
+  }
+}
+@-o-keyframes sharow {
+  from {
+    top: 49px;
+    left: 80px;
+  }
+  to {
+    top: 98px;
+    left: 115px;
+  }
+}
+@keyframes sharow {
+  from {
+    top: 49px;
+    left: 80px;
+  }
+  to {
+    top: 98px;
+    left: 115px;
+  }
+}
+/* line 20, ../sass/screen.scss */
+.container {
+  background: black;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 27, ../sass/screen.scss */
+.container .apple {
+  background-image: url("../image/hero_large.jpg");
+  width: 848px;
+  height: 824px;
+  margin: 100px auto;
+  position: relative;
+  opacity: .8;
+}
+/* line 35, ../sass/screen.scss */
+.container .apple .canvas {
+  background: linear-gradient(170deg, transparent 0%, transparent 55%, #000 90%, #000 100%);
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top: 49px;
+  left: 86px;
+  transform: rotate(20deg);
+  border-radius: 100px;
+  -webkit-animation: sharow .5s linear 4.15s forwards;
+  -moz-animation: sharow .5s linear 4.15s forwards;
+  -o-animation: sharow .5s linear 4.15s forwards;
+  animation: sharow .5s linear 4.15s forwards;
+}
+/* line 47, ../sass/screen.scss */
+.container .mask-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 52, ../sass/screen.scss */
+.container .mask {
+  -webkit-mask-image: url(../image/hero_mask_large.svg);
+  -webkit-mask-size: 855px 824px;
+  -webkit-mask-repeat: no-repeat;
+  width: 848px;
+  height: 824px;
+  display: inline-block;
+  vertical-align: baseline;
+  background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, black), color-stop(100%, black));
+  -webkit-animation: mask_switch 5s ease-in-out 0s forwards;
+  -moz-animation: mask_switch 5s ease-in-out 0s forwards;
+  -o-animation: mask_switch 5s ease-in-out 0s forwards;
+  animation: mask_switch 5s ease-in-out 0s forwards;
+}
