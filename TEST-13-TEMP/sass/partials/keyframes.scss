@@ -1,0 +1,31 @@
+﻿
+@include keyframes(fog_show){
+	0%{ background-position-x: 0;  }
+	100%{ background-position-x: 2000px;  }
+}
+@include keyframes(line_show){
+	0%{ opacity : 0;  }
+	50%{opacity : .3;}
+	100%{ opacity: .9;  }
+}
+@include keyframes(line_position){
+	0%{ transform:translate3d(100px,0,0);  }
+	30%{ transform:translate3d(450px,0,0);  }
+	50%{ transform:translate3d(220px,0,0);  }
+	70%{ transform:translate3d(900px,0,0);  }
+	100%{ transform:translate3d(600px,0,0);  }
+}
+@include keyframes(line_position){
+	0%{ transform:translate3d(100px,0,0);  }
+	30%{ transform:translate3d(450px,0,0);  }
+	50%{ transform:translate3d(220px,0,0);  }
+	70%{ transform:translate3d(900px,0,0);  }
+	100%{ transform:translate3d(600px,0,0);  }
+}
+@include keyframes(line_position_other){
+	0%{ transform:translate3d(66px,0,0);  }
+	30%{ transform:translate3d(666px,0,0);  }
+	50%{ transform:translate3d(888px,0,0);  }
+	70%{ transform:translate3d(1000px,0,0);  }
+	100%{ transform:translate3d(1888px,0,0);  }
+}

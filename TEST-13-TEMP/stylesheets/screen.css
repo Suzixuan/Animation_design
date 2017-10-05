@@ -1,0 +1,341 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* 封装Animation,允许同一元素绑定多个动画 */
+@-webkit-keyframes fog_show {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
+}
+@-moz-keyframes fog_show {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
+}
+@-o-keyframes fog_show {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
+}
+@keyframes fog_show {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 2000px;
+  }
+}
+@-webkit-keyframes line_show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .3;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+@-moz-keyframes line_show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .3;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+@-o-keyframes line_show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .3;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+@keyframes line_show {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .3;
+  }
+  100% {
+    opacity: .9;
+  }
+}
+@-webkit-keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@-moz-keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@-o-keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@-webkit-keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@-moz-keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@-o-keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@keyframes line_position {
+  0% {
+    transform: translate3d(100px, 0, 0);
+  }
+  30% {
+    transform: translate3d(450px, 0, 0);
+  }
+  50% {
+    transform: translate3d(220px, 0, 0);
+  }
+  70% {
+    transform: translate3d(900px, 0, 0);
+  }
+  100% {
+    transform: translate3d(600px, 0, 0);
+  }
+}
+@-webkit-keyframes line_position_other {
+  0% {
+    transform: translate3d(66px, 0, 0);
+  }
+  30% {
+    transform: translate3d(666px, 0, 0);
+  }
+  50% {
+    transform: translate3d(888px, 0, 0);
+  }
+  70% {
+    transform: translate3d(1000px, 0, 0);
+  }
+  100% {
+    transform: translate3d(1888px, 0, 0);
+  }
+}
+@-moz-keyframes line_position_other {
+  0% {
+    transform: translate3d(66px, 0, 0);
+  }
+  30% {
+    transform: translate3d(666px, 0, 0);
+  }
+  50% {
+    transform: translate3d(888px, 0, 0);
+  }
+  70% {
+    transform: translate3d(1000px, 0, 0);
+  }
+  100% {
+    transform: translate3d(1888px, 0, 0);
+  }
+}
+@-o-keyframes line_position_other {
+  0% {
+    transform: translate3d(66px, 0, 0);
+  }
+  30% {
+    transform: translate3d(666px, 0, 0);
+  }
+  50% {
+    transform: translate3d(888px, 0, 0);
+  }
+  70% {
+    transform: translate3d(1000px, 0, 0);
+  }
+  100% {
+    transform: translate3d(1888px, 0, 0);
+  }
+}
+@keyframes line_position_other {
+  0% {
+    transform: translate3d(66px, 0, 0);
+  }
+  30% {
+    transform: translate3d(666px, 0, 0);
+  }
+  50% {
+    transform: translate3d(888px, 0, 0);
+  }
+  70% {
+    transform: translate3d(1000px, 0, 0);
+  }
+  100% {
+    transform: translate3d(1888px, 0, 0);
+  }
+}
+/* line 9, ../sass/screen.scss */
+body {
+  overflow: hidden;
+  margin: 0;
+}
+
+/* line 13, ../sass/screen.scss */
+#video .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2000px;
+  height: 1000px;
+  min-height: 700px;
+  background: url(../image/bg_cover.png) repeat top left;
+}
+
+/* line 22, ../sass/screen.scss */
+.fog {
+  background-image: url(../image/fog.png);
+  width: 2000px;
+  height: 351px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-animation: fog_show 30s linear infinite;
+  -moz-animation: fog_show 30s linear infinite;
+  -o-animation: fog_show 30s linear infinite;
+  animation: fog_show 30s linear infinite;
+}
+
+/* line 31, ../sass/screen.scss */
+.line_second, .line {
+  border: .5px double #59493C;
+  height: 1000px;
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+
+/* line 39, ../sass/screen.scss */
+.line {
+  -webkit-animation: line_show 2s linear infinite,line_position 4s linear infinite;
+  -moz-animation: line_show 2s linear infinite,line_position 4s linear infinite;
+  -o-animation: line_show 2s linear infinite,line_position 4s linear infinite;
+  animation: line_show 2s linear infinite,line_position 4s linear infinite;
+}
+
+/* line 42, ../sass/screen.scss */
+.line_second {
+  -webkit-animation: line_show 3s linear infinite,line_position_other 3s linear infinite;
+  -moz-animation: line_show 3s linear infinite,line_position_other 3s linear infinite;
+  -o-animation: line_show 3s linear infinite,line_position_other 3s linear infinite;
+  animation: line_show 3s linear infinite,line_position_other 3s linear infinite;
+}

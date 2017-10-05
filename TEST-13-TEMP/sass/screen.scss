@@ -1,0 +1,44 @@
+﻿/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "partials/mixins";
+@import "partials/keyframes";
+
+body{
+	overflow: hidden;
+	margin: 0;
+}
+#video .cover{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 2000px;
+    height: 1000px;
+    min-height: 700px;
+    background: url(../image/bg_cover.png) repeat top left;
+}
+.fog{
+	background-image: url(../image/fog.png);
+	width: 2000px;
+	height: 351px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	@include animation("fog_show 30s linear infinite");
+}
+.line_second,.line{
+	border:.5px double #59493C;
+	height: 1000px;
+	position: absolute;
+	top:0;
+	left: 20%;
+
+}
+.line{
+	@include animation("line_show 2s linear infinite,line_position 4s linear infinite");
+}
+.line_second{
+	@include animation("line_show 3s linear infinite,line_position_other 3s linear infinite");
+}
