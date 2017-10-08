@@ -55,10 +55,15 @@
 	// window.onload=function(){
  //      startPlay();
 	// };
+
+	if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent) && /(Android)/i.test(navigator.userAgent)) {
+	   	window.addEventListener("click", function (event) {
+    		startPlay();
+		}, false);
+	} else {
+	   startPlay();
+	};
 	
-	window.addEventListener("click", function (event) {
-    	startPlay();
-	}, false);
 	
 	
 
