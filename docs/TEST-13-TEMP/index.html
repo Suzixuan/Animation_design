@@ -36,6 +36,8 @@
 	
 	function startPlay(){
         SewisePlayer.doPlay();
+        document.getElementById('video').style.width = document.body.clientWidth
+		document.getElementById('video').style.height = document.body.clientHeight
     }
     
 	startPlay();
