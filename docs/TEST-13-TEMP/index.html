@@ -56,12 +56,10 @@
  //      startPlay();
 	// };
 	
-	setTimeout(function(){
-		window.addEventListener("load", function (event) {
-			alert(true);
-	    	startPlay();
-		}, false);
-	},3000);
+	window.addEventListener("load", function (event) {
+		alert(true);
+    	startPlay();
+	}, true);
 	
 	
 
