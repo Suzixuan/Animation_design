@@ -32,9 +32,9 @@
 	                //     ogg: "http://jackzhang1204.github.io/materials/mov_bbb.ogg",
 	                //     webm: "http://jackzhang1204.github.io/materials/mov_bbb.webm"
 	                // },
-	                autostart:"true",
-	                // timedisplay:"disable",
-	                // controlbardisplay:"disable",
+	                autostart:"false",
+	                timedisplay:"disable",
+	                controlbardisplay:"disable",
 	                volume:"0"
 	            });
 	        </script>
@@ -52,11 +52,13 @@
     }
     
 	
-	window.onload=function(){
-		alert(1);
-      startPlay();
-	};
+	// window.onload=function(){
+ //      startPlay();
+	// };
 	
+	window.addEventListener("load", function (event) {
+    	startPlay();
+	}, false);
 	
 
     
