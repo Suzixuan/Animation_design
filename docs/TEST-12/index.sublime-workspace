@@ -1,0 +1,369 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"po",
+				"pos:r\tposition:relative"
+			],
+			[
+				"b",
+				"bg+\tbackground+"
+			],
+			[
+				"set",
+				"setTimeout〔function〕"
+			],
+			[
+				"v",
+				"v\tvisibility"
+			],
+			[
+				"tr",
+				"transform"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"h",
+				"Set Syntax: HTML"
+			],
+			[
+				"view",
+				"View: Toggle Tabs"
+			],
+			[
+				"pc",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/preinstall/sass/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/preinstall/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/预设/sass/mixins.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/预设/sass/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/预设/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/node_modules/gauge/set-immediate.js",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/mixins.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-10/sass/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-10/sass/partials/keyframes.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-10/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-9/sass/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-4/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-5/sass/style.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-5/sass/style-1.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-5/index-1.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-5/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-6/sass/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/web/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-7/text.txt",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-7/index-2.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-6/test-6-1.svg",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-6/index.html",
+		"/C/Users/suzix/Desktop/未标题-1 [已恢复].svg",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-9/sass/partials/keyframes.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/web/scss/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-9/index.html",
+		"/C/Users/suzix/Desktop/资源 2.svg",
+		"/C/Users/suzix/Desktop/未标题-1.svg",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-10/sass/rhombus.svg",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/web/scss/partials/keyframes.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-10/sass/partials/mixins.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/web/video/MatKearney.mp3",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-9/sass/partials/mixins.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Sass_test/compass_text/sass/lesson.scss",
+		"/C/Users/suzix/Desktop/method-draw-image (2).svg",
+		"/C/Users/suzix/Desktop/method-draw-image (1).svg",
+		"/C/Users/suzix/Desktop/squre.svg",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-9/sass/partials/variables.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Emmet.html",
+		"/C/Users/suzix/Desktop/method-draw-image.svg",
+		"/C/Users/suzix/Desktop/test.svg",
+		"/F/WebDesign/OneDrive/ACERX64/Sublime Text Build 3126 x64/Data/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/suzix/Desktop/method-draw-image (1).html",
+		"/C/Users/suzix/Desktop/index.css",
+		"/F/WebDesign/OneDrive/ACERX64/Sublime Text Build 3126 x64/Data/Packages/Emmet/Emmet.sublime-settings",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/gulpfile.js",
+		"/C/Users/suzix/Desktop/sewise-player-master/player/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-6/stylesheets/screen.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/gulpfile.js",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/partials/keyframes.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/index.html",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/css/screen.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/partials/_keyframes.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-7/stylesheets/screen.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/stylesheets/screen.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8/scss/screen.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/screen.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/partials/_mixins.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/package.json",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/partials/_keyframes.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/partials/_responsive.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/partials/_variables.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/test.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/css/test.css",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/css/test.scss",
+		"/F/WebDesign/OneDrive/code_Lib/Animation_design/TEST-8-N/web/scss/test.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8-N/gulpfile.js",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-2/test/index.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8-N/package.json",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8/stylesheets/screen.css",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-2/test/index_1.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-2/test/index_3.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-2/sass/screen.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-5/index-1.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-5/index.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-4/index.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-4/sass/screen.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-3/sass/screen.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-3/index.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-2/index.html",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-1/sass/screen.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8/scss/partials/_keyframes.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-6/sass/screen.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8/scss/partials/_mixins.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-7/sass/screen.scss",
+		"/C/Users/suzix/Desktop/index.html",
+		"/C/OneDrive/ACERX64/Sublime Text Build 3126 x64/Data/Packages/Package Control/Package Control.sublime-settings",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8/config.rb",
+		"/C/OneDrive/ACERX64/Sublime Text Build 3126 x64/Data/Packages/AutoFileName/autofilename.sublime-settings",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-8/scss/screen.scss",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-7/index.css",
+		"/C/OneDrive/ACERX64/Sublime Text Build 3126 x64/Data/Packages/Default/Preferences.sublime-settings",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-7/stylesheets/screen.css",
+		"/C/OneDrive/code_Lib/Animation_design/TEST-7/index.html"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"1s",
+			"ease-in",
+			".5s",
+			"10ms",
+			"step",
+			"step(1)",
+			"ease-in-out",
+			"linear",
+			"0.01s",
+			"cubic-bezier(1, 0, 0, 1)",
+			".8",
+			"8s",
+			".5",
+			".8",
+			"cubic-bezier(0.86, 0, 0.07, 1)",
+			".7",
+			"ease-in-out",
+			".6",
+			"0.1",
+			"0.01",
+			".7",
+			".5",
+			"0.1s",
+			"linear",
+			"0.2s",
+			"1s",
+			"ease-out",
+			"block_show",
+			"1s",
+			"#000",
+			"white",
+			"#000",
+			"fourth",
+			".5",
+			"p1_move_sec",
+			"12.8s",
+			"8s",
+			"15s",
+			"3s",
+			"12.5",
+			"ease-out",
+			"1s",
+			"7s",
+			"1s",
+			".",
+			"8s",
+			"4",
+			"in",
+			"5s",
+			"5",
+			"cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+			"1s",
+			"ease-in-out",
+			"out",
+			"h2",
+			"div",
+			"h2"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 199.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

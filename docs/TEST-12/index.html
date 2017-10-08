@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		html{
+			margin: 0;
+			padding:0;
+		}
+		body{
+			margin: 0;
+			padding:0;
+			overflow: hidden;
+			/*font: 20px/1 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;*/
+			font-family:"YouYuan",幼圆;
+		}
+		.text{
+			font-size: 10rem;
+			text-align: center;
+			font-weight: bold;
+			/*height: 900px;
+			line-height: 900px;*/
+
+		}
+		.text > span{
+			position: relative;
+			display: inline-block;
+		}
+		.block1{
+			position: absolute;
+		    width: 100px;
+		    height: 40px;
+		    left: 10px;
+		    bottom: 40%;
+		    background: white;
+		    filter: blur(5px);
+		}
+		.instead{
+			color:transparent;
+			
+			text-stroke: 1px black;
+			-webkit-text-stroke: 1px black;
+			position: relative;
+			z-index: 100;
+		}
+		.color{
+			position: absolute;
+			right:0;
+			top: 0;
+			background: black;
+			width: 300px;
+			height: 300px;
+			z-index: 88;
+		}
+		.bg{
+			background-image: url(s.png);
+			width: 219px;
+			height: 225px;
+		}
+	</style>
+</head>
+<body>
+	<div class="text">
+			<span class="first">四
+					<!-- <span class="block1"></span> -->
+					<span class="instead">四</span>
+					
+					
+			</span>
+			<div class="bg"></div>
+			月は君の嘘</div>
+
+	
+
+</body>
+</html>
