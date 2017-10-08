@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>TEST-13</title>
+	<!-- <meta name="viewport" width="device-width"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 	<link rel="stylesheet" href="stylesheets/screen.css">
 	<style type="text/css">
-		@media (min-width: 400px) {
+		@media (max-width: 600px) {
 			#video{
-				width: 413px;
-				height: 732px;
+				height: 50rem;
 			}
 		}
 	</style>
@@ -34,7 +35,7 @@
 	                volume:"0"
 	            });
 	        </script>
-	        <div class="cover"></div>
+	        <div id="cover" class="cover"></div>
 	        <div class="fog"></div>
 	        <div class="line"></div>
 	        <div class="line_second"></div>
@@ -44,14 +45,14 @@
 	
 	function startPlay(){
         SewisePlayer.doPlay();
-	    document.getElementById('video').style.width = document.body.clientWidth;
-		document.getElementById('video').style.height = document.body.clientHeight;
     }
     
-	setTimeout(function(){startPlay();},2000);
+	startPlay();
 	
 	
 
     
 </script>
 </html>
+
+<!-- http://www.w3cplus.com/css/A-pixel-is-not-a-pixel-is-not-a-pixel.html -->
