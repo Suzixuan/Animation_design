@@ -20,7 +20,7 @@
 	                    ogg: "http://jackzhang1204.github.io/materials/mov_bbb.ogg",
 	                    webm: "http://jackzhang1204.github.io/materials/mov_bbb.webm"
 	                },
-	                autostart:"fales",
+	                autostart:"true",
 	                timedisplay:"disable",
 	                controlbardisplay:"disable",
 	                volume:"0"
@@ -38,7 +38,10 @@
         SewisePlayer.doPlay();
     }
     
-	startPlay();
+    setTimeout(function(){
+    	startPlay();
+    },1000);
+	
 
     
 </script>
