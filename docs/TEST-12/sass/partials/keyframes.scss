@@ -1,0 +1,95 @@
+﻿
+
+@mixin frames($name,$fill,$color,$color-opacity,$dasharray){
+
+	@include keyframes($name){
+		0%{  
+			fill: none;
+		    stroke-dasharray: 0 10;
+		    stroke: $color;
+		    stroke-opacity:0.2;
+		    // transform:translate3d(-449.69px, -264.35px,0) scaleX(0);
+		    
+
+		 }
+		 50%{
+	 		fill: $color-opacity;
+	 	   stroke-dasharray: $dasharray;
+	 	   stroke: $color;
+	 	   stroke-opacity:0.4;
+		 	  
+		 }
+		 80%{
+		 	fill: $color-opacity;
+		    stroke-dasharray: $dasharray;
+		    stroke: $color;
+		    stroke-opacity:0.6;
+		     
+		 }
+		100%{ 
+			fill: $fill;
+		    stroke-dasharray: $dasharray;
+		    stroke: $color;
+		    stroke-opacity:1;
+		    // transform:translate3d(-449.69px, -264.35px,0) scaleX(1);
+		 }
+	}
+
+}
+
+#first,#second{
+	@include frames(
+			$name:"text_show",
+			$fill:#D0507B,
+			$color:#D0507B,
+			$color-opacity:#D0507B,
+			$dasharray:82 500
+		);
+}
+
+#svg_2_show{
+	@include frames(
+			$name:"svg_2_show",
+			$fill:#9D6192,
+			$color:#9D6192,
+			$color-opacity:#9D6192,
+			$dasharray:150 500
+		);
+}
+#svg_3_show{
+	@include frames(
+			$name:"svg_3_show",
+			$fill:#777099,
+			$color:#777099,
+			$color-opacity:#777099,
+			$dasharray:50 300
+		);
+}
+#svg_4_show{
+	@include frames(
+			$name:"svg_4_show",
+			$fill:#5876AA,
+			$color:#5876AA,
+			$color-opacity:#5876AA,
+			$dasharray:100 300
+		);
+}
+#svg_5_show{
+	@include frames(
+			$name:"svg_5_show",
+			$fill:#5A83AE,
+			$color:#5A83AE,
+			$color-opacity:#5A83AE,
+			$dasharray:20 300
+		);
+}
+#svg_6_show{
+	@include frames(
+			$name:"svg_6_show",
+			$fill:#3386BE,
+			$color:#3386BE,
+			$color-opacity:#3386BE,
+			$dasharray:110 300
+		);
+}
+

@@ -1,0 +1,740 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* 封装Animation,允许同一元素绑定多个动画 */
+@-webkit-keyframes text_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #D0507B;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes text_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #D0507B;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes text_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #D0507B;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 1;
+  }
+}
+@keyframes text_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #D0507B;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #D0507B;
+    stroke-dasharray: 82 500;
+    stroke: #D0507B;
+    stroke-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_2_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #9D6192;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes svg_2_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #9D6192;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes svg_2_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #9D6192;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 1;
+  }
+}
+@keyframes svg_2_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #9D6192;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #9D6192;
+    stroke-dasharray: 150 500;
+    stroke: #9D6192;
+    stroke-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_3_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #777099;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes svg_3_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #777099;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes svg_3_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #777099;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 1;
+  }
+}
+@keyframes svg_3_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #777099;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #777099;
+    stroke-dasharray: 50 300;
+    stroke: #777099;
+    stroke-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_4_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5876AA;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes svg_4_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5876AA;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes svg_4_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5876AA;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 1;
+  }
+}
+@keyframes svg_4_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5876AA;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5876AA;
+    stroke-dasharray: 100 300;
+    stroke: #5876AA;
+    stroke-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_5_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5A83AE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes svg_5_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5A83AE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes svg_5_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5A83AE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 1;
+  }
+}
+@keyframes svg_5_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #5A83AE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #5A83AE;
+    stroke-dasharray: 20 300;
+    stroke: #5A83AE;
+    stroke-opacity: 1;
+  }
+}
+@-webkit-keyframes svg_6_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #3386BE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 1;
+  }
+}
+@-moz-keyframes svg_6_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #3386BE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 1;
+  }
+}
+@-o-keyframes svg_6_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #3386BE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 1;
+  }
+}
+@keyframes svg_6_show {
+  0% {
+    fill: none;
+    stroke-dasharray: 0 10;
+    stroke: #3386BE;
+    stroke-opacity: 0.2;
+  }
+  50% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.4;
+  }
+  80% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 0.6;
+  }
+  100% {
+    fill: #3386BE;
+    stroke-dasharray: 110 300;
+    stroke: #3386BE;
+    stroke-opacity: 1;
+  }
+}
+/* line 11, ../sass/screen.scss */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../sass/screen.scss */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*font: 20px/1 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;*/
+  font-family: "YouYuan",幼圆;
+  background: #D0D2D1;
+}
+
+/* line 23, ../sass/screen.scss */
+.text {
+  text-align: center;
+  margin: 300px 0 0;
+  width: 100%;
+}
+
+/* line 28, ../sass/screen.scss */
+#svg_2 .cls-5,
+#svg_2 .cls-6 {
+  fill: black;
+}
+
+/* line 32, ../sass/screen.scss */
+#svg_3 .cls-5 {
+  fill: #d1d2d0;
+}
+
+/* line 35, ../sass/screen.scss */
+#svg_4 .cls-4,
+#svg_4 .cls-6 {
+  fill: black;
+}
+
+/* line 39, ../sass/screen.scss */
+#first, #second,
+#svg_2_show,
+#svg_3_show,
+#svg_4_show,
+#svg_4_show_second,
+#svg_5_show,
+#svg_6_show {
+  fill: transparent;
+  stroke-dasharray: 0 500;
+  stroke-opacity: 0;
+  stroke-width: 1;
+  transform-origin: top;
+}
+
+/* line 56, ../sass/screen.scss */
+#first {
+  -webkit-animation: text_show 7s linear forwards;
+  -moz-animation: text_show 7s linear forwards;
+  -o-animation: text_show 7s linear forwards;
+  animation: text_show 7s linear forwards;
+}
+
+/* line 60, ../sass/screen.scss */
+#second {
+  -webkit-animation: text_show 7s linear 1.2s forwards;
+  -moz-animation: text_show 7s linear 1.2s forwards;
+  -o-animation: text_show 7s linear 1.2s forwards;
+  animation: text_show 7s linear 1.2s forwards;
+}
+
+/* line 63, ../sass/screen.scss */
+#svg_2_show {
+  -webkit-animation: svg_2_show 7s linear 1.4s forwards;
+  -moz-animation: svg_2_show 7s linear 1.4s forwards;
+  -o-animation: svg_2_show 7s linear 1.4s forwards;
+  animation: svg_2_show 7s linear 1.4s forwards;
+}
+
+/* line 66, ../sass/screen.scss */
+#svg_3_show {
+  -webkit-animation: svg_3_show 7s linear 1.6s forwards;
+  -moz-animation: svg_3_show 7s linear 1.6s forwards;
+  -o-animation: svg_3_show 7s linear 1.6s forwards;
+  animation: svg_3_show 7s linear 1.6s forwards;
+}
+
+/* line 69, ../sass/screen.scss */
+#svg_4_show, #svg_4_show_second {
+  -webkit-animation: svg_4_show 7s linear 1.8s forwards;
+  -moz-animation: svg_4_show 7s linear 1.8s forwards;
+  -o-animation: svg_4_show 7s linear 1.8s forwards;
+  animation: svg_4_show 7s linear 1.8s forwards;
+}
+
+/* line 72, ../sass/screen.scss */
+#svg_5_show {
+  -webkit-animation: svg_5_show 7s linear 2s forwards;
+  -moz-animation: svg_5_show 7s linear 2s forwards;
+  -o-animation: svg_5_show 7s linear 2s forwards;
+  animation: svg_5_show 7s linear 2s forwards;
+}
+
+/* line 75, ../sass/screen.scss */
+#svg_6_show {
+  -webkit-animation: svg_6_show 7s linear 2.2s forwards;
+  -moz-animation: svg_6_show 7s linear 2.2s forwards;
+  -o-animation: svg_6_show 7s linear 2.2s forwards;
+  animation: svg_6_show 7s linear 2.2s forwards;
+}

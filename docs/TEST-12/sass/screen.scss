@@ -1,0 +1,77 @@
+﻿/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "partials/mixins";
+@import "partials/keyframes";
+
+
+
+html{
+	margin: 0;
+	padding:0;
+}
+body{
+	margin: 0;
+	padding:0;
+	overflow: hidden;
+	/*font: 20px/1 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;*/
+	font-family:"YouYuan",幼圆;
+	background: #D0D2D1;
+}
+.text{
+	text-align: center;
+    margin: 300px 0 0;
+    width: 100%;
+}
+#svg_2 .cls-5,
+#svg_2 .cls-6{
+	fill:black;
+}
+#svg_3 .cls-5{
+	fill:#d1d2d0;
+}
+#svg_4 .cls-4,
+#svg_4 .cls-6{
+	fill:black;
+}
+#first,#second,
+#svg_2_show,
+#svg_3_show,
+#svg_4_show,
+#svg_4_show_second,
+#svg_5_show,
+#svg_6_show{
+	// fill:#D0507B;
+	// fill:transparent;
+	fill: transparent;
+    stroke-dasharray: 0 500;
+    stroke-opacity:0;
+    stroke-width:1;
+    transform-origin: top;
+    // transform:translate3d(-449.69px, -264.35px,0) scale(0);
+	
+}
+#first{
+	@include animation("text_show 7s linear forwards");
+	
+}
+#second{
+	@include animation("text_show 7s linear 1.2s forwards");
+}
+#svg_2_show{
+	@include animation("svg_2_show 7s linear 1.4s forwards");
+}
+#svg_3_show{
+	@include animation("svg_3_show 7s linear 1.6s forwards");
+}
+#svg_4_show,#svg_4_show_second{
+	@include animation("svg_4_show 7s linear 1.8s forwards");
+}
+#svg_5_show{
+	@include animation("svg_5_show 7s linear 2s forwards");
+}
+#svg_6_show{
+	@include animation("svg_6_show 7s linear 2.2s forwards");
+}
