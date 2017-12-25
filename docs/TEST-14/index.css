@@ -2,6 +2,8 @@
 body{
 	background: black;
 	overflow: hidden;
+	/*display: inline-block;*/
+    margin: 0;
 }
 
 @font-face {
@@ -12,12 +14,19 @@ body{
     font-style: normal;
 
 }
+
+.text{
+	position: relative;
+    width: 464px;
+    height: 650px;
+}
+
 .font{
 	font-size: 30px;
 	font-family:'christmas_time_personal_useRg';
 	color:#ffb43f;
 	position: absolute;
-	bottom: 25px;
+	bottom: 30px;
 	left: 30%;
     text-shadow: 5px 5px 50px #4a4242;
     animation: 2s linear 0s infinite text_show;
@@ -35,10 +44,9 @@ body{
 	width: 464px;
 	height: 650px;
 	position: relative;
-	margin: 5% 35% 0;
-	transform-style: preserve-3d;
+	margin: 10% 35%;
+	/*transform-style: preserve-3d;*/
 	perspective: 100;
-	border: 1px solid #2d2c2c;
     border-radius: 20px;
 }
 .img{
@@ -133,6 +141,7 @@ body{
 	background: url(images/15.png);
 	box-shadow: -20px -20px 150px 15px #1b1a1a inset;
 	border-radius: 20px;
+	border: 1px solid #2d2c2c;
 	/*animation: 1s linear 0s infinite rotate_15;
 	-webkit-animation:1s linear 0s infinite rotate_15;*/
 }
@@ -203,10 +212,37 @@ body{
 }
 @keyframes text_show{
 	0%{ text-shadow: 4px 1px 48px #4a4242; }
-	20%{ text-shadow: 6px 2px 52px #bb0000; }
-	40%{ text-shadow: 7px 3px 45px #2196f3; }
-	60%{ text-shadow: 8px 4px 46px #c18ae4; }
-	80%{ text-shadow: 3px 2px 47px #d26948; }
-	100%{ text-shadow: 5px 1px 49px #820f36; }
+	20%{ text-shadow: 4px 1px 48px #bb0000; }
+	40%{ text-shadow: 4px 1px 48px #2196f3; }
+	60%{ text-shadow: 4px 1px 48px #c18ae4; }
+	80%{ text-shadow: 4px 1px 48px #d26948; }
+	100%{ text-shadow: 4px 1px 48px #820f36; }
+}
+@media (max-width: 1024px) {
+  .content {
+    margin: 10% 25%;
+  }
+}
+@media (max-width: 414px) {
+  .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    margin: 0;
+    transform: scale(0.6);
+  }
+}
+@media (max-width: 320px) {
+  .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 0;
+    margin: 0;
+    transform: scale(0.4);
+  }
 }
 
