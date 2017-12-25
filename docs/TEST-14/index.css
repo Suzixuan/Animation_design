@@ -1,0 +1,212 @@
+
+body{
+	background: black;
+	overflow: hidden;
+}
+
+@font-face {
+    font-family: 'christmas_time_personal_useRg';
+    src: url('font/christmas_time_personal_use-webfont.woff2') format('woff2'),
+         url('font/christmas_time_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.font{
+	font-size: 30px;
+	font-family:'christmas_time_personal_useRg';
+	color:#ffb43f;
+	position: absolute;
+	bottom: 25px;
+	left: 30%;
+    text-shadow: 5px 5px 50px #4a4242;
+    animation: 2s linear 0s infinite text_show;
+	-webkit-animation:2s linear 0s infinite text_show;
+}
+
+.name{
+  bottom: 40px;
+  left: 3%;
+  position: relative;
+  font-size: 40px;
+}
+
+.content{
+	width: 464px;
+	height: 650px;
+	position: relative;
+	margin: 5% 35% 0;
+	transform-style: preserve-3d;
+	perspective: 100;
+	border: 1px solid #2d2c2c;
+    border-radius: 20px;
+}
+.img{
+	position: absolute;
+	width: 464px;
+	height: 650px;
+}
+.img_1{
+	background: url(images/1.png);
+	transform-origin:157px 382px;
+	animation: 50s steps(50, start) 0s 50 rotate_1;
+	-webkit-animation:50s steps(50, start) 0s 50 rotate_1;
+}
+.img_2{
+	background: url(images/2.png);
+	transform-origin:92px 500px;
+	animation: 20s steps(20, start) 0s 20 rotate_2;
+	-webkit-animation:20s steps(20, start) 0s 20 rotate_2;
+}
+.img_3{
+	background: url(images/3.png);
+	transform-origin:217px 507px;
+	animation: 20s steps(20, start) 0s 100 rotate_3;
+	-webkit-animation:20s steps(20, start) 0s 100 rotate_3;
+}
+.img_4{
+	background: url(images/4.png);
+	transform-origin:300px 526px;
+	animation: 10s steps(10, start) 0s 100 rotate_4;
+	-webkit-animation:10s steps(10, start) 0s 100 rotate_4;
+}
+.img_5{
+	background: url(images/5.png);
+	transform-origin:396px 512px;
+	animation: 80s steps(80, start) 0s 80 rotate_5;
+	-webkit-animation:80s steps(80, start) 0s 80 rotate_5;
+}
+.img_6{
+	background: url(images/6.png);
+	transform-origin:289px 447px;
+	animation: 100s steps(100, start) 0s 100 rotate_6;
+	-webkit-animation:100s steps(100, start) 0s 100 rotate_6;
+}
+.img_7{
+	background: url(images/7.png);
+	transform-origin:367px 402px;
+	animation: 100s steps(70, start) 0s 70 rotate_7;
+	-webkit-animation:100s steps(70, start) 0s 70 rotate_7;
+}
+.img_8{
+	background: url(images/8.png);
+	transform-origin:300px 328px;
+	animation: 60s steps(120, start) 0s 120 rotate_8;
+	-webkit-animation:60s steps(120, start) 0s 120 rotate_8;
+}
+.img_9{
+	background: url(images/9.png);
+	transform-origin:212px 298px;
+	animation: 22s steps(22, start) 0s 22 rotate_9;
+	-webkit-animation:22s steps(22, start) 0s 22 rotate_9;
+}
+.img_10{
+	background: url(images/10.png);
+	transform-origin:168px 249px;
+	animation: 33s steps(33, start) 0s 33 rotate_10;
+	-webkit-animation:33s steps(33, start) 0s 33 rotate_10;
+}
+.img_11{
+	background: url(images/11.png);
+	transform-origin:306px 235px;
+	animation: 44s steps(100, start) 0s 100 rotate_11;
+	-webkit-animation:44s steps(100, start) 0s 100 rotate_11;
+}
+.img_12{
+	background: url(images/12.png);
+	transform-origin:239px 186px;
+	animation: 100s steps(100, start) 0s 100 rotate_12;
+	-webkit-animation:100s steps(100, start) 0s 100 rotate_12;
+}
+.img_13{
+	background: url(images/13.png);
+	animation: 10s linear 0s infinite rotate_13;
+	-webkit-animation:10s linear 0s infinite rotate_13;
+}
+.img_14{
+	background: url(images/14.png);
+	transform-origin:246px 263px;
+	animation: 10s linear 0s infinite rotate_14;
+	-webkit-animation:10s linear 0s infinite rotate_14;
+}
+.img_15{
+	background: url(images/15.png);
+	box-shadow: -20px -20px 150px 15px #1b1a1a inset;
+	border-radius: 20px;
+	/*animation: 1s linear 0s infinite rotate_15;
+	-webkit-animation:1s linear 0s infinite rotate_15;*/
+}
+.img_16{
+	background: url(images/16.png);
+}
+
+
+@keyframes rotate_1{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_2{
+	from{-webkit-transform:rotate(360deg)}
+	to{-webkit-transform:rotate(0deg)}
+}
+@keyframes rotate_3{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_4{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_5{
+	from{-webkit-transform:rotate(360deg)}
+	to{-webkit-transform:rotate(0deg)}
+}
+@keyframes rotate_6{
+	from{-webkit-transform:rotate(360deg)}
+	to{-webkit-transform:rotate(0deg)}
+}
+@keyframes rotate_7{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_8{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_9{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_10{
+	from{-webkit-transform:rotate(360deg)}
+	to{-webkit-transform:rotate(0deg)}
+}
+@keyframes rotate_11{
+	from{-webkit-transform:rotate(360deg)}
+	to{-webkit-transform:rotate(0deg)}
+}
+@keyframes rotate_12{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_13{
+	from{-webkit-transform:rotateY(0deg)}
+	to{-webkit-transform:rotateY(360deg)}
+}
+@keyframes rotate_14{
+	from{-webkit-transform:rotate(0deg)}
+	to{-webkit-transform:rotate(360deg)}
+}
+@keyframes rotate_15{
+	from{filter:blur(0px);}
+	to{filter:blur(1px);}
+}
+@keyframes text_show{
+	0%{ text-shadow: 4px 1px 48px #4a4242; }
+	20%{ text-shadow: 6px 2px 52px #bb0000; }
+	40%{ text-shadow: 7px 3px 45px #2196f3; }
+	60%{ text-shadow: 8px 4px 46px #c18ae4; }
+	80%{ text-shadow: 3px 2px 47px #d26948; }
+	100%{ text-shadow: 5px 1px 49px #820f36; }
+}
+
