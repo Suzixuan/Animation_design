@@ -85,3 +85,44 @@ TEST-8 My Zeitgeist 2016
 > 新的一年要……看看日历，不禁尴尬。这本来是一个月前所想所写的总结，而不是在被游戏玩一顿之后的某次所顿悟下的。走了一年弯路，现在也该上上正轨了吧，2017的目标，还是不用嘴说出来。不过现在凌晨2点下的决心，打了很大的折扣吧。
 
 ![](http://wx4.sinaimg.cn/mw690/6a1e8e1bgy1fcyyjirnboj20dz07wac0.jpg)
+
+
+
+
+
+TEST-09  —— 临摹自 Re:CREATORS : 第2话 OP
+
+> 久违的码代码，都快生锈了![[二哈]](https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/74/moren_hashiqi_org.png)。 作为4月霸权8w8，遇到这么炫酷的OP开头，难免手痒，不过还是虎头蛇尾啦，漏了部分和最后显示标题。彻积木式的写特效，麻烦死了。或者还是学学视频制作？！
+
+![](http://wx4.sinaimg.cn/large/6a1e8e1bly1fnyejcgmkaj20j60aq40i.jpg)
+
+
+
+
+
+TEST-11 APPLE 官网宣传页
+
+> 想买手机逛苹果的时候无意看到的，特别那摄像头DUANG一下的光影特效太好看了，但最后死活做不出...emmmmmm...算了[哆啦A梦汗] 
+
+![](http://wx3.sinaimg.cn/mw690/6a1e8e1bly1fnyeoi66jaj20j60asgmm.jpg)
+
+
+
+
+
+TEST-12<四月是你的谎言>结局
+
+> 冒着期中考试FFF的危险爆肝临摹了一下<四月是你的谎言>结局的效果。
+> 也算是作完结撒花纪念吧，毕竟那晚看完哭得这么厉害...
+
+![](http://wx1.sinaimg.cn/mw690/6a1e8e1bly1fnyer5omtrj20dx07sq3s.jpg)
+
+
+
+
+
+NO.14 Christmas Scene 2017
+
+> 寥寥200多行代码，为自己写张贺卡。
+
+![](http://wx1.sinaimg.cn/mw690/6a1e8e1bly1fnyettb9thj20j70atgo0.jpg)
