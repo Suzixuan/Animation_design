@@ -1,0 +1,1325 @@
+
+
+@import "mixins.scss";
+@import "keyframes.scss";
+
+
+body,ul,li{
+	margin:0;
+	padding:0;
+	font: 20px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+#container{
+	width: 984px;
+	height: 800px;
+	margin: 50px auto;
+	background: #000;
+	position:relative;
+	.bottom{
+		background-image: url(../images/videoplay.png);
+		width: 984px;
+		height: 69px;
+		position:absolute;
+		bottom:0px;
+	}
+
+	.first-act{
+		width: 978px;
+		height: 725px;
+		// background: #F3F2F3;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+50,e1e1e1+51,f6f6f6+100;White+Gloss+%231 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 50%, rgba(225,225,225,1) 51%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		position:absolute;
+		top:3px;
+		left:3px;
+		overflow: hidden;
+
+		.act-top{
+			width: 977px;
+			background: white;
+			height: 100px;
+			border:1px solid #DBDADB;
+			box-shadow:0px 2px 1px #E6E4E6;
+			position: absolute;
+		    top: 0;
+		    z-index: 999;
+
+			ul{
+				width: 70%;
+			    height: 30%;
+			    float: right;
+			    margin: 40px;
+			}
+			li{
+				list-style: none;
+				float:left;
+				margin:0 30px;
+				font-size:20px;
+				height: 30px;
+				opacity:0;
+				@include animation("text-show-1 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 2s forwards");
+				&:first-child{
+					transform:translateY(-1000px);
+					&:before{
+						content:"";
+						border-bottom:3px solid #CEDCDA;
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						opacity: 1;
+						transform:translateX(2000px);
+						@include animation("line-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4s forwards,line-show-second 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 11s forwards");
+					} 
+					
+				}
+				&:nth-child(2){
+					transform:translateY(-1100px); 
+				}
+				&:nth-child(3){
+					transform:translateY(-1200px); 
+				}
+				&:nth-child(4){
+					transform:translateY(-1300px); 
+				}
+				&:nth-child(5){
+					transform:translateY(-1400px); 
+				}
+			}
+
+		}
+		.act-content{
+
+			width: 100%;
+			height: 70%;
+			margin:200px 0;
+			@include animation("content-up 3s linear 9s forwards");
+
+			ul{
+				overflow: hidden;
+				margin: 100px 0;
+			}
+
+			li{
+				list-style: none;
+				width: 24.78%;
+				height: 200px;
+				border:1px solid #6E6D6F;
+				float:left;
+				opacity: 0;
+				position:relative;
+				@include animation("box-show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 4s forwards");
+
+				.img{
+					width: 100%;
+					height: 100%;
+					
+				    background-size: cover;
+				    transform:scale(0);
+				    background-size: cover;
+				}
+
+				&:nth-child(1) .img{
+					background-image: url('../images/123.jpg');
+				}
+				&:nth-child(2) .img{
+					background-image: url('../images/0023.jpg');
+				}
+				&:nth-child(3) .img{
+					background-image: url('../images/P70525-125130.jpg');
+				}
+				&:nth-child(4) .img{
+					background-image: url('../images/P70322-122819.jpg');
+				}
+				&:nth-child(5) .img{
+					background-image: url('../images/20170911_094827.jpg');
+				}
+				&:nth-child(6) .img{
+					background-image: url('../images/0015.jpg');
+				}
+				&:nth-child(7) .img{
+					background-image: url('../images/0016.jpg');
+				}
+				&:nth-child(8) .img{
+					background-image: url('../images/124.jpg');
+				}
+
+
+				&:first-child .img{
+					@include animation("img_show .5s linear 5s forwards");
+				}
+				&:nth-child(2),&:nth-child(4),&:nth-child(5),&:nth-child(7){
+					.text{
+						position:absolute;
+						top:0;
+						width: 100%;
+						height: 100%;
+						background: #000;
+						z-index: 999;
+						filter:blur(100px);
+						@include animation("black-show 1s linear 7s forwards");
+
+						
+					}
+					.left{
+						font-size:60px;
+						color:white;
+						float: left;
+						border-right:1px solid white;
+						width:50%;
+						height: 100%;
+						text-align:center;
+						line-height:200px;
+					}
+					.right{
+						font-size: 20px;
+					    color: white;
+					    float: right;
+					    display: inline-block;
+					    height: 100%;
+					    width: 48%;
+					    margin-top: 90px;
+					    text-align: left;
+
+					}
+					.img{
+						@include animation("img_show .5s linear 5.2s forwards");
+					}
+				}
+				&:nth-child(3) .img{
+					@include animation("img_show .5s linear 5.4s forwards");
+				}
+				&:nth-child(4) .img{
+					@include animation("img_show .5s linear 5.6s forwards");
+				}
+				&:nth-child(5) .img{
+					@include animation("img_show .5s linear 5.8s forwards");
+				}
+				&:nth-child(6) .img{
+					@include animation("img_show .5s linear 6s forwards");
+				}
+				&:nth-child(7) .img{
+					@include animation("img_show .5s linear 6.2s forwards");
+				}
+				&:nth-child(8) .img{
+					@include animation("img_show .5s linear 6.4s forwards");
+				}
+			}
+		}
+
+		.act-content-second{
+			position: absolute;
+			top:150px;
+			width: 100%;
+			height: 70%;
+			@include animation("act-content-second-hidden .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 17.5s forwards");
+			
+			.second-act{
+				width: 300%;
+				transform:translateX(600px);
+				opacity: 0;
+				@include animation("second-act-show 7s cubic-bezier(0.68, -0.55, 0.265, 1.55) 12s forwards");
+			}
+			.big-text:before{
+				content:"翻学";
+				font-size:400px;
+				font-weight:bold;
+				float: left;
+				transform:translateX(1000px);
+				@include animation("big-second-act-text-show 4s linear 13s forwards");
+			}
+			.small-text:before{
+				content:"一整年都翻学";
+				font-size:60px;
+				font-weight:bold;
+				float: left;
+				display: block;
+				width: 500px;
+				height: 100px;
+				margin-top: 200px;
+			}
+			.text-end{
+				font-size:60px;
+				font-weight:bold;
+				float: left;
+				width: 500px;
+				height: 100px;
+				margin-top: 200px;
+				margin-left:100px;
+
+				span{
+					display:inline-block;
+					letter-spacing:20px; 
+					@include animation("text-end-show 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 16s forwards");
+
+					&:nth-child(2){
+						transform: translateX(-75px);
+						color:#F17A21;
+					}
+					&:nth-child(3){
+						transform: translateX(-95px);
+					}
+					&:nth-child(4){
+						color:#84C1B9;
+						transform: translateX(-105px);
+					}
+				}
+			}
+			.img{
+				background-image: url(../images/001.jpg);
+			    width: 600px;
+			    height: 700px;
+			    background-size: cover;
+			    float: left;
+			    margin-top: -50px;
+			}
+		}
+
+		.act-content-third{
+
+			position: absolute;
+			top:104px;
+			@include animation("act-content-third-hidden 5s linear 27s forwards");
+			
+			.background{ 
+				background-image: url(../images/20170911_094827.jpg);
+				background-size: 120%;
+				width: 980px;
+    			height: 622px;
+    			opacity: 0;
+    			background-position: 1px -400px;
+				@include animation("bg-show 5s linear 18s forwards");
+
+			}
+
+			.sharp{
+				width: 980px;
+				height: 622px;
+				// background: #000;
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+				background: rgb(69,72,77); /* Old browsers */
+				background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+				// filter:blur(100px);
+				transform:translateY(1000px);
+				opacity:0.7;
+				position: fixed;
+				top:156px;
+				@include animation("sharp-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 23s forwards");
+
+				.box{
+					width: 120px;
+					height: 40px;
+					border:1px solid #6E6D6F;
+					text-align:center;
+					line-height:40px;
+					color:white;
+					font-weight:300;
+					margin:300px auto 0;
+					opacity: 0;
+					@include animation("sharp-box-show 1s linear 23.5s forwards");
+				}
+				.point{
+					width: 20px;
+					height: 20px;
+					border-radius:20px;
+					position: absolute;
+					top:70%;
+					left:40%;
+					background: #82BFB6;
+					opacity: 0;
+					@include animation("point-show 1s linear 24.5s forwards");
+				}
+			}
+		}
+		.act-content-fourth{
+
+			position: absolute;
+			top:104px;
+			// position:relative;
+			width: 300%;
+			@include animation("act-content-fourth-move 3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 35s forwards,act-content-fourth-move-1 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 39s forwards");
+			
+			.first-part{
+				
+				@include animation("first-part 1s linear 28s forwards");
+				opacity: 0;
+
+				.img{
+					background: url(../images/124.jpg);
+					margin-top: 140px;
+					width: 700px;
+					height: 300px;
+					border: 1px solid #F3F2F3;
+    				box-shadow: inset -70px 11px 50px 20px #F3F2F3;
+    				opacity: 0;
+ 					@include animation("first-part-img 5s linear 30s forwards");
+					background-size: 100%;
+					background-position: 0px 0px;
+
+				}
+				.text{
+					width: 400px;
+					font-size:30px;
+					color:#211E19;
+					top:230px;
+					left:17%;
+					position: absolute;
+					z-index: 999;
+					font-weight:bold;
+					letter-spacing:5px; 
+
+
+					span{
+						font-size:20px;
+						color:#979797;
+					}
+				}
+				.cross{
+					width:30px;
+					height: 0px;
+					border:1px solid #979797;
+					position: absolute;
+					top:100px;
+					left: 28%;
+
+					&:before{
+						content:"";
+						width: 0px;
+						height: 70px;
+						float: left;
+						border:1px solid #979797;
+						transform:translate3d(15px,-10px,1px);
+
+					}
+				}
+			}
+			.second-part{
+
+				position: absolute;
+				left:40%;
+				top:104px;
+
+				.img{
+					background-image: url("../images/wx_camera_1503699213304.jpg");
+					width: 1000px;
+					height: 400px;
+					background-size: cover;
+					background-position: 0 -500px;
+				}
+				.img-1{
+					background-image: url('../images/P70828-101103.jpg');
+					width: 1000px;
+					height: 400px;
+					background-size: cover;
+					background-position: 0 -300px;
+				}
+				.cross-line{
+					width: 40px;
+					height: 0px;
+					border:1px solid #979797;
+					transform:translate3d(-40px,-850px,0);
+					&:before{
+						content:"";
+						width: 0px;
+						height: 900px;
+						float: left;
+						border:1px dotted;
+						transform:translate3d(18px,-20px,0);
+					}
+				}
+				.text{
+					transform:translate3d(100px,-900px,0);
+					-webkit-text-fill-color:transparent;   
+					-webkit-text-stroke:1px #979797;
+					font-size:40px;  
+				}
+				.title{
+					font-size:100px;
+					letter-spacing:10px;
+					font-weight:bold;
+					margin-top: 100px;
+					-webkit-text-fill-color:transparent;   
+					-webkit-text-stroke:1px #979797;
+					position: relative;
+					z-index: 3;
+					@include animation("fourth-title 1s linear 41s forwards,fourth-title-rotate 1.5s linear 44s forwards,fourth-title-move 1s linear 47s forwards,fourth-title-hidden .5s linear 51s forwards");
+
+
+					&:before{
+						content:"玩";
+						font-size:100px;
+						position: absolute;
+						transform:translate3d(140px,200px,0) rotate(-50deg);
+						-webkit-text-fill-color:#FF403C;   
+						-webkit-text-stroke:1px;
+						opacity: 0;
+
+						@include animation("fourth-title-text 1s linear 42s forwards");
+
+					}
+
+					span.study{
+						
+						@include animation("fourth-title-text-1 1s linear 43s forwards");
+					}
+
+					span.work{
+						@include animation("fourth-title-work 3s linear 50s forwards");
+					}
+
+					span.rest{
+						// position: fixed;
+						// transform:translateX(110px);
+						@include animation("fourth-title-rest .5s linear 50s forwards");
+
+					}
+				}
+				.phone{
+					width: 1024px;
+					height: 768px;
+					background-image: url('../images/mockup.png');
+					background-position: 0px 0px;
+					transform:translateY(400px);
+					
+					@include animation("phone-show 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 45s forwards");
+
+					.picture{
+						position: absolute;
+						top:120px;
+						left: 370px;
+						opacity: .8;
+						filter:blur(1px);
+					}
+
+					.first{
+						background-image: url('../images/P70525-125130.jpg');
+						width: 280px;
+						height: 500px;
+						background-size: 150%;
+					}
+					.second{
+						background-image: url('../images/P70322-122819.jpg');
+						width: 280px;
+						height: 500px;
+						background-size: 150%;
+						@include animation("picture-show 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 48s forwards");
+					}
+					.third{
+						background-image: url('../images/P61117-173654.jpg');
+						width: 280px;
+						height:500px;
+						background-size: 250%;
+						@include animation("picture-show-1 1s cubic-bezier(0.95, 0.05, 0.795, 0.035) 49s forwards");
+						
+					}
+
+
+				}
+
+			}
+		}
+	}
+	.second-act{
+
+		.act-content-first{
+
+			width: 200%;
+			height: 100%;
+			overflow: hidden;
+
+			.first-part{
+				float: left;
+				// opacity: 0;
+				// @include animation("act-content-first-show 1s linear 62s forwards");
+
+				.bg{
+					width: 980px;
+					height: 622px;
+					// background: #716060;
+
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#606c88+0,3f4c6b+100;Grey+3D+%232 */
+					background: rgb(96,108,136); /* Old browsers */
+					background: -moz-radial-gradient(center, ellipse cover, rgba(96,108,136,1) 0%, rgba(63,76,107,1) 100%); /* FF3.6-15 */
+					background: -webkit-radial-gradient(center, ellipse cover, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: radial-gradient(ellipse at center, rgba(96,108,136,1) 0%,rgba(63,76,107,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+					opacity: .4;
+					z-index: 9999;
+					overflow: hidden;
+					transform:translate3d(0px,104px,0);
+					opacity: 0;
+					position:relative;
+
+					@include animation("second-act-bg-show 1s linear 51s forwards,second-act-bg-hidden 1s linear 62s forwards");
+
+
+					.title{
+						font-size:70px;
+						color:white;
+						font-weight:bold;
+						letter-spacing:20px;
+						transform:translate3d(40px,20px,0);
+						float: left;
+
+						&:before{
+							content:"曾经遇上...";
+							font-size:25px;
+							font-weight:100;
+							transform:translate3d(-350px,100px,0);
+							float: right;
+						}
+					}
+					.picture{
+
+						&:before{
+							content:"";
+							background-image: url('../images/P70720-150527.jpg');
+							width: 250px;
+							height: 250px;
+							float: left;
+							background-size: cover;
+							transform:translate3d(-250px,200px,0);
+							@include animation("second-act-pic-show 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) 51s forwards,picture-change 1s linear 56s forwards");
+						}
+					}
+					.topic{
+
+						width: 400px;
+						height: 100px;
+						text-align:center;
+						float: right;
+						font-weight:bold;
+						
+
+						&:before{
+							content:"忙中偷闲";
+							color: white;
+							font-size:60px;
+							float: right;
+							transform:translate3d(-70px,-50px,0);
+							@include animation("second-act-topic-show 8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 51s forwards,topic-change 1s linear 56s forwards");
+
+						}
+					}
+					.content{
+						width: 300px;
+						height: 100px;
+						text-align:left;
+						float: right;
+						
+
+						&:before{
+							content:"打工是不可能打工的，做生意又不会。最后找到这个养老工作。";
+							color: white;
+							font-size:15px;
+							font-weight:100;
+							float: right;
+							transform:translate3d(300px,50px,0);
+							@include animation("second-act-content-show 8s cubic-bezier(0.68, -0.55, 0.265, 1.55) 51s forwards,content-change 1s linear 56s forwards");
+
+						}
+					}
+					.topic-copy{
+						float: right;
+						width: 1200px;
+						height: 300px;
+						opacity: .4;
+						filter:blur(3px);
+						
+						&:before{
+							content:"忙中偷闲";
+							color: white;
+							font-size:300px;
+							font-weight:bold;
+							float: right;
+							transform:translate3d(500px,-50px,0);
+							@include animation("second-act-copy-show 8s linear 51s forwards,copy-change 1s linear 56s forwards");
+
+
+						}
+					}
+					.warp{
+						@include animation("second-act-warp-hidden 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 59s forwards");
+					}
+
+					.end{
+						font-size:60px;
+						font-weight:bold;
+						color:#86C3BB;
+						width: 1000px;
+						height: 100px;
+						float: left;
+						opacity: 0;
+						transform:translate3d(100px,-300px,0);
+						@include animation("second-act-end-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 60s forwards");
+
+					}
+
+
+				}
+
+			}
+			.second-part{
+
+				float: right;
+
+				.contanier{
+					width: 980px;
+					height: 622px;
+					// background: white;
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f6f6+0,dbdce2+21,b8bac6+49,dddfe3+80,f5f6f6+100;Grey+Pipe */
+					background: rgb(245,246,246); /* Old browsers */
+					background: -moz-linear-gradient(45deg, rgba(245,246,246,1) 0%, rgba(219,220,226,1) 21%, rgba(184,186,198,1) 49%, rgba(221,223,227,1) 80%, rgba(245,246,246,1) 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(45deg, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(45deg, rgba(245,246,246,1) 0%,rgba(219,220,226,1) 21%,rgba(184,186,198,1) 49%,rgba(221,223,227,1) 80%,rgba(245,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+					opacity: .9;
+					z-index: 999;
+					overflow: hidden;
+					opacity: 0;
+					float: right;
+					transform:translate3d(0px,104px,0);
+
+					@include animation("second-act-contanier-show .5s linear 62s forwards");
+
+
+					.people{
+						background-image: url('../images/0012.png');
+						width: 700px;
+						height: 620px;
+						background-size: cover;
+						transform:translate3d(200px,0px,0);
+						z-index: 99;
+						position: relative;
+
+					}
+					.text,.text-1{
+						font-size:150px;
+						font-weight:bold;
+						color:#86C3BB;
+						letter-spacing:20px;
+						width: 1000px;
+						height: 300px;
+						opacity: 0.8;
+						transform:translate3d(200px,-200px,0) rotate(-20deg);
+						z-index: 100;
+						position: relative;
+						@include animation("second-act-text-show 5s linear 62.5s forwards");
+
+					}
+					.text-1{
+						font-size:80px;
+						transform:translate3d(50px,-900px,0) rotate(-20deg);
+						z-index: 98;
+						@include animation("second-act-text-1-show 5s linear 62.5s forwards");
+					}
+
+					.act-first{
+						width: 100%;
+						height: 100%;
+						overflow: hidden;
+						// border:1px solid;
+						@include animation("act-first-show 1s linear 63.5s forwards,act-first-hidden 1s linear 64.5s forwards");
+
+						&:before{
+							content:"SA20180219";
+							position: absolute;
+							bottom:0px;
+							right: 20px;
+							width: 120px;
+							height: 30px;
+							border-top:1px solid;
+
+						}
+
+					}
+					.act-second{
+
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top:0;
+						left:0;
+
+						@include animation("act-second-hidden 1s linear 67.5s forwards");
+
+
+						.people{
+							background-image: url('../images/0013.jpg');
+							width: 100%;
+							height: 300px;
+							border-top:1px solid; border-bottom:1px solid;
+							transform:translate3d(-1300px,180px,0);
+							background-size: cover;
+							background-position: 0 -600px;
+
+							@include animation("act-second-people-show 1s linear 64.5s forwards,act-second-people-show-2 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 65s forwards");
+
+							// &:before{
+							// 	content:"";
+							// 	float: right;
+							// 	width: 0px;
+							// 	height: 1000px;
+							// 	border:2px dotted;
+							// 	transform:translate3d(100px,-510px,0);
+							// }
+
+							&:after{
+								content:"Do it!";
+								float: left;
+								font-size:30px;
+								font-weight:bold;
+
+							}
+
+						}
+						.line{
+							width:0px;
+							height: 390px;
+							border:1px solid #403D40;
+							transform:translate3d(50px,1168px,0px);
+							float: left;
+							@include animation("act-second-line-show .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 66s forwards");
+
+						}
+
+						ul{
+							width:410px;
+							height: 400px;
+							transform:translate3d(50px,-168px,0);
+							list-style:none;
+
+
+							.boxes{
+								width:0px;
+								height: 195px;
+								border:1px solid #403D40;
+								border-left:0px;
+								float: left;
+								opacity: 0;
+								background-size: cover;
+								background-position: 0 -300px;
+
+
+								&:nth-child(1){
+									@include animation("act-second-boxes-first-show 1s linear 66.5s forwards");
+									background-image: url('../images/0014.jpg');
+
+								}
+								&:nth-child(2){
+									@include animation("act-second-boxes-first-show 1s linear 66.5s forwards");
+									background-image: url('../images/0015.jpg');
+								}
+								&:nth-child(3){
+									@include animation("act-second-boxes-first-show 1s linear 66.5s forwards");
+									background-image: url('../images/0016.jpg');
+								}
+								&:nth-child(4){
+									@include animation("act-second-boxes-first-show 1s linear 66.5s forwards");
+									background-image: url('../images/0017.jpg');
+								}
+							}
+						}
+						.triangle{
+							border: 10px solid transparent;
+						    border-left: 20px solid black;
+						    width: 0;
+						    height: 0px;
+
+						    // position: absolute;
+						    transform:translate3d(20px,-630px,0);
+						    opacity: 0;
+						    // top:0;
+							
+							@include animation("act-second-triangle-show 1s linear 67s infinite");
+
+
+						    &:before{
+						    	content:"";
+					    		border: 10px solid transparent;
+					    	    border-left: 20px solid black;
+					    	    width: 0;
+					    	    height: 0px;
+					    	    float: left;
+					    	    transform:translate3d(0,-10px,0);
+						    }
+
+						    &:after{
+						    	content:"第一,二学期";
+						    	font-size:20px;
+						    	color:black;
+						    	width:150px;
+						    	float: left;
+						    	 transform:translate3d(30px,-35px,0);
+
+						    }
+
+
+						}
+					}
+
+					.act-third{
+
+						z-index: 999;
+						position: relative;
+						transform:translate3d(100px,200px,0);
+
+
+						.line{
+
+							opacity: 0;
+
+							&:nth-child(1){
+								width: 800px;
+								border:1px solid;
+								height: 0;
+
+								transform:translateX(-1000px);
+								
+
+								@include animation("line-first-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 69s forwards");
+
+								&:before{
+									content:"";
+									float: left;
+									width: 800px;
+									height: 0;
+									border:.5px solid;
+									transform:translate3d(2000px,-300px,0);
+									opacity: 0;
+
+									@include animation("line-second-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 69s forwards");
+
+								}
+
+							}
+
+							&:nth-child(2){
+
+								width: 0px;
+								height: 300px;
+								border:.5px solid;
+								transform:translate3d(0px,-2300px,0);
+								// opacity: 1;
+
+
+								@include animation("line-second-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 69s forwards");
+
+								&:before{
+									content:"";
+									float: left;
+									width: 0px;
+									height: 300px;
+									border:1px solid;
+									transform:translate3d(800px,0px,0);
+
+								}
+
+							}
+
+							&:nth-child(3){
+								width: 0px;
+								height: 300px;
+								border:1px dotted;
+								transform:translate3d(140px, -1603px, 0);
+								// opacity: 1;
+								@include animation("line-fourth-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 69.5s forwards");
+
+								&:before{
+									content:"";
+									width: 0px;
+									height: 300px;
+									border:1px dotted;
+									float: left;
+									transform:translate3d(140px, 0px, 0);
+
+								}
+
+							}
+
+							&:nth-child(4){
+								width: 280px;
+								height: 0;
+								float: left;
+								border:1px solid;
+								transform:translate3d(-1200px, -750px, 0);
+								@include animation("line-fifth-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 70s forwards");
+
+							}
+						}
+
+						.img{
+							background-image: url('../images/0018.jpg');
+							width: 560px;
+							height: 300px;
+							transform:translate3d(285px, -903px, 0);
+							background-size: cover;
+							background-position: 0 -400px;
+							opacity: 0;
+							// z-index: 101;
+							// position: relative;
+							filter:blur(20px);
+
+							@include animation("line-img-show 1s linear 70.5s forwards,line-img-show-second 4s steps(4,start) 73s forwards");
+						}
+
+						.small{
+
+							background-size: cover;
+							width: 140px;
+							height: 150px;
+							list-style: none;
+
+							filter:blur(20px);
+
+							@include animation("line-img-show 1s linear 70.5s forwards");
+
+							opacity: 0;
+							
+							&:nth-child(1){
+								background-image: url('../images/0020.jpg');
+								transform:translate3d(0px, -1203px, 0);
+							}
+
+							&:nth-child(2){
+								background-image: url('../images/0021.jpg');
+								transform:translate3d(141px, -1203px, 0);
+
+							}
+							&:nth-child(3){
+								background-image: url('../images/0022.jpg');
+								transform:translate3d(141px, -1504px, 0);
+
+							}
+							&:nth-child(4){
+								background: white;
+								transform:translate3d(0px, -1504px, 0);
+								z-index: 99;
+								position: relative;
+
+
+							}
+
+
+						}
+
+						.rotate-line{
+							width:0;
+							height: 200px;
+							border:1px dotted;
+							transform:translate3d(71px, -1679px, 0) rotate(45deg);
+							list-style: none;
+							position: relative;
+							z-index: 100;
+							opacity: 0;
+							@include animation("line-img-show 1s linear 70.5s forwards");
+
+						}
+
+						.content{
+
+							font-size:200px;
+							color:#86C3BB;
+							float: left;
+							transform:translate3d(0px, -2000px, 0);
+							top:0;
+							font-weight:bold;
+							width: 800px;
+							filter:blur(20px);
+							opacity: 0;
+
+							@include animation("line-img-show 1s linear 70.5s forwards");
+
+						}
+
+
+					}
+
+					.act-fourth{
+
+						.cover{
+
+							width: 100%;
+							height: 100%;
+							
+							position: absolute;
+							top:0;
+							z-index: 999;
+
+							li{
+								width: 243px;
+								height: 243px;
+								border:1px solid #E7E6E7;
+								float: left;
+								background: #F2F1F2;
+								list-style-type: none;
+
+								&:nth-child(odd){
+									opacity: 0;
+									@include animation("boxes-show 3s steps(3,start) 77s forwards");
+								}
+								&:nth-child(even){
+									opacity: 0;
+									@include animation("boxes-show 3s steps(6,start) 77s forwards");
+								}
+							}
+
+						}
+					}
+
+					.act-fifth{
+
+						width: 100%;
+						height: 1000%;
+						position: absolute;
+						top:0;
+						z-index: 1000;
+						@include animation("fifth-show 10s ease-in-out 81s forwards");
+
+
+
+						.content-1{
+							width: 100%;
+							height: 400px;
+							background-image: url('../images/0023.jpg');
+							background-size: cover;
+							transform:translate3d(0,700px,0);
+
+							@include animation("content-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 91s forwards");
+
+							&:before{
+								content:"A01 2017";
+								color:#75715E;
+								transform:translate3d(-20px,-50px,0);
+								float: right;
+							}
+
+							&:after{
+								content:"“假装进入状态...”";
+								font-size:20px;
+								color:#555555;
+								transform:translate3d(10px,-50px,0);
+								float: left;
+
+							}
+						}
+
+						.content-2{
+							width: 100%;
+							height: 400px;
+							background-image: url('../images/P61117-173654.jpg');
+							background-size: cover;
+							transform:translate3d(0,1000px,0);
+
+							@include animation("content-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 91s forwards");
+
+							&:before{
+								content:"A02 2017";
+								color:#75715E;
+								transform:translate3d(-20px,-50px,0);
+								float: right;
+							}
+
+							&:after{
+								content:"“社畜下班中...”";
+								font-size:20px;
+								color:#555555;
+								transform:translate3d(10px,-50px,0);
+								float: left;
+
+							}
+						}
+
+						.content-3{
+							width: 100%;
+							height: 400px;
+							background-image: url('../images/P70713-003346.jpg');
+							background-size: cover;
+							transform:translate3d(0,1200px,0);
+							@include animation("content-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 91s forwards");
+
+							&:before{
+								content:"A03 2017";
+								color:#75715E;
+								transform:translate3d(-20px,-50px,0);
+								float: right;
+							}
+
+							&:after{
+								content:"“暑假沉迷游戏...”";
+								font-size:20px;
+								color:#555555;
+								transform:translate3d(10px,-50px,0);
+								float: left;
+
+							}
+						}
+
+						.content-4{
+							width: 100%;
+							height: 400px;
+							background-image: url('../images/S70809-17505448.jpg');
+							background-size: cover;
+							transform:translate3d(0,1800px,0);
+							@include animation("content-show 1s cubic-bezier(0.68, -0.55, 0.265, 1.55) 91s forwards");
+
+							&:before{
+								content:"A04 2017";
+								color:#75715E;
+								transform:translate3d(-20px,-50px,0);
+								float: right;
+							}
+
+							&:after{
+								content:"“刷小说，英语好难呀！”";
+								font-size:20px;
+								color:#555555;
+								transform:translate3d(10px,-50px,0);
+								float: left;
+							}
+
+						}
+					}
+					.title{
+						font-size:40px;
+						font-weight:bold;
+						text-align:center;
+						width: 30px;
+						height: 200px;
+						margin:0 auto;
+						opacity: 0;
+
+						position:fixed;
+						top:0;
+						z-index: 9999;
+						
+
+
+						text-align:center;
+						@include animation("fifth-title-show 10s cubic-bezier(0.68, -0.55, 0.265, 1.55) 81s forwards");
+
+					}
+
+					.act-sixth{
+
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						top:0;
+						z-index: 1001;
+
+						li{
+							box-shadow: 1px 1px 13px 1px #f7ebeb;
+
+
+							list-style-type: none;
+							&:nth-child(1){
+								width: 600px;
+								height: 0px;
+								border:1px dotted #F2F2F2;
+								margin:0 auto;
+								transform:translate3d(1000px,150px,0);
+
+								@include animation("end-line-first .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 92s forwards");
+
+								
+								&:before{
+									content:"";
+									border:1px dotted #F2F2F2;
+									float: left;
+									width: 600px;
+									height: 0px;
+									transform:translate3d(0px,150px,0);
+									box-shadow: 3px -1px 13px 1px #f7ebeb;
+								}
+
+							}
+
+							&:nth-child(2){
+								width: 600px;
+								height: 0px;
+								border:1px dotted #F2F2F2;
+								margin:0 auto;
+								transform:translate3d(1000px,200px,0);
+								@include animation("end-line-second .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 92s forwards");
+
+
+
+								&:before{
+									content:"";
+									border:1px dotted #F2F2F2;
+									float: left;
+									width: 600px;
+									height: 0px;
+									transform:translate3d(0,50px,0);
+									box-shadow: 3px -1px 13px 1px #f7ebeb;
+								}
+
+							}
+
+							&:nth-child(3){
+
+								width: 0px;
+								height: 200px;
+								border:1px dotted #F2F2F2;
+								margin:0 auto;
+								transform:translate3d(-250px,1120px,0);
+								@include animation("end-line-third .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 92s forwards");
+
+
+
+								&:before{
+									content:"";
+									border:1px dotted #F2F2F2;
+									float: left;
+									width: 0px;
+									height: 200px;
+									transform:translate3d(500px,0px,0);
+									box-shadow: 3px -1px 13px 1px #f7ebeb;
+								}
+
+							}
+
+							&:nth-child(4){
+								width: 600px;
+								height: 0;
+								border:1px dotted #F2F2F2;
+							    transform:rotate(17deg) translate3d(1188px, -1142px, 0);
+							    @include animation("end-line-fourth .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 92s forwards");
+
+							}
+
+							&:nth-child(5),&:nth-child(6){
+								font-size:60px;
+								-webkit-text-fill-color:transparent;   
+								-webkit-text-stroke:1px #F2F2F2;
+								font-weight:bold;
+								color:white;
+								box-shadow:none;
+								text-shadow: 10px 0px 70px #f7ebeb;
+								transform:translate3d(280px, -73px, 1px);
+								filter:blur(100px);
+								font-style:italic;
+								@include animation("six-end-title-show 5s cubic-bezier(0.19, 1, 0.22, 1) 92s forwards");
+
+							}
+							&:nth-child(6){
+								transform:translate3d(434px, -60px, 1px);
+								font-style:italic;
+								font-size:52px;
+							}
+						}
+					}
+				}
+
+			}
+			
+		}
+	}	
+}
