@@ -66,7 +66,7 @@
 
 // };
 
-
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var path = require('path'),
 HtmlWebpackPlugin = require('html-webpack-plugin'),
 webpack = require('webpack'); //这里引入webpack是为了使用webpack的热更新功能以及其他自带插件，见 module.exports.plugins
@@ -115,7 +115,12 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
 
     // 当接收到热更新信号时，在浏览器console控制台打印更多可读性高的模块名称等信息
-    new webpack.NamedModulesPlugin()
+    new webpack.NamedModulesPlugin(),
+
+    new ExtractTextPlugin({
+      // 从 .js 文件中提取出来的 .css 文件的名称_[contenthash:8]
+      filename: `[name].css`,
+    })
   ],
   
   // 定义webpack-dev-server
