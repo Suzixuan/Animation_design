@@ -1,0 +1,49 @@
+
+body{
+	font: 20px/1 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, Georgia;
+	margin: 0;
+	padding: 0;
+}
+
+svg{
+	overflow: visible;
+	width: 420px;
+	height: 50px;
+	letter-spacing: 5px;
+}
+
+.container{
+	width: 100%;
+	text-align: center;
+	margin-top: 400px;
+}
+.top-title{
+	letter-spacing: 20px;
+	text-shadow: 1px 0px 1px #ABB2BF;
+}
+
+.topic{
+	letter-spacing: 40px;
+	font-weight: 500;
+	font-size: 60px;
+	margin-top: 50px;
+	mix-blend-mode:overly;
+	/* background-blend-mode: overlay; */
+	background-image:url('p1.jpg');
+	-webkit-text-fill-color: transparent;
+	background-size: 200%;
+    -webkit-background-clip: text;
+    background-position: 0px 1px;
+		-webkit-animation: line-show 5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s infinite;
+}
+
+.bottom-title{
+	/* transform:skew(10deg,10deg); */
+}
+
+@keyframes line-show {
+	0% {   background-position: 0px 1px; }
+	40%{ background-position: -325px -274px; }
+	70%{   background-position: -399px -400px; }
+  100%{  background-position: 400px 700px; }
+}
