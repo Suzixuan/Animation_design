@@ -1,0 +1,102 @@
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+
+
+<circle cx="21.5" cy="110.24" r="21" style="fill:none;stroke:#000;stroke-miterlimit:10">
+	<animateMotion dur="10s" repeatCount="indefinite">
+		<mpath xlink:href="#path"/>
+	</animateMotion>
+	
+</circle>
+<path id="path" d="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379" transform="translate(-334 -210.26)" style="fill:none;stroke:#000;stroke-miterlimit:10"/>
+
+</svg> -->
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>蚂蚁部落</title>
+<style>
+	*{
+	  margin: 0px;
+	  padding: 0px;
+	}
+	svg {
+	  
+	  margin:200px;
+	}
+   #ball-1{
+    transform:translate3d(-40px,-5px,0);
+    opacity: .4;
+  }
+  #ball-2{
+    transform:translate3d(40px,0px,0);
+  }
+  #ball-3{
+    transform:translate3d(80px,-10px,0);
+    opacity: .4;
+  }
+</style>
+</head>
+<body>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+  <path id="path" transform=""
+        d="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+        stroke="red"
+        stroke-width="1"
+        fill="none" />
+  <animateMotion
+                 xlink:href="#ball"
+                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+                 dur="5s"
+                 begin="0s"
+                 rotate="auto-reverse"
+                 fill="freeze">
+  </animateMotion>
+  <animateMotion
+                 xlink:href="#ball-1"
+                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+                 dur="5s"
+                 begin="0s"
+                 rotate="auto-reverse"
+                 fill="freeze">
+  </animateMotion> 
+  <animateMotion
+                 xlink:href="#ball-2"
+                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+                 dur="5s"
+                 begin="0s"
+                 rotate="auto-reverse"
+                 fill="freeze">
+  </animateMotion> 
+  <animateMotion
+                 xlink:href="#ball-3"
+                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+                 dur="5s"
+                 begin="0s"
+                 rotate="auto-reverse"
+                 fill="freeze">
+  </animateMotion> 
+ 
+ <circle id="ball" cx="0" cy="0" r="12" stroke="" stroke-width="0" fill="#479BD7"/>
+ <circle id="ball-1" cx="0" cy="0" r="12" stroke="" stroke-width="0" fill="#479BD7"/>
+ <circle id="ball-2" cx="0" cy="0" r="12" stroke="" stroke-width="0" fill="#479BD7"/>
+ <circle id="ball-3" cx="0" cy="0" r="12" stroke="" stroke-width="0" fill="#479BD7"/>
+</svg>          
+</body>
+</html>
+
+
+
+<!-- 
+参考：
+http://www.softwhy.com/article-109-1.html
+http://www.cnblogs.com/st-leslie/p/5384962.html
+https://segmentfault.com/a/1190000007806877
+https://www.jianshu.com/p/0e4641990c4e
+
+ -->

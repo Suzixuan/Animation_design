@@ -1,0 +1,92 @@
+ <!doctype html>
+  <html>
+   <head>
+     <title>TEST-17</title>
+   </head>
+   <body>
+    <script src="./bundle.js"></script>
+
+    <div class="container">
+    	<div class="position">
+    		<div class="circle-1"></div>
+    		<div class="circle-2"></div>
+    		<div class="circle-3"></div>
+    		<div class="circle-4"></div>
+    		<div class="circle-5"></div>
+    		<div class="circle-6"></div>
+    		<div class="circle-7"></div>
+    		<div class="circle-8"></div>
+    		<div class="circle-9"></div>
+    		<div class="circle-10"></div>
+    		<div class="circle-11"></div>
+    		<div class="circle-12"></div>
+
+
+
+
+
+
+    		<svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+    		  <path id="path" transform=""
+    		        d="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+    		        stroke="red"
+    		        stroke-width="0"
+    		        fill="none" />
+    		  <animateMotion 
+    		                 xlink:href="#ball"
+    		                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+    		                 dur="4s"
+    		                 begin="0s"
+    		                 rotate="auto-reverse"
+    		                 fill="remove" repeatCount="2">
+    		  </animateMotion>
+    		  <animateMotion 
+    		                 xlink:href="#ball-1"
+    		                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+    		                 dur="4s"
+    		                 begin="0.3s"
+    		                 rotate="auto-reverse"
+    		                 fill="remove" repeatCount="2">
+    		  </animateMotion> 
+    		  <animateMotion 
+    		                 xlink:href="#ball-2"
+    		                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+    		                 dur="4s"
+    		                 begin="0.6s"
+    		                 rotate="auto-reverse"
+    		                 fill="remove" repeatCount="2">
+    		  </animateMotion> 
+    		  <animateMotion 
+    		                 xlink:href="#ball-3"
+    		                 path="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379"
+    		                 dur="4s"
+    		                 begin="0.9s"
+    		                 rotate="auto-reverse"
+    		                 fill="remove" repeatCount="2">
+    		  </animateMotion> 
+    		 
+    		 <circle id="ball" cx="0" cy="0" r="12" fill-opacity="1" stroke="" stroke-width="0" fill="#479BD7"/>
+    		 <circle id="ball-1" cx="0" cy="0" r="12" fill-opacity="0.5" stroke="" stroke-width="0" fill="#479BD7"/>
+    		 <circle id="ball-2" cx="0" cy="0" r="12" fill-opacity="0.3" stroke="" stroke-width="0" fill="#479BD7"/>
+    		 <circle id="ball-3" cx="0" cy="0" r="12" fill-opacity="0.2" stroke="" stroke-width="0" fill="#479BD7"/>
+    		</svg>
+
+    	</div>
+    </div>
+
+    
+   </body>
+  </html>
+
+
+
+
+  <!-- 
+参考：
+http://www.softwhy.com/article-109-1.html   （fill="remove"用法）
+https://www.xiabingbao.com/css/2015/07/27/css3-animation-circle.html （半圆）
+http://www.softwhy.com/article-109-1.html（SVG animateMotion路径动画）
+https://www.w3.org/TR/SVG/animate.html#RotateAttribute （rotate = "<number> | auto | auto-reverse"）
+
+
+   -->

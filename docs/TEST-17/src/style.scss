@@ -1,0 +1,227 @@
+
+
+@import "mixins.scss";
+@import "keyframes.scss";
+
+$size_50:50;
+$left_10:10;
+$bottom_10 :10;
+
+// circle_type: 1、半圆；2、4/1圆；3、4/3圆
+@mixin circle($size,$left,$bottom,$border-width,$rotate,$circle_type){
+	width: $size;
+    height: $size;
+    position:absolute;
+    bottom:$bottom;
+    left:$left;
+    border:$border-width solid transparent;
+    border-radius: 50%;
+    @if $circle_type == 1{
+    	border-top:$border-width solid #479BD7;
+    }
+    @if $circle_type == 3{
+    	border-top:$border-width solid #479BD7;
+    	border-bottom:$border-width solid #479BD7;
+    }
+    border-right:$border-width solid #479BD7;
+    -webkit-transform : rotate($rotate);
+    -moz-transform : rotate($rotate);
+    -o-transform : rotate($rotate);
+    transform : rotate($rotate); 
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+body,ul,li{
+	margin:0;
+	padding:0;
+	font: 20px/1.5 Verdana, '游ゴシック', YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, sans-serif;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	background: #FEFEFE;
+
+	.position{
+		width: 500px;
+		height: 500px;
+		margin: 200px auto;
+		position:relative;
+		@include animation("position-hide 0.5s linear 9.5s forwards");
+
+		.circle-1{
+		    @include circle(
+		    	$size: 400px,
+		    	$left: 45px,
+		    	$bottom: 0,
+		    	$border-width:5px,
+		    	$rotate: 135deg,
+		    	$circle_type:1
+		    );
+		     @include animation("circle-1 4s linear 0s infinite");
+
+		}
+		.circle-2{
+			@include circle(
+		    	$size:400px - $size_50,
+		    	$left:45px + $left_10,
+		    	$bottom:0px + $bottom_10,
+		    	$border-width:20px,
+		    	$rotate: 140deg,
+		    	$circle_type:2
+		    );
+		    @include animation("circle-2 2s linear 0s infinite");
+
+		}
+		.circle-3{
+			@include circle(
+		    	$size:400px - $size_50*2 + 10,
+		    	$left:80px,
+		    	$bottom:35px,
+		    	$border-width:15px,
+		    	$rotate: 105deg,
+		    	$circle_type:3
+		    );
+		    @include animation("circle-3 4s linear 0s infinite");
+
+		}
+		.circle-4{
+			@include circle(
+		    	$size:400px - $size_50*3 + 20,
+		    	$left:105px,
+		    	$bottom:60px,
+		    	$border-width:6px,
+		    	$rotate: 175deg,
+		    	$circle_type:1
+		    );
+		    @include animation("circle-4 3s linear 0s infinite");
+
+		}
+		.circle-5{
+			@include circle(
+		    	$size:400px - $size_50*3 -10,
+		    	$left:128px,
+		    	$bottom:79px,
+		    	$border-width:5px,
+		    	$rotate: -17deg,
+		    	$circle_type:1
+		    );
+		    @include animation("circle-5 4s linear 0s infinite");
+
+		}
+		.circle-6{
+			@include circle(
+		    	$size:400px - $size_50*4 + 35,
+		    	$left:103px,
+		    	$bottom:57px,
+		    	$border-width:30px,
+		    	$rotate: 315deg,
+		    	$circle_type:3
+		    );
+		    opacity:.4;
+		    @include animation("circle-6 6s linear 0s infinite");
+
+		}
+		.circle-7{
+			@include circle(
+		    	$size:400px - $size_50*5 + 35,
+		    	$left:150px,
+		    	$bottom:110px,
+		    	$border-width:7px,
+		    	$rotate: 180deg,
+		    	$circle_type:3
+		    );
+		     @include animation("circle-7 5s linear 0s infinite");
+
+		}
+		.circle-8{
+			@include circle(
+		    	$size:400px - $size_50*5 + 25,
+		    	$left:148px,
+		    	$bottom:110px,
+		    	$border-width:14px,
+		    	$rotate: 213deg,
+		    	$circle_type:2
+		    );
+		    opacity:.6;
+		    @include animation("circle-8 4s linear 0s infinite");
+
+		}
+		.circle-9{
+			@include circle(
+		    	$size:400px - $size_50*6 + 30,
+		    	$left:180px,
+		    	$bottom:140px,
+		    	$border-width:7px,
+		    	$rotate: 45deg,
+		    	$circle_type:1
+		    );
+		    @include animation("circle-9 2s linear 0s infinite");
+
+		}
+		.circle-10{
+			@include circle(
+		    	$size:400px - $size_50*7 + 30,
+		    	$left:195px,
+		    	$bottom:157px,
+		    	$border-width:14px,
+		    	$rotate: 180deg,
+		    	$circle_type:3
+		    );
+		    opacity:.4;
+
+		}
+		.circle-11{
+			@include circle(
+		    	$size:400px - $size_50*8 + 50,
+		    	$left:220px,
+		    	$bottom:180px,
+		    	$border-width:4px,
+		    	$rotate: 180deg,
+		    	$circle_type:3
+		    );
+		    border-left:4px solid #479BD7;
+
+		}
+		.circle-12{
+		    position:absolute;
+		    bottom:0;
+		    left:45px;
+		    width: 0;
+            height: 0;
+            border-width: 205px;
+            border-style: solid;
+            border-color: transparent;
+            border-radius: 50%;
+            @include animation("circle-12 0.5s linear 9s forwards");
+
+		}
+
+	}
+}
+
+#svg{
+	position: absolute;
+	top: -85px;
+    left: -315px;
+    @include animation("ball-hide 0.5s linear 8s forwards");
+
+}
+

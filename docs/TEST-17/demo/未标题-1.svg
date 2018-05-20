@@ -1,0 +1,81 @@
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+
+
+<circle cx="21.5" cy="110.24" r="21" style="fill:none;stroke:#000;stroke-miterlimit:10">
+	<animateMotion dur="10s" repeatCount="indefinite">
+		<mpath xlink:href="#path"/>
+	</animateMotion>
+	
+</circle>
+<path id="path" d="M341.38,354.66c22.06-99.09,120.28-161.53,219.36-139.47A147,147,0,0,1,672.31,390.68a117.63,117.63,0,0,1-140.39,89.26,94.1,94.1,0,0,1-71.4-112.31,75.29,75.29,0,0,1,89.85-57.13,60.23,60.23,0,0,1,45.7,71.88,48.18,48.18,0,0,1-57.51,36.56,38.53,38.53,0,0,1-29.24-46,30.84,30.84,0,0,1,36.8-23.4A24.67,24.67,0,0,1,564.84,379" transform="translate(-334 -210.26)" style="fill:none;stroke:#000;stroke-miterlimit:10"/>
+
+</svg> -->
+
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path transform=""
+        d="M20,20 Q50,60 80,140 T340,100"
+        stroke="red"
+        stroke-width="6"
+        fill="none" />
+  <animateMotion
+                 xlink:href="#ant"
+                 path="M20,20 Q50,60 80,140 T340,100"
+                 dur="10s"
+                 begin="0s"
+                 rotate="auto-reverse"
+                 fill="freeze">
+  </animateMotion> 
+ 
+  <rect id="ant"
+        x="0" y="0"
+        width="20" height="20"
+        fill="green"/>
+</svg>          
+
+
+
+
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>蚂蚁部落</title>
+<style>
+	*{
+	  margin: 0px;
+	  padding: 0px;
+	}
+	svg {
+	  border:1px solid blue;
+	  width:400px;
+	  height:300px;
+	  margin:200px;
+	}
+</style>
+</head>
+<body>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path transform=""
+        d="M20,20 Q50,60 80,140 T340,100"
+        stroke="red"
+        stroke-width="6"
+        fill="none" />
+  <animateMotion
+                 xlink:href="#ant"
+                 path="M20,20 Q50,60 80,140 T340,100"
+                 dur="10s"
+                 begin="0s"
+                 rotate="auto-reverse"
+                 fill="freeze">
+  </animateMotion> 
+ 
+  <rect id="ant"
+        x="0" y="0"
+        width="20" height="20"
+        fill="green"/>
+</svg>          
+</body>
+</html>
