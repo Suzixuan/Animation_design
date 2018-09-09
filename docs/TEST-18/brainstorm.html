@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.container{
+			/* background-image:url('p1.jpg'); */
+			/* opacity: .5; */
+			width: 1024px;
+			height: 1441px;
+			margin: 0 auto;
+			position: relative;
+			transform: scale(.6);
+/* 			filter: blur(100px); */
+		}
+		.box1,.box2,.box3,.box4,.box5{
+			width: 200px;
+			height: 100%;
+			position: absolute;
+			transform: rotate(-30deg);
+			overflow: hidden;
+			mix-blend-mode: multiply;
+
+
+
+
+		}
+		.box1:before,.box2:before,.box3:before,.box4:before,.box5:before{
+			content: "";
+			background-image:url('p1.jpg');
+			width: 1024px;
+			height: 100%;
+			position: absolute;
+			transform: rotate(30deg);
+			top: 0;
+			left: 0;
+			/* transform-origin: left center; */
+		}
+		.box1{
+			top: 205px;
+    		left: 55px;
+		}
+		.box2{
+			transform: rotate(-82deg);
+			top: 407px;
+   			left: 355px;
+		}
+		.box2:before{
+			transform: rotate(82deg);
+		}
+		.box3{
+			top: -242px;
+    		left: 79px;
+			transform: rotate(36deg);
+			
+		}
+		.box3:before{
+			transform: rotate(-36deg);
+		}
+		.box4{
+			
+			transform: rotate(-75deg);
+		    top: -425px;
+		    left: 305px;
+			
+		}
+		.box4:before{
+			transform: rotate(75deg);
+			background-position: 0px -620px;
+		}
+		.box5{
+			
+			transform: rotate(69deg);
+			top: 0px;
+    		left: 264px;
+		    
+			
+		}
+		.box5:before{
+			transform: rotate(-69deg);
+			background-position: 0px -386px;
+	
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div class="box3"></div>
+	<div class="box4"></div>
+	<div class="box5"></div>
+</div>
+
+</body>
+</html>
