@@ -7,7 +7,7 @@ body{
 }
 
 .container{
-	background: url('2018-09-09_151221.png') repeat;
+	background: url('../images/2018-09-09_151221.png') repeat;
 	width: 1652px;
     height: 929px;
 	background-size: cover;
@@ -79,7 +79,7 @@ body{
     width: 900px;
     height: 929px;
     transform: rotate(40deg) translate3d(-200px,192px,0px);
-    background: url(2018-09-11_001015.png) no-repeat;
+    background: url('../images/2018-09-11_001015.png') no-repeat;
     position: absolute;
     background-position: -230px,0;
     -webkit-animation: box-show 1s ease-in-out 0s forwards;
@@ -90,7 +90,7 @@ body{
 	height: 995px;
  	position: absolute;
  	transform: rotate(-50deg) translate3d(-330px,-288px,1px);
- 	background: url(2018-09-11_001015.png) no-repeat,#FCF9FC;
+ 	background: url('../images/2018-09-11_001015.png') no-repeat,#FCF9FC;
  	background-position: -353px 41px;
  	height: 0;
  	-webkit-animation: box-show-2 1s ease-in-out .6s forwards;
@@ -100,7 +100,7 @@ body{
 	width: 1652px;
 	height: 300px;
 	position: absolute;
-	background: url(2018-09-11_001015.png) no-repeat,#FCF9FC;
+	background: url('../images/2018-09-11_001015.png') no-repeat,#FCF9FC;
 	transform: rotate(-90deg) translate3d(-675px,-675px,1px);
 	background-position: -1px 22px;
 }
@@ -109,7 +109,7 @@ body{
 	width: 1652px;
 	height: 300px;
 	position: absolute;
-	background: url(2018-09-11_001015.png) no-repeat,#FCF9FC;
+	background: url('../images/2018-09-11_001015.png') no-repeat,#FCF9FC;
 	transform: rotate(-90deg) translate3d(-675px,-676px,1px);
 	background-position: -1px -308px;
 }
@@ -118,7 +118,7 @@ body{
 	width: 1652px;
 	height: 300px;
 	position: absolute;
-	background: url(2018-09-11_001015.png) no-repeat,#FCF9FC;
+	background: url('../images/2018-09-11_001015.png') no-repeat,#FCF9FC;
 	transform: rotate(-90deg) translate3d(-676px,-676px,1px);
 	background-position: 0px -632px;
 }
@@ -146,5 +146,5 @@ body{
 	100% {  transform: translate3d(676px,-45px,0) rotate(90deg);}
 }
 @keyframes cover-show{
-	to{ background: url('2018-09-11_001015.png'); }
+	to{ background: url('../images/2018-09-11_001015.png'); }
 }
