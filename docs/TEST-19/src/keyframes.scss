@@ -1,0 +1,45 @@
+﻿
+
+@include keyframes(circle-1){
+	0% { transform : rotate(150deg); }
+	100% { transform : rotate(135deg); }
+}
+
+@include keyframes(circle-2){
+	to{ transform : rotate(100deg); }
+}
+@include keyframes(circle-3){
+	to{ transform : rotate(140deg); }
+}
+@include keyframes(circle-4){
+	to{ transform : rotate(120deg); }
+}
+@include keyframes(circle-5){
+	to{ transform : rotate(-100deg); }
+}
+@include keyframes(circle-6){
+	to{ transform : rotate(250deg); }
+}
+@include keyframes(circle-7){
+	to{ transform : rotate(100deg); }
+}
+@include keyframes(circle-8){
+	to{ transform : rotate(260deg); }
+}
+@include keyframes(circle-9){
+	to{ transform : rotate(120deg); }
+}
+@include keyframes(position-hide){
+	to{ transform : scale(0); }
+}
+@include keyframes(circle-12){
+	0%{ border-color: transparent;  }
+	40%{ border-color: #479BD7 transparent transparent transparent; transform:rotate(180deg); }
+	60%{ border-color: #479BD7 #479BD7 transparent transparent; transform:rotate(180deg);  }
+	80%{ border-color: #479BD7 #479BD7 #479BD7 transparent; transform:rotate(180deg); }
+	100%{  border-color: #479BD7; }
+}
+
+@include keyframes(ball-hide){
+	to{  opacity:0;}
+}
