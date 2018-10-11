@@ -17,6 +17,7 @@ module.exports = {
          test: /\.scss$/,
          use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
+          publicPath: '/dist/',
           //如果需要，可以在 sass-loader 之前将 resolve-url-loader 链接进来
           use: ['css-loader', 'sass-loader']
         })
