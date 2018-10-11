@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/* 封装Animation,允许同一元素绑定多个动画 */
+@-webkit-keyframes circle-1 {
+  0% {
+    transform: rotate(150deg); }
+  100% {
+    transform: rotate(135deg); } }
+
+@-moz-keyframes circle-1 {
+  0% {
+    transform: rotate(150deg); }
+  100% {
+    transform: rotate(135deg); } }
+
+@-o-keyframes circle-1 {
+  0% {
+    transform: rotate(150deg); }
+  100% {
+    transform: rotate(135deg); } }
+
+@keyframes circle-1 {
+  0% {
+    transform: rotate(150deg); }
+  100% {
+    transform: rotate(135deg); } }
+
+@-webkit-keyframes circle-2 {
+  to {
+    transform: rotate(100deg); } }
+
+@-moz-keyframes circle-2 {
+  to {
+    transform: rotate(100deg); } }
+
+@-o-keyframes circle-2 {
+  to {
+    transform: rotate(100deg); } }
+
+@keyframes circle-2 {
+  to {
+    transform: rotate(100deg); } }
+
+@-webkit-keyframes circle-3 {
+  to {
+    transform: rotate(140deg); } }
+
+@-moz-keyframes circle-3 {
+  to {
+    transform: rotate(140deg); } }
+
+@-o-keyframes circle-3 {
+  to {
+    transform: rotate(140deg); } }
+
+@keyframes circle-3 {
+  to {
+    transform: rotate(140deg); } }
+
+@-webkit-keyframes circle-4 {
+  to {
+    transform: rotate(120deg); } }
+
+@-moz-keyframes circle-4 {
+  to {
+    transform: rotate(120deg); } }
+
+@-o-keyframes circle-4 {
+  to {
+    transform: rotate(120deg); } }
+
+@keyframes circle-4 {
+  to {
+    transform: rotate(120deg); } }
+
+@-webkit-keyframes circle-5 {
+  to {
+    transform: rotate(-100deg); } }
+
+@-moz-keyframes circle-5 {
+  to {
+    transform: rotate(-100deg); } }
+
+@-o-keyframes circle-5 {
+  to {
+    transform: rotate(-100deg); } }
+
+@keyframes circle-5 {
+  to {
+    transform: rotate(-100deg); } }
+
+@-webkit-keyframes circle-6 {
+  to {
+    transform: rotate(250deg); } }
+
+@-moz-keyframes circle-6 {
+  to {
+    transform: rotate(250deg); } }
+
+@-o-keyframes circle-6 {
+  to {
+    transform: rotate(250deg); } }
+
+@keyframes circle-6 {
+  to {
+    transform: rotate(250deg); } }
+
+@-webkit-keyframes circle-7 {
+  to {
+    transform: rotate(100deg); } }
+
+@-moz-keyframes circle-7 {
+  to {
+    transform: rotate(100deg); } }
+
+@-o-keyframes circle-7 {
+  to {
+    transform: rotate(100deg); } }
+
+@keyframes circle-7 {
+  to {
+    transform: rotate(100deg); } }
+
+@-webkit-keyframes circle-8 {
+  to {
+    transform: rotate(260deg); } }
+
+@-moz-keyframes circle-8 {
+  to {
+    transform: rotate(260deg); } }
+
+@-o-keyframes circle-8 {
+  to {
+    transform: rotate(260deg); } }
+
+@keyframes circle-8 {
+  to {
+    transform: rotate(260deg); } }
+
+@-webkit-keyframes circle-9 {
+  to {
+    transform: rotate(120deg); } }
+
+@-moz-keyframes circle-9 {
+  to {
+    transform: rotate(120deg); } }
+
+@-o-keyframes circle-9 {
+  to {
+    transform: rotate(120deg); } }
+
+@keyframes circle-9 {
+  to {
+    transform: rotate(120deg); } }
+
+@-webkit-keyframes position-hide {
+  to {
+    transform: scale(0); } }
+
+@-moz-keyframes position-hide {
+  to {
+    transform: scale(0); } }
+
+@-o-keyframes position-hide {
+  to {
+    transform: scale(0); } }
+
+@keyframes position-hide {
+  to {
+    transform: scale(0); } }
+
+@-webkit-keyframes circle-12 {
+  0% {
+    border-color: transparent; }
+  40% {
+    border-color: #479BD7 transparent transparent transparent;
+    transform: rotate(180deg); }
+  60% {
+    border-color: #479BD7 #479BD7 transparent transparent;
+    transform: rotate(180deg); }
+  80% {
+    border-color: #479BD7 #479BD7 #479BD7 transparent;
+    transform: rotate(180deg); }
+  100% {
+    border-color: #479BD7; } }
+
+@-moz-keyframes circle-12 {
+  0% {
+    border-color: transparent; }
+  40% {
+    border-color: #479BD7 transparent transparent transparent;
+    transform: rotate(180deg); }
+  60% {
+    border-color: #479BD7 #479BD7 transparent transparent;
+    transform: rotate(180deg); }
+  80% {
+    border-color: #479BD7 #479BD7 #479BD7 transparent;
+    transform: rotate(180deg); }
+  100% {
+    border-color: #479BD7; } }
+
+@-o-keyframes circle-12 {
+  0% {
+    border-color: transparent; }
+  40% {
+    border-color: #479BD7 transparent transparent transparent;
+    transform: rotate(180deg); }
+  60% {
+    border-color: #479BD7 #479BD7 transparent transparent;
+    transform: rotate(180deg); }
+  80% {
+    border-color: #479BD7 #479BD7 #479BD7 transparent;
+    transform: rotate(180deg); }
+  100% {
+    border-color: #479BD7; } }
+
+@keyframes circle-12 {
+  0% {
+    border-color: transparent; }
+  40% {
+    border-color: #479BD7 transparent transparent transparent;
+    transform: rotate(180deg); }
+  60% {
+    border-color: #479BD7 #479BD7 transparent transparent;
+    transform: rotate(180deg); }
+  80% {
+    border-color: #479BD7 #479BD7 #479BD7 transparent;
+    transform: rotate(180deg); }
+  100% {
+    border-color: #479BD7; } }
+
+@-webkit-keyframes ball-hide {
+  to {
+    opacity: 0; } }
+
+@-moz-keyframes ball-hide {
+  to {
+    opacity: 0; } }
+
+@-o-keyframes ball-hide {
+  to {
+    opacity: 0; } }
+
+@keyframes ball-hide {
+  to {
+    opacity: 0; } }
+
+body {
+  overflow: hidden;
+  margin: 0; }
+
+.container {
+  background: url(/7f9fd25d7888043c7604cc6814f23ab3.jpg), rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 1000px;
+  background-size: .7%;
+  background-blend-mode: overlay; }
+
+svg {
+  margin: 0 25%; }

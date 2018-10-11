@@ -15,11 +15,11 @@ module.exports = {
      rules: [
        {
          test: /\.scss$/,
-         use: [
-           'style-loader',
-           'css-loader',
-           'sass-loader'
-         ]
+         use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          //如果需要，可以在 sass-loader 之前将 resolve-url-loader 链接进来
+          use: ['css-loader', 'sass-loader']
+        })
        },
        {
 //         // 对非文本文件采用 file-loader 加载
