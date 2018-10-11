@@ -17,7 +17,7 @@ module.exports = {
          test: /\.scss$/,
          use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          publicPath: '/dist/',
+          publicPath: '/Animation_design/TEST-19/dist/',   //应付gayhub
           //如果需要，可以在 sass-loader 之前将 resolve-url-loader 链接进来
           use: ['css-loader', 'sass-loader']
         })
