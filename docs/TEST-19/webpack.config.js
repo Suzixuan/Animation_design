@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
+  mode: 'production',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
@@ -34,7 +35,14 @@ module.exports = {
      ]
    },
 
-   plugins:[ new ExtractTextPlugin('[name].css')],
+   plugins:[
+
+      new ExtractTextPlugin('[name].css'),
+      new HtmlWebpackPlugin({
+        template: './dist/index.html'
+      })
+
+   ],
    devServer: {
      contentBase: './dist'
      // hot: true,   //用ExtractTextPlugin插件时用热更新会报错
@@ -48,4 +56,8 @@ https://webpack.docschina.org/plugins/extract-text-webpack-plugin/
 安装 npm install extract-text-webpack-plugin@next --save-dev
 
 
+关于HTML热更新
+https://github.com/AriaFallah/WebpackTutorial/tree/master/part1/html-reload
+https://webpack.docschina.org/plugins/html-webpack-plugin/
+https://segmentfault.com/q/1010000004707022（跳转）
 */
