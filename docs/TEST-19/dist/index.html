@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-<link href="main.css" rel="stylesheet"/></head>
-<body>
+	<title>设计图纸 #1</title>
+</head>
+<body id="part">
 	
 	<div class="container">
 
 		<!-- Donut/Ring reference, StackOverflow source: http://stackoverflow.com/questions/8193675/draw-a-hollow-circle-in-svg/8199621#8199621 -->
-		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000px">
+		<svg id="svg-1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000px">
 
 		<defs>
 		    <pattern id="ima" x="0" y="0" width="1" height="1">
@@ -27,8 +27,8 @@
 		            m 0 -500 
 		            a 500 500 0 1 0 1 0
 		            z
-		            m -1 125    
-		            a 375 375 0 1 1 -1 0     
+		            m -1 200    
+		            a 300 300 0 1 1 -1 0     
 		            Z" />
 
 		 
@@ -36,9 +36,50 @@
 
 	</div>
 
-<script type="text/javascript" src="bundle.js"></script>
+	<div class="container-2">
+		<div class="gallery">
+			<ul>
+				<li class="picture"></li>
+				<li class="picture"></li>
+				<li class="picture"></li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
+
+<script type="text/javascript">
+	 var fixedDom = document.getElementById('svg-1'),
+	 	 bodyPart = document.getElementById('part');
+    
+   window.onscroll = function() {
+  //为了保证兼容性，这里取两个值，哪个有值取哪一个
+  //scrollTop就是触发滚轮事件时滚轮的高度
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+  console.log("滚动距离" + scrollTop);
+
+  if(scrollTop>=100){
+  	fixedDom.classList.add("scale-1");
+  	fixedDom.classList.remove("scale-2");
+
+  	bodyPart.classList.add("scrollTop-1");
+  	bodyPart.classList.remove("scrollTop-2");
+  	return;
+  }
+  if(scrollTop<=1000){
+  	fixedDom.classList.add("scale-2");
+  	fixedDom.classList.remove("scale-1");
+
+  	bodyPart.classList.remove("scrollTop-1");
+  	bodyPart.classList.add("scrollTop-2");
+  	return;
+  }
+  
+
+}
+
+
+</script>
 
 
 <!-- 

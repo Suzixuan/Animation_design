@@ -17,7 +17,7 @@ module.exports = {
          test: /\.scss$/,
          use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          publicPath: '/Animation_design/TEST-19/dist/',   //应付gayhub
+          // publicPath: '/Animation_design/TEST-19/dist/',   //应付gayhub
           //如果需要，可以在 sass-loader 之前将 resolve-url-loader 链接进来
           use: ['css-loader', 'sass-loader']
         })
@@ -61,4 +61,8 @@ https://webpack.docschina.org/plugins/extract-text-webpack-plugin/
 https://github.com/AriaFallah/WebpackTutorial/tree/master/part1/html-reload
 https://webpack.docschina.org/plugins/html-webpack-plugin/
 https://segmentfault.com/q/1010000004707022（跳转）
+
+
+webpack 打包 图片相对路径问题
+https://segmentfault.com/q/1010000010420316/a-1020000010421264
 */

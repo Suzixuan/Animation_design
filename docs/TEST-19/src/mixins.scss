@@ -32,3 +32,28 @@
         @content;
     }
 }
+
+@mixin picture_position($number,$src,$width,$height,$x,$y){
+    .picture:nth-child(#{$number}){
+        background: url(#{$src});
+        width:$width;
+        height:$height;
+        background-size: 100%;
+        transform:translate3d($x,$y,0);
+
+
+    &:before{
+        content:"";
+        background: url(../images/SB077.jpg),url(#{$src});
+        background-blend-mode: overlay;
+        width:$width;
+        height:$height;
+        float: left;
+        opacity: .4;
+        background-size: 100%;
+    }
+
+    
+}
+
+}
