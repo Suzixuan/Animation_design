@@ -3,85 +3,81 @@
 <head>
 	<meta charset="UTF-8">
 	<title>设计图纸 #1</title>
-</head>
+<link href="/main.css" rel="stylesheet"></head>
 <body id="part">
-	
-	<div class="container">
 
-		<!-- Donut/Ring reference, StackOverflow source: http://stackoverflow.com/questions/8193675/draw-a-hollow-circle-in-svg/8199621#8199621 -->
-		<svg id="svg-1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000px">
+	<div id="fullpage">
+		<div id="c1" class="section active">
 
-		<defs>
-		    <pattern id="ima" x="0" y="0" width="1" height="1">
-		        <image href="http://wx4.sinaimg.cn/large/6a1e8e1bly1fw48aw3q4rj21hc0u04qq.jpg" x="-460" y="0" width="1920" height="1080"></image>
-		    </pattern>
-		</defs>
+			<!-- Donut/Ring reference, StackOverflow source: http://stackoverflow.com/questions/8193675/draw-a-hollow-circle-in-svg/8199621#8199621 -->
+			<svg id="svg-1" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000px" height="1000px">
 
-		  <!-- Reference circle -->
-		  <circle cx="0" cy="0" r="10" fill="none" class="shape"/>
+			<defs>
+			    <pattern id="ima" x="0" y="0" width="1" height="1">
+			        <image href="http://wx4.sinaimg.cn/large/6a1e8e1bly1fw48aw3q4rj21hc0u04qq.jpg" x="-460" y="0" width="1920" height="1080"></image>
+			    </pattern>
+			</defs>
 
-		  <!-- Ring/Donut centered at (100, 200) with outer radius 100 and inner radius 75 -->
-		  <!-- Note that there's a single pixel missing in the stroke along the outside -->
-		  <path class="shape" fill="url(#ima)" stroke="transparent" d="
-		            M 500, 500 
-		            m 0 -500 
-		            a 500 500 0 1 0 1 0
-		            z
-		            m -1 200    
-		            a 300 300 0 1 1 -1 0     
-		            Z" />
+			  <!-- Reference circle -->
+			  <circle cx="0" cy="0" r="10" fill="none" class="shape"/>
 
-		 
-		</svg>
+			  <!-- Ring/Donut centered at (100, 200) with outer radius 100 and inner radius 75 -->
+			  <!-- Note that there's a single pixel missing in the stroke along the outside -->
+			  <path class="shape" fill="url(#ima)" stroke="transparent" d="
+			            M 500, 500 
+			            m 0 -500 
+			            a 500 500 0 1 0 1 0
+			            z
+			            m -1 200    
+			            a 300 300 0 1 1 -1 0     
+			            Z" />
 
-	</div>
+			 
+			</svg>
 
-	<div class="container-2">
-		<div class="gallery">
-			<ul>
-				<li class="picture"></li>
-				<li class="picture"></li>
-				<li class="picture"></li>
-			</ul>
 		</div>
+
+		<div id="c2" class="section">
+			<div class="gallery">
+				<ul>
+					<li class="picture"></li>
+					<li class="picture"></li>
+					<li class="picture"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="c3" class="section"></div>
 	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+	<script type="text/javascript">
+
+		$(function(){
+			var $fullpage = $("#fullpage");
+			$("body").on('mousewheel', function(event) {
+			    console.log(1);
+			    $fullpage.find(".active").next().addClass("active")
+			    	.siblings().removeClass("active");	
+
+			});
+
+		});
+		// new fullpage('#fullpage', {
+		// 	//options here
+		// 	autoScrolling:true,
+		// 	scrollHorizontally: true,
+		// 	licenseKey:"OPEN-SOURCE-GPLV3-LICENSE"
+		// });
+
+		// //methods
+		// fullpage_api.setAllowScrolling(false);
+
+		
+	</script>
 </body>
 </html>
-
-<script type="text/javascript">
-	 var fixedDom = document.getElementById('svg-1'),
-	 	 bodyPart = document.getElementById('part');
-    
-   window.onscroll = function() {
-  //为了保证兼容性，这里取两个值，哪个有值取哪一个
-  //scrollTop就是触发滚轮事件时滚轮的高度
-  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-  console.log("滚动距离" + scrollTop);
-
-  if(scrollTop>=100){
-  	fixedDom.classList.add("scale-1");
-  	fixedDom.classList.remove("scale-2");
-
-  	bodyPart.classList.add("scrollTop-1");
-  	bodyPart.classList.remove("scrollTop-2");
-  	return;
-  }
-  if(scrollTop<=1000){
-  	fixedDom.classList.add("scale-2");
-  	fixedDom.classList.remove("scale-1");
-
-  	bodyPart.classList.remove("scrollTop-1");
-  	bodyPart.classList.add("scrollTop-2");
-  	return;
-  }
-  
-
-}
-
-
-</script>
-
-
 <!-- 
 	svg 空心圆
 	https://jsfiddle.net/nxjeen1u/280/
@@ -95,6 +91,10 @@
 
 	index.lock 问题！！！
 	https://blog.csdn.net/lihchweb/article/details/74352054
+
+	JS
+	https://www.jianshu.com/p/4bf613d8c927
+	https://segmentfault.com/q/1010000003051973
 
 
 

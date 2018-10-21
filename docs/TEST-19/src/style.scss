@@ -5,9 +5,8 @@
 
 
 body{
-	// overflow:hidden;
 	margin: 0;
-	// overflow: hidden;
+	overflow: hidden;
 }
 ul{
 	margin: 0;
@@ -15,10 +14,10 @@ ul{
     list-style: none;
 }
 
-.container,.container-2{
+.section{
 	background: url(../images/SB077.jpg),rgba(0,0,0,0.8);
     width: 100%;
-    height: 1000px;
+    height: 1300px;
     background-size: .7%;
     background-blend-mode: overlay;
     // overflow: hidden;
@@ -31,24 +30,24 @@ svg{
 
 }
 
-// .scale-1{
-// 	@include animation("scale-1 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s forwards");
-// }
-// .scale-2{
-// 	@include animation("scale-2 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s forwards");
-// }
+.scale-1{
+	@include animation("scale-1 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s forwards");
+}
+.scale-2{
+	@include animation("scale-2 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s forwards");
+}
 
-// .scrollTop-1{
-// 	overflow: hidden;
-// 	@include animation("scrollTop-1 2s linear 2.5s forwards");
-// }
-// .scrollTop-2{
-// 	overflow: auto;
-// 	@include animation("scrollTop-2 2s linear 2.5s forwards");
-// }
+.scrollTop-1{
+	// overflow: hidden;
+	@include animation("scrollTop-1 2s linear 2.5s forwards");
+}
+.scrollTop-2{
+	overflow: auto;
+	@include animation("scrollTop-2 2s linear 2.5s forwards");
+}
 
 .gallery{
-	margin-top:30%;
+	margin-top:25%;
 	margin-left:10%;
 	float:left;
 }
@@ -74,4 +73,13 @@ li{
 	$height:450px,
 	$x:125px,
 	$y:-400px
+	);
+
+@include picture_position(
+	$number:3,
+	$src:"../images/3.png",
+	$width:650px,
+	$height:350px,
+	$x:775px,
+	$y:-300px
 	);

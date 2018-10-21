@@ -2,18 +2,18 @@
 
 @include keyframes(scale-1){
 	0% { transform : scale(1); }
-	100% { transform : scale(6); }
+	100% { transform : scale(7); }
 }
 @include keyframes(scale-2){
-	0% { transform : scale(6); }
+	0% { transform : scale(7); }
 	100% { transform : scale(1); }
 }
 @include keyframes(scrollTop-1){
 	0% { transform : translateY(0px); }
-	100% { transform : translateY(-920px); }
+	100% { transform : translateY(-1300px); }
 }
 @include keyframes(scrollTop-2){
-	0% { transform : translateY(-920px); }
+	0% { transform : translateY(-1300px); }
 	100% { transform : translateY(0px); }
 }
 
