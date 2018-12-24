@@ -30,11 +30,96 @@ svg{
 
 }
 
-.route{
+.route-1{
 	position: absolute;
 	top: 150px;
     left: 109px;
     filter: blur(2px);
+}
+
+.route-2{
+	position: absolute;
+	top: 250px;
+    left: 109px;
+    filter: blur(2px);
+}
+
+.route-3{
+	position: absolute;
+	top: -52px;
+    left: 245px;
+    filter: blur(2px);
+}
+
+.route-4{
+	position: absolute;
+	top: 233px;
+    left: 106px;
+    filter: blur(2px);
+}
+
+.point-box{
+	position: absolute;
+}
+
+.lizi{
+	position: absolute;
+}
+
+#point-svg{
+	filter: blur(1px);
+	animation: filcker 5s ease-in-out 8s infinite,point-move 10s ease-in-out infinite;
+}
+
+#point-svg .st0{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+#point-svg .st0:after{
+	width: 0;
+	height: 0;
+	border-top: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+
+.top-star{
+    position: absolute;
+    top: -317px;
+    left: 37px;
+}
+.light{
+    width: 90px;
+    height: 90px;
+    background-color: transparent;
+    border: 40px #14bfff solid;
+    -webkit-border-radius: 90px;
+    position: absolute;
+    top: 0px;
+    left: 693px;
+    filter: blur(20px);
+    opacity: 0;
+    animation: light-show 3s linear 8s infinite;
+}
+
+.image{
+	background-image: url('merry Christmas.png');
+	width: 687px;
+	height: 191px;
+	float: right;
+}
+
+#key-star{
+	animation: move 3s linear 6s forwards;
+	stroke-dasharray: 0, 200px;
 }
 
 .path-1 {
@@ -52,7 +137,7 @@ svg{
 .path-5 {
     animation: move 4s linear 4s forwards;
 }
-.st0{
+#svg-1 .st0,#svg-2 .st0{
 	stroke-dasharray: 0, 3200px;
 }
  
@@ -62,5 +147,76 @@ svg{
       }
       100%{
           stroke-dasharray: 3200px, 3200px;
+          fill: #FAFAFA;
+      }
+}
+
+@keyframes filcker {
+      0%{
+           filter: blur(5px);
+      }
+      50%{
+      	filter: blur(1px);
+
+      }
+      100%{
+           filter: blur(10px);
+      }
+}
+
+@keyframes point-move {
+      0%{
+        transform: translate3d(1px,1px,0);
+      }
+      20%{
+      	transform: translate3d(3px,8px,0);
+      }
+      40%{
+      	transform: translate3d(16px,12px,0);
+
+      }
+      60%{
+      	transform: translate3d(10px,4px,0);
+
+      }
+      80%{
+      	transform: translate3d(13px,16px,0);
+      }
+      100%{
+       	   transform: translate3d(5px,20px,0);    
+      }
+}
+@keyframes show {
+      0%{
+          fill: none;stroke:#B0E5EF;
+      }
+      100%{
+          fill: white;stroke:#B0E5EF;
+      }
+}
+@keyframes light-show {
+      0%{
+          width: 90px;
+          height: 90px;
+          border: 40px #14bfff solid;
+          -webkit-border-radius: 90px;
+           filter: blur(20px);
+           opacity: 0.8;
+      }
+      50%{
+		width: 100px;
+      height: 100px;
+      border: 50px #14bfff solid;
+      -webkit-border-radius: 90px;
+       filter: blur(20px);
+       opacity: 0.8;
+      }
+      100%{
+          width: 80px;
+          height: 80px;
+          border: 40px #14bfff solid;
+          -webkit-border-radius: 80px;
+           filter: blur(15px);
+           opacity: 0.8;
       }
 }
