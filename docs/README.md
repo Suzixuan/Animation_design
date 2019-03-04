@@ -162,3 +162,14 @@
 #### No.18 工作细胞过场
 
 ![](http://wx4.sinaimg.cn/large/6a1e8e1bly1fva5p9bpebg21960qy1ky.gif)
+
+
+
+#### No.20  Christmas Scene 2018
+
+> 第三年。
+> 年年雪里，常插梅花醉，
+> 今年海角天涯，萧萧两鬓生华。
+
+![](http://wx3.sinaimg.cn/mw690/6a1e8e1bly1g0qin9iw4gj210b0lvk3x.jpg)
+
