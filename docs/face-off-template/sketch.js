@@ -28,6 +28,12 @@ function setup() {
   mic = new p5.AudioIn();
   mic.start();
 
+  var mySynth = new p5.MonoSynth();
+
+  // This won't play until the context has started
+  mySynth.play('A6');
+
+
   // Start the audio context on a click/touch event. Required for Chrome.
   userStartAudio().then(function() {
     myDiv.remove();
