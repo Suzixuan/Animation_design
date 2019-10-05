@@ -25,7 +25,7 @@ function setup() {
   var myDiv = createDiv('click to start audio capture');
   myDiv.position(0, 0);
 
-  mic = new p5.AudioIn()
+  mic = new p5.AudioIn();
   mic.start();
 
   // Start the audio context on a click/touch event. Required for Chrome.
