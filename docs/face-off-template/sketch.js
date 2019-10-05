@@ -48,6 +48,9 @@ function testFace(micLevel) {
   reVolume = map(micLevel, 10, 100, 0, 600);
 
   eaVolume += (reVolume - eaVolume) * easing;
+  var myDiv = createDiv(eaVolume);
+  myDiv.position(50, 50);
+  myDiv.color(0);
 
   ellipse(width / 2, height / 2, eaVolume, eaVolume);
 }
