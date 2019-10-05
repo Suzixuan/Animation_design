@@ -45,12 +45,9 @@ function testFace(micLevel) {
 
   // map() remaps one number set to another. Our v variable
   // only goes from 0 to 1, but we can map it to any number.
-  reVolume = map(micLevel, 0, 1, 0, 600);
+  reVolume = map(micLevel, 0, 1, 100, 600);
 
   eaVolume += (reVolume - eaVolume) * easing;
-  var myDiv = createDiv(eaVolume);
-  myDiv.position(50, 50);
-  myDiv.color(0);
 
   ellipse(width / 2, height / 2, eaVolume, eaVolume);
 }
