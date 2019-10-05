@@ -12,8 +12,8 @@
 
 var mic;
 
-var reVolume = 0;
-var eaVolume = 0;
+var reVolume = 100;
+var eaVolume = 100;
 
 // The closer to 1 the less it eases. The closer to 0 the more it eases.
 var easing = .3;
