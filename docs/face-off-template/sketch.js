@@ -12,8 +12,8 @@
 
 var mic;
 
-var reVolume = 100;
-var eaVolume = 100;
+var reVolume = 0;
+var eaVolume = 0;
 
 // The closer to 1 the less it eases. The closer to 0 the more it eases.
 var easing = .3;
@@ -45,9 +45,9 @@ function testFace(micLevel) {
 
   // map() remaps one number set to another. Our v variable
   // only goes from 0 to 1, but we can map it to any number.
-  reVolume = map(micLevel, 0, 100, 0, 1000);
+  reVolume = map(micLevel, 0, 1, 0, 600);
 
   eaVolume += (reVolume - eaVolume) * easing;
 
-  ellipse(width / 2, height / 2, eaVolume, eaVolume);
+  ellipse(width / 2, height / 2, eaVolume+200, eaVolume+200);
 }
