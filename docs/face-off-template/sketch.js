@@ -38,14 +38,14 @@ function draw() {
   background(45);
   fill(200);
   micLevel = mic.getLevel();
-  testFace(micLevel+100);
+  testFace(micLevel);
 }
 
 function testFace(micLevel) {
 
   // map() remaps one number set to another. Our v variable
   // only goes from 0 to 1, but we can map it to any number.
-  reVolume = map(micLevel, 0, 1, 0, 600);
+  reVolume = map(micLevel, 0, 100, 0, 1000);
 
   eaVolume += (reVolume - eaVolume) * easing;
 
