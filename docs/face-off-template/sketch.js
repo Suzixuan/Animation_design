@@ -38,7 +38,7 @@ function draw() {
   background(45);
   fill(200);
   micLevel = mic.getLevel();
-  testFace(micLevel);
+  testFace(micLevel+100);
 }
 
 function testFace(micLevel) {
