@@ -10,6 +10,19 @@
 
 */
 
+window.onload = function() {
+  var context = new AudioContext();
+  // Setup all nodes
+  ...
+}
+
+// One-liner to resume playback when user interacted with the page.
+document.querySelector('button').addEventListener('click', function() {
+  context.resume().then(() => {
+    console.log('Playback resumed successfully');
+  });
+});
+
 var mic;
 
 var reVolume = 0;
