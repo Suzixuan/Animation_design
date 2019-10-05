@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="viewDiv">
+		<a href="TEST-1/demo.html">点击</a>
+	</div>
+	
+	
+</body>
+<script>
+	function load_home() {
+	 document.getElementById("viewDiv").innerHTML = '<object type="text/html" data="TEST-1/demo.html" width="100%" height="100%"></object>';
+   }
+
+   load_home();
+</script>
+</html>

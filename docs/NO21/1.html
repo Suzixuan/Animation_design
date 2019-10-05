@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	</title>
+	<style type="text/css">
+	body{
+		background: #E93428;
+	}
+	.t{
+		font-size: 100px;
+		width: 800px;
+		height: 250px;
+		font-weight: 500;
+		position: absolute;
+		
+	}
+	.text-1{
+		color: red;
+	}
+	.text-2{
+		color: black;
+		position: absolute;
+		left: 0px;
+	    mix-blend-mode: lighten;
+	}
+	.box{
+		width: 800px;
+		height: 250px;
+		border: 1px solid;
+		position: relative;
+	}
+	.box-1{
+		width: 400px;
+		height: 100%;
+		float: left;
+		background: black;
+		mix-blend-mode: difference;
+	}
+	.box-2{
+		width: 400px;
+		float: right;
+		height: 100%;
+		background: #E93428;
+		/* isolation:isolate; */
+	}
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="box-1">
+			<div class="t text-1">EBI CURRY EARL</div>
+		</div>
+		<div class="box-2"><div class="t text-2">EBI CURRY EARL</div></div>
+		
+
+	</div>
+	
+	
+</body>
+</html>
