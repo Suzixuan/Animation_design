@@ -49,5 +49,5 @@ function testFace(micLevel) {
 
   eaVolume += (reVolume - eaVolume) * easing;
 
-  ellipse(width / 2, height / 2, eaVolume+500, eaVolume+500);
+  ellipse(width / 2, height / 2, eaVolume, eaVolume+10);
 }
