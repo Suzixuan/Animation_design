@@ -37,7 +37,7 @@ function setup() {
   mic.start();
 
   //test
-  mySound.setVolume(1);
+  mySound.setVolume(10);
   mySound.play();
 
   // Start the audio context on a click/touch event. Required for Chrome.
