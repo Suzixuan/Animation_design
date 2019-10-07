@@ -29,7 +29,7 @@ function preload() {
   svgs[0] = loadImage("cap.svg");
   svgs[1] = loadImage("star.svg");
   soundFormats('mp3', 'ogg');
-  mySound = loadSound('05.WORLDBIGFLAMEUP.mp3');
+  mySound = loadSound('片霧烈火,大岛启之 - why,or why not.mp3');
 }
 
 function setup() {
