@@ -103,7 +103,7 @@ function testFace(micLevel) {
 
 
   //eye
-  if (eaVolume > 0 && eaVolume <= 170) {
+  if (eaVolume >= 0 && eaVolume <= 170) {
     fill(0);
     ellipse(215, 345, 60, 60);
     ellipse(345, 345, 60, 60);
