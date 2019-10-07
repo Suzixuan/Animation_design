@@ -166,7 +166,7 @@ function testFace(micLevel) {
 
   if (eaVolume > 170) {
     // scale(map(mouthEaVolume,0,30,0.5,1.6));
-    ellipse(285, 426, (55 + map(eaVolume, 200, 300, 0, 5)), 65 + map(eaVolume, 200, 300, -5, 3));
+    ellipse(285, 426, (55 + map(eaVolume, 170, 300, 0, 5)), 65 + map(eaVolume, 170, 300, -5, 3));
   }
 
 }
