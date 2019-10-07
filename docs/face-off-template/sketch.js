@@ -103,7 +103,7 @@ function testFace(micLevel) {
 
 
   //eye
-  if (eaVolume > 0 && eaVolume <= 180) {
+  if (eaVolume > 0 && eaVolume <= 170) {
     fill(0);
     ellipse(215, 345, 60, 60);
     ellipse(345, 345, 60, 60);
@@ -124,17 +124,17 @@ function testFace(micLevel) {
     line(321, 341, 357, 360);
   }
 
-  // eyebrow vol >=60 && vol <=200
+  // eyebrow vol >=60 && vol <=170
   push();
   strokeWeight(4);
   stroke(0);
   noFill();
   strokeCap(ROUND);
-  browReVolume = map(eaVolume, 100, 200, 0, -20);
+  browReVolume = map(eaVolume, 100, 170, 0, -20);
   browEaVolume += (browReVolume - browEaVolume) * easing;
-  if (eaVolume >= 60 && eaVolume <= 180) {
+  if (eaVolume >= 60 && eaVolume <= 170) {
     translate(0, browEaVolume);
-  } else if (eaVolume > 180) {
+  } else if (eaVolume > 170) {
     translate(0, browEaVolume + random([0, -5]));
   }
   if (eaVolume < 50) {
@@ -156,15 +156,15 @@ function testFace(micLevel) {
     bezier(240, 426, 260, 400, 310, 410, 332, 426);
   }
 
-  //mouth speaking vol >=60 && vol <=180
+  //mouth speaking vol >=60 && vol <=170
   fill(0);
-  if (eaVolume >= 60 && eaVolume <= 180) {
-    mouthReVolume = map(eaVolume, 100, 180, -30, 40);
+  if (eaVolume >= 60 && eaVolume <= 170) {
+    mouthReVolume = map(eaVolume, 100, 170, -30, 40);
     mouthEaVolume += (mouthReVolume - mouthEaVolume) * easing;
     bezier(246, 410, 262, 467 + mouthEaVolume, 310, 467 + mouthEaVolume, 320, 410);
   }
 
-  if (eaVolume > 180) {
+  if (eaVolume > 170) {
     // scale(map(mouthEaVolume,0,30,0.5,1.6));
     ellipse(285, 426, (55 + map(eaVolume, 200, 300, 0, 5)), 65 + map(eaVolume, 200, 300, -5, 3));
   }
