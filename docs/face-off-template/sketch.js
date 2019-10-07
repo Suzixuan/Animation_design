@@ -156,10 +156,10 @@ function testFace(micLevel) {
     bezier(240, 426, 260, 400, 310, 410, 332, 426);
   }
 
-  //mouth speaking vol >=60 && vol <=200
+  //mouth speaking vol >=60 && vol <=180
   fill(0);
   if (eaVolume >= 60 && eaVolume <= 180) {
-    mouthReVolume = map(eaVolume, 100, 200, -10, 30);
+    mouthReVolume = map(eaVolume, 100, 180, -30, 40);
     mouthEaVolume += (mouthReVolume - mouthEaVolume) * easing;
     bezier(246, 410, 262, 467 + mouthEaVolume, 310, 467 + mouthEaVolume, 320, 410);
   }
