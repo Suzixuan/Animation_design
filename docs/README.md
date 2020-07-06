@@ -189,7 +189,7 @@
 
 > 描述：http://t.cn/A6ybeKUR
 
-<img src="https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif" style="zoom:;" />
+<img src="https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif"/>
 
 
 
