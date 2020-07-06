@@ -173,3 +173,23 @@
 
 ![](http://wx3.sinaimg.cn/mw690/6a1e8e1bly1g0qin9iw4gj210b0lvk3x.jpg)
 
+
+
+
+
+#### No.21 例子：混合模式：difference //差值
+
+> 描述：http://t.cn/A6ybDwOj
+
+<img src="https://wx4.sinaimg.cn/large/6a1e8e1bly1g3dbzanhwog20pa08bab6.gif" />
+
+
+
+#### No.22 例子：混合模式：exclusion //排除  和  text-fill-color
+
+> 描述：http://t.cn/A6ybeKUR
+
+![](https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif)
+
+
+

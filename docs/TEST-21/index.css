@@ -1,0 +1,32 @@
+
+.content{
+  margin: 20% auto;
+  text-align: center;
+  position: relative;
+}
+.content span {
+  font-size: 7vw;
+  font-family: gibbs;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1.5px #000;
+
+  mix-blend-mode: exclusion;
+  color: white;
+
+}
+
+.video{
+  /* width: 500px; */
+  /* height: 500px; */
+  /* border-radius: 500px; */
+  overflow: hidden;
+  position: fixed;
+  /* transform: translate3d(241px, -190px, 10px); */
+  transform: translate3d(402px, -420px, -26px);
+}
+
+#video{
+
+}
