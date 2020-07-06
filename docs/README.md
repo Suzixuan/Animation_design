@@ -188,8 +188,10 @@
 #### No.22 例子：混合模式：exclusion //排除  和  text-fill-color
 
 > 描述：http://t.cn/A6ybeKUR
+>
+> https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif
 
-<img src="https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif"/>
+![](../../../../../Typora%20%E5%9B%BE%E7%89%87%E5%82%A8%E5%AD%98/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif)
 
 
 
