@@ -147,7 +147,7 @@
 
 > —— 看完久久不能忘怀，遂试着临摹下效果（对比在楼下），因为还记得之前看过[@张鑫旭](https://weibo.com/n/%E5%BC%A0%E9%91%AB%E6%97%AD?from=feed&loc=at) 大佬的教程，简直是为它度身定做呀！但没想到最后在SVG那卡壳![[跪了]](https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/75/2018new_gui_org.png)。最后记录了几篇文章，感觉水深火热![[二哈]](https://img.t.sinajs.cn/t4/appstyle/expression/ext/normal/22/2018new_erha_org.png) 
 
-![](http://wx1.sinaimg.cn/large/6a1e8e1bgy1fpsksusxdog20qd0mftl4.gif)
+<img src="http://wx1.sinaimg.cn/large/6a1e8e1bgy1fpsksusxdog20qd0mftl4.gif" style="zoom:67%;" />
 
 
 
@@ -161,7 +161,7 @@
 
 #### No.18 工作细胞过场
 
-![](http://wx4.sinaimg.cn/large/6a1e8e1bly1fva5p9bpebg21960qy1ky.gif)
+<img src="http://wx4.sinaimg.cn/large/6a1e8e1bly1fva5p9bpebg21960qy1ky.gif" style="zoom:67%;" />
 
 
 
@@ -181,7 +181,7 @@
 
 > 描述：http://t.cn/A6ybDwOj
 
-<img src="https://wx4.sinaimg.cn/large/6a1e8e1bly1g3dbzanhwog20pa08bab6.gif" />
+<img src="https://wx4.sinaimg.cn/large/6a1e8e1bly1g3dbzanhwog20pa08bab6.gif" style="zoom:80%;" />
 
 
 
@@ -189,7 +189,7 @@
 
 > 描述：http://t.cn/A6ybeKUR
 
-![](https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif)
+<img src="https://wx3.sinaimg.cn/large/6a1e8e1bgy1gggzxa2goeg20wu0k01l9.gif" style="zoom:;" />
 
 
 
